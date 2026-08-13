@@ -1,0 +1,19 @@
+# Environments
+.venv/
+__pycache__/
+*.pyc
+
+# Private data — raw set files and Strategy Tester reports stay local.
+# The compiled timeline database (aggregated trades/daily P&L) IS committed.
+reports_in/*
+!reports_in/.gitkeep
+timeline/test_partial/
+runs/*
+!runs/.gitkeep
+reference/*
+!reference/.gitkeep
+excluded/
+
+# OS noise
+Thumbs.db
+.DS_Store

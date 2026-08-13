@@ -1,0 +1,1214 @@
+"""
+EA Portfolio Engine — Streamlit app.
+====================================
+An educational tool for exploring EA portfolio management regimes on
+backtested data. Built for people with no quant background: every control
+and metric is explained in plain language.
+
+Run:  streamlit run app.py   (port 8504 via .streamlit/config.toml)
+"""
+
+import os
+import sys
+import json
+import glob
+
+import numpy as np
+import pandas as pd
+import streamlit as st
+import plotly.graph_objects as go
+
+from portfolio_sim import load_timeline, load_trades, ea_stats, rank_metric, pick_top
+from run_sim import run_one
+from interactive_sim import InteractiveSession
+
+ENGINE_DIR = os.path.dirname(os.path.abspath(__file__))
+RUNS_DIR   = os.path.join(ENGINE_DIR, 'runs')
+
+st.set_page_config(page_title='EA Portfolio Engine', page_icon='⚙️',
+                   layout='wide', initial_sidebar_state='expanded')
+
+
+# ── Shared helpers ────────────────────────────────────────────────────────────
+
+def list_timelines():
+    base = os.path.join(ENGINE_DIR, 'timeline')
+    if not os.path.isdir(base):
+        return []
+    return sorted(d for d in os.listdir(base)
+                  if os.path.isfile(os.path.join(base, d, 'daily_pnl.csv')))
+
+
+@st.cache_data(show_spinner=False)
+def cached_timeline(name):
+    return load_timeline(name)
+
+
+@st.cache_resource(show_spinner=False)
+def cached_tradebook(name):
+    return load_trades(name)
+
+
+def friendly_name(ea_id, meta):
+    row = meta[meta.ea_id == ea_id]
+    if row.empty:
+        return ea_id
+    r = row.iloc[0]
+    return f"{r['strategy']}  ({r['symbol']} {r['timeframe']}, {r['family']})"
+
+
+def equity_chart(frames, basis=100_000):
+    """frames: {label: DataFrame with equity column indexed by date}"""
+    fig = go.Figure()
+    for label, df in frames.items():
+        fig.add_trace(go.Scatter(x=df.index, y=df['equity'],
+                                 mode='lines', name=label))
+    fig.add_hline(y=basis, line_dash='dot', line_color='gray',
+                  annotation_text='starting balance')
+    fig.update_layout(height=420, margin=dict(l=10, r=10, t=30, b=10),
+                      legend=dict(orientation='h', y=-0.15),
+                      yaxis_title='Account value ($)')
+    return fig
+
+
+def friendly_wf_table(df):
+    """Walk-forward comparison with plain-language headers."""
+    out = df.rename(columns={
+        'run': 'Management style', 'net_profit': 'Profit ($)',
+        'ann_return_pct': 'Per year (%)', 'sharpe': 'Sharpe',
+        'max_dd_pct': 'Worst drop (%)', 'turnover_units': 'Churn',
+        'events': 'Decisions'})
+    keep = ['Management style', 'Profit ($)', 'Per year (%)', 'Sharpe',
+            'Worst drop (%)', 'Churn', 'Decisions']
+    return out[[c for c in keep if c in out.columns]]
+
+
+def friendly_mc_table(df):
+    """Monte Carlo summary with plain-language headers and values."""
+    out = df.copy()
+    out['block']  = out['block'].map({
+        'weekly_5d': 'Weekly (5-day) blocks',
+        'monthly_21d': 'Monthly (21-day) blocks',
+        'quarterly_63d': 'Quarterly (63-day) blocks'}).fillna(out['block'])
+    out['regime'] = out['regime'].map({
+        'rules': 'Rules style', 'equal_weight': 'Equal weight'}).fillna(out['regime'])
+    for col in ['P(dd>5%)', 'P(dd>10%)', 'P(loss)']:
+        if col in out.columns:
+            out[col] = (out[col] * 100).round(0).astype(int).astype(str) + '%'
+    out = out.rename(columns={
+        'block'     : 'History reshuffled in',
+        'regime'    : 'Style',
+        'sharpe_p05': 'Sharpe — unlucky end (5th percentile)',
+        'sharpe_med': 'Sharpe — typical (median)',
+        'sharpe_p95': 'Sharpe — lucky end (95th percentile)',
+        'dd_pct_p05': 'Worst drop % — lucky end (5th percentile)',
+        'dd_pct_med': 'Worst drop % — typical (median)',
+        'dd_pct_p95': 'Worst drop % — unlucky end (95th percentile)',
+        'net_med'   : 'Profit ($) — typical (median)',
+        'P(dd>5%)'  : 'Chance of a drop over 5%',
+        'P(dd>10%)' : 'Chance of a drop over 10%',
+        'P(loss)'   : 'Chance of finishing at a loss'})
+    return out
+
+
+METRIC_HELP = {
+    'net_profit'    : 'Total dollars made over the test (on the fixed $100k base).',
+    'ann_return_pct': 'Average profit per year, as % of the $100k base.',
+    'sharpe'        : ('Return per unit of "wobble". Higher = smoother ride for the '
+                      'same profit. Above ~1 is decent in live trading; the huge '
+                      'values here are inflated because this pool only contains '
+                      'strategies that already looked good historically.'),
+    'max_dd_pct'    : ('Biggest peak-to-valley drop of the account, as % of $100k. '
+                      'The "how bad did it get" number.'),
+    'turnover_units': 'How much swapping the regime did. Higher = more churn.',
+}
+
+
+# ── Sidebar ───────────────────────────────────────────────────────────────────
+
+with st.sidebar:
+    st.markdown('## ⚙️ EA Portfolio Engine')
+    st.caption('Test *management styles* for a team of trading robots — '
+               'on history, before risking anything.')
+    page = st.radio('Page', ['📚 Learn', '🗂 Data', '📊 EA Pool', '🌐 Regimes',
+                             '🛠 Build a Run', '▶ Interactive Replay',
+                             '🏁 Results & Compare'],
+                    label_visibility='collapsed')
+    st.divider()
+    timelines = list_timelines()
+    if timelines:
+        default_ix = timelines.index('main_pool') if 'main_pool' in timelines else 0
+        timeline_name = st.selectbox(
+            'Dataset (timeline)', timelines, index=default_ix,
+            help='A timeline is a compiled bundle of backtests. Build new ones '
+                 'with compile_timeline.py — see the README.')
+    else:
+        timeline_name = None
+        st.warning('No timelines found. Compile one first (see README).')
+
+
+# ══════════════════════════════════════════════════════════════════════════════
+# 📚 LEARN
+# ══════════════════════════════════════════════════════════════════════════════
+
+if page == '📚 Learn':
+    st.title('📚 What is this tool?')
+
+    st.markdown("""
+Imagine you manage a **team of trading robots** (called *EAs* — Expert Advisors).
+Each one trades its own market its own way. Some are on form, some are in a slump —
+and form changes. The question this tool answers:
+
+> **Does actively managing the team — benching slumping robots, promoting in-form
+> ones — actually beat just letting everyone play?**
+
+Humans are famously bad at this decision. A winning streak breeds overconfidence
+(risk up, trade more), then a losing streak hits harder than it should, panic sets
+in, the system gets shelved… usually right before it recovers. This tool replaces
+that emotional loop with **written rules**, then *tests those rules against history*
+so you can see what they would have done — before any real money is involved.
+""")
+
+    st.subheader('The dataset, in plain words')
+    st.markdown("""
+Every robot in the pool was backtested on the **same account size (100,000 dollars)**
+with its trade size fixed so that its *worst historical losing stretch* equals
+roughly **5,000 dollars (5%)**. That means every robot carries the **same risk weight** — one unit
+of any robot risks about as much as one unit of any other. This makes team
+comparisons fair, and it means "run robot X at half size" is exactly half the P&L.
+""")
+    with st.expander('⚠️ Two honest warnings about this data'):
+        st.markdown("""
+1. **Historical drawdown is not a limit.** The 5% calibration comes from each
+   robot's *past* worst stretch. The future can (and sometimes will) be worse.
+   Our simulations across shuffled histories say a ~5% team drawdown is *normal*
+   and ~8% is unlucky-but-ordinary — neither means the system is broken.
+2. **This pool is made of survivors.** Every robot here exists because its
+   backtest looked good. That inflates every absolute number you'll see.
+   **Compare regimes against each other — don't trust the raw profit figures.**
+""")
+
+    st.subheader('The management styles you can test')
+    st.markdown("""
+| Style | In plain words |
+|---|---|
+| **Equal weight** | Everyone plays, same size, never change anything. The humble benchmark — famously hard to beat. |
+| **Static top-N** | Pick the N best-looking robots once, never touch them again. Set-and-forget. |
+| **Momentum** | Every review, re-rank everyone by recent form and field the current top N. The "performance chaser". |
+| **Rules (rotation)** | Only bench a robot when it breaks a written rule (losing streak too long, drawdown too deep), then promote the best available substitute. The "disciplined manager". |
+| **Random** | Swap robots by dice roll. Sounds silly — it's the control test. Any style worth using must beat random *by a lot*. |
+""")
+
+    st.subheader('What we found on this dataset (so far)')
+    st.markdown("""
+- **Discipline beat chasing.** The rules style made its case with ~26 team changes
+  in six years. Momentum needed *hundreds* of swaps for a worse risk-adjusted result.
+- **Random was terrible** — which proves the rankings contain real signal here.
+- **Equal weight is quietly excellent** — smallest drawdowns of everything.
+  Beating it *per unit of risk* is the real bar.
+- **A concentrated team is the big trap.** Picking the "10 best performers" of
+  2020–22 produced a team of 9 Bitcoin robots. The rules style fixed that by
+  itself over time; set-and-forget rode the rollercoaster.
+- **We know what a "normal" bad stretch looks like.** Monte Carlo reshuffled
+  history into 300 alternate orderings and re-ran the rules style through each:
+  the median worst drop was ~5% and the 95th percentile ~8% — with the *actual*
+  history's ~4% being slightly lucky. So a 5% team drawdown is **normal**, 8%
+  is unlucky-but-ordinary, and neither means the system is broken. Deciding
+  that threshold *before* the drawdown happens is what breaks the
+  panic-and-shelve cycle. (Equal weight, for comparison, stayed between 1.9%
+  and 3.1% in *every one* of 300 histories — maximum diversification buys
+  near-immunity to sequence luck.)
+- **One firm rule can carry the whole job.** Sweeping the *streak cost* rule
+  ("bench a robot when its current losing streak has cost X dollars") showed
+  that a tight threshold — 1,000 dollars, i.e. 1% of the account — used as the
+  **only** benching rule matched the full multi-rule setups (smooth returns,
+  ~4.5% worst drop). It's also the fairest rule across fast and slow robots,
+  because it measures dollars, not days or trades. The flip side from the same
+  sweep: two *half-strict* rules were worse than one firm one — the worst
+  drawdowns came from settings where no single rule was decisive enough to
+  lead. A decisive rule matters more than its exact number. Monte Carlo backed
+  this up: re-run through the same 300 reshuffled histories, the single-rule
+  style matched the full multi-rule setup's outcome range (median worst drop
+  ~5%, 95th percentile ~7.5%) with a slightly *tighter* bad tail — it never
+  exceeded a 10% drop in any of the 300 histories. The walk-forward test added
+  the caveat: tuned on 2020–22 and run frozen on 2023–26, the single rule
+  matched momentum's smoothness with **12 decisions instead of about a
+  thousand** and earned the highest return of any managed style — but handed
+  the concentrated 9-Bitcoin starting team, it benched the cluster more slowly
+  than the multi-rule setup and took a deeper worst drop (6.3% vs 3.3%).
+  The twist came when we re-ran the walk-forward at a **3-day review** instead
+  of 5: the single rule jumped to the *top of the out-of-sample table* — its
+  weakness had been slow benching, not the rule itself, and faster check-ins
+  fixed it with still only ~25 team changes in three and a half years. Verdict:
+  one firm rule plus prompt reviews is a complete style; the drawdown rule
+  remains cheap insurance for whoever wants the smallest possible drops.
+- **How often should the manager check in?** We swept review cadence from daily
+  to monthly. With written rules, checking *often* is free — even daily reviews
+  barely increased swapping (the rules are the brake, not the calendar) while
+  catching damage sooner; the only harmful setting was checking *slowly* (every
+  2–4 weeks), which let drawdowns run. Performance-chasing was the mirror image:
+  its results didn't change with cadence, but daily checking quadrupled the
+  workload. The takeaway in one line: **with written rules, checking often adds
+  safety without churn; with performance-chasing, checking often adds churn
+  without safety.** Start with a review every 1–5 trading days — confirmed
+  out-of-sample: re-running the whole walk-forward at 3 days kept the same
+  ordering of styles and lifted the rules variants.
+- **Two starting recipes, if you just want to begin.** Everything above boils
+  down to two well-evidenced configurations: (1) *the simple one* — bench any
+  robot whose current losing streak has cost 1,000 dollars, review every 3
+  days, diversification cap on; (2) *the cautious one* — the multi-rule setup
+  (streak + drawdown limits), review every 3–5 days, for the smallest drops.
+  Both beat every alternative we tested across the sweep, Monte Carlo, and
+  walk-forward. Build either on the **Build a Run** page in two minutes —
+  then try to beat it.
+""")
+
+    st.subheader('Mini glossary')
+    st.markdown("""
+- **Drawdown (DD)** — how far the account fell from its best point. The pain number.
+- **Sharpe ratio** — profit per unit of day-to-day wobble. Smoothness score.
+- **Correlation** — do two robots win and lose *at the same time*? High correlation
+  = one bad day hits both = hidden concentration.
+- **Turnover** — how much swapping a style does. Churn has costs.
+- **Review** — a scheduled check-in day where the rules are evaluated.
+- **Lookback** — how far back the style looks when judging "recent form".
+""")
+
+
+# ══════════════════════════════════════════════════════════════════════════════
+# 🗂 DATA
+# ══════════════════════════════════════════════════════════════════════════════
+
+elif page == '🗂 Data':
+    st.title('🗂 Data management')
+    st.caption('A **timeline** is a compiled bundle of backtest reports — the '
+               'dataset every simulation reads. Build one from a folder of MT5 '
+               'Strategy Tester `.htm` reports, or update an existing one after '
+               'adding new reports.')
+
+    # ── Existing timelines ────────────────────────────────────────────────
+    st.subheader('Existing timelines')
+    tl_rows = []
+    for name in list_timelines():
+        mpath = os.path.join(ENGINE_DIR, 'timeline', name, 'manifest.json')
+        row = {'Timeline': name}
+        if os.path.isfile(mpath):
+            with open(mpath, encoding='utf-8') as f:
+                d = json.load(f).get('dataset', {})
+            row.update({'Robots': d.get('ea_count'), 'Trades': d.get('trade_count'),
+                        'From': d.get('first_trade'), 'To': d.get('last_trade'),
+                        'Compiled': d.get('generated')})
+        tl_rows.append(row)
+    if tl_rows:
+        st.dataframe(pd.DataFrame(tl_rows), use_container_width=True, hide_index=True)
+    else:
+        st.info('No timelines yet — compile one below.')
+
+    # ── Compile / update ──────────────────────────────────────────────────
+    st.subheader('Create or update a timeline')
+    st.markdown("""
+1. Copy the Strategy Tester `.htm` reports you want into a folder
+   (subfolders are fine — the folder names become each robot's *family*).
+2. Point the compiler at that folder, give the timeline a name, press Compile.
+
+Using an **existing name updates that timeline in place** (all its future runs
+use the new data); a **new name creates a separate dataset**, so you can keep
+e.g. a gold-only pool and a full pool side by side.
+""")
+    folder = st.text_input('Reports folder',
+                           value=os.path.join(ENGINE_DIR, 'reports_in'),
+                           help='Scanned recursively for .htm reports. Duplicate '
+                                'filenames are de-duplicated automatically.')
+    new_name = st.text_input('Timeline name', value='main_pool',
+                             help='Letters, numbers and underscores work best.')
+    if st.button('⚙️ Compile timeline', type='primary',
+                 disabled=not (folder.strip() and new_name.strip())):
+        import io as _io
+        import contextlib
+        from compile_timeline import compile_reports
+        if not os.path.isdir(folder):
+            st.error(f'Folder not found: {folder}')
+        elif not glob.glob(os.path.join(folder, '**', '*.htm'), recursive=True):
+            st.error('No .htm reports found in that folder.')
+        else:
+            buf = _io.StringIO()
+            out_dir = os.path.join(ENGINE_DIR, 'timeline', new_name.strip())
+            try:
+                with st.spinner('Parsing reports and building the timeline…'):
+                    with contextlib.redirect_stdout(buf):
+                        compile_reports(folder, out_dir)
+                cached_timeline.clear()
+                st.success(f'Timeline **{new_name.strip()}** compiled. '
+                           'It is now available in the sidebar selector.')
+            except SystemExit:
+                st.error('Compile failed — details in the log below.')
+            with st.expander('Compiler log', expanded=True):
+                st.code(buf.getvalue() or '(no output)')
+
+    # ── Market regime data ────────────────────────────────────────────────
+    st.subheader('Market regime data')
+    ref_path = os.path.join(ENGINE_DIR, 'reference', 'reference_prices.csv')
+    if os.path.isfile(ref_path):
+        _ref = pd.read_csv(ref_path, index_col='date', parse_dates=['date'])
+        st.caption(f'Reference data: **{len(_ref.columns)} series**, latest date '
+                   f'**{_ref.index.max():%d %b %Y}** '
+                   f'({len(_ref)} rows, via Yahoo Finance).')
+    else:
+        st.caption('No reference data downloaded yet.')
+    st.markdown('Refreshing downloads the latest reference prices (dollar index, '
+                'VIX, etc.) and rebuilds the regime matrix for **every** timeline, '
+                'so the Regimes page stays current.')
+    if st.button('🔄 Refresh market data & rebuild regime matrices'):
+        import subprocess
+        py = os.path.join(ENGINE_DIR, '.venv', 'Scripts', 'python.exe')
+        if not os.path.isfile(py):
+            py = sys.executable
+        logs = []
+        ok = True
+        with st.spinner('Downloading reference prices (Yahoo Finance)…'):
+            r = subprocess.run([py, 'fetch_reference_data.py'], cwd=ENGINE_DIR,
+                               capture_output=True, text=True, timeout=600)
+            logs.append('── fetch_reference_data ──\n' + r.stdout + r.stderr)
+            ok = ok and r.returncode == 0
+        if ok:
+            for tl in list_timelines():
+                with st.spinner(f'Rebuilding regime matrix for {tl}…'):
+                    r = subprocess.run([py, 'build_regime_matrix.py',
+                                        '--timeline', tl], cwd=ENGINE_DIR,
+                                       capture_output=True, text=True, timeout=300)
+                    logs.append(f'── build_regime_matrix {tl} ──\n' + r.stdout + r.stderr)
+                    ok = ok and r.returncode == 0
+        if ok:
+            st.success('Market data refreshed and regime matrices rebuilt for all timelines.')
+        else:
+            st.error('Refresh hit an error — see the log below. If Yahoo failed, '
+                     'the Dukascopy fallback is documented in fetch_reference_data.py.')
+        with st.expander('Refresh log', expanded=not ok):
+            st.code('\n\n'.join(logs))
+
+    with st.expander('Where do reports come from?'):
+        st.markdown("""
+Reports are produced by the **MT5 Tools batch backtester** (or any MT5 Strategy
+Tester run saved as an `.htm` report). For this project's conventions — fixed
+100k balance, lot step calibrated to the 5% historical-DD target — see the
+README in the engine folder. The compiler reads each report's trades, its
+input parameters (lot step, historical max DD) and its results summary, and
+flags robots whose drawdown calibration looks stale or defaulted.
+""")
+
+
+# ══════════════════════════════════════════════════════════════════════════════
+# 📊 EA POOL
+# ══════════════════════════════════════════════════════════════════════════════
+
+elif page == '📊 EA Pool':
+    st.title('📊 The robot pool')
+    if not timeline_name:
+        st.stop()
+    daily, meta = cached_timeline(timeline_name)
+
+    c1, c2, c3, c4 = st.columns(4)
+    c1.metric('Robots (EAs)', len(meta))
+    c2.metric('Strategy families', meta.family.nunique())
+    c3.metric('Markets', meta.symbol.nunique())
+    c4.metric('Trading days', len(daily))
+
+    st.caption('Every row is one robot: a strategy configuration backtested '
+               '2020 → 2026 on a fixed $100k account.')
+
+    fam = st.multiselect('Filter by family (source folder)',
+                         sorted(meta.family.unique()))
+    sym = st.multiselect('Filter by market', sorted(meta.symbol.unique()))
+    view = meta.copy()
+    if fam:
+        view = view[view.family.isin(fam)]
+    if sym:
+        view = view[view.symbol.isin(sym)]
+
+    show = view[['strategy', 'family', 'symbol', 'timeframe', 'net_profit',
+                 'realized_dd_pct', 'dd_vs_target', 'trades']].rename(columns={
+        'strategy': 'Strategy', 'family': 'Family', 'symbol': 'Market',
+        'timeframe': 'TF', 'net_profit': 'Backtest profit ($)',
+        'realized_dd_pct': 'Worst DD (%)', 'dd_vs_target': 'DD vs 5% target',
+        'trades': 'Trades'})
+    st.dataframe(show, use_container_width=True, hide_index=True,
+                 column_config={
+                     'DD vs 5% target': st.column_config.NumberColumn(
+                         help='1.0 = this robot\'s backtest drawdown landed exactly on '
+                              'the 5% calibration target. Far below 1 = it risked less '
+                              'than intended here; far above = more. Values far from 1 '
+                              'usually mean the set author\'s historical-DD number was '
+                              'stale or a default.')})
+
+    with st.expander('What does "DD vs 5% target" mean, and why care?'):
+        st.markdown("""
+Each robot's trade size was set using a **historical max drawdown** number provided
+in its settings file. If that number was accurate, the backtest's worst drawdown
+should land near **5% of the account** (ratio ≈ 1.0). A ratio of 0.2 means the robot
+risked far *less* than intended; 3.0 means far *more*. Robots built by third parties
+sometimes ship with stale or default numbers — this column is the lie detector.
+**History is not a limit either way**: even a perfectly calibrated robot can exceed
+its historical worst in the future.
+""")
+
+
+# ══════════════════════════════════════════════════════════════════════════════
+# 🌐 REGIMES
+# ══════════════════════════════════════════════════════════════════════════════
+
+elif page == '🌐 Regimes':
+    st.title('🌐 Market regimes — where does each robot make its money?')
+    if not timeline_name:
+        st.stop()
+    daily, meta = cached_timeline(timeline_name)
+    tdir = os.path.join(ENGINE_DIR, 'timeline', timeline_name)
+    states_path = os.path.join(tdir, 'regime_states.csv')
+    matrix_path = os.path.join(tdir, 'regime_matrix.csv')
+
+    if not (os.path.isfile(states_path) and os.path.isfile(matrix_path)):
+        st.info('No regime data for this timeline yet. From the engine folder run:\n\n'
+                '```\npython fetch_reference_data.py\n'
+                f'python build_regime_matrix.py --timeline {timeline_name}\n```')
+        st.stop()
+
+    states = pd.read_csv(states_path, index_col='date', parse_dates=['date'])
+    matrix = pd.read_csv(matrix_path)
+
+    st.markdown("""
+Markets move through **regimes** — stretches where the dollar is strong or weak,
+volatility is calm or stressed, Bitcoin is in a bull or bear phase. A robot that
+looks brilliant overall may earn *all* of its money in one regime and tread
+water (or bleed) in the others. This page shows **where each robot's profit
+historically came from**, so a team isn't accidentally a one-regime bet —
+which is exactly how the "team of 9 Bitcoin robots" trap happens.
+""")
+    with st.expander('⚠️ How to use this honestly (please read once)'):
+        st.markdown("""
+- **This is a description of the past, not a prediction.** The states are
+  *coincident*: "gold robots earned most in gold uptrends" does not tell you
+  when the next uptrend starts or ends.
+- States come from simple transparent rules — price vs its own 100/200-day
+  average, and fixed VIX levels (calm <15, normal 15–25, stressed >25). No
+  fitted models, nothing clever hiding inside.
+- Sensible uses: check a candidate team isn't concentrated in one regime;
+  understand *why* a robot is slumping ("its regime is out"); set expectations.
+  Risky use: flipping robots on/off the moment a state changes — test that as
+  a regime in Build a Run before believing it.
+""")
+
+    # ── Current states ────────────────────────────────────────────────────
+    st.subheader('Where the market is right now')
+    latest = states.dropna().iloc[-1]
+    st.caption(f'As of {states.dropna().index[-1]:%d %b %Y} (data via Yahoo Finance):')
+    cols = st.columns(len(latest))
+    for c, (ind, val) in zip(cols, latest.items()):
+        c.metric(ind, str(val))
+
+    # ── Heatmap ───────────────────────────────────────────────────────────
+    st.subheader('Profit smoothness by regime (Sharpe)')
+    level = st.radio('Show', ['Families + whole pool', 'Individual robots'],
+                     horizontal=True)
+    if level == 'Individual robots':
+        f1, f2 = st.columns(2)
+        fams = f1.multiselect('Filter families', sorted(meta.family.unique()))
+        mkts = f2.multiselect('Filter markets', sorted(meta.symbol.unique()),
+                              help='e.g. pick XAUUSD.a to see every gold robot '
+                                   'across all families side by side.')
+        keep = meta
+        if fams:
+            keep = keep[keep.family.isin(fams)]
+        if mkts:
+            keep = keep[keep.symbol.isin(mkts)]
+        sub = matrix[(matrix.type == 'ea') & matrix.entity.isin(keep.ea_id.tolist())]
+    else:
+        sub = matrix[matrix.type.isin(['family', 'pool'])]
+
+    sub = sub.copy()
+    sub['col'] = sub['indicator'] + ': ' + sub['state']
+    heat = sub.pivot_table(index='entity', columns='col', values='sharpe')
+    if len(heat) > 0:
+        fig = go.Figure(go.Heatmap(
+            z=heat.values, x=list(heat.columns), y=list(heat.index),
+            colorscale='RdYlGn', zmid=0,
+            colorbar=dict(title='Sharpe'),
+            hovertemplate='%{y}<br>%{x}<br>Sharpe %{z:.2f}<extra></extra>'))
+        fig.update_layout(height=max(300, 26 * len(heat) + 120),
+                          margin=dict(l=10, r=10, t=10, b=10),
+                          xaxis=dict(tickangle=-35))
+        st.plotly_chart(fig, use_container_width=True)
+        st.caption('Green = smooth profits in that regime; red = losses. '
+                   'A robot that is green in one column and red in its opposite '
+                   'is a one-regime specialist — fine, as long as the team '
+                   'knows it and balances around it.')
+
+    # ── Drill-down ────────────────────────────────────────────────────────
+    st.subheader('Drill into a family — or specific strategies within it')
+    st.caption('A family row includes **every** robot from that folder, equally '
+               'weighted. Use the second box to narrow to specific strategies — '
+               'one strategy shows its own numbers; several show the combined '
+               'result of just that subset (recomputed live).')
+    c1, c2 = st.columns(2)
+    fam_opts = ['POOL: all robots'] + ['FAMILY: ' + f for f in sorted(meta.family.unique())]
+    scope = c1.selectbox('Family / whole pool', fam_opts)
+    members = []
+    if scope.startswith('FAMILY: '):
+        fam_meta = meta[meta.family == scope[8:]]
+        members = c2.multiselect(
+            'Strategies within family (blank = whole family)',
+            fam_meta.ea_id.tolist(),
+            format_func=lambda e: fam_meta.set_index('ea_id').at[e, 'strategy']
+                                  + f" ({fam_meta.set_index('ea_id').at[e, 'symbol']})")
+
+    if len(members) == 1:
+        d = matrix[matrix.entity == members[0]].copy()
+        st.caption(f'Showing **{members[0]}** on its own.')
+    elif len(members) > 1:
+        from build_regime_matrix import condition as _condition
+        subset_pnl = daily[[m for m in members if m in daily.columns]].sum(axis=1)
+        recs = []
+        for ind in states.columns:
+            for row in _condition(subset_pnl, states[ind]):
+                recs.append({'indicator': ind, **row})
+        d = pd.DataFrame(recs)
+        st.caption(f'Showing the combined result of **{len(members)} selected '
+                   'strategies** (equal weight, recomputed live).')
+    else:
+        d = matrix[matrix.entity == scope].copy()
+    d['col'] = d['indicator'] + ': ' + d['state']
+    show = d[['indicator', 'state', 'days', 'total_pnl', 'avg_daily',
+              'sharpe', 'pnl_share_pct']].rename(columns={
+        'indicator': 'Indicator', 'state': 'Regime', 'days': 'Days',
+        'total_pnl': 'Profit ($)', 'avg_daily': 'Avg per day ($)',
+        'sharpe': 'Sharpe', 'pnl_share_pct': 'Share of profit (%)'})
+    st.dataframe(show, use_container_width=True, hide_index=True)
+    fig = go.Figure(go.Bar(x=d['col'], y=d['sharpe'],
+                           marker_color=np.where(d['sharpe'] >= 0,
+                                                 '#2dc653', '#e05555')))
+    fig.update_layout(height=300, margin=dict(l=10, r=10, t=10, b=10),
+                      yaxis_title='Sharpe', xaxis=dict(tickangle=-35))
+    st.plotly_chart(fig, use_container_width=True)
+
+
+# ══════════════════════════════════════════════════════════════════════════════
+# 🛠 BUILD A RUN
+# ══════════════════════════════════════════════════════════════════════════════
+
+elif page == '🛠 Build a Run':
+    st.title('🛠 Build a management style and test it')
+    if not timeline_name:
+        st.stop()
+    daily, meta = cached_timeline(timeline_name)
+    ea_ids = list(daily.columns)
+
+    st.caption('Configure a style below, then press Run. The simulator walks '
+               'history day by day — decisions only ever use information that '
+               'was available at the time.')
+
+    run_name = st.text_input('Name this run', placeholder='e.g. my_first_rules_test',
+                             help='Results are saved under runs/<name> so you can '
+                                  'compare styles later.')
+
+    REGIME_INFO = {
+        'equal_weight': ('Equal weight — everyone plays',
+                         'Every selected robot runs at the same size, forever. '
+                         'No decisions. The benchmark to beat.'),
+        'static_topn' : ('Static top-N — pick once, never touch',
+                         'Ranks robots on early history, fields the top N, then '
+                         'never changes the team again.'),
+        'momentum'    : ('Momentum — chase recent form',
+                         'At every review, re-ranks everyone by recent performance '
+                         'and fields the current top N. High churn.'),
+        'rules'       : ('Rules — bench on damage, promote the best sub',
+                         'Only benches a robot when it breaks one of your written '
+                         'rules (losing streak / drawdown), then promotes the best '
+                         'available substitute. Low churn.'),
+        'inverse_vol' : ('Inverse volatility — size down the wild ones',
+                         'Everyone plays, but calmer robots get more size and '
+                         'wilder robots get less.'),
+        'random'      : ('Random — dice-roll swaps (control test)',
+                         'Swaps robots randomly. Only useful to prove the other '
+                         'styles beat luck.'),
+    }
+    regime = st.selectbox('Management style', list(REGIME_INFO),
+                          format_func=lambda k: REGIME_INFO[k][0])
+    st.info(REGIME_INFO[regime][1])
+
+    # ── Test period & risk size ───────────────────────────────────────────
+    st.subheader('1 — Test period & robot size')
+    dmin, dmax = daily.index[0].date(), daily.index[-1].date()
+    c1, c2, c3 = st.columns(3)
+    start_date = c1.date_input('Start date', dmin, min_value=dmin, max_value=dmax,
+                               help='Start later than the data begins to test on a '
+                                    'period the robots were NOT tuned on. If these '
+                                    'set files were optimised on pre-2023 data, '
+                                    'starting in 2023 gives a more honest test '
+                                    'and helps avoid overfitting.')
+    end_date   = c2.date_input('End date', dmax, min_value=dmin, max_value=dmax,
+                               help='Stop early to hold back recent data for a '
+                                    'later out-of-sample check.')
+    risk_pct   = c3.slider('Risk per robot (% of account)', 0.5, 10.0, 5.0, 0.5,
+                           help='The backtests were sized so each robot targets a '
+                                '5% historical drawdown. Sizing is linear, so '
+                                'choosing 2.5% simply runs every robot at half '
+                                'size — same trades, half the P&L and half the '
+                                'risk. This rescales the whole team.')
+    if start_date >= end_date:
+        st.error('Start date must be before end date.')
+        st.stop()
+
+    # ── Team selection ────────────────────────────────────────────────────
+    st.subheader('2 — Pick the team')
+    pick_mode = st.radio('Starting team',
+                         ['Auto-pick the top N', 'Whole strategy family', 'Choose manually'],
+                         horizontal=True,
+                         help='Auto-pick ranks robots by early-history Sharpe '
+                              '(first ~3 months) and takes the best N. Whole '
+                              'strategy family fields every robot from one source '
+                              'folder — the "just run the Gold Reaper suite" '
+                              'style. Manual lets you hand-pick.')
+    n_slots = st.number_input('Team size (N slots)', 2, 40, 10,
+                              help='How many robots trade at once. Each filled slot '
+                                   'carries one risk unit (~5% historical DD).',
+                              disabled=(pick_mode != 'Auto-pick the top N'))
+    portfolio_spec = f'top{int(n_slots)}_sharpe'
+    if pick_mode == 'Whole strategy family':
+        fam_pick = st.multiselect('Strategy families', sorted(meta.family.unique()),
+                                  help='All robots whose reports came from these '
+                                       'folders. Pick several to combine suites — '
+                                       'e.g. Gold Reaper + Goldtrade Pro.')
+        fam_meta = meta[meta.family.isin(fam_pick)]
+        chosen = fam_meta.ea_id.tolist()
+        if fam_pick:
+            per_fam = ' · '.join(f"{f}: {n}" for f, n in
+                                 fam_meta.family.value_counts().items())
+            st.caption(f'**{len(chosen)} robot(s)** across '
+                       f'{len(fam_pick)} family(ies) — {per_fam}')
+        portfolio_spec = chosen
+        if chosen:
+            n_slots = len(chosen)
+    elif pick_mode == 'Choose manually':
+        chosen = st.multiselect('Team robots', ea_ids,
+                                format_func=lambda e: friendly_name(e, meta))
+        portfolio_spec = chosen
+        if chosen:
+            n_slots = len(chosen)
+
+    subs_spec = 'all'
+    if regime == 'rules':
+        sub_mode = st.radio('Substitutes bench', ['All other robots', 'Choose manually'],
+                            horizontal=True,
+                            help='Who can be promoted when someone is benched.')
+        if sub_mode == 'Choose manually':
+            subs_spec = st.multiselect('Substitute robots', ea_ids,
+                                       format_func=lambda e: friendly_name(e, meta))
+
+    # ── Rules / params ────────────────────────────────────────────────────
+    st.subheader('3 — Set the rules')
+    params = {}
+    colA, colB = st.columns(2)
+    with colA:
+        review_every = st.slider('Review every N trading days', 1, 21, 5,
+                                 help='How often the manager checks the rules. '
+                                      '5 = weekly-ish. More frequent = more churn.')
+        lookback = st.slider('Lookback window (trading days)', 21, 252, 63,
+                             help='How much recent history counts as "recent form". '
+                                  '63 ≈ 3 months.')
+    with colB:
+        warmup = st.slider('Warm-up before first decision (days)', 21, 252, 63,
+                           help='The simulator stays flat this long so early '
+                                'decisions have some history to work with.')
+        metric = st.selectbox('Form metric', ['sharpe', 'return', 'calmar'],
+                              help='How "recent form" is scored. Sharpe = smooth '
+                                   'profit; return = raw profit; calmar = profit '
+                                   'vs worst drop.')
+    params['lookback'] = lookback
+    params['metric']   = metric
+
+    if regime == 'rules':
+        st.markdown('**Benching rules** — a robot is benched when *any* enabled rule fires.')
+        streak_mode = st.radio(
+            'Count losing streaks in…', ['days', 'trades'], horizontal=True,
+            help='**Days** = consecutive losing trading days (only days the robot '
+                 'actually traded count). **Trades** = consecutive losing trades from '
+                 'the trade history — fairer when comparing a fast robot that trades '
+                 '20× a day against a slow one that trades once a day.')
+        unit = streak_mode
+        c1, c2 = st.columns(2)
+        with c1:
+            use_streak = st.checkbox('Bench on losing streak', True)
+            streak = st.slider(f'…after this many losing {unit} in a row', 2, 15, 5,
+                               disabled=not use_streak)
+            use_dollar = st.checkbox('Bench on streak cost', False,
+                                     help='Fires when the CURRENT losing streak has cost '
+                                          'more than this many dollars in total — catches '
+                                          'a short but brutal streak that a simple count '
+                                          'would miss.')
+            dollar_lim = st.number_input('…streak cost threshold ($)', 250, 20000, 3000,
+                                         step=250, disabled=not use_dollar)
+            use_freq = st.checkbox('Bench on loss frequency', False,
+                                   help='NOT consecutive — fires when there are this many '
+                                        f'losing {unit} inside a recent window, even with '
+                                        'wins sprinkled in between. Catches the slow bleeder.')
+            freq_n = st.slider('…this many losses', 3, 30, 8, disabled=not use_freq)
+            freq_m = st.slider('…within this many trading days', 5, 63, 21,
+                               disabled=not use_freq)
+        with c2:
+            use_dd = st.checkbox('Bench on drawdown', True)
+            dd_lim = st.slider('…after it drops this % of the account', 0.5, 6.0, 2.5, 0.5,
+                               disabled=not use_dd,
+                               help='Measured over the lookback window, per robot, at '
+                                    'full backtest size.')
+            use_corr = st.checkbox('Correlation cap on promotions', False,
+                                   help='Blocks promoting a substitute that wins/loses '
+                                        'at the same time as the current team. Leave OFF '
+                                        'for a deliberately concentrated team (e.g. all-gold).')
+            corr_cap = st.slider('…max correlation allowed', 0.3, 0.95, 0.7, 0.05,
+                                 disabled=not use_corr)
+            cooldown = st.slider('Cooldown before a benched robot can return (days)',
+                                 0, 63, 21)
+        params.update({
+            'streak_mode'        : streak_mode,
+            'loss_streak_limit'  : streak if use_streak else None,
+            'streak_dollar_limit': int(dollar_lim) if use_dollar else None,
+            'loss_count_limit'   : int(freq_n) if use_freq else None,
+            'loss_count_window'  : int(freq_m),
+            'ea_dd_limit_pct'    : dd_lim if use_dd else None,
+            'corr_cap'           : corr_cap if use_corr else None,
+            'cooldown_days'      : cooldown,
+        })
+
+    if regime == 'momentum':
+        use_mcost = st.checkbox(
+            'Exclude robots on a costly losing streak', False,
+            help='Momentum still picks the top N by recent form, but a robot '
+                 'whose CURRENT losing streak has cost more than this threshold '
+                 'is ineligible until the streak ends — stops promoting a robot '
+                 'mid-bleed just because its longer history still ranks well.')
+        mcost = st.number_input('…streak cost threshold ($)', 250, 20000, 1500,
+                                step=250, disabled=not use_mcost)
+        params['streak_dollar_limit'] = int(mcost) if use_mcost else None
+
+    if regime in ('rules', 'momentum'):
+        use_symcap = st.checkbox(
+            'Limit robots per market (diversification)', False,
+            help='Caps how many team slots one market can occupy — e.g. at most '
+                 '3 gold robots at a time. This is the rule that stops "pick the '
+                 'best performers" from quietly building a team of 9 Bitcoin '
+                 'robots. Applies to the starting team AND every later promotion.')
+        sym_cap = st.slider('…max robots on the same market', 1, 10, 3,
+                            disabled=not use_symcap)
+        params['max_per_symbol'] = int(sym_cap) if use_symcap else None
+
+    # ── Overlays ──────────────────────────────────────────────────────────
+    st.subheader('4 — Optional safety overlays')
+    overlays = {}
+    c1, c2 = st.columns(2)
+    with c1:
+        if st.checkbox('Drawdown de-risking', False,
+                       help='Automatically shrinks the whole team\'s size as the '
+                            'account falls from its peak, and restores it on recovery. '
+                            'The disciplined version of "getting scared" — cuts pain, '
+                            'can slow recovery.'):
+            start = st.slider('Start shrinking at account DD %', 1.0, 8.0, 3.0, 0.5)
+            floor = st.slider('Minimum size reached at DD %', start + 0.5, 12.0, 6.0, 0.5)
+            overlays['dd_derisk'] = {'start_pct': start, 'floor_pct': floor}
+    with c2:
+        if st.checkbox('Volatility targeting', False,
+                       help='Keeps the team\'s day-to-day wobble near a target by '
+                            'scaling everyone up in quiet times and down in wild times.'):
+            tv = st.number_input('Target yearly wobble ($)', 5_000, 60_000, 15_000,
+                                 step=1_000)
+            overlays['vol_target'] = {'target_ann_vol': tv}
+
+    # ── Run ───────────────────────────────────────────────────────────────
+    st.divider()
+    problems = []
+    if not run_name.strip():
+        problems.append('**give the run a name** (the box at the top of the page — '
+                        'results are saved under it)')
+    if pick_mode != 'Auto-pick the top N' and not portfolio_spec:
+        problems.append('**pick at least one robot** for the team '
+                        f'(the "{pick_mode}" box is empty)')
+    if regime == 'rules' and isinstance(subs_spec, list) and not subs_spec:
+        problems.append('**pick some substitutes**, or switch the bench back to '
+                        '"All other robots"')
+    if problems:
+        st.warning('Before you can run:\n\n' + '\n'.join(f'- {p}' for p in problems))
+    if st.button('▶ Run the simulation', type='primary',
+                 disabled=bool(problems)):
+        cfg = {'timeline': timeline_name, 'regime': regime,
+               'portfolio': portfolio_spec, 'substitutes': subs_spec,
+               'n_slots': int(n_slots),
+               'gross_budget': float(n_slots) * float(risk_pct) / 5.0,
+               'risk_pct_per_ea': float(risk_pct),
+               'start_date': str(start_date), 'end_date': str(end_date),
+               'review_every': int(review_every), 'warmup': int(warmup),
+               'params': params, 'overlays': overlays or None}
+        try:
+            with st.spinner('Walking through history day by day…'):
+                summary = run_one(run_name.strip(), cfg, daily)
+        except ValueError as e:
+            st.error(str(e))
+            st.stop()
+        st.success(f"Done — saved as runs/{run_name.strip()}")
+
+        m1, m2, m3, m4, m5 = st.columns(5)
+        m1.metric('Profit', f"${summary['net_profit']:,.0f}", help=METRIC_HELP['net_profit'])
+        m2.metric('Per year', f"{summary['ann_return_pct']:.0f}%", help=METRIC_HELP['ann_return_pct'])
+        m3.metric('Sharpe', summary['sharpe'], help=METRIC_HELP['sharpe'])
+        m4.metric('Worst drop', f"{summary['max_dd_pct']:.1f}%", help=METRIC_HELP['max_dd_pct'])
+        m5.metric('Churn', f"{summary['turnover_units']:.0f}", help=METRIC_HELP['turnover_units'])
+
+        eq = pd.read_csv(os.path.join(RUNS_DIR, run_name.strip(), 'equity.csv'),
+                         index_col=0, parse_dates=True)
+        st.plotly_chart(equity_chart({run_name.strip(): eq}), use_container_width=True)
+        st.caption('Head to **Results & Compare** to see this against the benchmarks.')
+
+
+# ══════════════════════════════════════════════════════════════════════════════
+# ▶ INTERACTIVE REPLAY
+# ══════════════════════════════════════════════════════════════════════════════
+
+elif page == '▶ Interactive Replay':
+    st.title('▶ Interactive replay — you are the manager')
+    if not timeline_name:
+        st.stop()
+    daily, meta = cached_timeline(timeline_name)
+
+    st.caption('The simulation plays forward through history and **pauses every '
+               'time the rules fire**. You see the evidence and make the call: '
+               'swap, bench without a replacement, or overrule and keep. '
+               'Your decisions steer the rest of the run.')
+
+    if 'ir_session' not in st.session_state:
+        st.session_state.ir_session = None
+        st.session_state.ir_status  = None
+
+    ses = st.session_state.ir_session
+
+    # ── Setup form ────────────────────────────────────────────────────────
+    if ses is None:
+        with st.form('ir_setup'):
+            st.subheader('Session setup')
+            streak_mode = st.radio(
+                'Count losing streaks in…', ['days', 'trades'], horizontal=True,
+                help='Days = consecutive losing trading days. Trades = consecutive '
+                     'losing trades from the trade history — fairer across fast and '
+                     'slow robots.')
+            c1, c2, c3 = st.columns(3)
+            n_slots  = c1.number_input('Team size', 2, 30, 10)
+            streak   = c2.slider('Bench after N losing streak', 2, 15, 5)
+            dd_lim   = c3.slider('Bench after robot DD % of account', 0.5, 6.0, 2.5, 0.5)
+            c4, c5, c6 = st.columns(3)
+            review   = c4.slider('Review every N days', 1, 21, 5)
+            use_corr = c5.checkbox('Correlation cap 0.7 on promotions', True)
+            cooldown = c6.slider('Cooldown (days)', 0, 63, 21)
+            c7, c8 = st.columns(3)[:2]
+            use_symcap = c7.checkbox(
+                'Limit robots per market', True,
+                help='Diversification rule: caps how many team slots one market '
+                     'can occupy, for the starting team and every promotion.')
+            sym_cap = c8.number_input('Max per market', 1, 10, 3,
+                                      disabled=not use_symcap)
+            with st.expander('More benching rules (optional)'):
+                d1, d2, d3 = st.columns(3)
+                use_dollar = d1.checkbox('Bench on streak cost ($)', False,
+                                         help='Fires when the current losing streak has '
+                                              'cost more than the threshold in total.')
+                dollar_lim = d1.number_input('Streak cost threshold ($)', 250, 20000,
+                                             3000, step=250)
+                use_freq = d2.checkbox('Bench on loss frequency', False,
+                                       help='Fires on N losses within a recent window, '
+                                            'even non-consecutive — the slow bleeder rule.')
+                freq_n = d2.number_input('…this many losses', 3, 30, 8)
+                freq_m = d3.number_input('…within trading days', 5, 63, 21)
+            if st.form_submit_button('▶ Start session', type='primary'):
+                stats = ea_stats(daily.iloc[:63])
+                cap = int(sym_cap) if use_symcap else None
+                portfolio = pick_top(stats, 'sharpe', int(n_slots), cap)
+                tb = cached_tradebook(timeline_name) if streak_mode == 'trades' else None
+                st.session_state.ir_session = InteractiveSession(
+                    daily, portfolio, list(daily.columns),
+                    gross=float(n_slots), review_every=int(review), warmup=63,
+                    loss_streak_limit=int(streak), ea_dd_limit_pct=float(dd_lim),
+                    corr_cap=0.7 if use_corr else None, cooldown_days=int(cooldown),
+                    max_per_symbol=cap, streak_mode=streak_mode,
+                    streak_dollar_limit=int(dollar_lim) if use_dollar else None,
+                    loss_count_limit=int(freq_n) if use_freq else None,
+                    loss_count_window=int(freq_m), tradebook=tb)
+                st.session_state.ir_status = None
+                st.rerun()
+        st.stop()
+
+    # ── Controls ──────────────────────────────────────────────────────────
+    cA, cB, cC = st.columns([2, 2, 1])
+    with cA:
+        if ses.pending is None and st.session_state.ir_status != 'done':
+            if st.button('⏵ Play to next decision', type='primary'):
+                with st.spinner('Trading forward…'):
+                    st.session_state.ir_status = ses.advance()
+                st.rerun()
+    with cB:
+        if ses.pending is None and st.session_state.ir_status != 'done':
+            if st.button('⏭ Auto-pilot to the end (approve everything)'):
+                with st.spinner('Auto-piloting…'):
+                    while ses.advance() == 'paused':
+                        ses.apply_decisions(['swap'] * len(ses.pending))
+                    st.session_state.ir_status = 'done'
+                st.rerun()
+    with cC:
+        if st.button('🔄 Reset'):
+            st.session_state.ir_session = None
+            st.session_state.ir_status  = None
+            st.rerun()
+
+    # ── Progress + equity so far ──────────────────────────────────────────
+    eq = ses.equity_frame()
+    prog = ses.t / len(daily)
+    when = daily.index[min(ses.t, len(daily) - 1)]
+    st.progress(prog, text=f"{when:%d %b %Y} — day {ses.t:,} of {len(daily):,}")
+
+    if not eq.empty:
+        k1, k2, k3 = st.columns(3)
+        k1.metric('Account', f"${ses.equity:,.0f}")
+        s = ses.summary()
+        k2.metric('Worst drop so far', f"{s.get('max_dd_pct', 0):.1f}%" if s else '—')
+        k3.metric('Decisions made', len(ses.journal))
+        st.plotly_chart(equity_chart({'your run': eq}), use_container_width=True)
+
+    # ── Decision point ────────────────────────────────────────────────────
+    if ses.pending:
+        st.subheader(f"🛑 Decision point — {ses.pending_date:%d %b %Y}")
+        st.caption('The rules fired. For each proposal, make your call. '
+                   '"Swap" follows the rules; "Keep" overrules them.')
+        decisions = []
+        for i, prop in enumerate(ses.pending):
+            with st.container(border=True):
+                esc = lambda s: s.replace('$', r'\$')
+                if prop['drop']:
+                    st.markdown(f"**Bench:** `{friendly_name(prop['drop'], meta)}` — "
+                                f"{esc(prop['drop_reason'])}")
+                    ev = prop['evidence'].get('drop', {})
+                    if ev:
+                        st.caption(f"Recent window: P&L \\${ev['window_pnl']:,.0f} · "
+                                   f"worst drop \\${ev['window_dd']:,.0f} · "
+                                   f"losing streak {ev['loss_streak']} days")
+                if prop['add']:
+                    st.markdown(f"**Promote:** `{friendly_name(prop['add'], meta)}` — "
+                                f"{esc(prop['add_reason'])}")
+                    ev = prop['evidence'].get('add', {})
+                    if ev:
+                        st.caption(f"Recent window: P&L \\${ev['window_pnl']:,.0f} · "
+                                   f"Sharpe {ev['sharpe']} · "
+                                   f"worst drop \\${ev['window_dd']:,.0f}")
+                options = ['Swap (follow the rules)']
+                if prop['drop']:
+                    options += ['Bench only (no replacement)', 'Keep (overrule)']
+                choice = st.radio('Your call', options, key=f'ir_dec_{ses.t}_{i}',
+                                  horizontal=True, label_visibility='collapsed')
+                decisions.append({'Swap (follow the rules)': 'swap',
+                                  'Bench only (no replacement)': 'drop_only',
+                                  'Keep (overrule)': 'keep'}[choice])
+        if st.button('✅ Apply my decisions & continue', type='primary'):
+            ses.apply_decisions(decisions)
+            with st.spinner('Trading forward…'):
+                st.session_state.ir_status = ses.advance()
+            st.rerun()
+
+    # ── Finished ──────────────────────────────────────────────────────────
+    if st.session_state.ir_status == 'done':
+        st.success('End of history reached.')
+        s = ses.summary()
+        if s:
+            m1, m2, m3, m4 = st.columns(4)
+            m1.metric('Final profit', f"${s['net_profit']:,.0f}")
+            m2.metric('Per year', f"{s['ann_return_pct']:.0f}%")
+            m3.metric('Sharpe', s['sharpe'])
+            m4.metric('Worst drop', f"{s['max_dd_pct']:.1f}%")
+
+    # ── Mid-session rule editor ───────────────────────────────────────────
+    with st.expander('⚙️ Adjust rules mid-session'):
+        st.caption('Change the team policy while the run is live — like a manager '
+                   'updating the rulebook. Changes take effect from the **next '
+                   'review** (a pending decision still reflects the old rules) '
+                   'and every change is logged to the journal. Set a limit to 0 '
+                   'to turn that rule off.')
+        m1, m2, m3 = st.columns(3)
+        new_mode   = m1.radio('Streak counted in', ['days', 'trades'],
+                              index=0 if ses.streak_mode == 'days' else 1,
+                              horizontal=True, key='ir_rule_mode')
+        new_streak = m2.number_input('Losing streak limit', 0, 30,
+                                     int(ses.streak_lim or 0), key='ir_rule_streak')
+        new_dd     = m3.number_input('Robot DD limit (% of account)', 0.0, 10.0,
+                                     float(ses.dd_lim / ses.basis * 100) if ses.dd_lim else 0.0,
+                                     step=0.5, key='ir_rule_dd')
+        m4, m5, m6 = st.columns(3)
+        new_dollar = m4.number_input('Streak cost limit ($)', 0, 30000,
+                                     int(ses.dollar_lim or 0), step=250, key='ir_rule_dollar')
+        new_freqn  = m5.number_input('Loss frequency limit', 0, 40,
+                                     int(ses.count_lim or 0), key='ir_rule_freqn')
+        new_freqm  = m6.number_input('…within trading days', 5, 63,
+                                     int(ses.count_win), key='ir_rule_freqm')
+        m7, m8, m9 = st.columns(3)
+        new_corr   = m7.number_input('Correlation cap', 0.0, 0.95,
+                                     float(ses.corr_cap or 0.0), step=0.05, key='ir_rule_corr')
+        new_cool   = m8.number_input('Cooldown (days)', 0, 63,
+                                     int(ses.cooldown), key='ir_rule_cool')
+        new_symcap = m9.number_input('Max robots per market', 0, 10,
+                                     int(ses.max_sym or 0), key='ir_rule_symcap')
+        if st.button('Apply rule changes', key='ir_rule_apply'):
+            if new_mode == 'trades' and ses.tradebook is None:
+                ses.tradebook = cached_tradebook(timeline_name)
+            changed = ses.update_rules(
+                streak_mode=new_mode,
+                loss_streak_limit=int(new_streak) or None,
+                ea_dd_limit_pct=float(new_dd) or None,
+                streak_dollar_limit=int(new_dollar) or None,
+                loss_count_limit=int(new_freqn) or None,
+                loss_count_window=int(new_freqm),
+                corr_cap=float(new_corr) or None,
+                cooldown_days=int(new_cool),
+                max_per_symbol=int(new_symcap) or None)
+            if changed:
+                st.success('Updated: ' + ', '.join(changed))
+            else:
+                st.info('No changes made.')
+
+    # ── Current team + journal ────────────────────────────────────────────
+    with st.expander('Current team', expanded=False):
+        for ea in ses.active:
+            st.markdown(f"- {friendly_name(ea, meta)}")
+    if ses.journal:
+        with st.expander(f'Decision journal ({len(ses.journal)})'):
+            st.dataframe(pd.DataFrame(ses.journal), use_container_width=True,
+                         hide_index=True)
+
+
+# ══════════════════════════════════════════════════════════════════════════════
+# 🏁 RESULTS & COMPARE
+# ══════════════════════════════════════════════════════════════════════════════
+
+elif page == '🏁 Results & Compare':
+    st.title('🏁 Results & compare')
+
+    rows = {}
+    for d in sorted(os.listdir(RUNS_DIR)) if os.path.isdir(RUNS_DIR) else []:
+        p = os.path.join(RUNS_DIR, d, 'summary.json')
+        if d.startswith('_') or not os.path.isfile(p):
+            continue
+        with open(p) as f:
+            rows[d] = json.load(f)['summary']
+    if not rows:
+        st.info('No completed runs yet — build one on the **Build a Run** page.')
+        st.stop()
+
+    df = pd.DataFrame(rows).T[['net_profit', 'ann_return_pct', 'sharpe',
+                               'max_dd_pct', 'turnover_units', 'events']]
+    df = df.sort_values('sharpe', ascending=False).rename(columns={
+        'net_profit': 'Profit ($)', 'ann_return_pct': 'Per year (%)',
+        'sharpe': 'Sharpe', 'max_dd_pct': 'Worst drop (%)',
+        'turnover_units': 'Churn', 'events': 'Decisions'})
+    st.dataframe(df, use_container_width=True,
+                 column_config={c: st.column_config.NumberColumn(help=h) for c, h in {
+                     'Profit ($)'    : METRIC_HELP['net_profit'],
+                     'Per year (%)'  : METRIC_HELP['ann_return_pct'],
+                     'Sharpe'        : METRIC_HELP['sharpe'],
+                     'Worst drop (%)': METRIC_HELP['max_dd_pct'],
+                     'Churn'         : METRIC_HELP['turnover_units'],
+                 }.items()})
+
+    with st.expander('How to read this table (start here!)'):
+        st.markdown("""
+- **Ignore the absolute profit numbers** — this pool only contains strategies that
+  already looked good on history, which flatters everything. The *comparison
+  between rows* is what's meaningful.
+- **Sharpe** is the fairest single column: profit per unit of day-to-day wobble.
+- A style is only interesting if it beats **bench_equal_weight** (do nothing)
+  convincingly — and it must crush **bench_random** (dice rolls), or its
+  decisions add nothing.
+- **Churn** is the hidden cost column: two styles with equal Sharpe are not equal
+  if one needed 20× the swaps.
+""")
+
+    with st.expander('🔬 The deeper tests behind these results — what they are and why they matter'):
+        st.markdown("""
+A single backtest can look great by luck. Four extra tests guard against
+fooling ourselves — all run from the engine's command line (see README):
+
+**1. Control tests (random + do-nothing).** Every regime is compared against
+*random swapping* and *equal-weight-hold-everything*. If a clever style can't
+crush dice rolls and comfortably beat doing nothing, its decisions add nothing.
+
+**2. Parameter sweeps** (`sweep_analysis.py`). We re-run a style across a whole
+grid of settings (bench after 3, 4, 5… losing days × several drawdown limits).
+A trustworthy style scores well across a broad *region* of settings. If only
+one magic combination works, that's **curve fitting** — the settings were
+fitted to history, not to anything real. Ours came out as a broad plateau.
+
+**3. Walk-forward** (`walk_forward.py`). Choose the team and tune every setting
+using ONLY older data (2020–22), then run frozen on newer data (2023–26) the
+tuning never saw. This catches styles that only work in hindsight. A bonus
+lesson it exposed: picking the "10 best performers" of 2020–22 built a team of
+9 Bitcoin robots — the diversification cap now prevents exactly that.
+
+**4. Monte Carlo** (`monte_carlo.py`). History happened in one particular order;
+Monte Carlo reshuffles it in blocks (weeks / months / quarters) into hundreds of
+alternate histories and re-runs the style through each. The result is a *range*
+of outcomes instead of one number — e.g. a ~5% team drawdown is *normal* and
+~8% is unlucky-but-ordinary. Knowing that range **before** a drawdown happens
+is what stops the panic-and-shelve cycle.
+""")
+        wf_path = os.path.join(RUNS_DIR, '_walk_forward', 'test_window_comparison.csv')
+        if os.path.isfile(wf_path):
+            st.markdown('**Walk-forward — test window 2023-26 (all settings frozen '
+                        'using only 2020-22 data):**')
+            st.dataframe(friendly_wf_table(pd.read_csv(wf_path)),
+                         use_container_width=True, hide_index=True)
+        mc_path = os.path.join(RUNS_DIR, '_monte_carlo', 'summary.csv')
+        if os.path.isfile(mc_path):
+            st.markdown('**Monte Carlo — range of outcomes across 100 reshuffled '
+                        'histories per block size:**')
+            st.dataframe(friendly_mc_table(pd.read_csv(mc_path)),
+                         use_container_width=True, hide_index=True)
+        mc2_path = os.path.join(RUNS_DIR, '_monte_carlo_streak_cost', 'summary.csv')
+        if os.path.isfile(mc2_path):
+            st.markdown('**Monte Carlo — streak-cost-only rule (bench when the current '
+                        'losing streak has cost 1,000 dollars), same reshuffled histories:**')
+            st.dataframe(friendly_mc_table(pd.read_csv(mc2_path)),
+                         use_container_width=True, hide_index=True)
+
+    picks = st.multiselect('Overlay equity curves',
+                           list(df.index), default=list(df.index)[:3])
+    frames = {}
+    for name in picks:
+        p = os.path.join(RUNS_DIR, name, 'equity.csv')
+        if os.path.isfile(p):
+            frames[name] = pd.read_csv(p, index_col=0, parse_dates=True)
+    if frames:
+        st.plotly_chart(equity_chart(frames), use_container_width=True)
+
+    st.subheader('Drill into one run')
+    sel = st.selectbox('Run', list(df.index))
+    seldir = os.path.join(RUNS_DIR, sel)
+    eq = pd.read_csv(os.path.join(seldir, 'equity.csv'), index_col=0, parse_dates=True)
+
+    dd = eq['equity'].cummax() - eq['equity']
+    fig = go.Figure()
+    fig.add_trace(go.Scatter(x=eq.index, y=-dd, fill='tozeroy', name='drawdown',
+                             line=dict(color='#e05555')))
+    fig.update_layout(height=200, margin=dict(l=10, r=10, t=25, b=10),
+                      yaxis_title='$ below peak',
+                      title='Drawdown — how far below its best the account was')
+    st.plotly_chart(fig, use_container_width=True)
+
+    ev_path = os.path.join(seldir, 'events.csv')
+    if os.path.isfile(ev_path) and os.path.getsize(ev_path) > 2:
+        try:
+            ev = pd.read_csv(ev_path)
+            if not ev.empty:
+                st.subheader('Decision journal')
+                st.caption('Every action this style took, dated and with its reason — '
+                           'the paper trail a human manager never writes down.')
+                st.dataframe(ev, use_container_width=True, hide_index=True)
+        except pd.errors.EmptyDataError:
+            pass
