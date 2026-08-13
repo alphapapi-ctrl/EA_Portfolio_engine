@@ -113,6 +113,28 @@ def day_streak_stats(col):
     return n, total
 
 
+def day_streak_baseline(col):
+    """
+    Worst COMPLETED losing-day streak (length, $ cost) in a series, excluding
+    the trailing (possibly still-running) streak — so a live streak is judged
+    against records set before it, never against itself.
+    """
+    vals = col.to_numpy()
+    vals = vals[vals != 0.0]
+    runs, n, c = [], 0, 0.0
+    for v in vals:
+        if v < 0:
+            n += 1
+            c += float(v)
+        else:
+            if n:
+                runs.append((n, c))
+            n, c = 0, 0.0
+    if not runs:                    # only the ongoing run (or none) exists
+        return 0, 0.0
+    return max(r[0] for r in runs), -min(r[1] for r in runs)
+
+
 # ── Rolling per-EA stats ──────────────────────────────────────────────────────
 
 def ea_stats(hist):
@@ -305,7 +327,8 @@ class Rules:
                  corr_cap=None, cooldown_days=21, max_per_symbol=None,
                  streak_mode='days', streak_dollar_limit=None,
                  loss_count_limit=None, loss_count_window=21,
-                 tradebook=None, basis=100_000):
+                 tradebook=None, relative_ratio=None, rel_baselines=None,
+                 rel_expanding=False, basis=100_000):
         self.active      = list(portfolio)
         self.subs        = list(substitutes)
         self.gross       = gross
@@ -322,6 +345,9 @@ class Rules:
         self.count_lim   = loss_count_limit       # N losses within loss_count_window
         self.count_win   = loss_count_window      # trading days
         self.tradebook   = tradebook              # required for 'trades' mode
+        self.rel_ratio   = relative_ratio         # e.g. 1.0 = at historical worst
+        self.rel_base    = rel_baselines or {}    # ea_id -> (streak_n, streak_$)
+        self.rel_expand  = rel_expanding          # derive baselines in-sim
         self._benched    = {}                     # ea_id -> review date benched
 
     def streak_info(self, ea, window, asof):
@@ -341,7 +367,7 @@ class Rules:
             cnt = int((cvals < 0).sum())
         return n, dollars, cnt, 'days'
 
-    def drop_reason(self, ea, window, stats, asof):
+    def drop_reason(self, ea, window, stats, asof, hist=None):
         """First benching rule that fires for this EA, or None."""
         n, dollars, cnt, unit = self.streak_info(ea, window, asof)
         if self.streak_lim and n >= self.streak_lim:
@@ -354,6 +380,23 @@ class Rules:
                     f"trading days >= {self.count_lim}")
         if self.dd_lim and stats.at[ea, 'max_dd'] >= self.dd_lim:
             return f"window DD ${stats.at[ea, 'max_dd']:,.0f} >= ${self.dd_lim:,.0f}"
+
+        # Relative rules: current streak vs this EA's own historical worst.
+        # Fires only on a NEW record (strictly exceeding the baseline) that is
+        # also >= ratio x baseline, so a baseline of 1 doesn't hair-trigger.
+        if self.rel_ratio:
+            if ea in self.rel_base:
+                bn, bc = self.rel_base[ea]
+            elif self.rel_expand and hist is not None:
+                bn, bc = day_streak_baseline(hist[ea])
+            else:
+                bn = bc = 0
+            if bn > 0 and n > bn and n >= self.rel_ratio * bn:
+                return (f"streak {n} {unit} = {n / bn:.1f}x its historical "
+                        f"worst ({bn})")
+            if bc > 0 and -dollars > bc and -dollars >= self.rel_ratio * bc:
+                return (f"streak cost ${-dollars:,.0f} = {-dollars / bc:.1f}x "
+                        f"its historical worst (${bc:,.0f})")
         return None
 
     def review(self, date, hist, weights):
@@ -365,7 +408,7 @@ class Rules:
 
         # 1. Drops
         for ea in list(self.active):
-            reason = self.drop_reason(ea, window, stats, asof)
+            reason = self.drop_reason(ea, window, stats, asof, hist=hist)
             if reason:
                 self.active.remove(ea)
                 self._benched[ea] = date
