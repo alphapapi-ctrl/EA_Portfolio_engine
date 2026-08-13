@@ -84,6 +84,14 @@ work out of the box. The **raw inputs stay local and git-ignored**:
 and `reference/` (market data, refreshable from Yahoo Finance in one click
 on the Data page).
 
+## Working with an AI assistant
+
+If you're using ChatGPT, Claude, or similar to analyse this data or extend
+the engine, point it at **[AI_GUIDE.md](AI_GUIDE.md)** first — it documents
+the repo structure, data schemas, the risk-normalisation semantics, the
+invariants (no look-ahead, survivorship caveats), and the findings already
+established, so the assistant starts productive instead of re-deriving basics.
+
 ## Honest caveats
 
 - Backtest pools are **survivors** — every robot is there because its history
