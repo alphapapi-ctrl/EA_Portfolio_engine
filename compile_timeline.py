@@ -29,6 +29,7 @@ import json
 import argparse
 from datetime import datetime
 
+import numpy as np
 import pandas as pd
 
 from parsers import parse_backtest_trades, parse_backtest_summary, parse_backtest_inputs
@@ -53,6 +54,57 @@ def split_ea_id(ea_id):
     if m:
         return ea_id[:m.start()], m.group('symbol'), m.group('period')
     return ea_id, '', ''
+
+
+def streak_stats(trades):
+    """
+    Historical streak baselines from one EA's trades (sorted by close_time).
+    Streak-cost caveat: a single news-gap / 1m-OHLC artifact loss can dominate
+    the cost baseline — largest_single_loss is kept separately so consumers
+    can detect that (cost baseline ~= one trade -> treat with suspicion).
+    """
+    pnl = trades.sort_values('close_time')['net_profit'].to_numpy()
+
+    max_ln = max_wn = loss_n = win_n = 0
+    max_lc = loss_c = 0.0
+    loss_runs = []
+    for v in pnl:
+        if v < 0:
+            loss_n += 1
+            loss_c += float(v)
+            if win_n:
+                win_n = 0
+            max_ln = max(max_ln, loss_n)
+            max_lc = min(max_lc, loss_c)
+        elif v > 0:
+            if loss_n:
+                loss_runs.append(loss_n)
+            loss_n, loss_c = 0, 0.0
+            win_n += 1
+            max_wn = max(max_wn, win_n)
+    if loss_n:
+        loss_runs.append(loss_n)
+
+    # Day-based losing streak (days with trades only)
+    daily = trades.groupby(trades['close_time'].dt.date)['net_profit'].sum()
+    day_n = max_day_n = 0
+    for v in daily.to_numpy():
+        if v < 0:
+            day_n += 1
+            max_day_n = max(max_day_n, day_n)
+        elif v > 0:
+            day_n = 0
+
+    losses = pnl[pnl < 0]
+    return {
+        'win_rate_pct'          : round(float((pnl > 0).mean() * 100), 1) if len(pnl) else 0.0,
+        'hist_max_loss_streak'  : int(max_ln),
+        'hist_max_loss_streak_days': int(max_day_n),
+        'hist_max_streak_cost'  : round(-max_lc, 2),
+        'hist_avg_loss_streak'  : round(float(np.mean(loss_runs)), 2) if loss_runs else 0.0,
+        'hist_max_win_streak'   : int(max_wn),
+        'largest_single_loss'   : round(-float(losses.min()), 2) if len(losses) else 0.0,
+    }
 
 
 def compile_reports(reports_dir, out_dir):
@@ -139,6 +191,7 @@ def compile_reports(reports_dir, out_dir):
             'trades'           : len(trades),
             'first_trade'      : trades['close_time'].min(),
             'last_trade'       : trades['close_time'].max(),
+            **streak_stats(trades),
             # Validation: realized backtest DD vs the calibration target.
             # >1.0 = drew down more than target; far from 1.0 = the set's
             # HistoricalMaxDD input doesn't describe this window (stale
