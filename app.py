@@ -242,35 +242,47 @@ comparisons fair, and it means "run robot X at half size" is exactly half the P&
   window the correlation cap went from "barely matters" to clearly valuable:
   in-sample it added ~0.7 Sharpe to the rules style. Diversify by rule, not
   by hope.
-- **We know what a "normal" bad stretch looks like.** Monte Carlo across 300
-  reshuffled histories: a 10-slot rules book runs a median worst drop of
-  ~5.3%, ~9% at the unlucky 95th percentile, and exceeded 10% in at most 3%
-  of histories. Equal weight stayed between 1.8% and 3.1% in *every single
-  history*. Decide before a drawdown which number means "broken" — that
-  decision, made in advance, is what breaks the panic-and-shelve cycle.
-- **One firm rule can still carry the job.** "Bench any robot whose current
-  losing streak has cost 1,000 dollars" remained sweep-stable as the *only*
-  rule, matched the multi-rule setup's Monte Carlo outcome range with a
-  slightly tighter bad tail, and out-of-sample earned a slightly *higher*
-  Sharpe than the multi-rule setup with only ~20 decisions — at the price of
-  a deeper worst drop (7.6% vs 4.5%). The trade is clear: one rule for
-  simplicity and return, add the drawdown rule for the smallest drops. (An
-  earlier finding that a 3-day review specifically lifted this rule did not
-  reproduce on the longer window — treat review speed as taste, not edge.)
-- **How often should the manager check in?** With written rules, checking often
-  is free — daily reviews barely increase swapping, because the rules are the
-  brake, not the calendar. Checking every 2–3 weeks was the weakest zone for
-  drawdowns. Performance-chasing is the mirror image: cadence changes the
-  workload, never the result. **With written rules, checking often adds safety
-  without churn; with performance-chasing, checking often adds churn without
-  safety.** Every 1–5 trading days remains a sensible habit.
-- **Where to start.** (1) *The honest default:* equal weight across the pool
-  with the diversification cap — the champion to beat, near-zero effort.
-  (2) *The cautious concentrator:* the multi-rule setup (streak + drawdown
-  limits, correlation cap), for the highest return-per-worst-drop and a
-  handful of decisions a month. (3) *The simple concentrator:* the single
-  1,000-dollar streak-cost rule, for maximum simplicity. Build any of them on
-  the **Build a Run** page in two minutes — then try to beat the default.
+""")
+
+    st.subheader('First steps to building a management system')
+    st.caption('The findings above are what history says. These four steps turn '
+               'them into a working system — in this order, each decided '
+               '*before* any money moves.')
+    st.markdown("""
+**Step 1 — Set your expectations in writing, before you start.** Monte Carlo
+across 300 reshuffled histories says a 10-slot rules book runs a median worst
+drop of ~5.3%, ~9% at the unlucky 95th percentile, and exceeded 10% in at most
+3% of histories (a wide equal-weight book: 1.8–3.1% in every single history).
+Write down, today, which number means "normal", which means "unlucky", and
+which means "broken — stop". That pre-made decision is what breaks the
+panic-and-shelve cycle, because in the middle of a drawdown you will not be
+able to make it calmly.
+
+**Step 2 — Pick your rules (fewer, firmer).** One firm rule can carry the job:
+"bench any robot whose current losing streak has cost 1,000 dollars" was
+sweep-stable as the *only* rule, matched the multi-rule Monte Carlo range with
+a tighter bad tail, and out-of-sample earned a slightly higher Sharpe than the
+full setup with only ~20 decisions — at the price of a deeper worst drop
+(7.6% vs 4.5%). Add the per-robot drawdown limit if you want the smallest
+drops. Two half-strict rules are worse than one firm one.
+
+**Step 3 — Pick your check-in rhythm.** With written rules, checking often is
+free — daily reviews barely increase swapping, because the rules are the
+brake, not the calendar; every 2–3 weeks was the weakest zone. **With written
+rules, checking often adds safety without churn; with performance-chasing,
+checking often adds churn without safety.** Every 1–5 trading days is a
+sensible habit. (Review speed is taste, not edge — an earlier finding that
+3-day reviews specifically helped did not survive the longer test window.)
+
+**Step 4 — Choose your starting configuration and try to beat it.**
+(1) *The honest default:* equal weight across as wide a pool as you can
+operate, diversification cap on — near-zero effort, the champion to beat.
+(2) *The cautious concentrator:* the multi-rule setup (streak + drawdown
+limits, correlation cap) — the best return-per-worst-drop tested, a handful
+of decisions a month. (3) *The simple concentrator:* the single 1,000-dollar
+streak-cost rule. Build any of them on the **Build a Run** page in two
+minutes — then spend your energy trying to beat the default, not tweaking
+the winner.
 """)
 
     st.subheader('Mini glossary')
@@ -656,12 +668,30 @@ elif page == '🛠 Build a Run':
     end_date   = c2.date_input('End date', dmax, min_value=dmin, max_value=dmax,
                                help='Stop early to hold back recent data for a '
                                     'later out-of-sample check.')
-    risk_pct   = c3.slider('Risk per robot (% of account)', 0.5, 10.0, 5.0, 0.5,
-                           help='The backtests were sized so each robot targets a '
-                                '5% historical drawdown. Sizing is linear, so '
-                                'choosing 2.5% simply runs every robot at half '
-                                'size — same trades, half the P&L and half the '
-                                'risk. This rescales the whole team.')
+    risk_pct   = c3.slider('Account MaxDD % risk applied using lot steps',
+                           0.5, 50.0, 5.0, 0.5,
+                           help='Lot sizes are set by the lot-step method: each '
+                                'robot\'s lots are calibrated so its HISTORICAL '
+                                'max drawdown equals this % of the account. '
+                                '5% is a comfortable median for someone getting '
+                                'into this. Higher settings (30–50%) are '
+                                'aggressive configurations typically run on a '
+                                'small satellite account holding only 10–15% of '
+                                'total capital — risk diversified ACROSS '
+                                'accounts, not just within one. Sizing is '
+                                'linear: 10% runs every robot at exactly double '
+                                'the 5% baseline. History is not a limit either '
+                                'way.')
+    _scale = risk_pct / 5.0
+    st.caption(f'At **{risk_pct:g}%** per robot, the Monte Carlo expectations for '
+               f'a 10-slot rules book scale to: normal worst drop '
+               f'**~{5.3 * _scale:.0f}%** of the account, unlucky (95th pct) '
+               f'**~{9 * _scale:.0f}%**. '
+               + ('⚠️ At this level a normal bad stretch is a major drawdown — '
+                  'appropriate only for a small slice of total capital, with '
+                  'the "broken vs normal" thresholds written down in advance.'
+                  if risk_pct > 15 else
+                  'Decide in advance which number means "broken".'))
     if start_date >= end_date:
         st.error('Start date must be before end date.')
         st.stop()
@@ -1189,22 +1219,67 @@ is what stops the panic-and-shelve cycle.
             st.dataframe(friendly_mc_table(pd.read_csv(mc2_path)),
                          use_container_width=True, hide_index=True)
 
+    comp_view = st.toggle(
+        '💹 Compounding view — lot size tracks the balance', value=False,
+        help='The simulations run on a FIXED balance (linear, fair comparisons, '
+             'transferable thresholds). This view re-renders the same daily '
+             'returns as if lots scaled with the balance — the live-compounding '
+             'upper bound. Two honest notes: percentage drawdowns stay the same '
+             'but their DOLLAR size grows with the balance (a normal 5% dip on '
+             'a compounded account can dwarf your original stake — decide in '
+             'advance that it is normal); and the curve assumes fills stay '
+             'perfect as lots grow, which stops being true at scale. A stepped '
+             'middle path — raising the fixed balance in deliberate jumps when '
+             'you are comfortable — lands between the two lines and is the '
+             'most psychologically sustainable version.')
+
+    def apply_view(eq_df, basis=100_000):
+        if not comp_view:
+            return eq_df
+        out = eq_df.copy()
+        out['equity'] = basis * (1 + out['pnl'] / basis).cumprod()
+        return out
+
     picks = st.multiselect('Overlay equity curves',
                            list(df.index), default=list(df.index)[:3])
     frames = {}
     for name in picks:
         p = os.path.join(RUNS_DIR, name, 'equity.csv')
         if os.path.isfile(p):
-            frames[name] = pd.read_csv(p, index_col=0, parse_dates=True)
+            frames[name] = apply_view(pd.read_csv(p, index_col=0, parse_dates=True))
     if frames:
         st.plotly_chart(equity_chart(frames), use_container_width=True)
+        if comp_view:
+            st.caption('Same strategies, same days, same percentage moves — '
+                       'only the sizing rule changed. On a log axis this would '
+                       'be a straight line; in dollars it is a hockey stick, '
+                       'in both directions.')
 
     st.subheader('Drill into one run')
     sel = st.selectbox('Run', list(df.index))
     seldir = os.path.join(RUNS_DIR, sel)
-    eq = pd.read_csv(os.path.join(seldir, 'equity.csv'), index_col=0, parse_dates=True)
+    eq = apply_view(pd.read_csv(os.path.join(seldir, 'equity.csv'),
+                                index_col=0, parse_dates=True))
 
     dd = eq['equity'].cummax() - eq['equity']
+    if comp_view:
+        peak = eq['equity'].cummax()
+        dd_pct = (dd / peak * 100).max()
+        m1, m2, m3 = st.columns(3)
+        m1.metric('Final balance (compounded)', f"${eq['equity'].iloc[-1]:,.0f}")
+        m2.metric('Worst drop ($, compounded)', f"${dd.max():,.0f}",
+                  help='Same percentage event as the linear view — but felt '
+                       'in the balance of the day it happens.')
+        m3.metric('Worst drop (%)', f"{dd_pct:.1f}%")
+        if eq['equity'].iloc[-1] > 100_000 * 1000:
+            st.warning('That final balance is mathematically faithful and '
+                       'practically absurd — which IS the lesson: nobody '
+                       'compounds an edge untouched for years. Lot sizes hit '
+                       'liquidity and broker limits, fills degrade, and sane '
+                       'people withdraw. Read the first year or two of this '
+                       'curve as the realistic part, and the rest as a '
+                       'demonstration of why capacity — not maths — is the '
+                       'binding constraint.')
     fig = go.Figure()
     fig.add_trace(go.Scatter(x=eq.index, y=-dd, fill='tozeroy', name='drawdown',
                              line=dict(color='#e05555')))
