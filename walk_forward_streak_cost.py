@@ -81,7 +81,9 @@ if __name__ == '__main__':
     ap = argparse.ArgumentParser()
     ap.add_argument('--review-every', type=int, default=REVIEW_EVERY,
                     help='Review cadence in trading days [5]')
+    ap.add_argument('--timeline', default=TIMELINE)
     a = ap.parse_args()
+    TIMELINE = a.timeline
     REVIEW_EVERY = a.review_every
     if a.review_every != 5:
         WF_DIR = WF_DIR + f'_r{a.review_every}'

@@ -123,4 +123,9 @@ def main():
 
 
 if __name__ == '__main__':
+    import argparse
+    ap = argparse.ArgumentParser()
+    ap.add_argument('--timeline', default=TIMELINE)
+    a = ap.parse_args()
+    TIMELINE = a.timeline
     main()

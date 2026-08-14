@@ -21,4 +21,9 @@ mc.OUT_DIR = os.path.join(os.path.dirname(os.path.abspath(__file__)),
                           'runs', '_monte_carlo_streak_cost')
 
 if __name__ == '__main__':
+    import argparse
+    ap = argparse.ArgumentParser()
+    ap.add_argument('--timeline', default=mc.TIMELINE)
+    a = ap.parse_args()
+    mc.TIMELINE = a.timeline
     mc.main()

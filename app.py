@@ -182,7 +182,7 @@ comparisons fair, and it means "run robot X at half size" is exactly half the P&
 1. **Historical drawdown is not a limit.** The 5% calibration comes from each
    robot's *past* worst stretch. The future can (and sometimes will) be worse.
    Our simulations across shuffled histories say a ~5% team drawdown is *normal*
-   and ~8% is unlucky-but-ordinary — neither means the system is broken.
+   and ~9% is unlucky-but-ordinary — neither means the system is broken.
 2. **This pool is made of survivors.** Every robot here exists because its
    backtest looked good. That inflates every absolute number you'll see.
    **Compare regimes against each other — don't trust the raw profit figures.**
@@ -199,68 +199,78 @@ comparisons fair, and it means "run robot X at half size" is exactly half the P&
 | **Random** | Swap robots by dice roll. Sounds silly — it's the control test. Any style worth using must beat random *by a lot*. |
 """)
 
-    st.subheader('What we found on this dataset (so far)')
+    st.subheader('What we found on this dataset')
+    st.caption('All numbers below come from the full test battery re-run on the '
+               'extended 2018–2026 window (140 robots, tick-verified recent '
+               'data). Where the longer, harder window *changed* a conclusion, '
+               'we say so — that is the test suite doing its job.')
     st.markdown("""
-- **Discipline beat chasing.** The rules style made its case with ~26 team changes
-  in six years. Momentum needed *hundreds* of swaps for a worse risk-adjusted result.
-- **Random was terrible** — which proves the rankings contain real signal here.
-- **Equal weight is quietly excellent** — smallest drawdowns of everything.
-  Beating it *per unit of risk* is the real bar.
-- **A concentrated team is the big trap.** Picking the "10 best performers" of
-  2020–22 produced a team of 9 Bitcoin robots. The rules style fixed that by
-  itself over time; set-and-forget rode the rollercoaster.
-- **We know what a "normal" bad stretch looks like.** Monte Carlo reshuffled
-  history into 300 alternate orderings and re-ran the rules style through each:
-  the median worst drop was ~5% and the 95th percentile ~8% — with the *actual*
-  history's ~4% being slightly lucky. So a 5% team drawdown is **normal**, 8%
-  is unlucky-but-ordinary, and neither means the system is broken. Deciding
-  that threshold *before* the drawdown happens is what breaks the
-  panic-and-shelve cycle. (Equal weight, for comparison, stayed between 1.9%
-  and 3.1% in *every one* of 300 histories — maximum diversification buys
-  near-immunity to sequence luck.)
-- **One firm rule can carry the whole job.** Sweeping the *streak cost* rule
-  ("bench a robot when its current losing streak has cost X dollars") showed
-  that a tight threshold — 1,000 dollars, i.e. 1% of the account — used as the
-  **only** benching rule matched the full multi-rule setups (smooth returns,
-  ~4.5% worst drop). It's also the fairest rule across fast and slow robots,
-  because it measures dollars, not days or trades. The flip side from the same
-  sweep: two *half-strict* rules were worse than one firm one — the worst
-  drawdowns came from settings where no single rule was decisive enough to
-  lead. A decisive rule matters more than its exact number. Monte Carlo backed
-  this up: re-run through the same 300 reshuffled histories, the single-rule
-  style matched the full multi-rule setup's outcome range (median worst drop
-  ~5%, 95th percentile ~7.5%) with a slightly *tighter* bad tail — it never
-  exceeded a 10% drop in any of the 300 histories. The walk-forward test added
-  the caveat: tuned on 2020–22 and run frozen on 2023–26, the single rule
-  matched momentum's smoothness with **12 decisions instead of about a
-  thousand** and earned the highest return of any managed style — but handed
-  the concentrated 9-Bitcoin starting team, it benched the cluster more slowly
-  than the multi-rule setup and took a deeper worst drop (6.3% vs 3.3%).
-  The twist came when we re-ran the walk-forward at a **3-day review** instead
-  of 5: the single rule jumped to the *top of the out-of-sample table* — its
-  weakness had been slow benching, not the rule itself, and faster check-ins
-  fixed it with still only ~25 team changes in three and a half years. Verdict:
-  one firm rule plus prompt reviews is a complete style; the drawdown rule
-  remains cheap insurance for whoever wants the smallest possible drops.
-- **How often should the manager check in?** We swept review cadence from daily
-  to monthly. With written rules, checking *often* is free — even daily reviews
-  barely increased swapping (the rules are the brake, not the calendar) while
-  catching damage sooner; the only harmful setting was checking *slowly* (every
-  2–4 weeks), which let drawdowns run. Performance-chasing was the mirror image:
-  its results didn't change with cadence, but daily checking quadrupled the
-  workload. The takeaway in one line: **with written rules, checking often adds
-  safety without churn; with performance-chasing, checking often adds churn
-  without safety.** Start with a review every 1–5 trading days — confirmed
-  out-of-sample: re-running the whole walk-forward at 3 days kept the same
-  ordering of styles and lifted the rules variants.
-- **Two starting recipes, if you just want to begin.** Everything above boils
-  down to two well-evidenced configurations: (1) *the simple one* — bench any
-  robot whose current losing streak has cost 1,000 dollars, review every 3
-  days, diversification cap on; (2) *the cautious one* — the multi-rule setup
-  (streak + drawdown limits), review every 3–5 days, for the smallest drops.
-  Both beat every alternative we tested across the sweep, Monte Carlo, and
-  walk-forward. Build either on the **Build a Run** page in two minutes —
-  then try to beat it.
+- **The headline: how widely you diversify matters more than how cleverly you
+  manage — but at realistic size, management wins big.** Out-of-sample
+  (knobs frozen on 2018–22, tested 2023–26), holding *all 140 robots* equally
+  beat every management style per unit of risk (Sharpe 9.5, worst drop 1.8%) —
+  but nobody actually runs 140 robots. At sizes people really trade, the
+  picture flips hard: a passively-held random bucket of **10** robots averaged
+  Sharpe **4.0** with an 8% worst drop — barely better than swapping robots at
+  random — while the rules style managing 10 slots scored **8.0 with a 4.5%
+  drop**: roughly double the smoothness at half the pain. Even the best
+  passive bucket size tested (20 robots, Sharpe ~7.6) trailed every managed
+  style. The honest hierarchy: **diversify as widely as you can genuinely
+  operate; manage whatever concentration remains with written rules.** Breadth
+  beats management, but management beats same-size do-nothing by a wide margin.
+- **The synthesis, proven on a real portfolio.** We took an actual
+  human-curated selection (37 robots, deliberately gold-heavy) and ran it both
+  ways at the same risk budget. Held as-is, out-of-sample: Sharpe 6.3, worst
+  drop 4.2% — respectable, beats small random buckets. The *same portfolio*
+  under the written rules (with the full pool as its substitute bench):
+  **Sharpe 10.2, worst drop 3.1%, nearly double the return** — the best
+  out-of-sample result of anything tested, including the 140-robot spread.
+  Breadth times rules beats either alone. Curation chooses the squad;
+  rules coach it.
+- **What management still wins: drawdown control and decision economy.** Among
+  managed styles, the multi-rule setup had by far the smallest worst drop
+  (3.0–4.5% vs 7.5–9.6% for momentum and set-and-forget) and the best
+  return-per-worst-drop (Calmar ~60–73, the highest of anything tested) — with
+  ~30–40 team changes in 3.5 years versus momentum's ~900. If you must
+  concentrate, written rules remain the safest way to do it.
+- **Random is still terrible** (Sharpe ~5 vs 8–9.5 for everything sensible,
+  across 10 seeds) — the rankings and rules carry real signal; churn alone
+  does not.
+- **A concentrated team is still the big trap.** Ranking by past performance
+  again picked 9 Bitcoin robots out of 10 — and holding that team untouched
+  drew down 9.6% out-of-sample (11.9% in the full-window test). On this longer
+  window the correlation cap went from "barely matters" to clearly valuable:
+  in-sample it added ~0.7 Sharpe to the rules style. Diversify by rule, not
+  by hope.
+- **We know what a "normal" bad stretch looks like.** Monte Carlo across 300
+  reshuffled histories: a 10-slot rules book runs a median worst drop of
+  ~5.3%, ~9% at the unlucky 95th percentile, and exceeded 10% in at most 3%
+  of histories. Equal weight stayed between 1.8% and 3.1% in *every single
+  history*. Decide before a drawdown which number means "broken" — that
+  decision, made in advance, is what breaks the panic-and-shelve cycle.
+- **One firm rule can still carry the job.** "Bench any robot whose current
+  losing streak has cost 1,000 dollars" remained sweep-stable as the *only*
+  rule, matched the multi-rule setup's Monte Carlo outcome range with a
+  slightly tighter bad tail, and out-of-sample earned a slightly *higher*
+  Sharpe than the multi-rule setup with only ~20 decisions — at the price of
+  a deeper worst drop (7.6% vs 4.5%). The trade is clear: one rule for
+  simplicity and return, add the drawdown rule for the smallest drops. (An
+  earlier finding that a 3-day review specifically lifted this rule did not
+  reproduce on the longer window — treat review speed as taste, not edge.)
+- **How often should the manager check in?** With written rules, checking often
+  is free — daily reviews barely increase swapping, because the rules are the
+  brake, not the calendar. Checking every 2–3 weeks was the weakest zone for
+  drawdowns. Performance-chasing is the mirror image: cadence changes the
+  workload, never the result. **With written rules, checking often adds safety
+  without churn; with performance-chasing, checking often adds churn without
+  safety.** Every 1–5 trading days remains a sensible habit.
+- **Where to start.** (1) *The honest default:* equal weight across the pool
+  with the diversification cap — the champion to beat, near-zero effort.
+  (2) *The cautious concentrator:* the multi-rule setup (streak + drawdown
+  limits, correlation cap), for the highest return-per-worst-drop and a
+  handful of decisions a month. (3) *The simple concentrator:* the single
+  1,000-dollar streak-cost rule, for maximum simplicity. Build any of them on
+  the **Build a Run** page in two minutes — then try to beat the default.
 """)
 
     st.subheader('Mini glossary')
@@ -414,7 +424,7 @@ elif page == '📊 EA Pool':
     c4.metric('Trading days', len(daily))
 
     st.caption('Every row is one robot: a strategy configuration backtested '
-               '2020 → 2026 on a fixed $100k account.')
+               'on a fixed $100k account (the main pool covers 2018 → 2026).')
 
     fam = st.multiselect('Filter by family (source folder)',
                          sorted(meta.family.unique()))
@@ -1146,10 +1156,12 @@ one magic combination works, that's **curve fitting** — the settings were
 fitted to history, not to anything real. Ours came out as a broad plateau.
 
 **3. Walk-forward** (`walk_forward.py`). Choose the team and tune every setting
-using ONLY older data (2020–22), then run frozen on newer data (2023–26) the
-tuning never saw. This catches styles that only work in hindsight. A bonus
-lesson it exposed: picking the "10 best performers" of 2020–22 built a team of
-9 Bitcoin robots — the diversification cap now prevents exactly that.
+using ONLY older data (2018–22), then run frozen on newer data (2023–26) the
+tuning never saw. This catches styles that only work in hindsight — on the
+extended window it demoted every managed style below plain equal weight, the
+single most honest result in this project. Bonus lesson: picking the "10 best
+performers" of the calibration years builds a team of 9 Bitcoin robots — the
+diversification cap prevents exactly that.
 
 **4. Monte Carlo** (`monte_carlo.py`). History happened in one particular order;
 Monte Carlo reshuffles it in blocks (weeks / months / quarters) into hundreds of
@@ -1161,7 +1173,7 @@ is what stops the panic-and-shelve cycle.
         wf_path = os.path.join(RUNS_DIR, '_walk_forward', 'test_window_comparison.csv')
         if os.path.isfile(wf_path):
             st.markdown('**Walk-forward — test window 2023-26 (all settings frozen '
-                        'using only 2020-22 data):**')
+                        'using only 2018-22 data):**')
             st.dataframe(friendly_wf_table(pd.read_csv(wf_path)),
                          use_container_width=True, hide_index=True)
         mc_path = os.path.join(RUNS_DIR, '_monte_carlo', 'summary.csv')
