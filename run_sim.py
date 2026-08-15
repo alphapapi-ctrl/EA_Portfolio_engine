@@ -106,6 +106,8 @@ def build_regime(cfg, daily):
             loss_count_limit    = params.get('loss_count_limit'),
             loss_count_window   = int(params.get('loss_count_window', 21)),
             tradebook           = tradebook,
+            capacity            = int(cfg.get('capacity', 0)) or None,
+            fill_blanks_after   = int(cfg.get('fill_blanks_after', 0)),
         )
     raise ValueError(f"Unknown regime: {name}")
 

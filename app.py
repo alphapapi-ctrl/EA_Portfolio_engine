@@ -1119,6 +1119,28 @@ elif page == '🛠 Build a Run':
                 st.caption(f'⚖️ Fielding **{n_slots} of {len(chosen)}** picked '
                            'robots — the management style decides which.')
 
+    capacity, fill_after = int(n_slots), 0
+    if regime == 'rules':
+        cc1, cc2 = st.columns(2)
+        capacity = int(cc1.number_input(
+            'Team capacity (slots)', int(n_slots), 40, int(n_slots),
+            help='Your upper limit of simultaneous robots. Set it higher '
+                 'than the starting team to keep BLANK slots in reserve — '
+                 'e.g. capacity for 15 while starting with 10.'))
+        if capacity > int(n_slots):
+            fill_after = int(cc2.number_input(
+                'Fill blank slots after (trading days)', 0, 252, 63,
+                help='The refill may only use the blank slots after this '
+                     'many trading days — 63 ≈ 3 months, once enough '
+                     'evidence has accumulated. Benched robots are still '
+                     'replaced immediately (up to the starting team size).'))
+            st.caption(f'⚖️ Starting with **{int(n_slots)} of {capacity} '
+                       f'slots filled** — {capacity - int(n_slots)} blank '
+                       f'slot(s) held in reserve, unlocked for the refill '
+                       f'after {fill_after} trading days. Each slot is one '
+                       'risk unit whether filled or blank, so deployed risk '
+                       'steps up when the blanks fill.')
+
     subs_spec = 'all'
     if regime == 'rules':
         sub_mode = st.radio('Substitutes bench', ['All other robots', 'Choose manually'],
@@ -1261,8 +1283,8 @@ elif page == '🛠 Build a Run':
 
     # ── Run ───────────────────────────────────────────────────────────────
     st.divider()
-    _gross = float(n_slots) * float(risk_pct) / 5.0
-    st.caption(f'⚖️ This run **sums {int(n_slots)} robot(s) at '
+    _gross = float(capacity) * float(risk_pct) / 5.0
+    st.caption(f'⚖️ This run **sums {int(capacity)} robot(s) at '
                f'{risk_pct:.1f}% sizing** — {_gross:.0f} robots-worth of '
                'backtested size in total ("risk units"). Thanks to the '
                '\\$100k / 5%-DD normalisation the backtest figures add '
@@ -1291,8 +1313,10 @@ elif page == '🛠 Build a Run':
                  disabled=bool(problems)):
         cfg = {'timeline': timeline_name, 'regime': regime,
                'portfolio': portfolio_spec, 'substitutes': subs_spec,
-               'n_slots': int(n_slots),
-               'gross_budget': float(n_slots) * float(risk_pct) / 5.0,
+               'n_slots': int(capacity),
+               'capacity': int(capacity),
+               'fill_blanks_after': int(fill_after),
+               'gross_budget': float(capacity) * float(risk_pct) / 5.0,
                'risk_pct_per_ea': float(risk_pct),
                'start_date': str(start_date), 'end_date': str(end_date),
                'review_every': int(review_every), 'warmup': int(warmup),

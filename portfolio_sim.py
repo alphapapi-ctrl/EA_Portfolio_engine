@@ -328,11 +328,19 @@ class Rules:
                  streak_mode='days', streak_dollar_limit=None,
                  loss_count_limit=None, loss_count_window=21,
                  tradebook=None, relative_ratio=None, rel_baselines=None,
-                 rel_expanding=False, basis=100_000):
+                 rel_expanding=False, basis=100_000,
+                 capacity=None, fill_blanks_after=0):
         self.active      = list(portfolio)
         self.subs        = list(substitutes)
         self.gross       = gross
-        self.n_slots     = len(portfolio)
+        # capacity > len(portfolio) leaves BLANK slots: budgeted risk held in
+        # reserve, which the refill may only use after fill_blanks_after
+        # trading days (benched robots are still replaced immediately, up to
+        # the starting team size).
+        self.n_slots     = int(capacity) if capacity else len(portfolio)
+        self.start_len   = len(portfolio)
+        self.fill_after  = int(fill_blanks_after or 0)
+        self._h0         = None
         self.lookback    = lookback
         self.metric      = metric
         self.streak_lim  = loss_streak_limit
@@ -406,6 +414,14 @@ class Rules:
         stats  = ea_stats(window[pool])
         events = []
 
+        # Blank-slot hold-back: refill target stays at the starting team size
+        # until fill_blanks_after trading days have elapsed since first review.
+        if self._h0 is None:
+            self._h0 = len(hist)
+        elapsed = len(hist) - self._h0
+        cap = (self.n_slots if elapsed >= self.fill_after
+               else min(self.start_len, self.n_slots))
+
         # 1. Drops
         for ea in list(self.active):
             reason = self.drop_reason(ea, window, stats, asof, hist=hist)
@@ -417,7 +433,7 @@ class Rules:
         # 2. Refills from substitutes (and recovered benched EAs)
         ranked = rank_metric(stats, self.metric).sort_values(ascending=False)
         for ea in ranked.index:
-            if len(self.active) >= self.n_slots:
+            if len(self.active) >= cap:
                 break
             if ea in self.active:
                 continue
