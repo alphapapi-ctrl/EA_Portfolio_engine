@@ -97,8 +97,11 @@ def build_regime(cfg, daily):
         tradebook = None
         if params.get('streak_mode') == 'trades':
             tradebook = load_trades(cfg['timeline'])
+        # trim_start: hand the FULL starting team to Rules so the first
+        # review trims by form (instead of blindly keeping the first N)
+        start_team = candidates if cfg.get('trim_start') else candidates[:n_slots]
         return REGIMES['rules'](
-            candidates[:n_slots], subs, gross,
+            start_team, subs, gross,
             lookback            = int(params.get('lookback', 63)),
             metric              = params.get('metric', 'sharpe'),
             loss_streak_limit   = params.get('loss_streak_limit'),

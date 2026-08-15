@@ -28,7 +28,7 @@ class InteractiveSession:
                  corr_cap=None, cooldown_days=21, max_per_symbol=None,
                  streak_mode='days', streak_dollar_limit=None,
                  loss_count_limit=None, loss_count_window=21, tradebook=None,
-                 basis=100_000):
+                 basis=100_000, n_slots=None):
         self.daily        = daily
         self.gross        = gross
         self.review_every = review_every
@@ -48,7 +48,11 @@ class InteractiveSession:
         self.basis        = basis
 
         self.active    = list(portfolio)
-        self.n_slots   = len(portfolio)
+        # n_slots < len(portfolio): start with the full (diverse) team, then
+        # the first review proposes trimming the weakest-form robots down to
+        # n_slots. Weights are gross/len(active) so an oversized start is
+        # spread across the whole starting team, not concentrated.
+        self.n_slots   = int(n_slots) if n_slots else len(portfolio)
         self.subs      = [s for s in substitutes if s not in self.active]
         self._benched  = {}                      # ea_id -> day index benched
 
@@ -66,7 +70,7 @@ class InteractiveSession:
     def _set_weights(self):
         w = pd.Series(0.0, index=self.daily.columns)
         if self.active:
-            w[self.active] = self.gross / self.n_slots
+            w[self.active] = self.gross / max(self.n_slots, len(self.active))
         self.weights = w
 
     def _step_day(self):
@@ -162,9 +166,23 @@ class InteractiveSession:
             if reason:
                 drops.append((ea, reason))
 
+        # Oversized starting team: propose trimming the weakest-form robots
+        # (by the ranking metric) down to n_slots, after any rule-based drops.
+        excess = len(self.active) - len(drops) - self.n_slots
+        if excess > 0:
+            dropped_ids = {d[0] for d in drops}
+            surviving = [ea for ea in self.active if ea not in dropped_ids]
+            weakest = (rank_metric(stats.loc[surviving], self.metric)
+                       .sort_values(ascending=True).index[:excess])
+            for ea in weakest:
+                drops.append((ea, f"team trim: weakest {self.metric} of the "
+                                  f"{len(surviving)} remaining — trimming to "
+                                  f"{self.n_slots} slots"))
+
         vacancies = len(drops) + (self.n_slots - len(self.active))
-        if vacancies == 0:
+        if vacancies <= 0 and not drops:
             return []
+        vacancies = max(vacancies, 0)
 
         # Candidate replacements, best first, respecting cooldown + corr cap
         remaining = [ea for ea in self.active if ea not in [d[0] for d in drops]]

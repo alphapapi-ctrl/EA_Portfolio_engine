@@ -338,8 +338,11 @@ class Rules:
         # reserve, which the refill may only use after fill_blanks_after
         # trading days (benched robots are still replaced immediately, up to
         # the starting team size).
+        # capacity < len(portfolio): start with the full (diverse) team, then
+        # the first review TRIMS the weakest-form robots down to capacity.
         self.n_slots     = int(capacity) if capacity else len(portfolio)
         self.start_len   = len(portfolio)
+        self.trim_start  = len(portfolio) > self.n_slots
         self.fill_after  = int(fill_blanks_after or 0)
         self._h0         = None
         # pick_from_top > 1: each refill chooses at random among the K best
@@ -436,6 +439,18 @@ class Rules:
                 self._benched[ea] = date
                 events.append({'date': date, 'action': 'drop', 'ea_id': ea, 'detail': reason})
 
+        # 1b. Oversized start: trim the weakest by form down to capacity
+        excess = len(self.active) - self.n_slots
+        if excess > 0:
+            weakest = (rank_metric(stats.loc[self.active], self.metric)
+                       .sort_values(ascending=True).index[:excess])
+            for ea in weakest:
+                self.active.remove(ea)
+                self._benched[ea] = date
+                events.append({'date': date, 'action': 'drop', 'ea_id': ea,
+                               'detail': f'team trim: weakest {self.metric} — '
+                                         f'trimming to {self.n_slots} slots'})
+
         # 2. Refills from substitutes (and recovered benched EAs)
         ranked = rank_metric(stats, self.metric).sort_values(ascending=False)
         logged = set()
@@ -486,7 +501,7 @@ class Rules:
 
         w = pd.Series(0.0, index=weights.index)
         if self.active:
-            w[self.active] = self.gross / self.n_slots
+            w[self.active] = self.gross / max(self.n_slots, len(self.active))
         return w, events
 
 

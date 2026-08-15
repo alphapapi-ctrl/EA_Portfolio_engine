@@ -202,8 +202,8 @@ with st.sidebar:
     st.caption('Test *management styles* for a team of trading robots — '
                'on history, before risking anything.')
     page = st.radio('Page', ['📚 Learn', '🗂 Data', '📊 EA Pool', '🌐 Regimes',
-                             '🛠 Build a Run', '▶ Interactive Replay',
-                             '🏁 Results & Compare'],
+                             '🛠 Build a Run', '🏁 Results & Compare',
+                             '▶ Interactive Replay'],
                     label_visibility='collapsed')
     st.divider()
     timeline_name = dataset_selector('dataset_sidebar')
@@ -1147,13 +1147,24 @@ elif page == '🛠 Build a Run':
                 help='How many of your picked robots are fielded at once. '
                      'Leave it at the maximum to field everyone. Lower it and '
                      'the style chooses within your pool: top-N / momentum / '
-                     'random rank or draw from your picks, rules starts with '
-                     'the first N you selected (the rest can still come in as '
-                     'substitutes).'))
+                     'random rank or draw from your picks; rules trims the '
+                     'full pick down to N by form at the first review (the '
+                     'trimmed robots can still come back as substitutes).'))
             if n_slots < len(chosen):
-                st.caption(f'⚖️ Fielding **{n_slots} of {len(chosen)}** picked '
-                           'robots — the management style decides which.')
+                if regime == 'rules':
+                    st.caption(f'✂️ Starting with all **{len(chosen)}** picked '
+                               f'robots, then trimming to the **{n_slots}** '
+                               'best by recent form at the first review — the '
+                               'rest go to the bench and can return later. '
+                               'Use this to start diverse and let evidence '
+                               'pick the core team.')
+                else:
+                    st.caption(f'⚖️ Fielding **{n_slots} of {len(chosen)}** '
+                               'picked robots — the management style decides '
+                               'which.')
 
+    trim_start = (regime == 'rules' and pick_mode == 'Pick the team yourself'
+                  and bool(chosen) and int(n_slots) < len(chosen))
     capacity, fill_after = int(n_slots), 0
     if regime == 'rules':
         cc1, cc2 = st.columns(2)
@@ -1367,6 +1378,7 @@ elif page == '🛠 Build a Run':
         cfg = {'timeline': timeline_name, 'regime': regime,
                'portfolio': portfolio_spec, 'substitutes': subs_spec,
                'candidate_pool': candidate_pool,
+               'trim_start': bool(trim_start),
                'n_slots': int(capacity),
                'capacity': int(capacity),
                'fill_blanks_after': int(fill_after),
@@ -1423,6 +1435,61 @@ elif page == '▶ Interactive Replay':
 
     # ── Setup form ────────────────────────────────────────────────────────
     if ses is None:
+        # ── Starting team (outside the form so filters can cascade) ───────
+        st.subheader('Starting team')
+        ir_pick = st.radio('How to choose the starting team',
+                           ['Auto-pick the top N', 'Pick the team yourself'],
+                           horizontal=True, key='ir_pick_mode',
+                           help='Auto-pick ranks by early-history Sharpe '
+                                '(first ~3 months). Pick yourself: filters + '
+                                'suites/portfolios + hand-pick, same as Build '
+                                'a Run.')
+        ir_team = None
+        if ir_pick == 'Pick the team yourself':
+            ir_suites = load_suites()
+            ir_suite_default = []
+            if ir_suites:
+                ir_suite_sel = st.selectbox(
+                    'Suite / portfolio quick-pick',
+                    ['(no suite)'] + [s['name'] for s in ir_suites],
+                    key='ir_suite')
+                if ir_suite_sel != '(no suite)':
+                    s = next(s for s in ir_suites if s['name'] == ir_suite_sel)
+                    ir_suite_default = [m for m in s.get('members', [])
+                                        if m in daily.columns]
+            i1, i2, i3 = st.columns(3)
+            ir_fams = i1.multiselect('Strategy family',
+                                     sorted(meta.family.unique()), key='ir_fams')
+            ir_syms = i2.multiselect('Market (symbol)',
+                                     sorted(meta.symbol.unique()), key='ir_syms')
+            ir_tfs  = i3.multiselect('Timeframe',
+                                     sorted(meta.timeframe.unique()), key='ir_tfs')
+            fm = meta
+            if ir_fams:
+                fm = fm[fm.family.isin(ir_fams)]
+            if ir_syms:
+                fm = fm[fm.symbol.isin(ir_syms)]
+            if ir_tfs:
+                fm = fm[fm.timeframe.isin(ir_tfs)]
+            ir_pool = [e for e in fm.ea_id if e in daily.columns]
+            ir_filtered = bool(ir_fams or ir_syms or ir_tfs)
+            ir_suite_default = [m for m in ir_suite_default if m in ir_pool]
+            # Keyed widgets ignore default= once they hold state: when the
+            # suite/filter selection changes, push the new pre-selection in.
+            ir_sig = (st.session_state.get('ir_suite', ''), tuple(ir_fams),
+                      tuple(ir_syms), tuple(ir_tfs))
+            if st.session_state.get('ir_team_sig') != ir_sig:
+                st.session_state['ir_team_sig'] = ir_sig
+                st.session_state['ir_team'] = (
+                    ir_suite_default or (ir_pool if ir_filtered else []))
+            ir_team = st.multiselect(
+                'Team robots', ir_pool,
+                format_func=lambda e: friendly_name(e, meta), key='ir_team',
+                help='With a filter or suite on, matches start selected — '
+                     'deselect any you don\'t want.')
+            if ir_team:
+                st.caption(f'**{len(ir_team)} robot(s)** on the starting team.')
+
         with st.form('ir_setup'):
             st.subheader('Session setup')
             streak_mode = st.radio(
@@ -1431,7 +1498,13 @@ elif page == '▶ Interactive Replay':
                      'losing trades from the trade history — fairer across fast and '
                      'slow robots.')
             c1, c2, c3 = st.columns(3)
-            n_slots  = c1.number_input('Team size', 2, 30, 10)
+            n_slots  = c1.number_input(
+                'Team size', 2, 40,
+                max(2, len(ir_team)) if ir_team else 10,
+                help='Auto-pick: how many robots to field. Pick yourself: '
+                     'defaults to your pick count; set it LOWER to trim the '
+                     'team down to N at the first review (the rules keep '
+                     'the N best by form and bench the rest).')
             streak   = c2.slider('Bench after N losing streak', 2, 15, 5)
             dd_lim   = c3.slider('Bench after robot DD % of account', 0.5, 6.0, 2.5, 0.5)
             c4, c5, c6 = st.columns(3)
@@ -1458,13 +1531,21 @@ elif page == '▶ Interactive Replay':
                 freq_n = d2.number_input('…this many losses', 3, 30, 8)
                 freq_m = d3.number_input('…within trading days', 5, 63, 21)
             if st.form_submit_button('▶ Start session', type='primary'):
-                stats = ea_stats(daily.iloc[:63])
                 cap = int(sym_cap) if use_symcap else None
-                portfolio = pick_top(stats, 'sharpe', int(n_slots), cap)
+                if ir_pick == 'Pick the team yourself':
+                    if not ir_team:
+                        st.error('Pick at least one robot for the starting '
+                                 'team (or switch to Auto-pick).')
+                        st.stop()
+                    portfolio = list(ir_team)
+                else:
+                    stats = ea_stats(daily.iloc[:63])
+                    portfolio = pick_top(stats, 'sharpe', int(n_slots), cap)
                 tb = cached_tradebook(timeline_name) if streak_mode == 'trades' else None
                 st.session_state.ir_session = InteractiveSession(
                     daily, portfolio, list(daily.columns),
                     gross=float(n_slots), review_every=int(review), warmup=63,
+                    n_slots=int(n_slots),
                     loss_streak_limit=int(streak), ea_dd_limit_pct=float(dd_lim),
                     corr_cap=0.7 if use_corr else None, cooldown_days=int(cooldown),
                     max_per_symbol=cap, streak_mode=streak_mode,
