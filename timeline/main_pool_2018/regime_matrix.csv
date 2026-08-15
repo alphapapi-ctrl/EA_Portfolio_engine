@@ -2099,66 +2099,336 @@ VolatilityBreakout_VolUS500_g_M15_US500.a_M15_OHLC,ea,OIL,oil uptrend,845,18677.
 VolatilityBreakout_VolUS500_g_M15_US500.a_M15_OHLC,ea,VIX,calm,404,79.0,0.2,0.02,0.2
 VolatilityBreakout_VolUS500_g_M15_US500.a_M15_OHLC,ea,VIX,normal,1203,10845.39,9.02,0.59,32.1
 VolatilityBreakout_VolUS500_g_M15_US500.a_M15_OHLC,ea,VIX,stressed,370,22852.56,61.76,2.84,67.7
-FAMILY: BTC_UBSonechart_Sets,family,DXY,strong dollar,990,1640842.99,1657.42,6.7,53.7
-FAMILY: BTC_UBSonechart_Sets,family,DXY,weak dollar,891,1417457.32,1590.86,6.63,46.3
-FAMILY: BTC_UBSonechart_Sets,family,SP500,stocks bear,379,704313.82,1858.35,7.6,24.2
-FAMILY: BTC_UBSonechart_Sets,family,SP500,stocks bull,1399,2209019.42,1579.0,6.36,75.8
-FAMILY: BTC_UBSonechart_Sets,family,GOLD,gold downtrend,441,756017.66,1714.33,6.56,26.0
-FAMILY: BTC_UBSonechart_Sets,family,GOLD,gold uptrend,1337,2157315.58,1613.55,6.65,74.0
-FAMILY: BTC_UBSonechart_Sets,family,BTC,crypto bear,788,1353968.57,1718.23,6.98,45.2
-FAMILY: BTC_UBSonechart_Sets,family,BTC,crypto bull,1053,1638252.88,1555.8,6.39,54.8
-FAMILY: BTC_UBSonechart_Sets,family,US10Y,rates falling,716,1243822.61,1737.18,7.26,40.7
-FAMILY: BTC_UBSonechart_Sets,family,US10Y,rates rising,1165,1814477.7,1557.49,6.31,59.3
-FAMILY: BTC_UBSonechart_Sets,family,OIL,oil downtrend,928,1492250.7,1608.03,6.33,51.2
-FAMILY: BTC_UBSonechart_Sets,family,OIL,oil uptrend,850,1421082.54,1671.86,6.96,48.8
-FAMILY: BTC_UBSonechart_Sets,family,VIX,calm,406,699242.12,1722.27,6.55,20.9
-FAMILY: BTC_UBSonechart_Sets,family,VIX,normal,1206,1920692.41,1592.61,6.7,57.5
-FAMILY: BTC_UBSonechart_Sets,family,VIX,stressed,370,722364.24,1952.34,8.28,21.6
-FAMILY: FX_UBSonechart_Sets,family,DXY,strong dollar,990,394322.61,398.31,4.3,45.5
-FAMILY: FX_UBSonechart_Sets,family,DXY,weak dollar,891,472451.64,530.25,5.36,54.5
-FAMILY: FX_UBSonechart_Sets,family,SP500,stocks bear,379,245627.09,648.09,6.37,30.6
-FAMILY: FX_UBSonechart_Sets,family,SP500,stocks bull,1399,556717.83,397.94,4.31,69.4
-FAMILY: FX_UBSonechart_Sets,family,GOLD,gold downtrend,441,225235.64,510.74,4.98,28.1
-FAMILY: FX_UBSonechart_Sets,family,GOLD,gold uptrend,1337,577109.28,431.64,4.7,71.9
-FAMILY: FX_UBSonechart_Sets,family,BTC,crypto bear,788,360577.0,457.59,4.79,42.3
-FAMILY: FX_UBSonechart_Sets,family,BTC,crypto bull,1053,492835.48,468.03,4.92,57.7
-FAMILY: FX_UBSonechart_Sets,family,US10Y,rates falling,716,338214.6,472.37,4.9,39.0
-FAMILY: FX_UBSonechart_Sets,family,US10Y,rates rising,1165,528559.65,453.7,4.76,61.0
-FAMILY: FX_UBSonechart_Sets,family,OIL,oil downtrend,928,479248.22,516.43,5.43,59.7
-FAMILY: FX_UBSonechart_Sets,family,OIL,oil uptrend,850,323096.7,380.11,4.05,40.3
-FAMILY: FX_UBSonechart_Sets,family,VIX,calm,406,163816.57,403.49,3.82,18.0
-FAMILY: FX_UBSonechart_Sets,family,VIX,normal,1206,508535.44,421.67,4.49,55.9
-FAMILY: FX_UBSonechart_Sets,family,VIX,stressed,370,237411.0,641.65,7.09,26.1
-FAMILY: Gold_UBSonechart_Sets,family,DXY,strong dollar,990,1634688.64,1651.2,5.07,51.1
-FAMILY: Gold_UBSonechart_Sets,family,DXY,weak dollar,891,1566303.77,1757.92,5.17,48.9
-FAMILY: Gold_UBSonechart_Sets,family,SP500,stocks bear,379,587837.54,1551.02,4.84,19.4
-FAMILY: Gold_UBSonechart_Sets,family,SP500,stocks bull,1399,2449908.13,1751.19,5.35,80.6
-FAMILY: Gold_UBSonechart_Sets,family,GOLD,gold downtrend,441,625693.63,1418.81,4.32,20.6
-FAMILY: Gold_UBSonechart_Sets,family,GOLD,gold uptrend,1337,2412052.04,1804.08,5.55,79.4
-FAMILY: Gold_UBSonechart_Sets,family,BTC,crypto bear,788,1641126.65,2082.65,5.95,51.2
-FAMILY: Gold_UBSonechart_Sets,family,BTC,crypto bull,1053,1561611.19,1483.01,4.64,48.8
-FAMILY: Gold_UBSonechart_Sets,family,US10Y,rates falling,716,1154988.74,1613.11,5.2,36.1
-FAMILY: Gold_UBSonechart_Sets,family,US10Y,rates rising,1165,2046003.67,1756.23,5.08,63.9
-FAMILY: Gold_UBSonechart_Sets,family,OIL,oil downtrend,928,1360595.98,1466.16,5.18,44.8
-FAMILY: Gold_UBSonechart_Sets,family,OIL,oil uptrend,850,1677149.69,1973.12,5.38,55.2
-FAMILY: Gold_UBSonechart_Sets,family,VIX,calm,406,561189.61,1382.24,3.93,16.9
-FAMILY: Gold_UBSonechart_Sets,family,VIX,normal,1206,2186057.83,1812.65,5.48,65.7
-FAMILY: Gold_UBSonechart_Sets,family,VIX,stressed,370,581603.22,1571.9,4.54,17.5
-FAMILY: IndicesUBSonechartSets,family,DXY,strong dollar,990,1026590.98,1036.96,4.34,59.4
-FAMILY: IndicesUBSonechartSets,family,DXY,weak dollar,891,701712.59,787.56,3.75,40.6
-FAMILY: IndicesUBSonechartSets,family,SP500,stocks bear,379,538844.81,1421.75,4.91,33.2
-FAMILY: IndicesUBSonechartSets,family,SP500,stocks bull,1399,1085819.44,776.14,3.76,66.8
-FAMILY: IndicesUBSonechartSets,family,GOLD,gold downtrend,441,500422.59,1134.75,4.48,30.8
-FAMILY: IndicesUBSonechartSets,family,GOLD,gold uptrend,1337,1124241.66,840.87,3.86,69.2
-FAMILY: IndicesUBSonechartSets,family,BTC,crypto bear,788,761119.79,965.89,3.87,44.7
-FAMILY: IndicesUBSonechartSets,family,BTC,crypto bull,1053,941484.71,894.1,4.3,55.3
-FAMILY: IndicesUBSonechartSets,family,US10Y,rates falling,716,662258.72,924.94,4.14,38.3
-FAMILY: IndicesUBSonechartSets,family,US10Y,rates rising,1165,1066044.85,915.06,4.02,61.7
-FAMILY: IndicesUBSonechartSets,family,OIL,oil downtrend,928,865159.76,932.28,3.83,53.3
-FAMILY: IndicesUBSonechartSets,family,OIL,oil uptrend,850,759504.49,893.53,4.29,46.7
-FAMILY: IndicesUBSonechartSets,family,VIX,calm,406,195273.28,480.97,2.79,10.7
-FAMILY: IndicesUBSonechartSets,family,VIX,normal,1206,1073633.92,890.24,4.05,58.9
-FAMILY: IndicesUBSonechartSets,family,VIX,stressed,370,554318.37,1498.16,5.14,30.4
+FAMILY: Advanced Scalper,family,DXY,strong dollar,990,261968.68,264.61,5.13,45.1
+FAMILY: Advanced Scalper,family,DXY,weak dollar,891,318694.71,357.68,6.32,54.9
+FAMILY: Advanced Scalper,family,SP500,stocks bear,379,183667.07,484.61,7.15,33.0
+FAMILY: Advanced Scalper,family,SP500,stocks bull,1399,372119.29,265.99,5.36,67.0
+FAMILY: Advanced Scalper,family,GOLD,gold downtrend,441,147050.4,333.45,6.22,26.5
+FAMILY: Advanced Scalper,family,GOLD,gold uptrend,1337,408735.96,305.71,5.6,73.5
+FAMILY: Advanced Scalper,family,BTC,crypto bear,788,267236.58,339.13,5.93,46.4
+FAMILY: Advanced Scalper,family,BTC,crypto bull,1053,308723.05,293.18,5.66,53.6
+FAMILY: Advanced Scalper,family,US10Y,rates falling,716,247655.99,345.89,5.76,42.7
+FAMILY: Advanced Scalper,family,US10Y,rates rising,1165,333007.4,285.84,5.7,57.3
+FAMILY: Advanced Scalper,family,OIL,oil downtrend,928,337322.76,363.49,6.05,60.7
+FAMILY: Advanced Scalper,family,OIL,oil uptrend,850,218463.6,257.02,5.47,39.3
+FAMILY: Advanced Scalper,family,VIX,calm,406,106654.17,262.69,5.47,17.7
+FAMILY: Advanced Scalper,family,VIX,normal,1206,344219.88,285.42,5.16,57.2
+FAMILY: Advanced Scalper,family,VIX,stressed,370,151289.71,408.89,7.76,25.1
+FAMILY: Bitcoin Reaper,family,DXY,strong dollar,990,678915.06,685.77,5.44,53.0
+FAMILY: Bitcoin Reaper,family,DXY,weak dollar,891,603033.75,676.81,5.57,47.0
+FAMILY: Bitcoin Reaper,family,SP500,stocks bear,379,296691.49,782.83,6.51,24.0
+FAMILY: Bitcoin Reaper,family,SP500,stocks bull,1399,938157.83,670.59,5.26,76.0
+FAMILY: Bitcoin Reaper,family,GOLD,gold downtrend,441,326897.14,741.26,5.76,26.5
+FAMILY: Bitcoin Reaper,family,GOLD,gold uptrend,1337,907952.18,679.1,5.42,73.5
+FAMILY: Bitcoin Reaper,family,BTC,crypto bear,788,549959.89,697.92,5.74,43.7
+FAMILY: Bitcoin Reaper,family,BTC,crypto bull,1053,707944.27,672.31,5.3,56.3
+FAMILY: Bitcoin Reaper,family,US10Y,rates falling,716,511634.21,714.57,5.9,39.9
+FAMILY: Bitcoin Reaper,family,US10Y,rates rising,1165,770314.6,661.21,5.26,60.1
+FAMILY: Bitcoin Reaper,family,OIL,oil downtrend,928,625971.89,674.54,5.28,50.7
+FAMILY: Bitcoin Reaper,family,OIL,oil uptrend,850,608877.43,716.33,5.76,49.3
+FAMILY: Bitcoin Reaper,family,VIX,calm,406,287343.68,707.74,5.39,20.7
+FAMILY: Bitcoin Reaper,family,VIX,normal,1206,793592.56,658.04,5.43,57.1
+FAMILY: Bitcoin Reaper,family,VIX,stressed,370,308938.01,834.97,7.15,22.2
+FAMILY: Bitcoin Reaper Aggressive,family,DXY,strong dollar,990,624727.39,631.04,6.89,54.1
+FAMILY: Bitcoin Reaper Aggressive,family,DXY,weak dollar,891,530870.39,595.81,7.05,45.9
+FAMILY: Bitcoin Reaper Aggressive,family,SP500,stocks bear,379,270052.15,712.54,7.66,24.5
+FAMILY: Bitcoin Reaper Aggressive,family,SP500,stocks bull,1399,830103.71,593.36,6.7,75.5
+FAMILY: Bitcoin Reaper Aggressive,family,GOLD,gold downtrend,441,306112.9,694.13,7.08,27.8
+FAMILY: Bitcoin Reaper Aggressive,family,GOLD,gold uptrend,1337,794042.96,593.9,6.87,72.2
+FAMILY: Bitcoin Reaper Aggressive,family,BTC,crypto bear,788,514370.89,652.75,7.16,45.5
+FAMILY: Bitcoin Reaper Aggressive,family,BTC,crypto bull,1053,615030.73,584.07,6.74,54.5
+FAMILY: Bitcoin Reaper Aggressive,family,US10Y,rates falling,716,454245.37,634.42,7.46,39.3
+FAMILY: Bitcoin Reaper Aggressive,family,US10Y,rates rising,1165,701352.41,602.02,6.67,60.7
+FAMILY: Bitcoin Reaper Aggressive,family,OIL,oil downtrend,928,528718.21,569.74,6.47,48.1
+FAMILY: Bitcoin Reaper Aggressive,family,OIL,oil uptrend,850,571437.65,672.28,7.39,51.9
+FAMILY: Bitcoin Reaper Aggressive,family,VIX,calm,406,266117.16,655.46,7.1,21.2
+FAMILY: Bitcoin Reaper Aggressive,family,VIX,normal,1206,706141.75,585.52,6.84,56.3
+FAMILY: Bitcoin Reaper Aggressive,family,VIX,stressed,370,281050.38,759.6,8.33,22.4
+FAMILY: Bitcoin Scalp Pro,family,DXY,strong dollar,990,58592.89,59.18,3.73,61.1
+FAMILY: Bitcoin Scalp Pro,family,DXY,weak dollar,891,37374.11,41.95,2.61,38.9
+FAMILY: Bitcoin Scalp Pro,family,SP500,stocks bear,379,28536.46,75.29,4.84,29.7
+FAMILY: Bitcoin Scalp Pro,family,SP500,stocks bull,1399,67507.58,48.25,2.94,70.3
+FAMILY: Bitcoin Scalp Pro,family,GOLD,gold downtrend,441,32828.97,74.44,4.43,34.2
+FAMILY: Bitcoin Scalp Pro,family,GOLD,gold uptrend,1337,63215.07,47.28,2.95,65.8
+FAMILY: Bitcoin Scalp Pro,family,BTC,crypto bear,788,48882.63,62.03,3.94,51.2
+FAMILY: Bitcoin Scalp Pro,family,BTC,crypto bull,1053,46628.0,44.28,2.71,48.8
+FAMILY: Bitcoin Scalp Pro,family,US10Y,rates falling,716,23537.9,32.87,2.09,24.5
+FAMILY: Bitcoin Scalp Pro,family,US10Y,rates rising,1165,72429.1,62.17,3.87,75.5
+FAMILY: Bitcoin Scalp Pro,family,OIL,oil downtrend,928,35740.66,38.51,2.45,37.2
+FAMILY: Bitcoin Scalp Pro,family,OIL,oil uptrend,850,60303.38,70.95,4.24,62.8
+FAMILY: Bitcoin Scalp Pro,family,VIX,calm,406,18011.82,44.36,2.76,17.2
+FAMILY: Bitcoin Scalp Pro,family,VIX,normal,1206,63642.89,52.77,3.28,60.9
+FAMILY: Bitcoin Scalp Pro,family,VIX,stressed,370,22817.17,61.67,4.14,21.8
+FAMILY: Daytrade Pro,family,DXY,strong dollar,990,86883.23,87.76,2.4,53.0
+FAMILY: Daytrade Pro,family,DXY,weak dollar,891,76946.87,86.36,2.16,47.0
+FAMILY: Daytrade Pro,family,SP500,stocks bear,379,29574.65,78.03,2.22,22.9
+FAMILY: Daytrade Pro,family,SP500,stocks bull,1399,99417.02,71.06,2.02,77.1
+FAMILY: Daytrade Pro,family,GOLD,gold downtrend,441,49267.98,111.72,2.68,38.2
+FAMILY: Daytrade Pro,family,GOLD,gold uptrend,1337,79723.69,59.63,1.82,61.8
+FAMILY: Daytrade Pro,family,BTC,crypto bear,788,57834.01,73.39,1.98,38.2
+FAMILY: Daytrade Pro,family,BTC,crypto bull,1053,93386.23,88.69,2.39,61.8
+FAMILY: Daytrade Pro,family,US10Y,rates falling,716,41645.01,58.16,1.55,25.4
+FAMILY: Daytrade Pro,family,US10Y,rates rising,1165,122185.09,104.88,2.72,74.6
+FAMILY: Daytrade Pro,family,OIL,oil downtrend,928,56570.63,60.96,2.05,43.9
+FAMILY: Daytrade Pro,family,OIL,oil uptrend,850,72421.04,85.2,2.12,56.1
+FAMILY: Daytrade Pro,family,VIX,calm,406,36646.29,90.26,2.54,20.2
+FAMILY: Daytrade Pro,family,VIX,normal,1206,104029.77,86.26,2.25,57.2
+FAMILY: Daytrade Pro,family,VIX,stressed,370,41133.0,111.17,2.59,22.6
+FAMILY: Daytrade Pro 2,family,DXY,strong dollar,990,7579.7,7.66,0.28,20.9
+FAMILY: Daytrade Pro 2,family,DXY,weak dollar,891,28762.69,32.28,1.22,79.1
+FAMILY: Daytrade Pro 2,family,SP500,stocks bear,379,10218.13,26.96,1.01,35.9
+FAMILY: Daytrade Pro 2,family,SP500,stocks bull,1399,18261.66,13.05,0.49,64.1
+FAMILY: Daytrade Pro 2,family,GOLD,gold downtrend,441,763.3,1.73,0.06,2.7
+FAMILY: Daytrade Pro 2,family,GOLD,gold uptrend,1337,27716.49,20.73,0.79,97.3
+FAMILY: Daytrade Pro 2,family,BTC,crypto bear,788,24960.64,31.68,1.17,62.5
+FAMILY: Daytrade Pro 2,family,BTC,crypto bull,1053,14987.92,14.23,0.53,37.5
+FAMILY: Daytrade Pro 2,family,US10Y,rates falling,716,21497.5,30.02,1.06,59.2
+FAMILY: Daytrade Pro 2,family,US10Y,rates rising,1165,14844.89,12.74,0.48,40.8
+FAMILY: Daytrade Pro 2,family,OIL,oil downtrend,928,27106.98,29.21,1.11,95.2
+FAMILY: Daytrade Pro 2,family,OIL,oil uptrend,850,1372.81,1.62,0.06,4.8
+FAMILY: Daytrade Pro 2,family,VIX,calm,406,3729.69,9.19,0.33,9.7
+FAMILY: Daytrade Pro 2,family,VIX,normal,1206,13269.58,11.0,0.4,34.4
+FAMILY: Daytrade Pro 2,family,VIX,stressed,370,21627.46,58.45,2.48,56.0
+FAMILY: Gold Phantom,family,DXY,strong dollar,990,95994.01,96.96,1.84,44.8
+FAMILY: Gold Phantom,family,DXY,weak dollar,891,118052.22,132.49,2.01,55.2
+FAMILY: Gold Phantom,family,SP500,stocks bear,379,28875.18,76.19,1.75,15.2
+FAMILY: Gold Phantom,family,SP500,stocks bull,1399,160669.81,114.85,2.17,84.8
+FAMILY: Gold Phantom,family,GOLD,gold downtrend,441,35814.54,81.21,1.75,18.9
+FAMILY: Gold Phantom,family,GOLD,gold uptrend,1337,153730.45,114.98,2.19,81.1
+FAMILY: Gold Phantom,family,BTC,crypto bear,788,75670.34,96.03,1.72,34.1
+FAMILY: Gold Phantom,family,BTC,crypto bull,1053,146410.36,139.04,2.24,65.9
+FAMILY: Gold Phantom,family,US10Y,rates falling,716,107842.55,150.62,2.26,50.4
+FAMILY: Gold Phantom,family,US10Y,rates rising,1165,106203.68,91.16,1.67,49.6
+FAMILY: Gold Phantom,family,OIL,oil downtrend,928,103076.01,111.07,2.33,54.4
+FAMILY: Gold Phantom,family,OIL,oil uptrend,850,86468.98,101.73,1.87,45.6
+FAMILY: Gold Phantom,family,VIX,calm,406,50235.2,123.73,1.61,21.5
+FAMILY: Gold Phantom,family,VIX,normal,1206,150251.81,124.59,2.37,64.3
+FAMILY: Gold Phantom,family,VIX,stressed,370,33203.08,89.74,1.32,14.2
+FAMILY: Gold Reaper,family,DXY,strong dollar,990,336919.18,340.32,3.34,52.7
+FAMILY: Gold Reaper,family,DXY,weak dollar,891,302216.74,339.19,2.98,47.3
+FAMILY: Gold Reaper,family,SP500,stocks bear,379,133840.51,353.14,3.39,22.6
+FAMILY: Gold Reaper,family,SP500,stocks bull,1399,458643.34,327.84,3.04,77.4
+FAMILY: Gold Reaper,family,GOLD,gold downtrend,441,88176.81,199.95,2.13,14.9
+FAMILY: Gold Reaper,family,GOLD,gold uptrend,1337,504307.04,377.19,3.4,85.1
+FAMILY: Gold Reaper,family,BTC,crypto bear,788,275397.32,349.49,3.29,43.6
+FAMILY: Gold Reaper,family,BTC,crypto bull,1053,355743.24,337.84,3.09,56.4
+FAMILY: Gold Reaper,family,US10Y,rates falling,716,247087.63,345.09,3.22,38.7
+FAMILY: Gold Reaper,family,US10Y,rates rising,1165,392048.29,336.52,3.12,61.3
+FAMILY: Gold Reaper,family,OIL,oil downtrend,928,301738.65,325.15,3.05,50.9
+FAMILY: Gold Reaper,family,OIL,oil uptrend,850,290745.2,342.05,3.18,49.1
+FAMILY: Gold Reaper,family,VIX,calm,406,141249.13,347.9,3.07,21.2
+FAMILY: Gold Reaper,family,VIX,normal,1206,427840.17,354.76,3.28,64.1
+FAMILY: Gold Reaper,family,VIX,stressed,370,98584.08,266.44,2.38,14.8
+FAMILY: Gold Scalp,family,DXY,strong dollar,990,783143.59,791.05,6.04,52.9
+FAMILY: Gold Scalp,family,DXY,weak dollar,891,697884.59,783.26,6.07,47.1
+FAMILY: Gold Scalp,family,SP500,stocks bear,379,253406.49,668.62,6.01,17.6
+FAMILY: Gold Scalp,family,SP500,stocks bull,1399,1187031.79,848.49,6.16,82.4
+FAMILY: Gold Scalp,family,GOLD,gold downtrend,441,314606.84,713.39,5.8,21.8
+FAMILY: Gold Scalp,family,GOLD,gold uptrend,1337,1125831.44,842.06,6.21,78.2
+FAMILY: Gold Scalp,family,BTC,crypto bear,788,929428.08,1179.48,6.92,63.2
+FAMILY: Gold Scalp,family,BTC,crypto bull,1053,540221.07,513.03,5.92,36.8
+FAMILY: Gold Scalp,family,US10Y,rates falling,716,451935.6,631.19,5.85,30.5
+FAMILY: Gold Scalp,family,US10Y,rates rising,1165,1029092.58,883.34,6.24,69.5
+FAMILY: Gold Scalp,family,OIL,oil downtrend,928,621790.53,670.03,6.52,43.2
+FAMILY: Gold Scalp,family,OIL,oil uptrend,850,818647.75,963.12,6.08,56.8
+FAMILY: Gold Scalp,family,VIX,calm,406,182348.14,449.13,5.24,12.2
+FAMILY: Gold Scalp,family,VIX,normal,1206,1019925.94,845.71,6.22,68.0
+FAMILY: Gold Scalp,family,VIX,stressed,370,297105.8,802.99,5.82,19.8
+FAMILY: Gold Trade Pro,family,DXY,strong dollar,990,197710.21,199.71,1.83,42.9
+FAMILY: Gold Trade Pro,family,DXY,weak dollar,891,263257.67,295.46,2.66,57.1
+FAMILY: Gold Trade Pro,family,SP500,stocks bear,379,108847.1,287.2,2.5,25.2
+FAMILY: Gold Trade Pro,family,SP500,stocks bull,1399,322806.23,230.74,2.18,74.8
+FAMILY: Gold Trade Pro,family,GOLD,gold downtrend,441,99437.02,225.48,2.02,23.0
+FAMILY: Gold Trade Pro,family,GOLD,gold uptrend,1337,332216.31,248.48,2.33,77.0
+FAMILY: Gold Trade Pro,family,BTC,crypto bear,788,218427.3,277.19,2.41,46.9
+FAMILY: Gold Trade Pro,family,BTC,crypto bull,1053,247502.16,235.04,2.17,53.1
+FAMILY: Gold Trade Pro,family,US10Y,rates falling,716,161307.86,225.29,2.15,35.0
+FAMILY: Gold Trade Pro,family,US10Y,rates rising,1165,299660.02,257.22,2.27,65.0
+FAMILY: Gold Trade Pro,family,OIL,oil downtrend,928,172220.21,185.58,1.98,39.9
+FAMILY: Gold Trade Pro,family,OIL,oil uptrend,850,259433.12,305.22,2.52,60.1
+FAMILY: Gold Trade Pro,family,VIX,calm,406,106965.82,263.46,2.21,21.5
+FAMILY: Gold Trade Pro,family,VIX,normal,1206,296034.38,245.47,2.23,59.5
+FAMILY: Gold Trade Pro,family,VIX,stressed,370,94668.36,255.86,2.25,19.0
+FAMILY: Goldbot One,family,DXY,strong dollar,990,195299.39,197.27,2.32,54.4
+FAMILY: Goldbot One,family,DXY,weak dollar,891,163606.75,183.62,2.01,45.6
+FAMILY: Goldbot One,family,SP500,stocks bear,379,57078.55,150.6,1.72,16.9
+FAMILY: Goldbot One,family,SP500,stocks bull,1399,281131.48,200.95,2.4,83.1
+FAMILY: Goldbot One,family,GOLD,gold downtrend,441,76091.35,172.54,1.94,22.5
+FAMILY: Goldbot One,family,GOLD,gold uptrend,1337,262118.68,196.05,2.36,77.5
+FAMILY: Goldbot One,family,BTC,crypto bear,788,137784.2,174.85,1.95,37.2
+FAMILY: Goldbot One,family,BTC,crypto bull,1053,233013.61,221.29,2.55,62.8
+FAMILY: Goldbot One,family,US10Y,rates falling,716,158165.08,220.9,2.49,44.1
+FAMILY: Goldbot One,family,US10Y,rates rising,1165,200741.06,172.31,1.97,55.9
+FAMILY: Goldbot One,family,OIL,oil downtrend,928,150519.21,162.2,2.22,44.5
+FAMILY: Goldbot One,family,OIL,oil uptrend,850,187690.82,220.81,2.32,55.5
+FAMILY: Goldbot One,family,VIX,calm,406,69642.68,171.53,1.75,18.2
+FAMILY: Goldbot One,family,VIX,normal,1206,265078.41,219.8,2.65,69.3
+FAMILY: Goldbot One,family,VIX,stressed,370,47721.51,128.98,1.34,12.5
+FAMILY: Indicement US100,family,DXY,strong dollar,990,187546.56,189.44,3.59,60.1
+FAMILY: Indicement US100,family,DXY,weak dollar,891,124432.88,139.66,2.77,39.9
+FAMILY: Indicement US100,family,SP500,stocks bear,379,84393.53,222.67,3.76,29.1
+FAMILY: Indicement US100,family,SP500,stocks bull,1399,205665.52,147.01,2.98,70.9
+FAMILY: Indicement US100,family,GOLD,gold downtrend,441,86431.46,195.99,3.46,29.8
+FAMILY: Indicement US100,family,GOLD,gold uptrend,1337,203627.59,152.3,3.05,70.2
+FAMILY: Indicement US100,family,BTC,crypto bear,788,115061.76,146.02,2.66,37.7
+FAMILY: Indicement US100,family,BTC,crypto bull,1053,190054.51,180.49,3.67,62.3
+FAMILY: Indicement US100,family,US10Y,rates falling,716,121312.51,169.43,3.45,38.9
+FAMILY: Indicement US100,family,US10Y,rates rising,1165,190666.93,163.66,3.07,61.1
+FAMILY: Indicement US100,family,OIL,oil downtrend,928,159103.68,171.45,3.11,54.9
+FAMILY: Indicement US100,family,OIL,oil uptrend,850,130955.37,154.07,3.23,45.1
+FAMILY: Indicement US100,family,VIX,calm,406,65367.52,161.0,3.29,19.9
+FAMILY: Indicement US100,family,VIX,normal,1206,188348.95,156.18,3.15,57.2
+FAMILY: Indicement US100,family,VIX,stressed,370,75540.53,204.16,3.34,22.9
+FAMILY: Indicement US30,family,DXY,strong dollar,990,50705.67,51.22,1.81,58.8
+FAMILY: Indicement US30,family,DXY,weak dollar,891,35458.67,39.8,1.28,41.2
+FAMILY: Indicement US30,family,SP500,stocks bear,379,28101.35,74.15,2.64,35.6
+FAMILY: Indicement US30,family,SP500,stocks bull,1399,50730.28,36.26,1.22,64.4
+FAMILY: Indicement US30,family,GOLD,gold downtrend,441,21738.47,49.29,1.63,27.6
+FAMILY: Indicement US30,family,GOLD,gold uptrend,1337,57093.16,42.7,1.46,72.4
+FAMILY: Indicement US30,family,BTC,crypto bear,788,31660.83,40.18,1.35,37.7
+FAMILY: Indicement US30,family,BTC,crypto bull,1053,52367.0,49.73,1.71,62.3
+FAMILY: Indicement US30,family,US10Y,rates falling,716,26901.73,37.57,1.39,31.2
+FAMILY: Indicement US30,family,US10Y,rates rising,1165,59262.61,50.87,1.63,68.8
+FAMILY: Indicement US30,family,OIL,oil downtrend,928,53999.83,58.19,1.94,68.5
+FAMILY: Indicement US30,family,OIL,oil uptrend,850,24831.8,29.21,1.01,31.5
+FAMILY: Indicement US30,family,VIX,calm,406,13437.95,33.1,1.61,15.3
+FAMILY: Indicement US30,family,VIX,normal,1206,30606.68,25.38,0.84,34.8
+FAMILY: Indicement US30,family,VIX,stressed,370,43909.64,118.67,3.48,49.9
+FAMILY: Indicement US500,family,DXY,strong dollar,990,106059.77,107.13,3.19,64.1
+FAMILY: Indicement US500,family,DXY,weak dollar,891,59418.19,66.69,2.23,35.9
+FAMILY: Indicement US500,family,SP500,stocks bear,379,65933.22,173.97,4.25,41.5
+FAMILY: Indicement US500,family,SP500,stocks bull,1399,92833.96,66.36,2.31,58.5
+FAMILY: Indicement US500,family,GOLD,gold downtrend,441,62905.55,142.64,3.94,39.6
+FAMILY: Indicement US500,family,GOLD,gold uptrend,1337,95861.63,71.7,2.37,60.4
+FAMILY: Indicement US500,family,BTC,crypto bear,788,68516.5,86.95,2.45,42.3
+FAMILY: Indicement US500,family,BTC,crypto bull,1053,93408.88,88.71,3.06,57.7
+FAMILY: Indicement US500,family,US10Y,rates falling,716,55573.76,77.62,2.44,33.6
+FAMILY: Indicement US500,family,US10Y,rates rising,1165,109904.2,94.34,2.95,66.4
+FAMILY: Indicement US500,family,OIL,oil downtrend,928,79094.15,85.23,2.57,49.8
+FAMILY: Indicement US500,family,OIL,oil uptrend,850,79673.03,93.73,3.08,50.2
+FAMILY: Indicement US500,family,VIX,calm,406,22935.31,56.49,2.06,12.8
+FAMILY: Indicement US500,family,VIX,normal,1206,101542.47,84.2,2.77,56.7
+FAMILY: Indicement US500,family,VIX,stressed,370,54667.41,147.75,3.6,30.5
+FAMILY: ORB Master,family,DXY,strong dollar,990,238421.85,240.83,2.88,55.7
+FAMILY: ORB Master,family,DXY,weak dollar,891,189653.64,212.85,2.75,44.3
+FAMILY: ORB Master,family,SP500,stocks bear,379,134905.86,355.95,3.59,33.6
+FAMILY: ORB Master,family,SP500,stocks bull,1399,266829.85,190.73,2.57,66.4
+FAMILY: ORB Master,family,GOLD,gold downtrend,441,104818.18,237.68,2.62,26.1
+FAMILY: ORB Master,family,GOLD,gold uptrend,1337,296917.53,222.08,2.9,73.9
+FAMILY: ORB Master,family,BTC,crypto bear,788,185985.66,236.02,2.68,44.4
+FAMILY: ORB Master,family,BTC,crypto bull,1053,233189.39,221.45,2.97,55.6
+FAMILY: ORB Master,family,US10Y,rates falling,716,135751.23,189.6,2.44,31.7
+FAMILY: ORB Master,family,US10Y,rates rising,1165,292324.26,250.92,3.05,68.3
+FAMILY: ORB Master,family,OIL,oil downtrend,928,197486.82,212.81,2.63,49.2
+FAMILY: ORB Master,family,OIL,oil uptrend,850,204248.89,240.29,3.02,50.8
+FAMILY: ORB Master,family,VIX,calm,406,63963.47,157.55,2.41,14.0
+FAMILY: ORB Master,family,VIX,normal,1206,285563.34,236.79,2.91,62.7
+FAMILY: ORB Master,family,VIX,stressed,370,106070.79,286.68,3.03,23.3
+FAMILY: Other Sets NAS100,family,DXY,strong dollar,990,165660.11,167.33,2.0,53.4
+FAMILY: Other Sets NAS100,family,DXY,weak dollar,891,144701.56,162.4,1.94,46.6
+FAMILY: Other Sets NAS100,family,SP500,stocks bear,379,94400.3,249.08,2.84,31.6
+FAMILY: Other Sets NAS100,family,SP500,stocks bull,1399,204322.44,146.05,1.78,68.4
+FAMILY: Other Sets NAS100,family,GOLD,gold downtrend,441,92826.97,210.49,2.72,31.1
+FAMILY: Other Sets NAS100,family,GOLD,gold uptrend,1337,205895.77,154.0,1.8,68.9
+FAMILY: Other Sets NAS100,family,BTC,crypto bear,788,115819.49,146.98,1.83,37.2
+FAMILY: Other Sets NAS100,family,BTC,crypto bull,1053,195573.3,185.73,2.16,62.8
+FAMILY: Other Sets NAS100,family,US10Y,rates falling,716,134792.68,188.26,2.14,43.4
+FAMILY: Other Sets NAS100,family,US10Y,rates rising,1165,175568.99,150.7,1.87,56.6
+FAMILY: Other Sets NAS100,family,OIL,oil downtrend,928,168150.69,181.2,2.05,56.3
+FAMILY: Other Sets NAS100,family,OIL,oil uptrend,850,130572.05,153.61,1.98,43.7
+FAMILY: Other Sets NAS100,family,VIX,calm,406,13991.02,34.46,0.47,4.2
+FAMILY: Other Sets NAS100,family,VIX,normal,1206,224324.34,186.01,2.21,67.2
+FAMILY: Other Sets NAS100,family,VIX,stressed,370,95366.98,257.75,2.73,28.6
+FAMILY: Volatility Breakout BTC,family,DXY,strong dollar,990,278607.65,281.42,3.96,53.1
+FAMILY: Volatility Breakout BTC,family,DXY,weak dollar,891,246179.07,276.3,3.51,46.9
+FAMILY: Volatility Breakout BTC,family,SP500,stocks bear,379,109033.72,287.69,3.48,22.6
+FAMILY: Volatility Breakout BTC,family,SP500,stocks bull,1399,373250.3,266.8,3.64,77.4
+FAMILY: Volatility Breakout BTC,family,GOLD,gold downtrend,441,90178.65,204.49,2.58,18.7
+FAMILY: Volatility Breakout BTC,family,GOLD,gold uptrend,1337,392105.37,293.27,3.97,81.3
+FAMILY: Volatility Breakout BTC,family,BTC,crypto bear,788,240755.16,305.53,3.87,47.3
+FAMILY: Volatility Breakout BTC,family,BTC,crypto bull,1053,268649.88,255.13,3.58,52.7
+FAMILY: Volatility Breakout BTC,family,US10Y,rates falling,716,254405.13,355.31,4.85,48.5
+FAMILY: Volatility Breakout BTC,family,US10Y,rates rising,1165,270381.59,232.09,3.07,51.5
+FAMILY: Volatility Breakout BTC,family,OIL,oil downtrend,928,301819.94,325.24,4.01,62.6
+FAMILY: Volatility Breakout BTC,family,OIL,oil uptrend,850,180464.08,212.31,3.12,37.4
+FAMILY: Volatility Breakout BTC,family,VIX,calm,406,127769.46,314.7,4.12,21.5
+FAMILY: Volatility Breakout BTC,family,VIX,normal,1206,357315.21,296.28,3.94,60.1
+FAMILY: Volatility Breakout BTC,family,VIX,stressed,370,109558.68,296.1,4.19,18.4
+FAMILY: Volatility Breakout EURUSD,family,DXY,strong dollar,990,37891.0,38.27,0.68,44.1
+FAMILY: Volatility Breakout EURUSD,family,DXY,weak dollar,891,48047.37,53.93,1.02,55.9
+FAMILY: Volatility Breakout EURUSD,family,SP500,stocks bear,379,22167.24,58.49,1.3,24.9
+FAMILY: Volatility Breakout EURUSD,family,SP500,stocks bull,1399,66919.86,47.83,0.81,75.1
+FAMILY: Volatility Breakout EURUSD,family,GOLD,gold downtrend,441,28153.96,63.84,1.06,31.6
+FAMILY: Volatility Breakout EURUSD,family,GOLD,gold uptrend,1337,60933.14,45.57,0.83,68.4
+FAMILY: Volatility Breakout EURUSD,family,BTC,crypto bear,788,10545.77,13.38,0.25,12.2
+FAMILY: Volatility Breakout EURUSD,family,BTC,crypto bull,1053,75738.28,71.93,1.28,87.8
+FAMILY: Volatility Breakout EURUSD,family,US10Y,rates falling,716,27416.1,38.29,0.75,31.9
+FAMILY: Volatility Breakout EURUSD,family,US10Y,rates rising,1165,58522.27,50.23,0.88,68.1
+FAMILY: Volatility Breakout EURUSD,family,OIL,oil downtrend,928,58247.85,62.77,1.06,65.4
+FAMILY: Volatility Breakout EURUSD,family,OIL,oil uptrend,850,30839.25,36.28,0.69,34.6
+FAMILY: Volatility Breakout EURUSD,family,VIX,calm,406,16786.42,41.35,0.65,19.3
+FAMILY: Volatility Breakout EURUSD,family,VIX,normal,1206,47016.21,38.99,0.72,53.9
+FAMILY: Volatility Breakout EURUSD,family,VIX,stressed,370,23360.83,63.14,1.47,26.8
+FAMILY: Volatility Breakout Gold,family,DXY,strong dollar,990,25622.26,25.88,0.85,54.6
+FAMILY: Volatility Breakout Gold,family,DXY,weak dollar,891,21285.8,23.89,0.9,45.4
+FAMILY: Volatility Breakout Gold,family,SP500,stocks bear,379,5789.71,15.28,0.55,12.7
+FAMILY: Volatility Breakout Gold,family,SP500,stocks bull,1399,39625.48,28.32,0.98,87.3
+FAMILY: Volatility Breakout Gold,family,GOLD,gold downtrend,441,11567.07,26.23,0.72,25.5
+FAMILY: Volatility Breakout Gold,family,GOLD,gold uptrend,1337,33848.12,25.32,0.99,74.5
+FAMILY: Volatility Breakout Gold,family,BTC,crypto bear,788,4419.41,5.61,0.21,10.2
+FAMILY: Volatility Breakout Gold,family,BTC,crypto bull,1053,38720.75,36.77,1.24,89.8
+FAMILY: Volatility Breakout Gold,family,US10Y,rates falling,716,28650.02,40.01,1.41,61.1
+FAMILY: Volatility Breakout Gold,family,US10Y,rates rising,1165,18258.04,15.67,0.54,38.9
+FAMILY: Volatility Breakout Gold,family,OIL,oil downtrend,928,11251.37,12.12,0.5,24.8
+FAMILY: Volatility Breakout Gold,family,OIL,oil uptrend,850,34163.82,40.19,1.22,75.2
+FAMILY: Volatility Breakout Gold,family,VIX,calm,406,10748.64,26.47,0.81,22.4
+FAMILY: Volatility Breakout Gold,family,VIX,normal,1206,26927.12,22.33,0.8,56.1
+FAMILY: Volatility Breakout Gold,family,VIX,stressed,370,10320.39,27.89,0.94,21.5
+FAMILY: Volatility Breakout NAS100,family,DXY,strong dollar,990,191242.16,193.17,1.82,75.1
+FAMILY: Volatility Breakout NAS100,family,DXY,weak dollar,891,63260.89,71.0,0.83,24.9
+FAMILY: Volatility Breakout NAS100,family,SP500,stocks bear,379,89546.88,236.27,1.91,37.9
+FAMILY: Volatility Breakout NAS100,family,SP500,stocks bull,1399,146554.01,104.76,1.17,62.1
+FAMILY: Volatility Breakout NAS100,family,GOLD,gold downtrend,441,101628.42,230.45,1.97,43.0
+FAMILY: Volatility Breakout NAS100,family,GOLD,gold uptrend,1337,134472.47,100.58,1.11,57.0
+FAMILY: Volatility Breakout NAS100,family,BTC,crypto bear,788,156852.49,199.05,1.79,61.6
+FAMILY: Volatility Breakout NAS100,family,BTC,crypto bull,1053,97738.74,92.82,1.07,38.4
+FAMILY: Volatility Breakout NAS100,family,US10Y,rates falling,716,122278.15,170.78,1.85,48.0
+FAMILY: Volatility Breakout NAS100,family,US10Y,rates rising,1165,132224.9,113.5,1.14,52.0
+FAMILY: Volatility Breakout NAS100,family,OIL,oil downtrend,928,122558.97,132.07,1.31,51.9
+FAMILY: Volatility Breakout NAS100,family,OIL,oil uptrend,850,113541.92,133.58,1.42,48.1
+FAMILY: Volatility Breakout NAS100,family,VIX,calm,406,-8453.56,-20.82,-0.34,-3.1
+FAMILY: Volatility Breakout NAS100,family,VIX,normal,1206,154454.02,128.07,1.3,57.2
+FAMILY: Volatility Breakout NAS100,family,VIX,stressed,370,124192.87,335.66,2.79,46.0
+FAMILY: Volatility Breakout US30,family,DXY,strong dollar,990,45121.18,45.58,2.73,49.4
+FAMILY: Volatility Breakout US30,family,DXY,weak dollar,891,46131.98,51.78,2.55,50.6
+FAMILY: Volatility Breakout US30,family,SP500,stocks bear,379,12871.04,33.96,1.59,15.1
+FAMILY: Volatility Breakout US30,family,SP500,stocks bull,1399,72111.56,51.55,2.88,84.9
+FAMILY: Volatility Breakout US30,family,GOLD,gold downtrend,441,15143.3,34.34,1.88,17.8
+FAMILY: Volatility Breakout US30,family,GOLD,gold uptrend,1337,69839.3,52.24,2.77,82.2
+FAMILY: Volatility Breakout US30,family,BTC,crypto bear,788,39355.44,49.94,2.52,45.1
+FAMILY: Volatility Breakout US30,family,BTC,crypto bull,1053,47983.36,45.57,2.6,54.9
+FAMILY: Volatility Breakout US30,family,US10Y,rates falling,716,39796.81,55.58,2.71,43.6
+FAMILY: Volatility Breakout US30,family,US10Y,rates rising,1165,51456.35,44.17,2.58,56.4
+FAMILY: Volatility Breakout US30,family,OIL,oil downtrend,928,47697.9,51.4,2.47,56.1
+FAMILY: Volatility Breakout US30,family,OIL,oil uptrend,850,37284.7,43.86,2.74,43.9
+FAMILY: Volatility Breakout US30,family,VIX,calm,406,18461.09,45.47,2.7,22.0
+FAMILY: Volatility Breakout US30,family,VIX,normal,1206,50000.23,41.46,1.82,59.5
+FAMILY: Volatility Breakout US30,family,VIX,stressed,370,15609.52,42.19,2.4,18.6
+FAMILY: Volatility Breakout US500,family,DXY,strong dollar,990,41833.68,42.26,1.35,52.0
+FAMILY: Volatility Breakout US500,family,DXY,weak dollar,891,38654.78,43.38,1.52,48.0
+FAMILY: Volatility Breakout US500,family,SP500,stocks bear,379,28692.63,75.71,1.91,38.0
+FAMILY: Volatility Breakout US500,family,SP500,stocks bull,1399,46771.82,33.43,1.24,62.0
+FAMILY: Volatility Breakout US500,family,GOLD,gold downtrend,441,14930.24,33.86,0.95,19.8
+FAMILY: Volatility Breakout US500,family,GOLD,gold uptrend,1337,60534.21,45.28,1.6,80.2
+FAMILY: Volatility Breakout US500,family,BTC,crypto bear,788,47867.62,60.75,1.77,60.6
+FAMILY: Volatility Breakout US500,family,BTC,crypto bull,1053,31169.53,29.6,1.11,39.4
+FAMILY: Volatility Breakout US500,family,US10Y,rates falling,716,25851.85,36.11,1.28,32.1
+FAMILY: Volatility Breakout US500,family,US10Y,rates rising,1165,54636.61,46.9,1.51,67.9
+FAMILY: Volatility Breakout US500,family,OIL,oil downtrend,928,37067.72,39.94,1.2,49.1
+FAMILY: Volatility Breakout US500,family,OIL,oil uptrend,850,38396.73,45.17,1.71,50.9
+FAMILY: Volatility Breakout US500,family,VIX,calm,406,5570.48,13.72,0.58,6.7
+FAMILY: Volatility Breakout US500,family,VIX,normal,1206,38793.89,32.17,1.15,46.6
+FAMILY: Volatility Breakout US500,family,VIX,stressed,370,38960.63,105.3,2.47,46.8
 POOL: all robots,pool,DXY,strong dollar,990,4696445.22,4743.88,9.4,53.0
 POOL: all robots,pool,DXY,weak dollar,891,4157925.32,4666.58,9.33,47.0
 POOL: all robots,pool,SP500,stocks bear,379,2076623.26,5479.22,9.99,24.8

@@ -36,6 +36,24 @@ from parsers import parse_backtest_trades, parse_backtest_summary, parse_backtes
 
 ENGINE_DIR = os.path.dirname(os.path.abspath(__file__))
 
+
+def load_family_map():
+    """Strategy-prefix -> product-family overrides (family_map.json).
+    Keeps families = EA products even when reports sit in bucket folders."""
+    p = os.path.join(ENGINE_DIR, 'family_map.json')
+    if not os.path.isfile(p):
+        return []
+    with open(p, encoding='utf-8') as f:
+        m = json.load(f).get('map', {})
+    return sorted(m.items(), key=lambda kv: -len(kv[0]))  # longest prefix wins
+
+
+def map_family(strategy, folder_family, fam_map):
+    for prefix, fam in fam_map:
+        if strategy.startswith(prefix):
+            return fam
+    return folder_family
+
 # Backtests are normalised to this: fixed balance, lot step sized so the
 # EA's historical max DD ~= DD_TARGET_PCT of the balance.
 BALANCE       = 100_000
@@ -139,6 +157,7 @@ def compile_reports(reports_dir, out_dir):
     all_trades = []
     meta_rows  = []
     skipped    = []
+    fam_map    = load_family_map()
 
     for path in htm_files:
         fname = os.path.basename(path)
@@ -164,6 +183,7 @@ def compile_reports(reports_dir, out_dir):
         hist_dd  = float(inputs.get('HistoricalMaxDD', 0) or 0)
 
         strategy, sym_from_id, tf_from_id = split_ea_id(ea_id)
+        family = map_family(strategy, family, fam_map)
 
         trades = trades.copy()
         trades.insert(0, 'ea_id', ea_id)
