@@ -1,4 +1,6 @@
-# EA Portfolio Engine
+# UBS Portfolio Manager
+
+*(repo/codebase name: EA Portfolio Engine)*
 
 A simulator and educational app for testing **portfolio management styles for
 teams of trading robots (EAs)** against backtest history — before risking

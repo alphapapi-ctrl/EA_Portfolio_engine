@@ -1,5 +1,5 @@
 """
-EA Portfolio Engine — Streamlit app.
+UBS Portfolio Manager (EA Portfolio Engine) — Streamlit app.
 ====================================
 An educational tool for exploring EA portfolio management regimes on
 backtested data. Built for people with no quant background: every control
@@ -26,7 +26,7 @@ from interactive_sim import InteractiveSession
 ENGINE_DIR = os.path.dirname(os.path.abspath(__file__))
 RUNS_DIR   = os.path.join(ENGINE_DIR, 'runs')
 
-st.set_page_config(page_title='EA Portfolio Engine', page_icon='⚙️',
+st.set_page_config(page_title='UBS Portfolio Manager', page_icon='⚙️',
                    layout='wide', initial_sidebar_state='expanded')
 
 
@@ -198,7 +198,7 @@ METRIC_HELP = {
 # ── Sidebar ───────────────────────────────────────────────────────────────────
 
 with st.sidebar:
-    st.markdown('## ⚙️ EA Portfolio Engine')
+    st.markdown('## ⚙️ UBS Portfolio Manager')
     st.caption('Test *management styles* for a team of trading robots — '
                'on history, before risking anything.')
     page = st.radio('Page', ['📚 Learn', '🗂 Data', '📊 EA Pool', '🌐 Regimes',
