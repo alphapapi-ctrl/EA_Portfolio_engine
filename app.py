@@ -1248,6 +1248,15 @@ elif page == '🛠 Build a Run':
 
     # ── Run ───────────────────────────────────────────────────────────────
     st.divider()
+    _gross = float(n_slots) * float(risk_pct) / 5.0
+    st.caption(f'⚖️ This run deploys **{_gross:.0f} risk units** '
+               f'({int(n_slots)} slot(s) × {risk_pct:.1f}% ÷ 5). One unit = '
+               'one robot at its 5% account-DD calibration, the live-account '
+               'convention. Profit and drawdown **dollars scale linearly '
+               'with the unit count** — a 37-slot book shows ~3.7× the '
+               'dollars of a 10-slot bench from sizing alone. Compare '
+               'different-sized runs on Sharpe, or rerun them at matching '
+               'units.')
     problems = []
     if not run_name.strip():
         problems.append('**give the run a name** (the box at the top of the page — '
@@ -1528,18 +1537,31 @@ elif page == '🏁 Results & Compare':
             continue
         with open(p) as f:
             rows[d] = json.load(f)['summary']
+        cp = os.path.join(RUNS_DIR, d, 'config.json')
+        if os.path.isfile(cp):
+            with open(cp) as f:
+                rows[d]['risk_units'] = json.load(f).get('gross_budget')
     if not rows:
         st.info('No completed runs yet — build one on the **Build a Run** page.')
         st.stop()
 
-    df = pd.DataFrame(rows).T[['net_profit', 'ann_return_pct', 'sharpe',
-                               'max_dd_pct', 'turnover_units', 'events']]
+    df = pd.DataFrame(rows).T[['risk_units', 'net_profit', 'ann_return_pct',
+                               'sharpe', 'max_dd_pct', 'turnover_units',
+                               'events']]
     df = df.sort_values('sharpe', ascending=False).rename(columns={
+        'risk_units': 'Risk units',
         'net_profit': 'Profit ($)', 'ann_return_pct': 'Per year (%)',
         'sharpe': 'Sharpe', 'max_dd_pct': 'Worst drop (%)',
         'turnover_units': 'Churn', 'events': 'Decisions'})
     st.dataframe(df, use_container_width=True,
                  column_config={c: st.column_config.NumberColumn(help=h) for c, h in {
+                     'Risk units'    : ('Total risk deployed: slots × (risk% / 5). '
+                                        'One unit = one robot at its 5% account-DD '
+                                        'calibration. Profit and drawdown DOLLARS '
+                                        'scale linearly with this — only compare '
+                                        'dollars between runs with the SAME unit '
+                                        'count; Sharpe is fair across different '
+                                        'counts.'),
                      'Profit ($)'    : METRIC_HELP['net_profit'],
                      'Per year (%)'  : METRIC_HELP['ann_return_pct'],
                      'Sharpe'        : METRIC_HELP['sharpe'],
@@ -1549,6 +1571,10 @@ elif page == '🏁 Results & Compare':
 
     with st.expander('How to read this table (start here!)'):
         st.markdown("""
+- **Check Risk units before comparing dollars.** A 37-slot book deploys 37
+  units of risk; the 10-slot benches deploy 10. Its profit *and* drawdown
+  dollars will be ~3.7× bigger for that reason alone — that is sizing, not
+  skill. Sharpe is the fair cross-unit comparison.
 - **Ignore the absolute profit numbers** — this pool only contains strategies that
   already looked good on history, which flatters everything. The *comparison
   between rows* is what's meaningful.
