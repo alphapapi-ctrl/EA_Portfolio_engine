@@ -239,7 +239,7 @@ roughly **5,000 dollars (5%)**. That means every robot carries the **same risk w
 of any robot risks about as much as one unit of any other. This makes team
 comparisons fair, and it means "run robot X at half size" is exactly half the P&L.
 """)
-    with st.expander('⚠️ Two honest warnings about this data'):
+    with st.expander('⚠️ Three honest warnings about this data'):
         st.markdown("""
 1. **Historical drawdown is not a limit.** The 5% calibration comes from each
    robot's *past* worst stretch. The future can (and sometimes will) be worse.
@@ -248,6 +248,15 @@ comparisons fair, and it means "run robot X at half size" is exactly half the P&
 2. **This pool is made of survivors.** Every robot here exists because its
    backtest looked good. That inflates every absolute number you'll see.
    **Compare regimes against each other — don't trust the raw profit figures.**
+3. **Scalper backtests are the least trustworthy of all.** Strategies that make
+   many small, fast trades are hypersensitive to spreads, slippage and fill
+   quality — exactly the things backtests model most optimistically (even
+   tick data flatters quick limit-order fills). In this pool the gold
+   scalpers post outsized numbers that every ranking then chases. The
+   easiest robustness check: **re-run your configuration with the scalper
+   family excluded** (deselect it in the family filters). If a conclusion
+   only holds with the scalpers in, it's a bet on scalper fills — not on
+   your management style.
 """)
 
     st.subheader('The management styles you can test')
@@ -1729,6 +1738,10 @@ elif page == '🏁 Results & Compare':
   decisions add nothing.
 - **Churn** is the hidden cost column: two styles with equal Sharpe are not equal
   if one needed 20× the swaps.
+- **Scalper sanity check:** scalper backtests are the least trustworthy numbers
+  in the pool (fills flatter them most). If a run's edge matters to you,
+  re-run it with the scalper family excluded — a conclusion that survives
+  without them is a much safer one.
 """)
 
     with st.expander('🔬 The deeper tests behind these results — what they are and why they matter'):
