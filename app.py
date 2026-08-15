@@ -1125,8 +1125,21 @@ elif page == '🛠 Build a Run':
                             horizontal=True,
                             help='Who can be promoted when someone is benched.')
         if sub_mode == 'Choose manually':
-            subs_spec = st.multiselect('Substitute robots', ea_ids,
-                                       format_func=lambda e: friendly_name(e, meta))
+            sub_fams = st.multiselect(
+                'Substitute family filter', sorted(meta.family.unique()),
+                help='Narrow the bench to these families — e.g. only gold '
+                     'robots may substitute into a gold book. Empty = all '
+                     'families. (Changing the filter resets the robot list '
+                     'to the new matches.)')
+            spool = (meta[meta.family.isin(sub_fams)] if sub_fams
+                     else meta).ea_id.tolist()
+            subs_spec = st.multiselect(
+                'Substitute robots', spool,
+                default=spool if sub_fams else [],
+                format_func=lambda e: friendly_name(e, meta),
+                help='With a family filter on, every match starts selected — '
+                     'deselect any you don\'t want. With no filter, '
+                     'hand-pick from the whole pool.')
 
     # ── Rules / params ────────────────────────────────────────────────────
     st.subheader('3 — Set the rules')
