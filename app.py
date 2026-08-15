@@ -759,27 +759,35 @@ which is exactly how the "team of 9 Bitcoin robots" trap happens.
     sub['col'] = sub['indicator'] + ': ' + sub['state']
     heat = sub.pivot_table(index='entity', columns='col', values='sharpe')
     if len(heat) > 0:
-        # Anchor red at zero Sharpe and stretch the gradient over the
-        # positive range actually present — this pool rarely goes negative,
-        # so a scale centred on 0 would paint everything one shade of green.
+        # Absolute anchors at the bottom, relative at the top: red = Sharpe 0
+        # or below (no edge), amber at ~1 (where a real edge conventionally
+        # begins), green deepening from there to the strongest value shown.
+        EDGE_SHARPE = 1.0
         finite = heat.values[np.isfinite(heat.values)]
         zmin = float(min(0.0, np.percentile(finite, 5))) if finite.size else 0.0
-        zmax = float(np.percentile(finite, 95)) if finite.size else 1.0
+        zmax = (float(max(np.percentile(finite, 95), EDGE_SHARPE * 2))
+                if finite.size else EDGE_SHARPE * 2)
+        stops = [(0.0, '#d73027')]
+        if zmin < 0:
+            stops.append(((0.0 - zmin) / (zmax - zmin), '#d73027'))
+        stops.append(((EDGE_SHARPE - zmin) / (zmax - zmin), '#fee08b'))
+        stops.append((1.0, '#1a9850'))
         fig = go.Figure(go.Heatmap(
             z=heat.values, x=list(heat.columns), y=list(heat.index),
-            colorscale='RdYlGn', zmin=zmin, zmax=max(zmax, zmin + 0.1),
+            colorscale=stops, zmin=zmin, zmax=zmax,
             colorbar=dict(title='Sharpe'),
             hovertemplate='%{y}<br>%{x}<br>Sharpe %{z:.2f}<extra></extra>'))
         fig.update_layout(height=max(300, 26 * len(heat) + 120),
                           margin=dict(l=10, r=10, t=10, b=10),
                           xaxis=dict(tickangle=-35))
         st.plotly_chart(fig, use_container_width=True)
-        st.caption('Colors are scaled to this view: deep green = the '
-                   'strongest Sharpe shown, red = zero (or negative) — so '
-                   'shading differences are meaningful even when everything '
-                   'is profitable. A robot that is green in one column and '
-                   'red in its opposite is a one-regime specialist — fine, '
-                   'as long as the team knows it and balances around it.')
+        st.caption('Color anchors: red = Sharpe 0 or below (no edge), amber '
+                   '≈ Sharpe 1 — the conventional line where a real edge '
+                   'begins — and green deepens from there to the strongest '
+                   'value in this view. A robot that is green in one column '
+                   'and red in its opposite is a one-regime specialist — '
+                   'fine, as long as the team knows it and balances around '
+                   'it.')
 
     # ── Drill-down ────────────────────────────────────────────────────────
     st.subheader('Drill into a family — or specific strategies within it')
