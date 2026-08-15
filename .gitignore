@@ -19,3 +19,6 @@ excluded/
 # OS noise
 Thumbs.db
 .DS_Store
+
+# Local teaching snapshot (pre-real-tick OHLC compile), not for clones
+timeline/main_pool_2018_ohlc/

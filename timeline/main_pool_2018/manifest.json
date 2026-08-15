@@ -1,10 +1,10 @@
 {
   "dataset": {
     "name": "main_pool_2018",
-    "generated": "2026-08-14 20:01:24",
+    "generated": "2026-08-16 07:44:28",
     "description": "Backtest trade timeline for a pool of Ultimate Breakout System (UBS) EA set files, compiled from MT5 Strategy Tester reports for portfolio rotation / risk-scaling simulation.",
     "ea_count": 140,
-    "trade_count": 172538,
+    "trade_count": 172535,
     "first_trade": "2018-01-02",
     "last_trade": "2026-08-12",
     "trading_days": 2354
@@ -25,7 +25,7 @@
     {
       "ea_id": "BTC_Reaper_Aggr_1_H1_BTCUSD.a_H1_OHLC",
       "strategy": "BTC_Reaper_Aggr_1_H1",
-      "family": "BTC_UBSonechart_Sets",
+      "family": "Bitcoin Reaper Aggressive",
       "symbol": "BTCUSD.a",
       "timeframe": "H1",
       "force_symbol": "BTCUSD.a",
@@ -49,12 +49,12 @@
       "hist_max_win_streak": 27,
       "largest_single_loss": 925.29,
       "dd_vs_target": 0.16,
-      "report_path": "C:\\Users\\pc\\AppData\\Local\\Temp\\claude\\C--BulkBackTest\\42d0231a-2e8f-4695-a7a4-77ae63b808cc\\scratchpad\\compile_stage\\ohlc\\BTC_UBSonechart_Sets\\BTC_Reaper_Aggr_1_H1_BTCUSD.a_H1_OHLC.htm"
+      "report_path": "C:\\BulkBackTest\\Updated set files\\BTC_UBSonechart_Sets\\1mOHLC reports\\BTC_Reaper_Aggr_1_H1_BTCUSD.a_H1_OHLC.htm"
     },
     {
       "ea_id": "BTC_Reaper_Aggr_2_H1_BTCUSD.a_H1_OHLC",
       "strategy": "BTC_Reaper_Aggr_2_H1",
-      "family": "BTC_UBSonechart_Sets",
+      "family": "Bitcoin Reaper Aggressive",
       "symbol": "BTCUSD.a",
       "timeframe": "H1",
       "force_symbol": "BTCUSD.a",
@@ -78,12 +78,12 @@
       "hist_max_win_streak": 23,
       "largest_single_loss": 187.5,
       "dd_vs_target": 0.11,
-      "report_path": "C:\\Users\\pc\\AppData\\Local\\Temp\\claude\\C--BulkBackTest\\42d0231a-2e8f-4695-a7a4-77ae63b808cc\\scratchpad\\compile_stage\\ohlc\\BTC_UBSonechart_Sets\\BTC_Reaper_Aggr_2_H1_BTCUSD.a_H1_OHLC.htm"
+      "report_path": "C:\\BulkBackTest\\Updated set files\\BTC_UBSonechart_Sets\\1mOHLC reports\\BTC_Reaper_Aggr_2_H1_BTCUSD.a_H1_OHLC.htm"
     },
     {
       "ea_id": "BTC_Reaper_Aggr_3_H1_BTCUSD.a_H1_OHLC",
       "strategy": "BTC_Reaper_Aggr_3_H1",
-      "family": "BTC_UBSonechart_Sets",
+      "family": "Bitcoin Reaper Aggressive",
       "symbol": "BTCUSD.a",
       "timeframe": "H1",
       "force_symbol": "BTCUSD.a",
@@ -107,12 +107,12 @@
       "hist_max_win_streak": 14,
       "largest_single_loss": 100.0,
       "dd_vs_target": 0.07,
-      "report_path": "C:\\Users\\pc\\AppData\\Local\\Temp\\claude\\C--BulkBackTest\\42d0231a-2e8f-4695-a7a4-77ae63b808cc\\scratchpad\\compile_stage\\ohlc\\BTC_UBSonechart_Sets\\BTC_Reaper_Aggr_3_H1_BTCUSD.a_H1_OHLC.htm"
+      "report_path": "C:\\BulkBackTest\\Updated set files\\BTC_UBSonechart_Sets\\1mOHLC reports\\BTC_Reaper_Aggr_3_H1_BTCUSD.a_H1_OHLC.htm"
     },
     {
       "ea_id": "BTC_Reaper_Aggr_4_H1_BTCUSD.a_H1_OHLC",
       "strategy": "BTC_Reaper_Aggr_4_H1",
-      "family": "BTC_UBSonechart_Sets",
+      "family": "Bitcoin Reaper Aggressive",
       "symbol": "BTCUSD.a",
       "timeframe": "H1",
       "force_symbol": "BTCUSD.a",
@@ -136,12 +136,12 @@
       "hist_max_win_streak": 72,
       "largest_single_loss": 197.47,
       "dd_vs_target": 0.24,
-      "report_path": "C:\\Users\\pc\\AppData\\Local\\Temp\\claude\\C--BulkBackTest\\42d0231a-2e8f-4695-a7a4-77ae63b808cc\\scratchpad\\compile_stage\\ohlc\\BTC_UBSonechart_Sets\\BTC_Reaper_Aggr_4_H1_BTCUSD.a_H1_OHLC.htm"
+      "report_path": "C:\\BulkBackTest\\Updated set files\\BTC_UBSonechart_Sets\\1mOHLC reports\\BTC_Reaper_Aggr_4_H1_BTCUSD.a_H1_OHLC.htm"
     },
     {
       "ea_id": "BTC_Reaper_Aggr_5_H1_BTCUSD.a_H1_OHLC",
       "strategy": "BTC_Reaper_Aggr_5_H1",
-      "family": "BTC_UBSonechart_Sets",
+      "family": "Bitcoin Reaper Aggressive",
       "symbol": "BTCUSD.a",
       "timeframe": "H1",
       "force_symbol": "BTCUSD.a",
@@ -165,12 +165,12 @@
       "hist_max_win_streak": 11,
       "largest_single_loss": 425.24,
       "dd_vs_target": 0.84,
-      "report_path": "C:\\Users\\pc\\AppData\\Local\\Temp\\claude\\C--BulkBackTest\\42d0231a-2e8f-4695-a7a4-77ae63b808cc\\scratchpad\\compile_stage\\ohlc\\BTC_UBSonechart_Sets\\BTC_Reaper_Aggr_5_H1_BTCUSD.a_H1_OHLC.htm"
+      "report_path": "C:\\BulkBackTest\\Updated set files\\BTC_UBSonechart_Sets\\1mOHLC reports\\BTC_Reaper_Aggr_5_H1_BTCUSD.a_H1_OHLC.htm"
     },
     {
       "ea_id": "BTC_Reaper_Aggr_6_H1_BTCUSD.a_H1_OHLC",
       "strategy": "BTC_Reaper_Aggr_6_H1",
-      "family": "BTC_UBSonechart_Sets",
+      "family": "Bitcoin Reaper Aggressive",
       "symbol": "BTCUSD.a",
       "timeframe": "H1",
       "force_symbol": "BTCUSD.a",
@@ -194,12 +194,12 @@
       "hist_max_win_streak": 41,
       "largest_single_loss": 270.0,
       "dd_vs_target": 0.14,
-      "report_path": "C:\\Users\\pc\\AppData\\Local\\Temp\\claude\\C--BulkBackTest\\42d0231a-2e8f-4695-a7a4-77ae63b808cc\\scratchpad\\compile_stage\\ohlc\\BTC_UBSonechart_Sets\\BTC_Reaper_Aggr_6_H1_BTCUSD.a_H1_OHLC.htm"
+      "report_path": "C:\\BulkBackTest\\Updated set files\\BTC_UBSonechart_Sets\\1mOHLC reports\\BTC_Reaper_Aggr_6_H1_BTCUSD.a_H1_OHLC.htm"
     },
     {
       "ea_id": "BTC_Reaper_Aggr_7_H1_BTCUSD.a_H1_OHLC",
       "strategy": "BTC_Reaper_Aggr_7_H1",
-      "family": "BTC_UBSonechart_Sets",
+      "family": "Bitcoin Reaper Aggressive",
       "symbol": "BTCUSD.a",
       "timeframe": "H1",
       "force_symbol": "BTCUSD.a",
@@ -223,12 +223,12 @@
       "hist_max_win_streak": 76,
       "largest_single_loss": 262.07,
       "dd_vs_target": 0.08,
-      "report_path": "C:\\Users\\pc\\AppData\\Local\\Temp\\claude\\C--BulkBackTest\\42d0231a-2e8f-4695-a7a4-77ae63b808cc\\scratchpad\\compile_stage\\ohlc\\BTC_UBSonechart_Sets\\BTC_Reaper_Aggr_7_H1_BTCUSD.a_H1_OHLC.htm"
+      "report_path": "C:\\BulkBackTest\\Updated set files\\BTC_UBSonechart_Sets\\1mOHLC reports\\BTC_Reaper_Aggr_7_H1_BTCUSD.a_H1_OHLC.htm"
     },
     {
       "ea_id": "BTC_Reaper_Aggr_8_H1_BTCUSD.a_H1_OHLC",
       "strategy": "BTC_Reaper_Aggr_8_H1",
-      "family": "BTC_UBSonechart_Sets",
+      "family": "Bitcoin Reaper Aggressive",
       "symbol": "BTCUSD.a",
       "timeframe": "H1",
       "force_symbol": "BTCUSD.a",
@@ -252,12 +252,12 @@
       "hist_max_win_streak": 11,
       "largest_single_loss": 324.47,
       "dd_vs_target": 0.3,
-      "report_path": "C:\\Users\\pc\\AppData\\Local\\Temp\\claude\\C--BulkBackTest\\42d0231a-2e8f-4695-a7a4-77ae63b808cc\\scratchpad\\compile_stage\\ohlc\\BTC_UBSonechart_Sets\\BTC_Reaper_Aggr_8_H1_BTCUSD.a_H1_OHLC.htm"
+      "report_path": "C:\\BulkBackTest\\Updated set files\\BTC_UBSonechart_Sets\\1mOHLC reports\\BTC_Reaper_Aggr_8_H1_BTCUSD.a_H1_OHLC.htm"
     },
     {
       "ea_id": "BTC_Reaper_Aggr_9_H1_BTCUSD.a_H1_OHLC",
       "strategy": "BTC_Reaper_Aggr_9_H1",
-      "family": "BTC_UBSonechart_Sets",
+      "family": "Bitcoin Reaper Aggressive",
       "symbol": "BTCUSD.a",
       "timeframe": "H1",
       "force_symbol": "BTCUSD.a",
@@ -281,12 +281,12 @@
       "hist_max_win_streak": 17,
       "largest_single_loss": 816.59,
       "dd_vs_target": 1.11,
-      "report_path": "C:\\Users\\pc\\AppData\\Local\\Temp\\claude\\C--BulkBackTest\\42d0231a-2e8f-4695-a7a4-77ae63b808cc\\scratchpad\\compile_stage\\ohlc\\BTC_UBSonechart_Sets\\BTC_Reaper_Aggr_9_H1_BTCUSD.a_H1_OHLC.htm"
+      "report_path": "C:\\BulkBackTest\\Updated set files\\BTC_UBSonechart_Sets\\1mOHLC reports\\BTC_Reaper_Aggr_9_H1_BTCUSD.a_H1_OHLC.htm"
     },
     {
       "ea_id": "BitcoinReaper_10_H1_BTCUSD.a_H1_OHLC",
       "strategy": "BitcoinReaper_10_H1",
-      "family": "BTC_UBSonechart_Sets",
+      "family": "Bitcoin Reaper",
       "symbol": "BTCUSD.a",
       "timeframe": "H1",
       "force_symbol": "BTCUSD.a",
@@ -310,12 +310,12 @@
       "hist_max_win_streak": 8,
       "largest_single_loss": 217.9,
       "dd_vs_target": 0.35,
-      "report_path": "C:\\Users\\pc\\AppData\\Local\\Temp\\claude\\C--BulkBackTest\\42d0231a-2e8f-4695-a7a4-77ae63b808cc\\scratchpad\\compile_stage\\ohlc\\BTC_UBSonechart_Sets\\BitcoinReaper_10_H1_BTCUSD.a_H1_OHLC.htm"
+      "report_path": "C:\\BulkBackTest\\Updated set files\\BTC_UBSonechart_Sets\\1mOHLC reports\\BitcoinReaper_10_H1_BTCUSD.a_H1_OHLC.htm"
     },
     {
       "ea_id": "BitcoinReaper_1_H1_BTCUSD.a_H1_OHLC",
       "strategy": "BitcoinReaper_1_H1",
-      "family": "BTC_UBSonechart_Sets",
+      "family": "Bitcoin Reaper",
       "symbol": "BTCUSD.a",
       "timeframe": "H1",
       "force_symbol": "BTCUSD.a",
@@ -339,12 +339,12 @@
       "hist_max_win_streak": 24,
       "largest_single_loss": 940.45,
       "dd_vs_target": 0.79,
-      "report_path": "C:\\Users\\pc\\AppData\\Local\\Temp\\claude\\C--BulkBackTest\\42d0231a-2e8f-4695-a7a4-77ae63b808cc\\scratchpad\\compile_stage\\ohlc\\BTC_UBSonechart_Sets\\BitcoinReaper_1_H1_BTCUSD.a_H1_OHLC.htm"
+      "report_path": "C:\\BulkBackTest\\Updated set files\\BTC_UBSonechart_Sets\\1mOHLC reports\\BitcoinReaper_1_H1_BTCUSD.a_H1_OHLC.htm"
     },
     {
       "ea_id": "BitcoinReaper_2_H1_BTCUSD.a_H1_OHLC",
       "strategy": "BitcoinReaper_2_H1",
-      "family": "BTC_UBSonechart_Sets",
+      "family": "Bitcoin Reaper",
       "symbol": "BTCUSD.a",
       "timeframe": "H1",
       "force_symbol": "BTCUSD.a",
@@ -368,12 +368,12 @@
       "hist_max_win_streak": 23,
       "largest_single_loss": 187.5,
       "dd_vs_target": 0.08,
-      "report_path": "C:\\Users\\pc\\AppData\\Local\\Temp\\claude\\C--BulkBackTest\\42d0231a-2e8f-4695-a7a4-77ae63b808cc\\scratchpad\\compile_stage\\ohlc\\BTC_UBSonechart_Sets\\BitcoinReaper_2_H1_BTCUSD.a_H1_OHLC.htm"
+      "report_path": "C:\\BulkBackTest\\Updated set files\\BTC_UBSonechart_Sets\\1mOHLC reports\\BitcoinReaper_2_H1_BTCUSD.a_H1_OHLC.htm"
     },
     {
       "ea_id": "BitcoinReaper_3_H1_BTCUSD.a_H1_OHLC",
       "strategy": "BitcoinReaper_3_H1",
-      "family": "BTC_UBSonechart_Sets",
+      "family": "Bitcoin Reaper",
       "symbol": "BTCUSD.a",
       "timeframe": "H1",
       "force_symbol": "BTCUSD.a",
@@ -397,12 +397,12 @@
       "hist_max_win_streak": 14,
       "largest_single_loss": 100.0,
       "dd_vs_target": 0.1,
-      "report_path": "C:\\Users\\pc\\AppData\\Local\\Temp\\claude\\C--BulkBackTest\\42d0231a-2e8f-4695-a7a4-77ae63b808cc\\scratchpad\\compile_stage\\ohlc\\BTC_UBSonechart_Sets\\BitcoinReaper_3_H1_BTCUSD.a_H1_OHLC.htm"
+      "report_path": "C:\\BulkBackTest\\Updated set files\\BTC_UBSonechart_Sets\\1mOHLC reports\\BitcoinReaper_3_H1_BTCUSD.a_H1_OHLC.htm"
     },
     {
       "ea_id": "BitcoinReaper_4_H1_BTCUSD.a_H1_OHLC",
       "strategy": "BitcoinReaper_4_H1",
-      "family": "BTC_UBSonechart_Sets",
+      "family": "Bitcoin Reaper",
       "symbol": "BTCUSD.a",
       "timeframe": "H1",
       "force_symbol": "BTCUSD.a",
@@ -426,12 +426,12 @@
       "hist_max_win_streak": 51,
       "largest_single_loss": 197.81,
       "dd_vs_target": 0.3,
-      "report_path": "C:\\Users\\pc\\AppData\\Local\\Temp\\claude\\C--BulkBackTest\\42d0231a-2e8f-4695-a7a4-77ae63b808cc\\scratchpad\\compile_stage\\ohlc\\BTC_UBSonechart_Sets\\BitcoinReaper_4_H1_BTCUSD.a_H1_OHLC.htm"
+      "report_path": "C:\\BulkBackTest\\Updated set files\\BTC_UBSonechart_Sets\\1mOHLC reports\\BitcoinReaper_4_H1_BTCUSD.a_H1_OHLC.htm"
     },
     {
       "ea_id": "BitcoinReaper_5_H1_BTCUSD.a_H1_OHLC",
       "strategy": "BitcoinReaper_5_H1",
-      "family": "BTC_UBSonechart_Sets",
+      "family": "Bitcoin Reaper",
       "symbol": "BTCUSD.a",
       "timeframe": "H1",
       "force_symbol": "BTCUSD.a",
@@ -455,12 +455,12 @@
       "hist_max_win_streak": 14,
       "largest_single_loss": 425.24,
       "dd_vs_target": 0.7,
-      "report_path": "C:\\Users\\pc\\AppData\\Local\\Temp\\claude\\C--BulkBackTest\\42d0231a-2e8f-4695-a7a4-77ae63b808cc\\scratchpad\\compile_stage\\ohlc\\BTC_UBSonechart_Sets\\BitcoinReaper_5_H1_BTCUSD.a_H1_OHLC.htm"
+      "report_path": "C:\\BulkBackTest\\Updated set files\\BTC_UBSonechart_Sets\\1mOHLC reports\\BitcoinReaper_5_H1_BTCUSD.a_H1_OHLC.htm"
     },
     {
       "ea_id": "BitcoinReaper_6_H1_BTCUSD.a_H1_OHLC",
       "strategy": "BitcoinReaper_6_H1",
-      "family": "BTC_UBSonechart_Sets",
+      "family": "Bitcoin Reaper",
       "symbol": "BTCUSD.a",
       "timeframe": "H1",
       "force_symbol": "BTCUSD.a",
@@ -484,12 +484,12 @@
       "hist_max_win_streak": 49,
       "largest_single_loss": 298.86,
       "dd_vs_target": 0.21,
-      "report_path": "C:\\Users\\pc\\AppData\\Local\\Temp\\claude\\C--BulkBackTest\\42d0231a-2e8f-4695-a7a4-77ae63b808cc\\scratchpad\\compile_stage\\ohlc\\BTC_UBSonechart_Sets\\BitcoinReaper_6_H1_BTCUSD.a_H1_OHLC.htm"
+      "report_path": "C:\\BulkBackTest\\Updated set files\\BTC_UBSonechart_Sets\\1mOHLC reports\\BitcoinReaper_6_H1_BTCUSD.a_H1_OHLC.htm"
     },
     {
       "ea_id": "BitcoinReaper_7_H1_BTCUSD.a_H1_OHLC",
       "strategy": "BitcoinReaper_7_H1",
-      "family": "BTC_UBSonechart_Sets",
+      "family": "Bitcoin Reaper",
       "symbol": "BTCUSD.a",
       "timeframe": "H1",
       "force_symbol": "BTCUSD.a",
@@ -513,12 +513,12 @@
       "hist_max_win_streak": 51,
       "largest_single_loss": 263.19,
       "dd_vs_target": 0.23,
-      "report_path": "C:\\Users\\pc\\AppData\\Local\\Temp\\claude\\C--BulkBackTest\\42d0231a-2e8f-4695-a7a4-77ae63b808cc\\scratchpad\\compile_stage\\ohlc\\BTC_UBSonechart_Sets\\BitcoinReaper_7_H1_BTCUSD.a_H1_OHLC.htm"
+      "report_path": "C:\\BulkBackTest\\Updated set files\\BTC_UBSonechart_Sets\\1mOHLC reports\\BitcoinReaper_7_H1_BTCUSD.a_H1_OHLC.htm"
     },
     {
       "ea_id": "BitcoinReaper_8_H1_BTCUSD.a_H1_OHLC",
       "strategy": "BitcoinReaper_8_H1",
-      "family": "BTC_UBSonechart_Sets",
+      "family": "Bitcoin Reaper",
       "symbol": "BTCUSD.a",
       "timeframe": "H1",
       "force_symbol": "BTCUSD.a",
@@ -542,12 +542,12 @@
       "hist_max_win_streak": 11,
       "largest_single_loss": 322.83,
       "dd_vs_target": 0.49,
-      "report_path": "C:\\Users\\pc\\AppData\\Local\\Temp\\claude\\C--BulkBackTest\\42d0231a-2e8f-4695-a7a4-77ae63b808cc\\scratchpad\\compile_stage\\ohlc\\BTC_UBSonechart_Sets\\BitcoinReaper_8_H1_BTCUSD.a_H1_OHLC.htm"
+      "report_path": "C:\\BulkBackTest\\Updated set files\\BTC_UBSonechart_Sets\\1mOHLC reports\\BitcoinReaper_8_H1_BTCUSD.a_H1_OHLC.htm"
     },
     {
       "ea_id": "BitcoinReaper_9_H1_BTCUSD.a_H1_OHLC",
       "strategy": "BitcoinReaper_9_H1",
-      "family": "BTC_UBSonechart_Sets",
+      "family": "Bitcoin Reaper",
       "symbol": "BTCUSD.a",
       "timeframe": "H1",
       "force_symbol": "BTCUSD.a",
@@ -571,12 +571,12 @@
       "hist_max_win_streak": 18,
       "largest_single_loss": 816.65,
       "dd_vs_target": 1.09,
-      "report_path": "C:\\Users\\pc\\AppData\\Local\\Temp\\claude\\C--BulkBackTest\\42d0231a-2e8f-4695-a7a4-77ae63b808cc\\scratchpad\\compile_stage\\ohlc\\BTC_UBSonechart_Sets\\BitcoinReaper_9_H1_BTCUSD.a_H1_OHLC.htm"
+      "report_path": "C:\\BulkBackTest\\Updated set files\\BTC_UBSonechart_Sets\\1mOHLC reports\\BitcoinReaper_9_H1_BTCUSD.a_H1_OHLC.htm"
     },
     {
       "ea_id": "BitcoinScalpPro_a_H1_BTCUSD.a_H1_OHLC",
       "strategy": "BitcoinScalpPro_a_H1",
-      "family": "BTC_UBSonechart_Sets",
+      "family": "Bitcoin Scalp Pro",
       "symbol": "BTCUSD.a",
       "timeframe": "H1",
       "force_symbol": "BTCUSD.a",
@@ -600,12 +600,12 @@
       "hist_max_win_streak": 8,
       "largest_single_loss": 356.51,
       "dd_vs_target": 0.29,
-      "report_path": "C:\\Users\\pc\\AppData\\Local\\Temp\\claude\\C--BulkBackTest\\42d0231a-2e8f-4695-a7a4-77ae63b808cc\\scratchpad\\compile_stage\\ohlc\\BTC_UBSonechart_Sets\\BitcoinScalpPro_a_H1_BTCUSD.a_H1_OHLC.htm"
+      "report_path": "C:\\BulkBackTest\\Updated set files\\BTC_UBSonechart_Sets\\1mOHLC reports\\BitcoinScalpPro_a_H1_BTCUSD.a_H1_OHLC.htm"
     },
     {
       "ea_id": "VolatilityBreakout_H1_B_H1_BTCUSD.a_H1_OHLC",
       "strategy": "VolatilityBreakout_H1_B_H1",
-      "family": "BTC_UBSonechart_Sets",
+      "family": "Volatility Breakout BTC",
       "symbol": "BTCUSD.a",
       "timeframe": "H1",
       "force_symbol": "BTCUSD.a",
@@ -629,12 +629,12 @@
       "hist_max_win_streak": 25,
       "largest_single_loss": 1856.9,
       "dd_vs_target": 0.64,
-      "report_path": "C:\\Users\\pc\\AppData\\Local\\Temp\\claude\\C--BulkBackTest\\42d0231a-2e8f-4695-a7a4-77ae63b808cc\\scratchpad\\compile_stage\\ohlc\\BTC_UBSonechart_Sets\\VolatilityBreakout_H1_B_H1_BTCUSD.a_H1_OHLC.htm"
+      "report_path": "C:\\BulkBackTest\\Updated set files\\BTC_UBSonechart_Sets\\1mOHLC reports\\VolatilityBreakout_H1_B_H1_BTCUSD.a_H1_OHLC.htm"
     },
     {
       "ea_id": "VolatilityBreakout_H1_C_H1_BTCUSD.a_H1_OHLC",
       "strategy": "VolatilityBreakout_H1_C_H1",
-      "family": "BTC_UBSonechart_Sets",
+      "family": "Volatility Breakout BTC",
       "symbol": "BTCUSD.a",
       "timeframe": "H1",
       "force_symbol": "BTCUSD.a",
@@ -658,12 +658,12 @@
       "hist_max_win_streak": 26,
       "largest_single_loss": 1421.94,
       "dd_vs_target": 0.53,
-      "report_path": "C:\\Users\\pc\\AppData\\Local\\Temp\\claude\\C--BulkBackTest\\42d0231a-2e8f-4695-a7a4-77ae63b808cc\\scratchpad\\compile_stage\\ohlc\\BTC_UBSonechart_Sets\\VolatilityBreakout_H1_C_H1_BTCUSD.a_H1_OHLC.htm"
+      "report_path": "C:\\BulkBackTest\\Updated set files\\BTC_UBSonechart_Sets\\1mOHLC reports\\VolatilityBreakout_H1_C_H1_BTCUSD.a_H1_OHLC.htm"
     },
     {
       "ea_id": "VolatilityBreakout_H1_E_H1_BTCUSD.a_H1_OHLC",
       "strategy": "VolatilityBreakout_H1_E_H1",
-      "family": "BTC_UBSonechart_Sets",
+      "family": "Volatility Breakout BTC",
       "symbol": "BTCUSD.a",
       "timeframe": "H1",
       "force_symbol": "BTCUSD.a",
@@ -687,12 +687,12 @@
       "hist_max_win_streak": 33,
       "largest_single_loss": 841.39,
       "dd_vs_target": 0.53,
-      "report_path": "C:\\Users\\pc\\AppData\\Local\\Temp\\claude\\C--BulkBackTest\\42d0231a-2e8f-4695-a7a4-77ae63b808cc\\scratchpad\\compile_stage\\ohlc\\BTC_UBSonechart_Sets\\VolatilityBreakout_H1_E_H1_BTCUSD.a_H1_OHLC.htm"
+      "report_path": "C:\\BulkBackTest\\Updated set files\\BTC_UBSonechart_Sets\\1mOHLC reports\\VolatilityBreakout_H1_E_H1_BTCUSD.a_H1_OHLC.htm"
     },
     {
       "ea_id": "VolatilityBreakout_H1_F_H1_BTCUSD.a_H1_OHLC",
       "strategy": "VolatilityBreakout_H1_F_H1",
-      "family": "BTC_UBSonechart_Sets",
+      "family": "Volatility Breakout BTC",
       "symbol": "BTCUSD.a",
       "timeframe": "H1",
       "force_symbol": "BTCUSD.a",
@@ -716,12 +716,12 @@
       "hist_max_win_streak": 44,
       "largest_single_loss": 1257.94,
       "dd_vs_target": 0.48,
-      "report_path": "C:\\Users\\pc\\AppData\\Local\\Temp\\claude\\C--BulkBackTest\\42d0231a-2e8f-4695-a7a4-77ae63b808cc\\scratchpad\\compile_stage\\ohlc\\BTC_UBSonechart_Sets\\VolatilityBreakout_H1_F_H1_BTCUSD.a_H1_OHLC.htm"
+      "report_path": "C:\\BulkBackTest\\Updated set files\\BTC_UBSonechart_Sets\\1mOHLC reports\\VolatilityBreakout_H1_F_H1_BTCUSD.a_H1_OHLC.htm"
     },
     {
       "ea_id": "VolatilityBreakout_H1_H_H1_BTCUSD.a_M15_OHLC",
       "strategy": "VolatilityBreakout_H1_H_H1",
-      "family": "BTC_UBSonechart_Sets",
+      "family": "Volatility Breakout BTC",
       "symbol": "BTCUSD.a",
       "timeframe": "M15",
       "force_symbol": "BTCUSD.a",
@@ -745,12 +745,12 @@
       "hist_max_win_streak": 47,
       "largest_single_loss": 1063.36,
       "dd_vs_target": 0.8,
-      "report_path": "C:\\Users\\pc\\AppData\\Local\\Temp\\claude\\C--BulkBackTest\\42d0231a-2e8f-4695-a7a4-77ae63b808cc\\scratchpad\\compile_stage\\ohlc\\BTC_UBSonechart_Sets\\VolatilityBreakout_H1_H_H1_BTCUSD.a_M15_OHLC.htm"
+      "report_path": "C:\\BulkBackTest\\Updated set files\\BTC_UBSonechart_Sets\\1mOHLC reports\\VolatilityBreakout_H1_H_H1_BTCUSD.a_M15_OHLC.htm"
     },
     {
       "ea_id": "VolatilityBreakout_H1_J_H1_BTCUSD.a_M15_OHLC",
       "strategy": "VolatilityBreakout_H1_J_H1",
-      "family": "BTC_UBSonechart_Sets",
+      "family": "Volatility Breakout BTC",
       "symbol": "BTCUSD.a",
       "timeframe": "M15",
       "force_symbol": "BTCUSD.a",
@@ -774,12 +774,12 @@
       "hist_max_win_streak": 17,
       "largest_single_loss": 2380.44,
       "dd_vs_target": 0.58,
-      "report_path": "C:\\Users\\pc\\AppData\\Local\\Temp\\claude\\C--BulkBackTest\\42d0231a-2e8f-4695-a7a4-77ae63b808cc\\scratchpad\\compile_stage\\ohlc\\BTC_UBSonechart_Sets\\VolatilityBreakout_H1_J_H1_BTCUSD.a_M15_OHLC.htm"
+      "report_path": "C:\\BulkBackTest\\Updated set files\\BTC_UBSonechart_Sets\\1mOHLC reports\\VolatilityBreakout_H1_J_H1_BTCUSD.a_M15_OHLC.htm"
     },
     {
       "ea_id": "VolatilityBreakout_H1_M_H1_BTCUSD.a_M15_OHLC",
       "strategy": "VolatilityBreakout_H1_M_H1",
-      "family": "BTC_UBSonechart_Sets",
+      "family": "Volatility Breakout BTC",
       "symbol": "BTCUSD.a",
       "timeframe": "M15",
       "force_symbol": "BTCUSD.a",
@@ -803,12 +803,12 @@
       "hist_max_win_streak": 13,
       "largest_single_loss": 2197.32,
       "dd_vs_target": 0.71,
-      "report_path": "C:\\Users\\pc\\AppData\\Local\\Temp\\claude\\C--BulkBackTest\\42d0231a-2e8f-4695-a7a4-77ae63b808cc\\scratchpad\\compile_stage\\ohlc\\BTC_UBSonechart_Sets\\VolatilityBreakout_H1_M_H1_BTCUSD.a_M15_OHLC.htm"
+      "report_path": "C:\\BulkBackTest\\Updated set files\\BTC_UBSonechart_Sets\\1mOHLC reports\\VolatilityBreakout_H1_M_H1_BTCUSD.a_M15_OHLC.htm"
     },
     {
       "ea_id": "VolatilityBreakout_H1_O_H1_BTCUSD.a_M15_OHLC",
       "strategy": "VolatilityBreakout_H1_O_H1",
-      "family": "BTC_UBSonechart_Sets",
+      "family": "Volatility Breakout BTC",
       "symbol": "BTCUSD.a",
       "timeframe": "M15",
       "force_symbol": "BTCUSD.a",
@@ -832,12 +832,12 @@
       "hist_max_win_streak": 19,
       "largest_single_loss": 8392.56,
       "dd_vs_target": 1.33,
-      "report_path": "C:\\Users\\pc\\AppData\\Local\\Temp\\claude\\C--BulkBackTest\\42d0231a-2e8f-4695-a7a4-77ae63b808cc\\scratchpad\\compile_stage\\ohlc\\BTC_UBSonechart_Sets\\VolatilityBreakout_H1_O_H1_BTCUSD.a_M15_OHLC.htm"
+      "report_path": "C:\\BulkBackTest\\Updated set files\\BTC_UBSonechart_Sets\\1mOHLC reports\\VolatilityBreakout_H1_O_H1_BTCUSD.a_M15_OHLC.htm"
     },
     {
       "ea_id": "AdvScal_eurusd_H1_SL17_EURUSD.a_H1_OHLC",
       "strategy": "AdvScal_eurusd_H1_SL17",
-      "family": "FX_UBSonechart_Sets",
+      "family": "Advanced Scalper",
       "symbol": "EURUSD.a",
       "timeframe": "H1",
       "force_symbol": "EURUSD.a",
@@ -861,12 +861,12 @@
       "hist_max_win_streak": 66,
       "largest_single_loss": 250.74,
       "dd_vs_target": 0.31,
-      "report_path": "C:\\Users\\pc\\AppData\\Local\\Temp\\claude\\C--BulkBackTest\\42d0231a-2e8f-4695-a7a4-77ae63b808cc\\scratchpad\\compile_stage\\ohlc\\FX_UBSonechart_Sets\\AdvScal_eurusd_H1_SL17_EURUSD.a_H1_OHLC.htm"
+      "report_path": "C:\\BulkBackTest\\Updated set files\\FX_UBSonechart_Sets\\1mOHLC reports\\AdvScal_eurusd_H1_SL17_EURUSD.a_H1_OHLC.htm"
     },
     {
       "ea_id": "AdvScalp_eurusd_H1_SL14_EURUSD.a_H1_OHLC",
       "strategy": "AdvScalp_eurusd_H1_SL14",
-      "family": "FX_UBSonechart_Sets",
+      "family": "Advanced Scalper",
       "symbol": "EURUSD.a",
       "timeframe": "H1",
       "force_symbol": "EURUSD.a",
@@ -890,12 +890,12 @@
       "hist_max_win_streak": 47,
       "largest_single_loss": 381.59,
       "dd_vs_target": 0.22,
-      "report_path": "C:\\Users\\pc\\AppData\\Local\\Temp\\claude\\C--BulkBackTest\\42d0231a-2e8f-4695-a7a4-77ae63b808cc\\scratchpad\\compile_stage\\ohlc\\FX_UBSonechart_Sets\\AdvScalp_eurusd_H1_SL14_EURUSD.a_H1_OHLC.htm"
+      "report_path": "C:\\BulkBackTest\\Updated set files\\FX_UBSonechart_Sets\\1mOHLC reports\\AdvScalp_eurusd_H1_SL14_EURUSD.a_H1_OHLC.htm"
     },
     {
       "ea_id": "AdvScalp_eurusd_H1_SL18_EURUSD.a_H1_OHLC",
       "strategy": "AdvScalp_eurusd_H1_SL18",
-      "family": "FX_UBSonechart_Sets",
+      "family": "Advanced Scalper",
       "symbol": "EURUSD.a",
       "timeframe": "H1",
       "force_symbol": "EURUSD.a",
@@ -919,12 +919,12 @@
       "hist_max_win_streak": 83,
       "largest_single_loss": 203.2,
       "dd_vs_target": 0.26,
-      "report_path": "C:\\Users\\pc\\AppData\\Local\\Temp\\claude\\C--BulkBackTest\\42d0231a-2e8f-4695-a7a4-77ae63b808cc\\scratchpad\\compile_stage\\ohlc\\FX_UBSonechart_Sets\\AdvScalp_eurusd_H1_SL18_EURUSD.a_H1_OHLC.htm"
+      "report_path": "C:\\BulkBackTest\\Updated set files\\FX_UBSonechart_Sets\\1mOHLC reports\\AdvScalp_eurusd_H1_SL18_EURUSD.a_H1_OHLC.htm"
     },
     {
       "ea_id": "AdvScalp_eurusd_H1_SL22_EURUSD.a_H1_OHLC",
       "strategy": "AdvScalp_eurusd_H1_SL22",
-      "family": "FX_UBSonechart_Sets",
+      "family": "Advanced Scalper",
       "symbol": "EURUSD.a",
       "timeframe": "H1",
       "force_symbol": "EURUSD.a",
@@ -948,12 +948,12 @@
       "hist_max_win_streak": 74,
       "largest_single_loss": 687.23,
       "dd_vs_target": 0.35,
-      "report_path": "C:\\Users\\pc\\AppData\\Local\\Temp\\claude\\C--BulkBackTest\\42d0231a-2e8f-4695-a7a4-77ae63b808cc\\scratchpad\\compile_stage\\ohlc\\FX_UBSonechart_Sets\\AdvScalp_eurusd_H1_SL22_EURUSD.a_H1_OHLC.htm"
+      "report_path": "C:\\BulkBackTest\\Updated set files\\FX_UBSonechart_Sets\\1mOHLC reports\\AdvScalp_eurusd_H1_SL22_EURUSD.a_H1_OHLC.htm"
     },
     {
       "ea_id": "AdvScalp_gbpusd_H1_GBPUSD.a_H1_OHLC",
       "strategy": "AdvScalp_gbpusd_H1",
-      "family": "FX_UBSonechart_Sets",
+      "family": "Advanced Scalper",
       "symbol": "GBPUSD.a",
       "timeframe": "H1",
       "force_symbol": "GBPUSD.a",
@@ -977,12 +977,12 @@
       "hist_max_win_streak": 79,
       "largest_single_loss": 866.53,
       "dd_vs_target": 0.2,
-      "report_path": "C:\\Users\\pc\\AppData\\Local\\Temp\\claude\\C--BulkBackTest\\42d0231a-2e8f-4695-a7a4-77ae63b808cc\\scratchpad\\compile_stage\\ohlc\\FX_UBSonechart_Sets\\AdvScalp_gbpusd_H1_GBPUSD.a_H1_OHLC.htm"
+      "report_path": "C:\\BulkBackTest\\Updated set files\\FX_UBSonechart_Sets\\1mOHLC reports\\AdvScalp_gbpusd_H1_GBPUSD.a_H1_OHLC.htm"
     },
     {
       "ea_id": "AdvScalp_usdjpy_H1_SL22_USDJPY.a_H1_OHLC",
       "strategy": "AdvScalp_usdjpy_H1_SL22",
-      "family": "FX_UBSonechart_Sets",
+      "family": "Advanced Scalper",
       "symbol": "USDJPY.a",
       "timeframe": "H1",
       "force_symbol": "USDJPY.a",
@@ -1006,12 +1006,12 @@
       "hist_max_win_streak": 52,
       "largest_single_loss": 673.09,
       "dd_vs_target": 0.33,
-      "report_path": "C:\\Users\\pc\\AppData\\Local\\Temp\\claude\\C--BulkBackTest\\42d0231a-2e8f-4695-a7a4-77ae63b808cc\\scratchpad\\compile_stage\\ohlc\\FX_UBSonechart_Sets\\AdvScalp_usdjpy_H1_SL22_USDJPY.a_H1_OHLC.htm"
+      "report_path": "C:\\BulkBackTest\\Updated set files\\FX_UBSonechart_Sets\\1mOHLC reports\\AdvScalp_usdjpy_H1_SL22_USDJPY.a_H1_OHLC.htm"
     },
     {
       "ea_id": "AdvScalp_usdjpy_H1_SL30_USDJPY.a_H1_OHLC",
       "strategy": "AdvScalp_usdjpy_H1_SL30",
-      "family": "FX_UBSonechart_Sets",
+      "family": "Advanced Scalper",
       "symbol": "USDJPY.a",
       "timeframe": "H1",
       "force_symbol": "USDJPY.a",
@@ -1035,12 +1035,12 @@
       "hist_max_win_streak": 48,
       "largest_single_loss": 521.61,
       "dd_vs_target": 0.33,
-      "report_path": "C:\\Users\\pc\\AppData\\Local\\Temp\\claude\\C--BulkBackTest\\42d0231a-2e8f-4695-a7a4-77ae63b808cc\\scratchpad\\compile_stage\\ohlc\\FX_UBSonechart_Sets\\AdvScalp_usdjpy_H1_SL30_USDJPY.a_H1_OHLC.htm"
+      "report_path": "C:\\BulkBackTest\\Updated set files\\FX_UBSonechart_Sets\\1mOHLC reports\\AdvScalp_usdjpy_H1_SL30_USDJPY.a_H1_OHLC.htm"
     },
     {
       "ea_id": "AdvScalp_usdjpy_H4_SL14_USDJPY.a_H4_OHLC",
       "strategy": "AdvScalp_usdjpy_H4_SL14",
-      "family": "FX_UBSonechart_Sets",
+      "family": "Advanced Scalper",
       "symbol": "USDJPY.a",
       "timeframe": "H4",
       "force_symbol": "USDJPY.a",
@@ -1064,12 +1064,12 @@
       "hist_max_win_streak": 14,
       "largest_single_loss": 263.99,
       "dd_vs_target": 0.5,
-      "report_path": "C:\\Users\\pc\\AppData\\Local\\Temp\\claude\\C--BulkBackTest\\42d0231a-2e8f-4695-a7a4-77ae63b808cc\\scratchpad\\compile_stage\\ohlc\\FX_UBSonechart_Sets\\AdvScalp_usdjpy_H4_SL14_USDJPY.a_H4_OHLC.htm"
+      "report_path": "C:\\BulkBackTest\\Updated set files\\FX_UBSonechart_Sets\\1mOHLC reports\\AdvScalp_usdjpy_H4_SL14_USDJPY.a_H4_OHLC.htm"
     },
     {
       "ea_id": "AdvScalp_usdjpy_H4_SL17_USDJPY.a_H4_OHLC",
       "strategy": "AdvScalp_usdjpy_H4_SL17",
-      "family": "FX_UBSonechart_Sets",
+      "family": "Advanced Scalper",
       "symbol": "USDJPY.a",
       "timeframe": "H4",
       "force_symbol": "USDJPY.a",
@@ -1093,12 +1093,12 @@
       "hist_max_win_streak": 14,
       "largest_single_loss": 141.82,
       "dd_vs_target": 0.16,
-      "report_path": "C:\\Users\\pc\\AppData\\Local\\Temp\\claude\\C--BulkBackTest\\42d0231a-2e8f-4695-a7a4-77ae63b808cc\\scratchpad\\compile_stage\\ohlc\\FX_UBSonechart_Sets\\AdvScalp_usdjpy_H4_SL17_USDJPY.a_H4_OHLC.htm"
+      "report_path": "C:\\BulkBackTest\\Updated set files\\FX_UBSonechart_Sets\\1mOHLC reports\\AdvScalp_usdjpy_H4_SL17_USDJPY.a_H4_OHLC.htm"
     },
     {
       "ea_id": "DTP2_eurusd_a_EURUSD.a_Daily_OHLC",
       "strategy": "DTP2_eurusd_a",
-      "family": "FX_UBSonechart_Sets",
+      "family": "Daytrade Pro 2",
       "symbol": "EURUSD.a",
       "timeframe": "Daily",
       "force_symbol": "EURUSD.a",
@@ -1122,12 +1122,12 @@
       "hist_max_win_streak": 12,
       "largest_single_loss": 338.26,
       "dd_vs_target": 1.2,
-      "report_path": "C:\\Users\\pc\\AppData\\Local\\Temp\\claude\\C--BulkBackTest\\42d0231a-2e8f-4695-a7a4-77ae63b808cc\\scratchpad\\compile_stage\\ohlc\\FX_UBSonechart_Sets\\DTP2_eurusd_a_EURUSD.a_Daily_OHLC.htm"
+      "report_path": "C:\\BulkBackTest\\Updated set files\\FX_UBSonechart_Sets\\1mOHLC reports\\DTP2_eurusd_a_EURUSD.a_Daily_OHLC.htm"
     },
     {
       "ea_id": "DTP2_eurusd_b_EURUSD.a_Daily_OHLC",
       "strategy": "DTP2_eurusd_b",
-      "family": "FX_UBSonechart_Sets",
+      "family": "Daytrade Pro 2",
       "symbol": "EURUSD.a",
       "timeframe": "Daily",
       "force_symbol": "EURUSD.a",
@@ -1151,12 +1151,12 @@
       "hist_max_win_streak": 16,
       "largest_single_loss": 1330.43,
       "dd_vs_target": 0.77,
-      "report_path": "C:\\Users\\pc\\AppData\\Local\\Temp\\claude\\C--BulkBackTest\\42d0231a-2e8f-4695-a7a4-77ae63b808cc\\scratchpad\\compile_stage\\ohlc\\FX_UBSonechart_Sets\\DTP2_eurusd_b_EURUSD.a_Daily_OHLC.htm"
+      "report_path": "C:\\BulkBackTest\\Updated set files\\FX_UBSonechart_Sets\\1mOHLC reports\\DTP2_eurusd_b_EURUSD.a_Daily_OHLC.htm"
     },
     {
       "ea_id": "DTP2_eurusd_c_EURUSD.a_Daily_OHLC",
       "strategy": "DTP2_eurusd_c",
-      "family": "FX_UBSonechart_Sets",
+      "family": "Daytrade Pro 2",
       "symbol": "EURUSD.a",
       "timeframe": "Daily",
       "force_symbol": "EURUSD.a",
@@ -1180,12 +1180,12 @@
       "hist_max_win_streak": 19,
       "largest_single_loss": 957.95,
       "dd_vs_target": 0.78,
-      "report_path": "C:\\Users\\pc\\AppData\\Local\\Temp\\claude\\C--BulkBackTest\\42d0231a-2e8f-4695-a7a4-77ae63b808cc\\scratchpad\\compile_stage\\ohlc\\FX_UBSonechart_Sets\\DTP2_eurusd_c_EURUSD.a_Daily_OHLC.htm"
+      "report_path": "C:\\BulkBackTest\\Updated set files\\FX_UBSonechart_Sets\\1mOHLC reports\\DTP2_eurusd_c_EURUSD.a_Daily_OHLC.htm"
     },
     {
       "ea_id": "DTP2_eurusd_d_EURUSD.a_Daily_OHLC",
       "strategy": "DTP2_eurusd_d",
-      "family": "FX_UBSonechart_Sets",
+      "family": "Daytrade Pro 2",
       "symbol": "EURUSD.a",
       "timeframe": "Daily",
       "force_symbol": "EURUSD.a",
@@ -1209,12 +1209,12 @@
       "hist_max_win_streak": 16,
       "largest_single_loss": 1330.43,
       "dd_vs_target": 0.77,
-      "report_path": "C:\\Users\\pc\\AppData\\Local\\Temp\\claude\\C--BulkBackTest\\42d0231a-2e8f-4695-a7a4-77ae63b808cc\\scratchpad\\compile_stage\\ohlc\\FX_UBSonechart_Sets\\DTP2_eurusd_d_EURUSD.a_Daily_OHLC.htm"
+      "report_path": "C:\\BulkBackTest\\Updated set files\\FX_UBSonechart_Sets\\1mOHLC reports\\DTP2_eurusd_d_EURUSD.a_Daily_OHLC.htm"
     },
     {
       "ea_id": "DTP2_gbpusd_a_GBPUSD.a_Daily_OHLC",
       "strategy": "DTP2_gbpusd_a",
-      "family": "FX_UBSonechart_Sets",
+      "family": "Daytrade Pro 2",
       "symbol": "GBPUSD.a",
       "timeframe": "Daily",
       "force_symbol": "GBPUSD.a",
@@ -1238,12 +1238,12 @@
       "hist_max_win_streak": 33,
       "largest_single_loss": 1285.73,
       "dd_vs_target": 0.75,
-      "report_path": "C:\\Users\\pc\\AppData\\Local\\Temp\\claude\\C--BulkBackTest\\42d0231a-2e8f-4695-a7a4-77ae63b808cc\\scratchpad\\compile_stage\\ohlc\\FX_UBSonechart_Sets\\DTP2_gbpusd_a_GBPUSD.a_Daily_OHLC.htm"
+      "report_path": "C:\\BulkBackTest\\Updated set files\\FX_UBSonechart_Sets\\1mOHLC reports\\DTP2_gbpusd_a_GBPUSD.a_Daily_OHLC.htm"
     },
     {
       "ea_id": "DaytradePro_AUDJPY_AUDJPY.a_Daily_OHLC",
       "strategy": "DaytradePro_AUDJPY",
-      "family": "FX_UBSonechart_Sets",
+      "family": "Daytrade Pro",
       "symbol": "AUDJPY.a",
       "timeframe": "Daily",
       "force_symbol": "AUDJPY.a",
@@ -1267,12 +1267,12 @@
       "hist_max_win_streak": 48,
       "largest_single_loss": 858.82,
       "dd_vs_target": 1.07,
-      "report_path": "C:\\Users\\pc\\AppData\\Local\\Temp\\claude\\C--BulkBackTest\\42d0231a-2e8f-4695-a7a4-77ae63b808cc\\scratchpad\\compile_stage\\ohlc\\FX_UBSonechart_Sets\\DaytradePro_AUDJPY_AUDJPY.a_Daily_OHLC.htm"
+      "report_path": "C:\\BulkBackTest\\Updated set files\\FX_UBSonechart_Sets\\1mOHLC reports\\DaytradePro_AUDJPY_AUDJPY.a_Daily_OHLC.htm"
     },
     {
       "ea_id": "DaytradePro_AUDUSD_AUDUSD.a_Daily_OHLC",
       "strategy": "DaytradePro_AUDUSD",
-      "family": "FX_UBSonechart_Sets",
+      "family": "Daytrade Pro",
       "symbol": "AUDUSD.a",
       "timeframe": "Daily",
       "force_symbol": "AUDUSD.a",
@@ -1296,12 +1296,12 @@
       "hist_max_win_streak": 147,
       "largest_single_loss": 1467.77,
       "dd_vs_target": 0.38,
-      "report_path": "C:\\Users\\pc\\AppData\\Local\\Temp\\claude\\C--BulkBackTest\\42d0231a-2e8f-4695-a7a4-77ae63b808cc\\scratchpad\\compile_stage\\ohlc\\FX_UBSonechart_Sets\\DaytradePro_AUDUSD_AUDUSD.a_Daily_OHLC.htm"
+      "report_path": "C:\\BulkBackTest\\Updated set files\\FX_UBSonechart_Sets\\1mOHLC reports\\DaytradePro_AUDUSD_AUDUSD.a_Daily_OHLC.htm"
     },
     {
       "ea_id": "DaytradePro_CHFJPY_CHFJPY.a_Daily_OHLC",
       "strategy": "DaytradePro_CHFJPY",
-      "family": "FX_UBSonechart_Sets",
+      "family": "Daytrade Pro",
       "symbol": "CHFJPY.a",
       "timeframe": "Daily",
       "force_symbol": "CHFJPY.a",
@@ -1325,12 +1325,12 @@
       "hist_max_win_streak": 58,
       "largest_single_loss": 675.37,
       "dd_vs_target": 1.04,
-      "report_path": "C:\\Users\\pc\\AppData\\Local\\Temp\\claude\\C--BulkBackTest\\42d0231a-2e8f-4695-a7a4-77ae63b808cc\\scratchpad\\compile_stage\\ohlc\\FX_UBSonechart_Sets\\DaytradePro_CHFJPY_CHFJPY.a_Daily_OHLC.htm"
+      "report_path": "C:\\BulkBackTest\\Updated set files\\FX_UBSonechart_Sets\\1mOHLC reports\\DaytradePro_CHFJPY_CHFJPY.a_Daily_OHLC.htm"
     },
     {
       "ea_id": "DaytradePro_EURAUD_EURAUD.a_Daily_OHLC",
       "strategy": "DaytradePro_EURAUD",
-      "family": "FX_UBSonechart_Sets",
+      "family": "Daytrade Pro",
       "symbol": "EURAUD.a",
       "timeframe": "Daily",
       "force_symbol": "EURAUD.a",
@@ -1354,12 +1354,12 @@
       "hist_max_win_streak": 6,
       "largest_single_loss": 1185.29,
       "dd_vs_target": 0.23,
-      "report_path": "C:\\Users\\pc\\AppData\\Local\\Temp\\claude\\C--BulkBackTest\\42d0231a-2e8f-4695-a7a4-77ae63b808cc\\scratchpad\\compile_stage\\ohlc\\FX_UBSonechart_Sets\\DaytradePro_EURAUD_EURAUD.a_Daily_OHLC.htm"
+      "report_path": "C:\\BulkBackTest\\Updated set files\\FX_UBSonechart_Sets\\1mOHLC reports\\DaytradePro_EURAUD_EURAUD.a_Daily_OHLC.htm"
     },
     {
       "ea_id": "DaytradePro_EURJPY_EURJPY.a_Daily_OHLC",
       "strategy": "DaytradePro_EURJPY",
-      "family": "FX_UBSonechart_Sets",
+      "family": "Daytrade Pro",
       "symbol": "EURJPY.a",
       "timeframe": "Daily",
       "force_symbol": "EURJPY.a",
@@ -1383,12 +1383,12 @@
       "hist_max_win_streak": 5,
       "largest_single_loss": 485.13,
       "dd_vs_target": 0.84,
-      "report_path": "C:\\Users\\pc\\AppData\\Local\\Temp\\claude\\C--BulkBackTest\\42d0231a-2e8f-4695-a7a4-77ae63b808cc\\scratchpad\\compile_stage\\ohlc\\FX_UBSonechart_Sets\\DaytradePro_EURJPY_EURJPY.a_Daily_OHLC.htm"
+      "report_path": "C:\\BulkBackTest\\Updated set files\\FX_UBSonechart_Sets\\1mOHLC reports\\DaytradePro_EURJPY_EURJPY.a_Daily_OHLC.htm"
     },
     {
       "ea_id": "DaytradePro_EURNZD_EURNZD.a_Daily_OHLC",
       "strategy": "DaytradePro_EURNZD",
-      "family": "FX_UBSonechart_Sets",
+      "family": "Daytrade Pro",
       "symbol": "EURNZD.a",
       "timeframe": "Daily",
       "force_symbol": "EURNZD.a",
@@ -1412,12 +1412,12 @@
       "hist_max_win_streak": 155,
       "largest_single_loss": 1059.57,
       "dd_vs_target": 1.13,
-      "report_path": "C:\\Users\\pc\\AppData\\Local\\Temp\\claude\\C--BulkBackTest\\42d0231a-2e8f-4695-a7a4-77ae63b808cc\\scratchpad\\compile_stage\\ohlc\\FX_UBSonechart_Sets\\DaytradePro_EURNZD_EURNZD.a_Daily_OHLC.htm"
+      "report_path": "C:\\BulkBackTest\\Updated set files\\FX_UBSonechart_Sets\\1mOHLC reports\\DaytradePro_EURNZD_EURNZD.a_Daily_OHLC.htm"
     },
     {
       "ea_id": "DaytradePro_EURUSD_EURUSD.a_Daily_OHLC",
       "strategy": "DaytradePro_EURUSD",
-      "family": "FX_UBSonechart_Sets",
+      "family": "Daytrade Pro",
       "symbol": "EURUSD.a",
       "timeframe": "Daily",
       "force_symbol": "EURUSD.a",
@@ -1441,12 +1441,12 @@
       "hist_max_win_streak": 72,
       "largest_single_loss": 1056.17,
       "dd_vs_target": 0.21,
-      "report_path": "C:\\Users\\pc\\AppData\\Local\\Temp\\claude\\C--BulkBackTest\\42d0231a-2e8f-4695-a7a4-77ae63b808cc\\scratchpad\\compile_stage\\ohlc\\FX_UBSonechart_Sets\\DaytradePro_EURUSD_EURUSD.a_Daily_OHLC.htm"
+      "report_path": "C:\\BulkBackTest\\Updated set files\\FX_UBSonechart_Sets\\1mOHLC reports\\DaytradePro_EURUSD_EURUSD.a_Daily_OHLC.htm"
     },
     {
       "ea_id": "DaytradePro_GBPJPY_GBPJPY.a_Daily_OHLC",
       "strategy": "DaytradePro_GBPJPY",
-      "family": "FX_UBSonechart_Sets",
+      "family": "Daytrade Pro",
       "symbol": "GBPJPY.a",
       "timeframe": "Daily",
       "force_symbol": "GBPJPY.a",
@@ -1470,12 +1470,12 @@
       "hist_max_win_streak": 10,
       "largest_single_loss": 904.66,
       "dd_vs_target": 1.12,
-      "report_path": "C:\\Users\\pc\\AppData\\Local\\Temp\\claude\\C--BulkBackTest\\42d0231a-2e8f-4695-a7a4-77ae63b808cc\\scratchpad\\compile_stage\\ohlc\\FX_UBSonechart_Sets\\DaytradePro_GBPJPY_GBPJPY.a_Daily_OHLC.htm"
+      "report_path": "C:\\BulkBackTest\\Updated set files\\FX_UBSonechart_Sets\\1mOHLC reports\\DaytradePro_GBPJPY_GBPJPY.a_Daily_OHLC.htm"
     },
     {
       "ea_id": "DaytradePro_GBPUSD_GBPUSD.a_Daily_OHLC",
       "strategy": "DaytradePro_GBPUSD",
-      "family": "FX_UBSonechart_Sets",
+      "family": "Daytrade Pro",
       "symbol": "GBPUSD.a",
       "timeframe": "Daily",
       "force_symbol": "GBPUSD.a",
@@ -1499,12 +1499,12 @@
       "hist_max_win_streak": 11,
       "largest_single_loss": 603.76,
       "dd_vs_target": 0.77,
-      "report_path": "C:\\Users\\pc\\AppData\\Local\\Temp\\claude\\C--BulkBackTest\\42d0231a-2e8f-4695-a7a4-77ae63b808cc\\scratchpad\\compile_stage\\ohlc\\FX_UBSonechart_Sets\\DaytradePro_GBPUSD_GBPUSD.a_Daily_OHLC.htm"
+      "report_path": "C:\\BulkBackTest\\Updated set files\\FX_UBSonechart_Sets\\1mOHLC reports\\DaytradePro_GBPUSD_GBPUSD.a_Daily_OHLC.htm"
     },
     {
       "ea_id": "DaytradePro_NZDUSD_NZDUSD.a_Daily_OHLC",
       "strategy": "DaytradePro_NZDUSD",
-      "family": "FX_UBSonechart_Sets",
+      "family": "Daytrade Pro",
       "symbol": "NZDUSD.a",
       "timeframe": "Daily",
       "force_symbol": "NZDUSD.a",
@@ -1528,12 +1528,12 @@
       "hist_max_win_streak": 63,
       "largest_single_loss": 2707.67,
       "dd_vs_target": 0.5,
-      "report_path": "C:\\Users\\pc\\AppData\\Local\\Temp\\claude\\C--BulkBackTest\\42d0231a-2e8f-4695-a7a4-77ae63b808cc\\scratchpad\\compile_stage\\ohlc\\FX_UBSonechart_Sets\\DaytradePro_NZDUSD_NZDUSD.a_Daily_OHLC.htm"
+      "report_path": "C:\\BulkBackTest\\Updated set files\\FX_UBSonechart_Sets\\1mOHLC reports\\DaytradePro_NZDUSD_NZDUSD.a_Daily_OHLC.htm"
     },
     {
       "ea_id": "DaytradePro_USDCAD_USDCAD.a_Daily_OHLC",
       "strategy": "DaytradePro_USDCAD",
-      "family": "FX_UBSonechart_Sets",
+      "family": "Daytrade Pro",
       "symbol": "USDCAD.a",
       "timeframe": "Daily",
       "force_symbol": "USDCAD.a",
@@ -1557,12 +1557,12 @@
       "hist_max_win_streak": 31,
       "largest_single_loss": 936.46,
       "dd_vs_target": 1.22,
-      "report_path": "C:\\Users\\pc\\AppData\\Local\\Temp\\claude\\C--BulkBackTest\\42d0231a-2e8f-4695-a7a4-77ae63b808cc\\scratchpad\\compile_stage\\ohlc\\FX_UBSonechart_Sets\\DaytradePro_USDCAD_USDCAD.a_Daily_OHLC.htm"
+      "report_path": "C:\\BulkBackTest\\Updated set files\\FX_UBSonechart_Sets\\1mOHLC reports\\DaytradePro_USDCAD_USDCAD.a_Daily_OHLC.htm"
     },
     {
       "ea_id": "DaytradePro_USDJPY_USDJPY.a_Daily_OHLC",
       "strategy": "DaytradePro_USDJPY",
-      "family": "FX_UBSonechart_Sets",
+      "family": "Daytrade Pro",
       "symbol": "USDJPY.a",
       "timeframe": "Daily",
       "force_symbol": "USDJPY.a",
@@ -1586,12 +1586,12 @@
       "hist_max_win_streak": 21,
       "largest_single_loss": 546.17,
       "dd_vs_target": 0.52,
-      "report_path": "C:\\Users\\pc\\AppData\\Local\\Temp\\claude\\C--BulkBackTest\\42d0231a-2e8f-4695-a7a4-77ae63b808cc\\scratchpad\\compile_stage\\ohlc\\FX_UBSonechart_Sets\\DaytradePro_USDJPY_USDJPY.a_Daily_OHLC.htm"
+      "report_path": "C:\\BulkBackTest\\Updated set files\\FX_UBSonechart_Sets\\1mOHLC reports\\DaytradePro_USDJPY_USDJPY.a_Daily_OHLC.htm"
     },
     {
       "ea_id": "DaytradePro_XAUUSD_XAUUSD.a_Daily_OHLC",
       "strategy": "DaytradePro_XAUUSD",
-      "family": "FX_UBSonechart_Sets",
+      "family": "Daytrade Pro",
       "symbol": "XAUUSD.a",
       "timeframe": "Daily",
       "force_symbol": "XAUUSD.a",
@@ -1615,12 +1615,12 @@
       "hist_max_win_streak": 13,
       "largest_single_loss": 375.03,
       "dd_vs_target": 0.27,
-      "report_path": "C:\\Users\\pc\\AppData\\Local\\Temp\\claude\\C--BulkBackTest\\42d0231a-2e8f-4695-a7a4-77ae63b808cc\\scratchpad\\compile_stage\\ohlc\\FX_UBSonechart_Sets\\DaytradePro_XAUUSD_XAUUSD.a_Daily_OHLC.htm"
+      "report_path": "C:\\BulkBackTest\\Updated set files\\FX_UBSonechart_Sets\\1mOHLC reports\\DaytradePro_XAUUSD_XAUUSD.a_Daily_OHLC.htm"
     },
     {
       "ea_id": "VolatilityBreakout_EURUSD_e_EURUSD.a_M15_OHLC",
       "strategy": "VolatilityBreakout_EURUSD_e",
-      "family": "FX_UBSonechart_Sets",
+      "family": "Volatility Breakout EURUSD",
       "symbol": "EURUSD.a",
       "timeframe": "M15",
       "force_symbol": "EURUSD.a",
@@ -1644,12 +1644,12 @@
       "hist_max_win_streak": 11,
       "largest_single_loss": 776.25,
       "dd_vs_target": 0.71,
-      "report_path": "C:\\Users\\pc\\AppData\\Local\\Temp\\claude\\C--BulkBackTest\\42d0231a-2e8f-4695-a7a4-77ae63b808cc\\scratchpad\\compile_stage\\ohlc\\FX_UBSonechart_Sets\\VolatilityBreakout_EURUSD_e_EURUSD.a_M15_OHLC.htm"
+      "report_path": "C:\\BulkBackTest\\Updated set files\\FX_UBSonechart_Sets\\1mOHLC reports\\VolatilityBreakout_EURUSD_e_EURUSD.a_M15_OHLC.htm"
     },
     {
       "ea_id": "VolatilityBreakout_EURUSD_f_EURUSD.a_M15_OHLC",
       "strategy": "VolatilityBreakout_EURUSD_f",
-      "family": "FX_UBSonechart_Sets",
+      "family": "Volatility Breakout EURUSD",
       "symbol": "EURUSD.a",
       "timeframe": "M15",
       "force_symbol": "EURUSD.a",
@@ -1673,12 +1673,12 @@
       "hist_max_win_streak": 9,
       "largest_single_loss": 820.24,
       "dd_vs_target": 0.85,
-      "report_path": "C:\\Users\\pc\\AppData\\Local\\Temp\\claude\\C--BulkBackTest\\42d0231a-2e8f-4695-a7a4-77ae63b808cc\\scratchpad\\compile_stage\\ohlc\\FX_UBSonechart_Sets\\VolatilityBreakout_EURUSD_f_EURUSD.a_M15_OHLC.htm"
+      "report_path": "C:\\BulkBackTest\\Updated set files\\FX_UBSonechart_Sets\\1mOHLC reports\\VolatilityBreakout_EURUSD_f_EURUSD.a_M15_OHLC.htm"
     },
     {
       "ea_id": "VolatilityBreakout_EURUSD_i_EURUSD.a_M15_OHLC",
       "strategy": "VolatilityBreakout_EURUSD_i",
-      "family": "FX_UBSonechart_Sets",
+      "family": "Volatility Breakout EURUSD",
       "symbol": "EURUSD.a",
       "timeframe": "M15",
       "force_symbol": "EURUSD.a",
@@ -1702,12 +1702,12 @@
       "hist_max_win_streak": 6,
       "largest_single_loss": 542.14,
       "dd_vs_target": 0.76,
-      "report_path": "C:\\Users\\pc\\AppData\\Local\\Temp\\claude\\C--BulkBackTest\\42d0231a-2e8f-4695-a7a4-77ae63b808cc\\scratchpad\\compile_stage\\ohlc\\FX_UBSonechart_Sets\\VolatilityBreakout_EURUSD_i_EURUSD.a_M15_OHLC.htm"
+      "report_path": "C:\\BulkBackTest\\Updated set files\\FX_UBSonechart_Sets\\1mOHLC reports\\VolatilityBreakout_EURUSD_i_EURUSD.a_M15_OHLC.htm"
     },
     {
       "ea_id": "VolatilityBreakout_EURUSD_k_EURUSD.a_M15_OHLC",
       "strategy": "VolatilityBreakout_EURUSD_k",
-      "family": "FX_UBSonechart_Sets",
+      "family": "Volatility Breakout EURUSD",
       "symbol": "EURUSD.a",
       "timeframe": "M15",
       "force_symbol": "EURUSD.a",
@@ -1731,12 +1731,12 @@
       "hist_max_win_streak": 7,
       "largest_single_loss": 1353.38,
       "dd_vs_target": 0.97,
-      "report_path": "C:\\Users\\pc\\AppData\\Local\\Temp\\claude\\C--BulkBackTest\\42d0231a-2e8f-4695-a7a4-77ae63b808cc\\scratchpad\\compile_stage\\ohlc\\FX_UBSonechart_Sets\\VolatilityBreakout_EURUSD_k_EURUSD.a_M15_OHLC.htm"
+      "report_path": "C:\\BulkBackTest\\Updated set files\\FX_UBSonechart_Sets\\1mOHLC reports\\VolatilityBreakout_EURUSD_k_EURUSD.a_M15_OHLC.htm"
     },
     {
       "ea_id": "VolatilityBreakout_EURUSD_l_EURUSD.a_M15_OHLC",
       "strategy": "VolatilityBreakout_EURUSD_l",
-      "family": "FX_UBSonechart_Sets",
+      "family": "Volatility Breakout EURUSD",
       "symbol": "EURUSD.a",
       "timeframe": "M15",
       "force_symbol": "EURUSD.a",
@@ -1760,12 +1760,12 @@
       "hist_max_win_streak": 13,
       "largest_single_loss": 591.39,
       "dd_vs_target": 0.32,
-      "report_path": "C:\\Users\\pc\\AppData\\Local\\Temp\\claude\\C--BulkBackTest\\42d0231a-2e8f-4695-a7a4-77ae63b808cc\\scratchpad\\compile_stage\\ohlc\\FX_UBSonechart_Sets\\VolatilityBreakout_EURUSD_l_EURUSD.a_M15_OHLC.htm"
+      "report_path": "C:\\BulkBackTest\\Updated set files\\FX_UBSonechart_Sets\\1mOHLC reports\\VolatilityBreakout_EURUSD_l_EURUSD.a_M15_OHLC.htm"
     },
     {
       "ea_id": "VolatilityBreakout_EURUSD_m_EURUSD.a_M15_OHLC",
       "strategy": "VolatilityBreakout_EURUSD_m",
-      "family": "FX_UBSonechart_Sets",
+      "family": "Volatility Breakout EURUSD",
       "symbol": "EURUSD.a",
       "timeframe": "M15",
       "force_symbol": "EURUSD.a",
@@ -1789,12 +1789,12 @@
       "hist_max_win_streak": 7,
       "largest_single_loss": 1654.49,
       "dd_vs_target": 0.84,
-      "report_path": "C:\\Users\\pc\\AppData\\Local\\Temp\\claude\\C--BulkBackTest\\42d0231a-2e8f-4695-a7a4-77ae63b808cc\\scratchpad\\compile_stage\\ohlc\\FX_UBSonechart_Sets\\VolatilityBreakout_EURUSD_m_EURUSD.a_M15_OHLC.htm"
+      "report_path": "C:\\BulkBackTest\\Updated set files\\FX_UBSonechart_Sets\\1mOHLC reports\\VolatilityBreakout_EURUSD_m_EURUSD.a_M15_OHLC.htm"
     },
     {
       "ea_id": "VolatilityBreakout_EURUSD_o_EURUSD.a_M15_OHLC",
       "strategy": "VolatilityBreakout_EURUSD_o",
-      "family": "FX_UBSonechart_Sets",
+      "family": "Volatility Breakout EURUSD",
       "symbol": "EURUSD.a",
       "timeframe": "M15",
       "force_symbol": "EURUSD.a",
@@ -1818,12 +1818,12 @@
       "hist_max_win_streak": 13,
       "largest_single_loss": 788.52,
       "dd_vs_target": 1.1,
-      "report_path": "C:\\Users\\pc\\AppData\\Local\\Temp\\claude\\C--BulkBackTest\\42d0231a-2e8f-4695-a7a4-77ae63b808cc\\scratchpad\\compile_stage\\ohlc\\FX_UBSonechart_Sets\\VolatilityBreakout_EURUSD_o_EURUSD.a_M15_OHLC.htm"
+      "report_path": "C:\\BulkBackTest\\Updated set files\\FX_UBSonechart_Sets\\1mOHLC reports\\VolatilityBreakout_EURUSD_o_EURUSD.a_M15_OHLC.htm"
     },
     {
       "ea_id": "GOLDTRADEPROH4_b_XAUUSD.a_H4_OHLC",
       "strategy": "GOLDTRADEPROH4_b",
-      "family": "Gold_UBSonechart_Sets",
+      "family": "Gold Trade Pro",
       "symbol": "XAUUSD.a",
       "timeframe": "H4",
       "force_symbol": "XAUUSD.a",
@@ -1847,12 +1847,12 @@
       "hist_max_win_streak": 6,
       "largest_single_loss": 909.16,
       "dd_vs_target": 0.59,
-      "report_path": "C:\\Users\\pc\\AppData\\Local\\Temp\\claude\\C--BulkBackTest\\42d0231a-2e8f-4695-a7a4-77ae63b808cc\\scratchpad\\compile_stage\\ohlc\\Gold_UBSonechart_Sets\\GOLDTRADEPROH4_b_XAUUSD.a_H4_OHLC.htm"
+      "report_path": "C:\\BulkBackTest\\Updated set files\\Gold_UBSonechart_Sets\\1mOHLC reports\\GOLDTRADEPROH4_b_XAUUSD.a_H4_OHLC.htm"
     },
     {
       "ea_id": "GOLDTRADEPRO_E_XAUUSD.a_Daily_OHLC",
       "strategy": "GOLDTRADEPRO_E",
-      "family": "Gold_UBSonechart_Sets",
+      "family": "Gold Trade Pro",
       "symbol": "XAUUSD.a",
       "timeframe": "Daily",
       "force_symbol": "XAUUSD.a",
@@ -1876,12 +1876,12 @@
       "hist_max_win_streak": 9,
       "largest_single_loss": 843.79,
       "dd_vs_target": 0.7,
-      "report_path": "C:\\Users\\pc\\AppData\\Local\\Temp\\claude\\C--BulkBackTest\\42d0231a-2e8f-4695-a7a4-77ae63b808cc\\scratchpad\\compile_stage\\ohlc\\Gold_UBSonechart_Sets\\GOLDTRADEPRO_E_XAUUSD.a_Daily_OHLC.htm"
+      "report_path": "C:\\BulkBackTest\\Updated set files\\Gold_UBSonechart_Sets\\1mOHLC reports\\GOLDTRADEPRO_E_XAUUSD.a_Daily_OHLC.htm"
     },
     {
       "ea_id": "GOLDTRADEPRO_F_XAUUSD.a_Daily_OHLC",
       "strategy": "GOLDTRADEPRO_F",
-      "family": "Gold_UBSonechart_Sets",
+      "family": "Gold Trade Pro",
       "symbol": "XAUUSD.a",
       "timeframe": "Daily",
       "force_symbol": "XAUUSD.a",
@@ -1905,12 +1905,12 @@
       "hist_max_win_streak": 10,
       "largest_single_loss": 912.76,
       "dd_vs_target": 0.38,
-      "report_path": "C:\\Users\\pc\\AppData\\Local\\Temp\\claude\\C--BulkBackTest\\42d0231a-2e8f-4695-a7a4-77ae63b808cc\\scratchpad\\compile_stage\\ohlc\\Gold_UBSonechart_Sets\\GOLDTRADEPRO_F_XAUUSD.a_Daily_OHLC.htm"
+      "report_path": "C:\\BulkBackTest\\Updated set files\\Gold_UBSonechart_Sets\\1mOHLC reports\\GOLDTRADEPRO_F_XAUUSD.a_Daily_OHLC.htm"
     },
     {
       "ea_id": "GOLDTRADEPRO_G_XAUUSD.a_Daily_OHLC",
       "strategy": "GOLDTRADEPRO_G",
-      "family": "Gold_UBSonechart_Sets",
+      "family": "Gold Trade Pro",
       "symbol": "XAUUSD.a",
       "timeframe": "Daily",
       "force_symbol": "XAUUSD.a",
@@ -1934,12 +1934,12 @@
       "hist_max_win_streak": 8,
       "largest_single_loss": 1585.65,
       "dd_vs_target": 0.82,
-      "report_path": "C:\\Users\\pc\\AppData\\Local\\Temp\\claude\\C--BulkBackTest\\42d0231a-2e8f-4695-a7a4-77ae63b808cc\\scratchpad\\compile_stage\\ohlc\\Gold_UBSonechart_Sets\\GOLDTRADEPRO_G_XAUUSD.a_Daily_OHLC.htm"
+      "report_path": "C:\\BulkBackTest\\Updated set files\\Gold_UBSonechart_Sets\\1mOHLC reports\\GOLDTRADEPRO_G_XAUUSD.a_Daily_OHLC.htm"
     },
     {
       "ea_id": "GOLDTRADEPRO_H_XAUUSD.a_Daily_OHLC",
       "strategy": "GOLDTRADEPRO_H",
-      "family": "Gold_UBSonechart_Sets",
+      "family": "Gold Trade Pro",
       "symbol": "XAUUSD.a",
       "timeframe": "Daily",
       "force_symbol": "XAUUSD.a",
@@ -1963,12 +1963,12 @@
       "hist_max_win_streak": 7,
       "largest_single_loss": 639.92,
       "dd_vs_target": 0.63,
-      "report_path": "C:\\Users\\pc\\AppData\\Local\\Temp\\claude\\C--BulkBackTest\\42d0231a-2e8f-4695-a7a4-77ae63b808cc\\scratchpad\\compile_stage\\ohlc\\Gold_UBSonechart_Sets\\GOLDTRADEPRO_H_XAUUSD.a_Daily_OHLC.htm"
+      "report_path": "C:\\BulkBackTest\\Updated set files\\Gold_UBSonechart_Sets\\1mOHLC reports\\GOLDTRADEPRO_H_XAUUSD.a_Daily_OHLC.htm"
     },
     {
       "ea_id": "GOLDTRADEPRO_a_XAUUSD.a_Daily_OHLC",
       "strategy": "GOLDTRADEPRO_a",
-      "family": "Gold_UBSonechart_Sets",
+      "family": "Gold Trade Pro",
       "symbol": "XAUUSD.a",
       "timeframe": "Daily",
       "force_symbol": "XAUUSD.a",
@@ -1992,12 +1992,12 @@
       "hist_max_win_streak": 10,
       "largest_single_loss": 1324.73,
       "dd_vs_target": 0.63,
-      "report_path": "C:\\Users\\pc\\AppData\\Local\\Temp\\claude\\C--BulkBackTest\\42d0231a-2e8f-4695-a7a4-77ae63b808cc\\scratchpad\\compile_stage\\ohlc\\Gold_UBSonechart_Sets\\GOLDTRADEPRO_a_XAUUSD.a_Daily_OHLC.htm"
+      "report_path": "C:\\BulkBackTest\\Updated set files\\Gold_UBSonechart_Sets\\1mOHLC reports\\GOLDTRADEPRO_a_XAUUSD.a_Daily_OHLC.htm"
     },
     {
       "ea_id": "GOLDTRADEPRO_c_XAUUSD.a_Daily_OHLC",
       "strategy": "GOLDTRADEPRO_c",
-      "family": "Gold_UBSonechart_Sets",
+      "family": "Gold Trade Pro",
       "symbol": "XAUUSD.a",
       "timeframe": "Daily",
       "force_symbol": "XAUUSD.a",
@@ -2021,12 +2021,12 @@
       "hist_max_win_streak": 25,
       "largest_single_loss": 2066.68,
       "dd_vs_target": 0.94,
-      "report_path": "C:\\Users\\pc\\AppData\\Local\\Temp\\claude\\C--BulkBackTest\\42d0231a-2e8f-4695-a7a4-77ae63b808cc\\scratchpad\\compile_stage\\ohlc\\Gold_UBSonechart_Sets\\GOLDTRADEPRO_c_XAUUSD.a_Daily_OHLC.htm"
+      "report_path": "C:\\BulkBackTest\\Updated set files\\Gold_UBSonechart_Sets\\1mOHLC reports\\GOLDTRADEPRO_c_XAUUSD.a_Daily_OHLC.htm"
     },
     {
       "ea_id": "GOLDTRADEPRO_d_XAUUSD.a_Daily_OHLC",
       "strategy": "GOLDTRADEPRO_d",
-      "family": "Gold_UBSonechart_Sets",
+      "family": "Gold Trade Pro",
       "symbol": "XAUUSD.a",
       "timeframe": "Daily",
       "force_symbol": "XAUUSD.a",
@@ -2050,12 +2050,12 @@
       "hist_max_win_streak": 9,
       "largest_single_loss": 721.39,
       "dd_vs_target": 0.58,
-      "report_path": "C:\\Users\\pc\\AppData\\Local\\Temp\\claude\\C--BulkBackTest\\42d0231a-2e8f-4695-a7a4-77ae63b808cc\\scratchpad\\compile_stage\\ohlc\\Gold_UBSonechart_Sets\\GOLDTRADEPRO_d_XAUUSD.a_Daily_OHLC.htm"
+      "report_path": "C:\\BulkBackTest\\Updated set files\\Gold_UBSonechart_Sets\\1mOHLC reports\\GOLDTRADEPRO_d_XAUUSD.a_Daily_OHLC.htm"
     },
     {
       "ea_id": "GoldBotOne_dailyA_XAUUSD.a_Daily_OHLC",
       "strategy": "GoldBotOne_dailyA",
-      "family": "Gold_UBSonechart_Sets",
+      "family": "Goldbot One",
       "symbol": "XAUUSD.a",
       "timeframe": "Daily",
       "force_symbol": "XAUUSD.a",
@@ -2079,12 +2079,12 @@
       "hist_max_win_streak": 7,
       "largest_single_loss": 1324.81,
       "dd_vs_target": 0.87,
-      "report_path": "C:\\Users\\pc\\AppData\\Local\\Temp\\claude\\C--BulkBackTest\\42d0231a-2e8f-4695-a7a4-77ae63b808cc\\scratchpad\\compile_stage\\ohlc\\Gold_UBSonechart_Sets\\GoldBotOne_dailyA_XAUUSD.a_Daily_OHLC.htm"
+      "report_path": "C:\\BulkBackTest\\Updated set files\\Gold_UBSonechart_Sets\\1mOHLC reports\\GoldBotOne_dailyA_XAUUSD.a_Daily_OHLC.htm"
     },
     {
       "ea_id": "GoldBotOne_dailyB_XAUUSD.a_Daily_OHLC",
       "strategy": "GoldBotOne_dailyB",
-      "family": "Gold_UBSonechart_Sets",
+      "family": "Goldbot One",
       "symbol": "XAUUSD.a",
       "timeframe": "Daily",
       "force_symbol": "XAUUSD.a",
@@ -2108,12 +2108,12 @@
       "hist_max_win_streak": 12,
       "largest_single_loss": 1536.91,
       "dd_vs_target": 0.63,
-      "report_path": "C:\\Users\\pc\\AppData\\Local\\Temp\\claude\\C--BulkBackTest\\42d0231a-2e8f-4695-a7a4-77ae63b808cc\\scratchpad\\compile_stage\\ohlc\\Gold_UBSonechart_Sets\\GoldBotOne_dailyB_XAUUSD.a_Daily_OHLC.htm"
+      "report_path": "C:\\BulkBackTest\\Updated set files\\Gold_UBSonechart_Sets\\1mOHLC reports\\GoldBotOne_dailyB_XAUUSD.a_Daily_OHLC.htm"
     },
     {
       "ea_id": "GoldBotOne_dailyC_XAUUSD.a_Daily_OHLC",
       "strategy": "GoldBotOne_dailyC",
-      "family": "Gold_UBSonechart_Sets",
+      "family": "Goldbot One",
       "symbol": "XAUUSD.a",
       "timeframe": "Daily",
       "force_symbol": "XAUUSD.a",
@@ -2137,12 +2137,12 @@
       "hist_max_win_streak": 7,
       "largest_single_loss": 187.09,
       "dd_vs_target": 0.14,
-      "report_path": "C:\\Users\\pc\\AppData\\Local\\Temp\\claude\\C--BulkBackTest\\42d0231a-2e8f-4695-a7a4-77ae63b808cc\\scratchpad\\compile_stage\\ohlc\\Gold_UBSonechart_Sets\\GoldBotOne_dailyC_XAUUSD.a_Daily_OHLC.htm"
+      "report_path": "C:\\BulkBackTest\\Updated set files\\Gold_UBSonechart_Sets\\1mOHLC reports\\GoldBotOne_dailyC_XAUUSD.a_Daily_OHLC.htm"
     },
     {
       "ea_id": "GoldBotOne_dailyD_XAUUSD.a_Daily_OHLC",
       "strategy": "GoldBotOne_dailyD",
-      "family": "Gold_UBSonechart_Sets",
+      "family": "Goldbot One",
       "symbol": "XAUUSD.a",
       "timeframe": "Daily",
       "force_symbol": "XAUUSD.a",
@@ -2166,12 +2166,12 @@
       "hist_max_win_streak": 8,
       "largest_single_loss": 2757.93,
       "dd_vs_target": 0.85,
-      "report_path": "C:\\Users\\pc\\AppData\\Local\\Temp\\claude\\C--BulkBackTest\\42d0231a-2e8f-4695-a7a4-77ae63b808cc\\scratchpad\\compile_stage\\ohlc\\Gold_UBSonechart_Sets\\GoldBotOne_dailyD_XAUUSD.a_Daily_OHLC.htm"
+      "report_path": "C:\\BulkBackTest\\Updated set files\\Gold_UBSonechart_Sets\\1mOHLC reports\\GoldBotOne_dailyD_XAUUSD.a_Daily_OHLC.htm"
     },
     {
       "ea_id": "GoldBotOne_dailyE_XAUUSD.a_Daily_OHLC",
       "strategy": "GoldBotOne_dailyE",
-      "family": "Gold_UBSonechart_Sets",
+      "family": "Goldbot One",
       "symbol": "XAUUSD.a",
       "timeframe": "Daily",
       "force_symbol": "XAUUSD.a",
@@ -2195,12 +2195,12 @@
       "hist_max_win_streak": 3,
       "largest_single_loss": 1607.47,
       "dd_vs_target": 1.05,
-      "report_path": "C:\\Users\\pc\\AppData\\Local\\Temp\\claude\\C--BulkBackTest\\42d0231a-2e8f-4695-a7a4-77ae63b808cc\\scratchpad\\compile_stage\\ohlc\\Gold_UBSonechart_Sets\\GoldBotOne_dailyE_XAUUSD.a_Daily_OHLC.htm"
+      "report_path": "C:\\BulkBackTest\\Updated set files\\Gold_UBSonechart_Sets\\1mOHLC reports\\GoldBotOne_dailyE_XAUUSD.a_Daily_OHLC.htm"
     },
     {
       "ea_id": "GoldBotOne_dailyH_XAUUSD.a_Daily_OHLC",
       "strategy": "GoldBotOne_dailyH",
-      "family": "Gold_UBSonechart_Sets",
+      "family": "Goldbot One",
       "symbol": "XAUUSD.a",
       "timeframe": "Daily",
       "force_symbol": "XAUUSD.a",
@@ -2224,12 +2224,12 @@
       "hist_max_win_streak": 10,
       "largest_single_loss": 879.86,
       "dd_vs_target": 0.55,
-      "report_path": "C:\\Users\\pc\\AppData\\Local\\Temp\\claude\\C--BulkBackTest\\42d0231a-2e8f-4695-a7a4-77ae63b808cc\\scratchpad\\compile_stage\\ohlc\\Gold_UBSonechart_Sets\\GoldBotOne_dailyH_XAUUSD.a_Daily_OHLC.htm"
+      "report_path": "C:\\BulkBackTest\\Updated set files\\Gold_UBSonechart_Sets\\1mOHLC reports\\GoldBotOne_dailyH_XAUUSD.a_Daily_OHLC.htm"
     },
     {
       "ea_id": "GoldBotOne_dailyI_XAUUSD.a_Daily_OHLC",
       "strategy": "GoldBotOne_dailyI",
-      "family": "Gold_UBSonechart_Sets",
+      "family": "Goldbot One",
       "symbol": "XAUUSD.a",
       "timeframe": "Daily",
       "force_symbol": "XAUUSD.a",
@@ -2253,12 +2253,12 @@
       "hist_max_win_streak": 10,
       "largest_single_loss": 560.21,
       "dd_vs_target": 0.61,
-      "report_path": "C:\\Users\\pc\\AppData\\Local\\Temp\\claude\\C--BulkBackTest\\42d0231a-2e8f-4695-a7a4-77ae63b808cc\\scratchpad\\compile_stage\\ohlc\\Gold_UBSonechart_Sets\\GoldBotOne_dailyI_XAUUSD.a_Daily_OHLC.htm"
+      "report_path": "C:\\BulkBackTest\\Updated set files\\Gold_UBSonechart_Sets\\1mOHLC reports\\GoldBotOne_dailyI_XAUUSD.a_Daily_OHLC.htm"
     },
     {
       "ea_id": "GoldBotOne_dailyK_XAUUSD.a_Daily_OHLC",
       "strategy": "GoldBotOne_dailyK",
-      "family": "Gold_UBSonechart_Sets",
+      "family": "Goldbot One",
       "symbol": "XAUUSD.a",
       "timeframe": "Daily",
       "force_symbol": "XAUUSD.a",
@@ -2282,12 +2282,12 @@
       "hist_max_win_streak": 7,
       "largest_single_loss": 847.74,
       "dd_vs_target": 0.6,
-      "report_path": "C:\\Users\\pc\\AppData\\Local\\Temp\\claude\\C--BulkBackTest\\42d0231a-2e8f-4695-a7a4-77ae63b808cc\\scratchpad\\compile_stage\\ohlc\\Gold_UBSonechart_Sets\\GoldBotOne_dailyK_XAUUSD.a_Daily_OHLC.htm"
+      "report_path": "C:\\BulkBackTest\\Updated set files\\Gold_UBSonechart_Sets\\1mOHLC reports\\GoldBotOne_dailyK_XAUUSD.a_Daily_OHLC.htm"
     },
     {
       "ea_id": "GoldPhantom_Gold_a_XAUUSD.a_Daily_OHLC",
       "strategy": "GoldPhantom_Gold_a",
-      "family": "Gold_UBSonechart_Sets",
+      "family": "Gold Phantom",
       "symbol": "XAUUSD.a",
       "timeframe": "Daily",
       "force_symbol": "XAUUSD.a",
@@ -2311,12 +2311,12 @@
       "hist_max_win_streak": 7,
       "largest_single_loss": 1905.75,
       "dd_vs_target": 0.82,
-      "report_path": "C:\\Users\\pc\\AppData\\Local\\Temp\\claude\\C--BulkBackTest\\42d0231a-2e8f-4695-a7a4-77ae63b808cc\\scratchpad\\compile_stage\\ohlc\\Gold_UBSonechart_Sets\\GoldPhantom_Gold_a_XAUUSD.a_Daily_OHLC.htm"
+      "report_path": "C:\\BulkBackTest\\Updated set files\\Gold_UBSonechart_Sets\\1mOHLC reports\\GoldPhantom_Gold_a_XAUUSD.a_Daily_OHLC.htm"
     },
     {
       "ea_id": "GoldPhantom_Gold_b_XAUUSD.a_Daily_OHLC",
       "strategy": "GoldPhantom_Gold_b",
-      "family": "Gold_UBSonechart_Sets",
+      "family": "Gold Phantom",
       "symbol": "XAUUSD.a",
       "timeframe": "Daily",
       "force_symbol": "XAUUSD.a",
@@ -2340,12 +2340,12 @@
       "hist_max_win_streak": 6,
       "largest_single_loss": 1270.38,
       "dd_vs_target": 0.43,
-      "report_path": "C:\\Users\\pc\\AppData\\Local\\Temp\\claude\\C--BulkBackTest\\42d0231a-2e8f-4695-a7a4-77ae63b808cc\\scratchpad\\compile_stage\\ohlc\\Gold_UBSonechart_Sets\\GoldPhantom_Gold_b_XAUUSD.a_Daily_OHLC.htm"
+      "report_path": "C:\\BulkBackTest\\Updated set files\\Gold_UBSonechart_Sets\\1mOHLC reports\\GoldPhantom_Gold_b_XAUUSD.a_Daily_OHLC.htm"
     },
     {
       "ea_id": "GoldPhantom_Gold_c_XAUUSD.a_Daily_OHLC",
       "strategy": "GoldPhantom_Gold_c",
-      "family": "Gold_UBSonechart_Sets",
+      "family": "Gold Phantom",
       "symbol": "XAUUSD.a",
       "timeframe": "Daily",
       "force_symbol": "XAUUSD.a",
@@ -2369,12 +2369,12 @@
       "hist_max_win_streak": 15,
       "largest_single_loss": 1212.59,
       "dd_vs_target": 0.59,
-      "report_path": "C:\\Users\\pc\\AppData\\Local\\Temp\\claude\\C--BulkBackTest\\42d0231a-2e8f-4695-a7a4-77ae63b808cc\\scratchpad\\compile_stage\\ohlc\\Gold_UBSonechart_Sets\\GoldPhantom_Gold_c_XAUUSD.a_Daily_OHLC.htm"
+      "report_path": "C:\\BulkBackTest\\Updated set files\\Gold_UBSonechart_Sets\\1mOHLC reports\\GoldPhantom_Gold_c_XAUUSD.a_Daily_OHLC.htm"
     },
     {
       "ea_id": "GoldReaper_strategy1_Daily_XAUUSD.a_Daily_OHLC",
       "strategy": "GoldReaper_strategy1_Daily",
-      "family": "Gold_UBSonechart_Sets",
+      "family": "Gold Reaper",
       "symbol": "XAUUSD.a",
       "timeframe": "Daily",
       "force_symbol": "XAUUSD.a",
@@ -2398,12 +2398,12 @@
       "hist_max_win_streak": 7,
       "largest_single_loss": 2909.32,
       "dd_vs_target": 0.68,
-      "report_path": "C:\\Users\\pc\\AppData\\Local\\Temp\\claude\\C--BulkBackTest\\42d0231a-2e8f-4695-a7a4-77ae63b808cc\\scratchpad\\compile_stage\\ohlc\\Gold_UBSonechart_Sets\\GoldReaper_strategy1_Daily_XAUUSD.a_Daily_OHLC.htm"
+      "report_path": "C:\\BulkBackTest\\Updated set files\\Gold_UBSonechart_Sets\\1mOHLC reports\\GoldReaper_strategy1_Daily_XAUUSD.a_Daily_OHLC.htm"
     },
     {
       "ea_id": "GoldReaper_strategy2_Daily_XAUUSD.a_Daily_OHLC",
       "strategy": "GoldReaper_strategy2_Daily",
-      "family": "Gold_UBSonechart_Sets",
+      "family": "Gold Reaper",
       "symbol": "XAUUSD.a",
       "timeframe": "Daily",
       "force_symbol": "XAUUSD.a",
@@ -2427,12 +2427,12 @@
       "hist_max_win_streak": 18,
       "largest_single_loss": 2050.44,
       "dd_vs_target": 0.42,
-      "report_path": "C:\\Users\\pc\\AppData\\Local\\Temp\\claude\\C--BulkBackTest\\42d0231a-2e8f-4695-a7a4-77ae63b808cc\\scratchpad\\compile_stage\\ohlc\\Gold_UBSonechart_Sets\\GoldReaper_strategy2_Daily_XAUUSD.a_Daily_OHLC.htm"
+      "report_path": "C:\\BulkBackTest\\Updated set files\\Gold_UBSonechart_Sets\\1mOHLC reports\\GoldReaper_strategy2_Daily_XAUUSD.a_Daily_OHLC.htm"
     },
     {
       "ea_id": "GoldReaper_strategy3_Daily_XAUUSD.a_Daily_OHLC",
       "strategy": "GoldReaper_strategy3_Daily",
-      "family": "Gold_UBSonechart_Sets",
+      "family": "Gold Reaper",
       "symbol": "XAUUSD.a",
       "timeframe": "Daily",
       "force_symbol": "XAUUSD.a",
@@ -2456,12 +2456,12 @@
       "hist_max_win_streak": 6,
       "largest_single_loss": 1190.07,
       "dd_vs_target": 0.45,
-      "report_path": "C:\\Users\\pc\\AppData\\Local\\Temp\\claude\\C--BulkBackTest\\42d0231a-2e8f-4695-a7a4-77ae63b808cc\\scratchpad\\compile_stage\\ohlc\\Gold_UBSonechart_Sets\\GoldReaper_strategy3_Daily_XAUUSD.a_Daily_OHLC.htm"
+      "report_path": "C:\\BulkBackTest\\Updated set files\\Gold_UBSonechart_Sets\\1mOHLC reports\\GoldReaper_strategy3_Daily_XAUUSD.a_Daily_OHLC.htm"
     },
     {
       "ea_id": "GoldReaper_strategy4_H4_XAUUSD.a_H4_OHLC",
       "strategy": "GoldReaper_strategy4_H4",
-      "family": "Gold_UBSonechart_Sets",
+      "family": "Gold Reaper",
       "symbol": "XAUUSD.a",
       "timeframe": "H4",
       "force_symbol": "XAUUSD.a",
@@ -2485,12 +2485,12 @@
       "hist_max_win_streak": 8,
       "largest_single_loss": 959.34,
       "dd_vs_target": 0.86,
-      "report_path": "C:\\Users\\pc\\AppData\\Local\\Temp\\claude\\C--BulkBackTest\\42d0231a-2e8f-4695-a7a4-77ae63b808cc\\scratchpad\\compile_stage\\ohlc\\Gold_UBSonechart_Sets\\GoldReaper_strategy4_H4_XAUUSD.a_H4_OHLC.htm"
+      "report_path": "C:\\BulkBackTest\\Updated set files\\Gold_UBSonechart_Sets\\1mOHLC reports\\GoldReaper_strategy4_H4_XAUUSD.a_H4_OHLC.htm"
     },
     {
       "ea_id": "GoldReaper_strategy5_H1_XAUUSD.a_H1_OHLC",
       "strategy": "GoldReaper_strategy5_H1",
-      "family": "Gold_UBSonechart_Sets",
+      "family": "Gold Reaper",
       "symbol": "XAUUSD.a",
       "timeframe": "H1",
       "force_symbol": "XAUUSD.a",
@@ -2514,12 +2514,12 @@
       "hist_max_win_streak": 31,
       "largest_single_loss": 1529.85,
       "dd_vs_target": 1.17,
-      "report_path": "C:\\Users\\pc\\AppData\\Local\\Temp\\claude\\C--BulkBackTest\\42d0231a-2e8f-4695-a7a4-77ae63b808cc\\scratchpad\\compile_stage\\ohlc\\Gold_UBSonechart_Sets\\GoldReaper_strategy5_H1_XAUUSD.a_H1_OHLC.htm"
+      "report_path": "C:\\BulkBackTest\\Updated set files\\Gold_UBSonechart_Sets\\1mOHLC reports\\GoldReaper_strategy5_H1_XAUUSD.a_H1_OHLC.htm"
     },
     {
       "ea_id": "GoldReaper_strategy6_H1_XAUUSD.a_H1_OHLC",
       "strategy": "GoldReaper_strategy6_H1",
-      "family": "Gold_UBSonechart_Sets",
+      "family": "Gold Reaper",
       "symbol": "XAUUSD.a",
       "timeframe": "H1",
       "force_symbol": "XAUUSD.a",
@@ -2543,12 +2543,12 @@
       "hist_max_win_streak": 22,
       "largest_single_loss": 1056.98,
       "dd_vs_target": 0.81,
-      "report_path": "C:\\Users\\pc\\AppData\\Local\\Temp\\claude\\C--BulkBackTest\\42d0231a-2e8f-4695-a7a4-77ae63b808cc\\scratchpad\\compile_stage\\ohlc\\Gold_UBSonechart_Sets\\GoldReaper_strategy6_H1_XAUUSD.a_H1_OHLC.htm"
+      "report_path": "C:\\BulkBackTest\\Updated set files\\Gold_UBSonechart_Sets\\1mOHLC reports\\GoldReaper_strategy6_H1_XAUUSD.a_H1_OHLC.htm"
     },
     {
       "ea_id": "GoldReaper_strategy7_H1_XAUUSD.a_H1_OHLC",
       "strategy": "GoldReaper_strategy7_H1",
-      "family": "Gold_UBSonechart_Sets",
+      "family": "Gold Reaper",
       "symbol": "XAUUSD.a",
       "timeframe": "H1",
       "force_symbol": "XAUUSD.a",
@@ -2572,12 +2572,12 @@
       "hist_max_win_streak": 23,
       "largest_single_loss": 1675.64,
       "dd_vs_target": 1.11,
-      "report_path": "C:\\Users\\pc\\AppData\\Local\\Temp\\claude\\C--BulkBackTest\\42d0231a-2e8f-4695-a7a4-77ae63b808cc\\scratchpad\\compile_stage\\ohlc\\Gold_UBSonechart_Sets\\GoldReaper_strategy7_H1_XAUUSD.a_H1_OHLC.htm"
+      "report_path": "C:\\BulkBackTest\\Updated set files\\Gold_UBSonechart_Sets\\1mOHLC reports\\GoldReaper_strategy7_H1_XAUUSD.a_H1_OHLC.htm"
     },
     {
       "ea_id": "GoldReaper_strategy8_H1_XAUUSD.a_H1_OHLC",
       "strategy": "GoldReaper_strategy8_H1",
-      "family": "Gold_UBSonechart_Sets",
+      "family": "Gold Reaper",
       "symbol": "XAUUSD.a",
       "timeframe": "H1",
       "force_symbol": "XAUUSD.a",
@@ -2601,12 +2601,12 @@
       "hist_max_win_streak": 6,
       "largest_single_loss": 837.17,
       "dd_vs_target": 1.22,
-      "report_path": "C:\\Users\\pc\\AppData\\Local\\Temp\\claude\\C--BulkBackTest\\42d0231a-2e8f-4695-a7a4-77ae63b808cc\\scratchpad\\compile_stage\\ohlc\\Gold_UBSonechart_Sets\\GoldReaper_strategy8_H1_XAUUSD.a_H1_OHLC.htm"
+      "report_path": "C:\\BulkBackTest\\Updated set files\\Gold_UBSonechart_Sets\\1mOHLC reports\\GoldReaper_strategy8_H1_XAUUSD.a_H1_OHLC.htm"
     },
     {
       "ea_id": "GoldReaper_strategy9_H1_XAUUSD.a_H1_OHLC",
       "strategy": "GoldReaper_strategy9_H1",
-      "family": "Gold_UBSonechart_Sets",
+      "family": "Gold Reaper",
       "symbol": "XAUUSD.a",
       "timeframe": "H1",
       "force_symbol": "XAUUSD.a",
@@ -2630,12 +2630,12 @@
       "hist_max_win_streak": 21,
       "largest_single_loss": 277.11,
       "dd_vs_target": 0.34,
-      "report_path": "C:\\Users\\pc\\AppData\\Local\\Temp\\claude\\C--BulkBackTest\\42d0231a-2e8f-4695-a7a4-77ae63b808cc\\scratchpad\\compile_stage\\ohlc\\Gold_UBSonechart_Sets\\GoldReaper_strategy9_H1_XAUUSD.a_H1_OHLC.htm"
+      "report_path": "C:\\BulkBackTest\\Updated set files\\Gold_UBSonechart_Sets\\1mOHLC reports\\GoldReaper_strategy9_H1_XAUUSD.a_H1_OHLC.htm"
     },
     {
-      "ea_id": "GoldScalp_H1_A_XAUUSD.a_H1_OHLC",
+      "ea_id": "GoldScalp_H1_A_XAUUSD.a_H1_REALTICKS",
       "strategy": "GoldScalp_H1_A",
-      "family": "Gold_UBSonechart_Sets",
+      "family": "Gold Scalp",
       "symbol": "XAUUSD.a",
       "timeframe": "H1",
       "force_symbol": "XAUUSD.a",
@@ -2644,27 +2644,27 @@
       "risk_pct_target": 5.0,
       "hist_max_dd": 25.0,
       "lot_step": 500.0,
-      "net_profit": 538608.14,
-      "realized_dd": 4389.0,
-      "realized_dd_pct": 3.8,
-      "equity_dd_pct": 3.71,
+      "net_profit": 290689.16,
+      "realized_dd": 6141.0,
+      "realized_dd_pct": 1.67,
+      "equity_dd_pct": 1.85,
       "trades": 2991,
-      "first_trade": "2018-01-03 21:09:20",
-      "last_trade": "2026-08-12 15:43:59",
-      "win_rate_pct": 56.8,
-      "hist_max_loss_streak": 9,
-      "hist_max_loss_streak_days": 10,
-      "hist_max_streak_cost": 1544.0,
-      "hist_avg_loss_streak": 1.86,
-      "hist_max_win_streak": 36,
-      "largest_single_loss": 1007.0,
-      "dd_vs_target": 0.76,
-      "report_path": "C:\\Users\\pc\\AppData\\Local\\Temp\\claude\\C--BulkBackTest\\42d0231a-2e8f-4695-a7a4-77ae63b808cc\\scratchpad\\compile_stage\\ohlc\\Gold_UBSonechart_Sets\\GoldScalp_H1_A_XAUUSD.a_H1_OHLC.htm"
+      "first_trade": "2018-01-03 21:09:01",
+      "last_trade": "2026-08-12 15:43:06",
+      "win_rate_pct": 52.7,
+      "hist_max_loss_streak": 10,
+      "hist_max_loss_streak_days": 11,
+      "hist_max_streak_cost": 2770.0,
+      "hist_avg_loss_streak": 1.97,
+      "hist_max_win_streak": 13,
+      "largest_single_loss": 2181.0,
+      "dd_vs_target": 0.33,
+      "report_path": "C:\\BulkBackTest\\Updated set files\\Gold_UBSonechart_Sets\\1mOHLC reports\\GoldScalp_H1_A_XAUUSD.a_H1_REALTICKS.htm"
     },
     {
-      "ea_id": "GoldScalp_H1_B_XAUUSD.a_H1_OHLC",
+      "ea_id": "GoldScalp_H1_B_XAUUSD.a_H1_REALTICKS",
       "strategy": "GoldScalp_H1_B",
-      "family": "Gold_UBSonechart_Sets",
+      "family": "Gold Scalp",
       "symbol": "XAUUSD.a",
       "timeframe": "H1",
       "force_symbol": "XAUUSD.a",
@@ -2673,27 +2673,27 @@
       "risk_pct_target": 5.0,
       "hist_max_dd": 30.0,
       "lot_step": 600.0,
-      "net_profit": 533946.9,
-      "realized_dd": 5597.5,
-      "realized_dd_pct": 1.84,
-      "equity_dd_pct": 2.97,
+      "net_profit": 286880.78,
+      "realized_dd": 5823.96,
+      "realized_dd_pct": 2.07,
+      "equity_dd_pct": 2.24,
       "trades": 2756,
-      "first_trade": "2018-01-03 21:07:59",
-      "last_trade": "2026-08-12 15:43:59",
-      "win_rate_pct": 86.1,
-      "hist_max_loss_streak": 4,
+      "first_trade": "2018-01-03 21:07:46",
+      "last_trade": "2026-08-12 15:43:08",
+      "win_rate_pct": 84.4,
+      "hist_max_loss_streak": 5,
       "hist_max_loss_streak_days": 5,
-      "hist_max_streak_cost": 3343.24,
-      "hist_avg_loss_streak": 1.17,
-      "hist_max_win_streak": 53,
-      "largest_single_loss": 1132.58,
-      "dd_vs_target": 0.37,
-      "report_path": "C:\\Users\\pc\\AppData\\Local\\Temp\\claude\\C--BulkBackTest\\42d0231a-2e8f-4695-a7a4-77ae63b808cc\\scratchpad\\compile_stage\\ohlc\\Gold_UBSonechart_Sets\\GoldScalp_H1_B_XAUUSD.a_H1_OHLC.htm"
+      "hist_max_streak_cost": 3349.88,
+      "hist_avg_loss_streak": 1.21,
+      "hist_max_win_streak": 39,
+      "largest_single_loss": 1810.23,
+      "dd_vs_target": 0.41,
+      "report_path": "C:\\BulkBackTest\\Updated set files\\Gold_UBSonechart_Sets\\1mOHLC reports\\GoldScalp_H1_B_XAUUSD.a_H1_REALTICKS.htm"
     },
     {
-      "ea_id": "GoldScalp_H1_C_XAUUSD.a_H1_OHLC",
+      "ea_id": "GoldScalp_H1_C_XAUUSD.a_H1_REALTICKS",
       "strategy": "GoldScalp_H1_C",
-      "family": "Gold_UBSonechart_Sets",
+      "family": "Gold Scalp",
       "symbol": "XAUUSD.a",
       "timeframe": "H1",
       "force_symbol": "XAUUSD.a",
@@ -2702,27 +2702,27 @@
       "risk_pct_target": 5.0,
       "hist_max_dd": 15.0,
       "lot_step": 300.0,
-      "net_profit": 425893.46,
-      "realized_dd": 5010.09,
-      "realized_dd_pct": 2.6,
-      "equity_dd_pct": 4.2,
-      "trades": 895,
-      "first_trade": "2018-02-14 17:22:40",
-      "last_trade": "2026-08-12 15:43:59",
-      "win_rate_pct": 77.9,
-      "hist_max_loss_streak": 3,
-      "hist_max_loss_streak_days": 3,
-      "hist_max_streak_cost": 3031.98,
-      "hist_avg_loss_streak": 1.26,
-      "hist_max_win_streak": 25,
-      "largest_single_loss": 1605.99,
-      "dd_vs_target": 0.52,
-      "report_path": "C:\\Users\\pc\\AppData\\Local\\Temp\\claude\\C--BulkBackTest\\42d0231a-2e8f-4695-a7a4-77ae63b808cc\\scratchpad\\compile_stage\\ohlc\\Gold_UBSonechart_Sets\\GoldScalp_H1_C_XAUUSD.a_H1_OHLC.htm"
+      "net_profit": 161411.26,
+      "realized_dd": 13641.98,
+      "realized_dd_pct": 7.29,
+      "equity_dd_pct": 7.82,
+      "trades": 893,
+      "first_trade": "2018-02-14 17:22:29",
+      "last_trade": "2026-08-12 15:43:02",
+      "win_rate_pct": 69.0,
+      "hist_max_loss_streak": 5,
+      "hist_max_loss_streak_days": 8,
+      "hist_max_streak_cost": 4578.77,
+      "hist_avg_loss_streak": 1.46,
+      "hist_max_win_streak": 15,
+      "largest_single_loss": 2908.76,
+      "dd_vs_target": 1.46,
+      "report_path": "C:\\BulkBackTest\\Updated set files\\Gold_UBSonechart_Sets\\1mOHLC reports\\GoldScalp_H1_C_XAUUSD.a_H1_REALTICKS.htm"
     },
     {
       "ea_id": "VolatilityBreakout_M5_C_XAUUSD.a_M5_OHLC",
       "strategy": "VolatilityBreakout_M5_C",
-      "family": "Gold_UBSonechart_Sets",
+      "family": "Volatility Breakout Gold",
       "symbol": "XAUUSD.a",
       "timeframe": "M5",
       "force_symbol": "XAUUSD.a",
@@ -2746,12 +2746,12 @@
       "hist_max_win_streak": 8,
       "largest_single_loss": 367.86,
       "dd_vs_target": 0.75,
-      "report_path": "C:\\Users\\pc\\AppData\\Local\\Temp\\claude\\C--BulkBackTest\\42d0231a-2e8f-4695-a7a4-77ae63b808cc\\scratchpad\\compile_stage\\ohlc\\Gold_UBSonechart_Sets\\VolatilityBreakout_M5_C_XAUUSD.a_M5_OHLC.htm"
+      "report_path": "C:\\BulkBackTest\\Updated set files\\Gold_UBSonechart_Sets\\1mOHLC reports\\VolatilityBreakout_M5_C_XAUUSD.a_M5_OHLC.htm"
     },
     {
       "ea_id": "VolatilityBreakout_M5_E_XAUUSD.a_M5_OHLC",
       "strategy": "VolatilityBreakout_M5_E",
-      "family": "Gold_UBSonechart_Sets",
+      "family": "Volatility Breakout Gold",
       "symbol": "XAUUSD.a",
       "timeframe": "M5",
       "force_symbol": "XAUUSD.a",
@@ -2775,12 +2775,12 @@
       "hist_max_win_streak": 6,
       "largest_single_loss": 457.77,
       "dd_vs_target": 0.66,
-      "report_path": "C:\\Users\\pc\\AppData\\Local\\Temp\\claude\\C--BulkBackTest\\42d0231a-2e8f-4695-a7a4-77ae63b808cc\\scratchpad\\compile_stage\\ohlc\\Gold_UBSonechart_Sets\\VolatilityBreakout_M5_E_XAUUSD.a_M5_OHLC.htm"
+      "report_path": "C:\\BulkBackTest\\Updated set files\\Gold_UBSonechart_Sets\\1mOHLC reports\\VolatilityBreakout_M5_E_XAUUSD.a_M5_OHLC.htm"
     },
     {
       "ea_id": "VolatilityBreakout_M5_G_XAUUSD.a_M5_OHLC",
       "strategy": "VolatilityBreakout_M5_G",
-      "family": "Gold_UBSonechart_Sets",
+      "family": "Volatility Breakout Gold",
       "symbol": "XAUUSD.a",
       "timeframe": "M5",
       "force_symbol": "XAUUSD.a",
@@ -2804,12 +2804,12 @@
       "hist_max_win_streak": 5,
       "largest_single_loss": 242.09,
       "dd_vs_target": 0.57,
-      "report_path": "C:\\Users\\pc\\AppData\\Local\\Temp\\claude\\C--BulkBackTest\\42d0231a-2e8f-4695-a7a4-77ae63b808cc\\scratchpad\\compile_stage\\ohlc\\Gold_UBSonechart_Sets\\VolatilityBreakout_M5_G_XAUUSD.a_M5_OHLC.htm"
+      "report_path": "C:\\BulkBackTest\\Updated set files\\Gold_UBSonechart_Sets\\1mOHLC reports\\VolatilityBreakout_M5_G_XAUUSD.a_M5_OHLC.htm"
     },
     {
       "ea_id": "VolatilityBreakout_M5_H_XAUUSD.a_M5_OHLC",
       "strategy": "VolatilityBreakout_M5_H",
-      "family": "Gold_UBSonechart_Sets",
+      "family": "Volatility Breakout Gold",
       "symbol": "XAUUSD.a",
       "timeframe": "M5",
       "force_symbol": "XAUUSD.a",
@@ -2833,12 +2833,12 @@
       "hist_max_win_streak": 5,
       "largest_single_loss": 784.09,
       "dd_vs_target": 1.19,
-      "report_path": "C:\\Users\\pc\\AppData\\Local\\Temp\\claude\\C--BulkBackTest\\42d0231a-2e8f-4695-a7a4-77ae63b808cc\\scratchpad\\compile_stage\\ohlc\\Gold_UBSonechart_Sets\\VolatilityBreakout_M5_H_XAUUSD.a_M5_OHLC.htm"
+      "report_path": "C:\\BulkBackTest\\Updated set files\\Gold_UBSonechart_Sets\\1mOHLC reports\\VolatilityBreakout_M5_H_XAUUSD.a_M5_OHLC.htm"
     },
     {
       "ea_id": "Indicement_US100_1_H1_USTEC.a_H1_OHLC",
       "strategy": "Indicement_US100_1_H1",
-      "family": "IndicesUBSonechartSets",
+      "family": "Indicement US100",
       "symbol": "USTEC.a",
       "timeframe": "H1",
       "force_symbol": "USTEC.a",
@@ -2862,12 +2862,12 @@
       "hist_max_win_streak": 38,
       "largest_single_loss": 797.03,
       "dd_vs_target": 0.52,
-      "report_path": "C:\\Users\\pc\\AppData\\Local\\Temp\\claude\\C--BulkBackTest\\42d0231a-2e8f-4695-a7a4-77ae63b808cc\\scratchpad\\compile_stage\\ohlc\\IndicesUBSonechartSets\\Indicement_US100_1_H1_USTEC.a_H1_OHLC.htm"
+      "report_path": "C:\\BulkBackTest\\Updated set files\\IndicesUBSonechartSets\\1mOHLC reports\\Indicement_US100_1_H1_USTEC.a_H1_OHLC.htm"
     },
     {
       "ea_id": "Indicement_US100_2_H1_USTEC.a_H1_OHLC",
       "strategy": "Indicement_US100_2_H1",
-      "family": "IndicesUBSonechartSets",
+      "family": "Indicement US100",
       "symbol": "USTEC.a",
       "timeframe": "H1",
       "force_symbol": "USTEC.a",
@@ -2891,12 +2891,12 @@
       "hist_max_win_streak": 41,
       "largest_single_loss": 703.67,
       "dd_vs_target": 0.49,
-      "report_path": "C:\\Users\\pc\\AppData\\Local\\Temp\\claude\\C--BulkBackTest\\42d0231a-2e8f-4695-a7a4-77ae63b808cc\\scratchpad\\compile_stage\\ohlc\\IndicesUBSonechartSets\\Indicement_US100_2_H1_USTEC.a_H1_OHLC.htm"
+      "report_path": "C:\\BulkBackTest\\Updated set files\\IndicesUBSonechartSets\\1mOHLC reports\\Indicement_US100_2_H1_USTEC.a_H1_OHLC.htm"
     },
     {
       "ea_id": "Indicement_US100_3_H1_USTEC.a_H1_OHLC",
       "strategy": "Indicement_US100_3_H1",
-      "family": "IndicesUBSonechartSets",
+      "family": "Indicement US100",
       "symbol": "USTEC.a",
       "timeframe": "H1",
       "force_symbol": "USTEC.a",
@@ -2920,12 +2920,12 @@
       "hist_max_win_streak": 46,
       "largest_single_loss": 647.49,
       "dd_vs_target": 0.61,
-      "report_path": "C:\\Users\\pc\\AppData\\Local\\Temp\\claude\\C--BulkBackTest\\42d0231a-2e8f-4695-a7a4-77ae63b808cc\\scratchpad\\compile_stage\\ohlc\\IndicesUBSonechartSets\\Indicement_US100_3_H1_USTEC.a_H1_OHLC.htm"
+      "report_path": "C:\\BulkBackTest\\Updated set files\\IndicesUBSonechartSets\\1mOHLC reports\\Indicement_US100_3_H1_USTEC.a_H1_OHLC.htm"
     },
     {
       "ea_id": "Indicement_US100_4_H1_USTEC.a_H1_OHLC",
       "strategy": "Indicement_US100_4_H1",
-      "family": "IndicesUBSonechartSets",
+      "family": "Indicement US100",
       "symbol": "USTEC.a",
       "timeframe": "H1",
       "force_symbol": "USTEC.a",
@@ -2949,12 +2949,12 @@
       "hist_max_win_streak": 19,
       "largest_single_loss": 1149.48,
       "dd_vs_target": 0.78,
-      "report_path": "C:\\Users\\pc\\AppData\\Local\\Temp\\claude\\C--BulkBackTest\\42d0231a-2e8f-4695-a7a4-77ae63b808cc\\scratchpad\\compile_stage\\ohlc\\IndicesUBSonechartSets\\Indicement_US100_4_H1_USTEC.a_H1_OHLC.htm"
+      "report_path": "C:\\BulkBackTest\\Updated set files\\IndicesUBSonechartSets\\1mOHLC reports\\Indicement_US100_4_H1_USTEC.a_H1_OHLC.htm"
     },
     {
       "ea_id": "Indicement_US30_1_Daily_US30.a_Daily_OHLC",
       "strategy": "Indicement_US30_1_Daily",
-      "family": "IndicesUBSonechartSets",
+      "family": "Indicement US30",
       "symbol": "US30.a",
       "timeframe": "Daily",
       "force_symbol": "US30.a",
@@ -2978,12 +2978,12 @@
       "hist_max_win_streak": 17,
       "largest_single_loss": 716.51,
       "dd_vs_target": 0.45,
-      "report_path": "C:\\Users\\pc\\AppData\\Local\\Temp\\claude\\C--BulkBackTest\\42d0231a-2e8f-4695-a7a4-77ae63b808cc\\scratchpad\\compile_stage\\ohlc\\IndicesUBSonechartSets\\Indicement_US30_1_Daily_US30.a_Daily_OHLC.htm"
+      "report_path": "C:\\BulkBackTest\\Updated set files\\IndicesUBSonechartSets\\1mOHLC reports\\Indicement_US30_1_Daily_US30.a_Daily_OHLC.htm"
     },
     {
       "ea_id": "Indicement_US30_2_Daily_US30.a_Daily_OHLC",
       "strategy": "Indicement_US30_2_Daily",
-      "family": "IndicesUBSonechartSets",
+      "family": "Indicement US30",
       "symbol": "US30.a",
       "timeframe": "Daily",
       "force_symbol": "US30.a",
@@ -3007,12 +3007,12 @@
       "hist_max_win_streak": 19,
       "largest_single_loss": 534.04,
       "dd_vs_target": 0.41,
-      "report_path": "C:\\Users\\pc\\AppData\\Local\\Temp\\claude\\C--BulkBackTest\\42d0231a-2e8f-4695-a7a4-77ae63b808cc\\scratchpad\\compile_stage\\ohlc\\IndicesUBSonechartSets\\Indicement_US30_2_Daily_US30.a_Daily_OHLC.htm"
+      "report_path": "C:\\BulkBackTest\\Updated set files\\IndicesUBSonechartSets\\1mOHLC reports\\Indicement_US30_2_Daily_US30.a_Daily_OHLC.htm"
     },
     {
       "ea_id": "Indicement_US30_3_Daily_US30.a_Daily_OHLC",
       "strategy": "Indicement_US30_3_Daily",
-      "family": "IndicesUBSonechartSets",
+      "family": "Indicement US30",
       "symbol": "US30.a",
       "timeframe": "Daily",
       "force_symbol": "US30.a",
@@ -3036,12 +3036,12 @@
       "hist_max_win_streak": 12,
       "largest_single_loss": 322.75,
       "dd_vs_target": 0.49,
-      "report_path": "C:\\Users\\pc\\AppData\\Local\\Temp\\claude\\C--BulkBackTest\\42d0231a-2e8f-4695-a7a4-77ae63b808cc\\scratchpad\\compile_stage\\ohlc\\IndicesUBSonechartSets\\Indicement_US30_3_Daily_US30.a_Daily_OHLC.htm"
+      "report_path": "C:\\BulkBackTest\\Updated set files\\IndicesUBSonechartSets\\1mOHLC reports\\Indicement_US30_3_Daily_US30.a_Daily_OHLC.htm"
     },
     {
       "ea_id": "Indicement_US30_4_Daily_US30.a_Daily_OHLC",
       "strategy": "Indicement_US30_4_Daily",
-      "family": "IndicesUBSonechartSets",
+      "family": "Indicement US30",
       "symbol": "US30.a",
       "timeframe": "Daily",
       "force_symbol": "US30.a",
@@ -3065,12 +3065,12 @@
       "hist_max_win_streak": 12,
       "largest_single_loss": 136.7,
       "dd_vs_target": 0.39,
-      "report_path": "C:\\Users\\pc\\AppData\\Local\\Temp\\claude\\C--BulkBackTest\\42d0231a-2e8f-4695-a7a4-77ae63b808cc\\scratchpad\\compile_stage\\ohlc\\IndicesUBSonechartSets\\Indicement_US30_4_Daily_US30.a_Daily_OHLC.htm"
+      "report_path": "C:\\BulkBackTest\\Updated set files\\IndicesUBSonechartSets\\1mOHLC reports\\Indicement_US30_4_Daily_US30.a_Daily_OHLC.htm"
     },
     {
       "ea_id": "Indicement_US500a_H1_US500.a_H1_OHLC",
       "strategy": "Indicement_US500a_H1",
-      "family": "IndicesUBSonechartSets",
+      "family": "Indicement US500",
       "symbol": "US500.a",
       "timeframe": "H1",
       "force_symbol": "US500.a",
@@ -3094,12 +3094,12 @@
       "hist_max_win_streak": 16,
       "largest_single_loss": 483.53,
       "dd_vs_target": 0.26,
-      "report_path": "C:\\Users\\pc\\AppData\\Local\\Temp\\claude\\C--BulkBackTest\\42d0231a-2e8f-4695-a7a4-77ae63b808cc\\scratchpad\\compile_stage\\ohlc\\IndicesUBSonechartSets\\Indicement_US500a_H1_US500.a_H1_OHLC.htm"
+      "report_path": "C:\\BulkBackTest\\Updated set files\\IndicesUBSonechartSets\\1mOHLC reports\\Indicement_US500a_H1_US500.a_H1_OHLC.htm"
     },
     {
       "ea_id": "Indicement_US500b_M15_US500.a_M15_OHLC",
       "strategy": "Indicement_US500b_M15",
-      "family": "IndicesUBSonechartSets",
+      "family": "Indicement US500",
       "symbol": "US500.a",
       "timeframe": "M15",
       "force_symbol": "US500.a",
@@ -3123,12 +3123,12 @@
       "hist_max_win_streak": 4,
       "largest_single_loss": 328.4,
       "dd_vs_target": 0.55,
-      "report_path": "C:\\Users\\pc\\AppData\\Local\\Temp\\claude\\C--BulkBackTest\\42d0231a-2e8f-4695-a7a4-77ae63b808cc\\scratchpad\\compile_stage\\ohlc\\IndicesUBSonechartSets\\Indicement_US500b_M15_US500.a_M15_OHLC.htm"
+      "report_path": "C:\\BulkBackTest\\Updated set files\\IndicesUBSonechartSets\\1mOHLC reports\\Indicement_US500b_M15_US500.a_M15_OHLC.htm"
     },
     {
       "ea_id": "Indicement_US500c_M15_US500.a_M15_OHLC",
       "strategy": "Indicement_US500c_M15",
-      "family": "IndicesUBSonechartSets",
+      "family": "Indicement US500",
       "symbol": "US500.a",
       "timeframe": "M15",
       "force_symbol": "US500.a",
@@ -3152,12 +3152,12 @@
       "hist_max_win_streak": 7,
       "largest_single_loss": 384.68,
       "dd_vs_target": 0.34,
-      "report_path": "C:\\Users\\pc\\AppData\\Local\\Temp\\claude\\C--BulkBackTest\\42d0231a-2e8f-4695-a7a4-77ae63b808cc\\scratchpad\\compile_stage\\ohlc\\IndicesUBSonechartSets\\Indicement_US500c_M15_US500.a_M15_OHLC.htm"
+      "report_path": "C:\\BulkBackTest\\Updated set files\\IndicesUBSonechartSets\\1mOHLC reports\\Indicement_US500c_M15_US500.a_M15_OHLC.htm"
     },
     {
       "ea_id": "Indicement_US500d_H1_US500.a_H1_OHLC",
       "strategy": "Indicement_US500d_H1",
-      "family": "IndicesUBSonechartSets",
+      "family": "Indicement US500",
       "symbol": "US500.a",
       "timeframe": "H1",
       "force_symbol": "US500.a",
@@ -3181,12 +3181,12 @@
       "hist_max_win_streak": 10,
       "largest_single_loss": 440.07,
       "dd_vs_target": 0.32,
-      "report_path": "C:\\Users\\pc\\AppData\\Local\\Temp\\claude\\C--BulkBackTest\\42d0231a-2e8f-4695-a7a4-77ae63b808cc\\scratchpad\\compile_stage\\ohlc\\IndicesUBSonechartSets\\Indicement_US500d_H1_US500.a_H1_OHLC.htm"
+      "report_path": "C:\\BulkBackTest\\Updated set files\\IndicesUBSonechartSets\\1mOHLC reports\\Indicement_US500d_H1_US500.a_H1_OHLC.htm"
     },
     {
       "ea_id": "Indicement_US500e_Daily_US500.a_Daily_OHLC",
       "strategy": "Indicement_US500e_Daily",
-      "family": "IndicesUBSonechartSets",
+      "family": "Indicement US500",
       "symbol": "US500.a",
       "timeframe": "Daily",
       "force_symbol": "US500.a",
@@ -3210,12 +3210,12 @@
       "hist_max_win_streak": 9,
       "largest_single_loss": 381.96,
       "dd_vs_target": 0.4,
-      "report_path": "C:\\Users\\pc\\AppData\\Local\\Temp\\claude\\C--BulkBackTest\\42d0231a-2e8f-4695-a7a4-77ae63b808cc\\scratchpad\\compile_stage\\ohlc\\IndicesUBSonechartSets\\Indicement_US500e_Daily_US500.a_Daily_OHLC.htm"
+      "report_path": "C:\\BulkBackTest\\Updated set files\\IndicesUBSonechartSets\\1mOHLC reports\\Indicement_US500e_Daily_US500.a_Daily_OHLC.htm"
     },
     {
       "ea_id": "Indicement_US500f_Daily_US500.a_Daily_OHLC",
       "strategy": "Indicement_US500f_Daily",
-      "family": "IndicesUBSonechartSets",
+      "family": "Indicement US500",
       "symbol": "US500.a",
       "timeframe": "Daily",
       "force_symbol": "US500.a",
@@ -3239,12 +3239,12 @@
       "hist_max_win_streak": 10,
       "largest_single_loss": 293.35,
       "dd_vs_target": 0.29,
-      "report_path": "C:\\Users\\pc\\AppData\\Local\\Temp\\claude\\C--BulkBackTest\\42d0231a-2e8f-4695-a7a4-77ae63b808cc\\scratchpad\\compile_stage\\ohlc\\IndicesUBSonechartSets\\Indicement_US500f_Daily_US500.a_Daily_OHLC.htm"
+      "report_path": "C:\\BulkBackTest\\Updated set files\\IndicesUBSonechartSets\\1mOHLC reports\\Indicement_US500f_Daily_US500.a_Daily_OHLC.htm"
     },
     {
       "ea_id": "ORBMASTER_DAX_M15_a_DE40.a_M15_OHLC",
       "strategy": "ORBMASTER_DAX_M15_a",
-      "family": "IndicesUBSonechartSets",
+      "family": "ORB Master",
       "symbol": "DE40.a",
       "timeframe": "M15",
       "force_symbol": "DE40.a",
@@ -3268,12 +3268,12 @@
       "hist_max_win_streak": 8,
       "largest_single_loss": 862.2,
       "dd_vs_target": 0.39,
-      "report_path": "C:\\Users\\pc\\AppData\\Local\\Temp\\claude\\C--BulkBackTest\\42d0231a-2e8f-4695-a7a4-77ae63b808cc\\scratchpad\\compile_stage\\ohlc\\IndicesUBSonechartSets\\ORBMASTER_DAX_M15_a_DE40.a_M15_OHLC.htm"
+      "report_path": "C:\\BulkBackTest\\Updated set files\\IndicesUBSonechartSets\\1mOHLC reports\\ORBMASTER_DAX_M15_a_DE40.a_M15_OHLC.htm"
     },
     {
       "ea_id": "ORBMASTER_DAX_M15_c_DE40.a_M15_OHLC",
       "strategy": "ORBMASTER_DAX_M15_c",
-      "family": "IndicesUBSonechartSets",
+      "family": "ORB Master",
       "symbol": "DE40.a",
       "timeframe": "M15",
       "force_symbol": "DE40.a",
@@ -3297,12 +3297,12 @@
       "hist_max_win_streak": 9,
       "largest_single_loss": 996.57,
       "dd_vs_target": 0.36,
-      "report_path": "C:\\Users\\pc\\AppData\\Local\\Temp\\claude\\C--BulkBackTest\\42d0231a-2e8f-4695-a7a4-77ae63b808cc\\scratchpad\\compile_stage\\ohlc\\IndicesUBSonechartSets\\ORBMASTER_DAX_M15_c_DE40.a_M15_OHLC.htm"
+      "report_path": "C:\\BulkBackTest\\Updated set files\\IndicesUBSonechartSets\\1mOHLC reports\\ORBMASTER_DAX_M15_c_DE40.a_M15_OHLC.htm"
     },
     {
       "ea_id": "ORBMASTER_DAX_M15_f_DE40.a_M15_OHLC",
       "strategy": "ORBMASTER_DAX_M15_f",
-      "family": "IndicesUBSonechartSets",
+      "family": "ORB Master",
       "symbol": "DE40.a",
       "timeframe": "M15",
       "force_symbol": "DE40.a",
@@ -3326,12 +3326,12 @@
       "hist_max_win_streak": 8,
       "largest_single_loss": 207.14,
       "dd_vs_target": 0.5,
-      "report_path": "C:\\Users\\pc\\AppData\\Local\\Temp\\claude\\C--BulkBackTest\\42d0231a-2e8f-4695-a7a4-77ae63b808cc\\scratchpad\\compile_stage\\ohlc\\IndicesUBSonechartSets\\ORBMASTER_DAX_M15_f_DE40.a_M15_OHLC.htm"
+      "report_path": "C:\\BulkBackTest\\Updated set files\\IndicesUBSonechartSets\\1mOHLC reports\\ORBMASTER_DAX_M15_f_DE40.a_M15_OHLC.htm"
     },
     {
       "ea_id": "ORBMASTER_US30_M15_c_US30.a_M15_OHLC",
       "strategy": "ORBMASTER_US30_M15_c",
-      "family": "IndicesUBSonechartSets",
+      "family": "ORB Master",
       "symbol": "US30.a",
       "timeframe": "M15",
       "force_symbol": "US30.a",
@@ -3355,12 +3355,12 @@
       "hist_max_win_streak": 6,
       "largest_single_loss": 622.83,
       "dd_vs_target": 1.56,
-      "report_path": "C:\\Users\\pc\\AppData\\Local\\Temp\\claude\\C--BulkBackTest\\42d0231a-2e8f-4695-a7a4-77ae63b808cc\\scratchpad\\compile_stage\\ohlc\\IndicesUBSonechartSets\\ORBMASTER_US30_M15_c_US30.a_M15_OHLC.htm"
+      "report_path": "C:\\BulkBackTest\\Updated set files\\IndicesUBSonechartSets\\1mOHLC reports\\ORBMASTER_US30_M15_c_US30.a_M15_OHLC.htm"
     },
     {
       "ea_id": "ORBMASTER_US30_M15_f_US30.a_M15_OHLC",
       "strategy": "ORBMASTER_US30_M15_f",
-      "family": "IndicesUBSonechartSets",
+      "family": "ORB Master",
       "symbol": "US30.a",
       "timeframe": "M15",
       "force_symbol": "US30.a",
@@ -3384,12 +3384,12 @@
       "hist_max_win_streak": 21,
       "largest_single_loss": 597.78,
       "dd_vs_target": 0.59,
-      "report_path": "C:\\Users\\pc\\AppData\\Local\\Temp\\claude\\C--BulkBackTest\\42d0231a-2e8f-4695-a7a4-77ae63b808cc\\scratchpad\\compile_stage\\ohlc\\IndicesUBSonechartSets\\ORBMASTER_US30_M15_f_US30.a_M15_OHLC.htm"
+      "report_path": "C:\\BulkBackTest\\Updated set files\\IndicesUBSonechartSets\\1mOHLC reports\\ORBMASTER_US30_M15_f_US30.a_M15_OHLC.htm"
     },
     {
       "ea_id": "ORBMASTER_US30_M15_h_US30.a_M15_OHLC",
       "strategy": "ORBMASTER_US30_M15_h",
-      "family": "IndicesUBSonechartSets",
+      "family": "ORB Master",
       "symbol": "US30.a",
       "timeframe": "M15",
       "force_symbol": "US30.a",
@@ -3413,12 +3413,12 @@
       "hist_max_win_streak": 9,
       "largest_single_loss": 336.65,
       "dd_vs_target": 0.81,
-      "report_path": "C:\\Users\\pc\\AppData\\Local\\Temp\\claude\\C--BulkBackTest\\42d0231a-2e8f-4695-a7a4-77ae63b808cc\\scratchpad\\compile_stage\\ohlc\\IndicesUBSonechartSets\\ORBMASTER_US30_M15_h_US30.a_M15_OHLC.htm"
+      "report_path": "C:\\BulkBackTest\\Updated set files\\IndicesUBSonechartSets\\1mOHLC reports\\ORBMASTER_US30_M15_h_US30.a_M15_OHLC.htm"
     },
     {
       "ea_id": "ORBMASTER_US500_M15_a_US500.a_M15_OHLC",
       "strategy": "ORBMASTER_US500_M15_a",
-      "family": "IndicesUBSonechartSets",
+      "family": "ORB Master",
       "symbol": "US500.a",
       "timeframe": "M15",
       "force_symbol": "US500.a",
@@ -3442,12 +3442,12 @@
       "hist_max_win_streak": 5,
       "largest_single_loss": 503.26,
       "dd_vs_target": 0.68,
-      "report_path": "C:\\Users\\pc\\AppData\\Local\\Temp\\claude\\C--BulkBackTest\\42d0231a-2e8f-4695-a7a4-77ae63b808cc\\scratchpad\\compile_stage\\ohlc\\IndicesUBSonechartSets\\ORBMASTER_US500_M15_a_US500.a_M15_OHLC.htm"
+      "report_path": "C:\\BulkBackTest\\Updated set files\\IndicesUBSonechartSets\\1mOHLC reports\\ORBMASTER_US500_M15_a_US500.a_M15_OHLC.htm"
     },
     {
       "ea_id": "ORBMASTER_US500_M15_c_US500.a_M15_OHLC",
       "strategy": "ORBMASTER_US500_M15_c",
-      "family": "IndicesUBSonechartSets",
+      "family": "ORB Master",
       "symbol": "US500.a",
       "timeframe": "M15",
       "force_symbol": "US500.a",
@@ -3471,12 +3471,12 @@
       "hist_max_win_streak": 5,
       "largest_single_loss": 595.47,
       "dd_vs_target": 0.63,
-      "report_path": "C:\\Users\\pc\\AppData\\Local\\Temp\\claude\\C--BulkBackTest\\42d0231a-2e8f-4695-a7a4-77ae63b808cc\\scratchpad\\compile_stage\\ohlc\\IndicesUBSonechartSets\\ORBMASTER_US500_M15_c_US500.a_M15_OHLC.htm"
+      "report_path": "C:\\BulkBackTest\\Updated set files\\IndicesUBSonechartSets\\1mOHLC reports\\ORBMASTER_US500_M15_c_US500.a_M15_OHLC.htm"
     },
     {
       "ea_id": "ORBMASTER_US500_M15_d_US500.a_M15_OHLC",
       "strategy": "ORBMASTER_US500_M15_d",
-      "family": "IndicesUBSonechartSets",
+      "family": "ORB Master",
       "symbol": "US500.a",
       "timeframe": "M15",
       "force_symbol": "US500.a",
@@ -3500,12 +3500,12 @@
       "hist_max_win_streak": 4,
       "largest_single_loss": 492.58,
       "dd_vs_target": 0.81,
-      "report_path": "C:\\Users\\pc\\AppData\\Local\\Temp\\claude\\C--BulkBackTest\\42d0231a-2e8f-4695-a7a4-77ae63b808cc\\scratchpad\\compile_stage\\ohlc\\IndicesUBSonechartSets\\ORBMASTER_US500_M15_d_US500.a_M15_OHLC.htm"
+      "report_path": "C:\\BulkBackTest\\Updated set files\\IndicesUBSonechartSets\\1mOHLC reports\\ORBMASTER_US500_M15_d_US500.a_M15_OHLC.htm"
     },
     {
       "ea_id": "ORBMASTER_USTEC_M15_a_USTEC.a_M15_OHLC",
       "strategy": "ORBMASTER_USTEC_M15_a",
-      "family": "IndicesUBSonechartSets",
+      "family": "ORB Master",
       "symbol": "USTEC.a",
       "timeframe": "M15",
       "force_symbol": "USTEC.a",
@@ -3529,12 +3529,12 @@
       "hist_max_win_streak": 15,
       "largest_single_loss": 1093.97,
       "dd_vs_target": 0.45,
-      "report_path": "C:\\Users\\pc\\AppData\\Local\\Temp\\claude\\C--BulkBackTest\\42d0231a-2e8f-4695-a7a4-77ae63b808cc\\scratchpad\\compile_stage\\ohlc\\IndicesUBSonechartSets\\ORBMASTER_USTEC_M15_a_USTEC.a_M15_OHLC.htm"
+      "report_path": "C:\\BulkBackTest\\Updated set files\\IndicesUBSonechartSets\\1mOHLC reports\\ORBMASTER_USTEC_M15_a_USTEC.a_M15_OHLC.htm"
     },
     {
       "ea_id": "ORBMASTER_USTEC_M15_e_USTEC.a_M15_OHLC",
       "strategy": "ORBMASTER_USTEC_M15_e",
-      "family": "IndicesUBSonechartSets",
+      "family": "ORB Master",
       "symbol": "USTEC.a",
       "timeframe": "M15",
       "force_symbol": "USTEC.a",
@@ -3558,12 +3558,12 @@
       "hist_max_win_streak": 6,
       "largest_single_loss": 231.82,
       "dd_vs_target": 0.65,
-      "report_path": "C:\\Users\\pc\\AppData\\Local\\Temp\\claude\\C--BulkBackTest\\42d0231a-2e8f-4695-a7a4-77ae63b808cc\\scratchpad\\compile_stage\\ohlc\\IndicesUBSonechartSets\\ORBMASTER_USTEC_M15_e_USTEC.a_M15_OHLC.htm"
+      "report_path": "C:\\BulkBackTest\\Updated set files\\IndicesUBSonechartSets\\1mOHLC reports\\ORBMASTER_USTEC_M15_e_USTEC.a_M15_OHLC.htm"
     },
     {
       "ea_id": "ORBMASTER_USTEC_M15_g_USTEC.a_M15_OHLC",
       "strategy": "ORBMASTER_USTEC_M15_g",
-      "family": "IndicesUBSonechartSets",
+      "family": "ORB Master",
       "symbol": "USTEC.a",
       "timeframe": "M15",
       "force_symbol": "USTEC.a",
@@ -3587,12 +3587,12 @@
       "hist_max_win_streak": 8,
       "largest_single_loss": 293.29,
       "dd_vs_target": 0.71,
-      "report_path": "C:\\Users\\pc\\AppData\\Local\\Temp\\claude\\C--BulkBackTest\\42d0231a-2e8f-4695-a7a4-77ae63b808cc\\scratchpad\\compile_stage\\ohlc\\IndicesUBSonechartSets\\ORBMASTER_USTEC_M15_g_USTEC.a_M15_OHLC.htm"
+      "report_path": "C:\\BulkBackTest\\Updated set files\\IndicesUBSonechartSets\\1mOHLC reports\\ORBMASTER_USTEC_M15_g_USTEC.a_M15_OHLC.htm"
     },
     {
       "ea_id": "OtherSets_nas100_H1_A_USTEC.a_H1_OHLC",
       "strategy": "OtherSets_nas100_H1_A",
-      "family": "IndicesUBSonechartSets",
+      "family": "Other Sets NAS100",
       "symbol": "USTEC.a",
       "timeframe": "H1",
       "force_symbol": "USTEC.a",
@@ -3616,12 +3616,12 @@
       "hist_max_win_streak": 11,
       "largest_single_loss": 850.72,
       "dd_vs_target": 0.68,
-      "report_path": "C:\\Users\\pc\\AppData\\Local\\Temp\\claude\\C--BulkBackTest\\42d0231a-2e8f-4695-a7a4-77ae63b808cc\\scratchpad\\compile_stage\\ohlc\\IndicesUBSonechartSets\\OtherSets_nas100_H1_A_USTEC.a_H1_OHLC.htm"
+      "report_path": "C:\\BulkBackTest\\Updated set files\\IndicesUBSonechartSets\\1mOHLC reports\\OtherSets_nas100_H1_A_USTEC.a_H1_OHLC.htm"
     },
     {
       "ea_id": "OtherSets_nas100_H1_C_USTEC.a_H1_OHLC",
       "strategy": "OtherSets_nas100_H1_C",
-      "family": "IndicesUBSonechartSets",
+      "family": "Other Sets NAS100",
       "symbol": "USTEC.a",
       "timeframe": "H1",
       "force_symbol": "USTEC.a",
@@ -3645,12 +3645,12 @@
       "hist_max_win_streak": 14,
       "largest_single_loss": 399.52,
       "dd_vs_target": 0.86,
-      "report_path": "C:\\Users\\pc\\AppData\\Local\\Temp\\claude\\C--BulkBackTest\\42d0231a-2e8f-4695-a7a4-77ae63b808cc\\scratchpad\\compile_stage\\ohlc\\IndicesUBSonechartSets\\OtherSets_nas100_H1_C_USTEC.a_H1_OHLC.htm"
+      "report_path": "C:\\BulkBackTest\\Updated set files\\IndicesUBSonechartSets\\1mOHLC reports\\OtherSets_nas100_H1_C_USTEC.a_H1_OHLC.htm"
     },
     {
       "ea_id": "OtherSets_nas100_H1_E_USTEC.a_H1_OHLC",
       "strategy": "OtherSets_nas100_H1_E",
-      "family": "IndicesUBSonechartSets",
+      "family": "Other Sets NAS100",
       "symbol": "USTEC.a",
       "timeframe": "H1",
       "force_symbol": "USTEC.a",
@@ -3674,12 +3674,12 @@
       "hist_max_win_streak": 20,
       "largest_single_loss": 806.01,
       "dd_vs_target": 0.7,
-      "report_path": "C:\\Users\\pc\\AppData\\Local\\Temp\\claude\\C--BulkBackTest\\42d0231a-2e8f-4695-a7a4-77ae63b808cc\\scratchpad\\compile_stage\\ohlc\\IndicesUBSonechartSets\\OtherSets_nas100_H1_E_USTEC.a_H1_OHLC.htm"
+      "report_path": "C:\\BulkBackTest\\Updated set files\\IndicesUBSonechartSets\\1mOHLC reports\\OtherSets_nas100_H1_E_USTEC.a_H1_OHLC.htm"
     },
     {
       "ea_id": "OtherSets_nas100_H1_G_USTEC.a_H1_OHLC",
       "strategy": "OtherSets_nas100_H1_G",
-      "family": "IndicesUBSonechartSets",
+      "family": "Other Sets NAS100",
       "symbol": "USTEC.a",
       "timeframe": "H1",
       "force_symbol": "USTEC.a",
@@ -3703,12 +3703,12 @@
       "hist_max_win_streak": 15,
       "largest_single_loss": 950.22,
       "dd_vs_target": 0.76,
-      "report_path": "C:\\Users\\pc\\AppData\\Local\\Temp\\claude\\C--BulkBackTest\\42d0231a-2e8f-4695-a7a4-77ae63b808cc\\scratchpad\\compile_stage\\ohlc\\IndicesUBSonechartSets\\OtherSets_nas100_H1_G_USTEC.a_H1_OHLC.htm"
+      "report_path": "C:\\BulkBackTest\\Updated set files\\IndicesUBSonechartSets\\1mOHLC reports\\OtherSets_nas100_H1_G_USTEC.a_H1_OHLC.htm"
     },
     {
       "ea_id": "OtherSets_nas100_H1_L_USTEC.a_H1_OHLC",
       "strategy": "OtherSets_nas100_H1_L",
-      "family": "IndicesUBSonechartSets",
+      "family": "Other Sets NAS100",
       "symbol": "USTEC.a",
       "timeframe": "H1",
       "force_symbol": "USTEC.a",
@@ -3732,12 +3732,12 @@
       "hist_max_win_streak": 12,
       "largest_single_loss": 1284.09,
       "dd_vs_target": 0.66,
-      "report_path": "C:\\Users\\pc\\AppData\\Local\\Temp\\claude\\C--BulkBackTest\\42d0231a-2e8f-4695-a7a4-77ae63b808cc\\scratchpad\\compile_stage\\ohlc\\IndicesUBSonechartSets\\OtherSets_nas100_H1_L_USTEC.a_H1_OHLC.htm"
+      "report_path": "C:\\BulkBackTest\\Updated set files\\IndicesUBSonechartSets\\1mOHLC reports\\OtherSets_nas100_H1_L_USTEC.a_H1_OHLC.htm"
     },
     {
       "ea_id": "VolatilityBreakout_NAS_VOL_M15_A_USTEC.a_M15_OHLC",
       "strategy": "VolatilityBreakout_NAS_VOL_M15_A",
-      "family": "IndicesUBSonechartSets",
+      "family": "Volatility Breakout NAS100",
       "symbol": "USTEC.a",
       "timeframe": "M15",
       "force_symbol": "USTEC.a",
@@ -3761,12 +3761,12 @@
       "hist_max_win_streak": 6,
       "largest_single_loss": 711.53,
       "dd_vs_target": 1.07,
-      "report_path": "C:\\Users\\pc\\AppData\\Local\\Temp\\claude\\C--BulkBackTest\\42d0231a-2e8f-4695-a7a4-77ae63b808cc\\scratchpad\\compile_stage\\ohlc\\IndicesUBSonechartSets\\VolatilityBreakout_NAS_VOL_M15_A_USTEC.a_M15_OHLC.htm"
+      "report_path": "C:\\BulkBackTest\\Updated set files\\IndicesUBSonechartSets\\1mOHLC reports\\VolatilityBreakout_NAS_VOL_M15_A_USTEC.a_M15_OHLC.htm"
     },
     {
       "ea_id": "VolatilityBreakout_NAS_VOL_M15_B_USTEC.a_M15_OHLC",
       "strategy": "VolatilityBreakout_NAS_VOL_M15_B",
-      "family": "IndicesUBSonechartSets",
+      "family": "Volatility Breakout NAS100",
       "symbol": "USTEC.a",
       "timeframe": "M15",
       "force_symbol": "USTEC.a",
@@ -3790,12 +3790,12 @@
       "hist_max_win_streak": 7,
       "largest_single_loss": 500.75,
       "dd_vs_target": 0.81,
-      "report_path": "C:\\Users\\pc\\AppData\\Local\\Temp\\claude\\C--BulkBackTest\\42d0231a-2e8f-4695-a7a4-77ae63b808cc\\scratchpad\\compile_stage\\ohlc\\IndicesUBSonechartSets\\VolatilityBreakout_NAS_VOL_M15_B_USTEC.a_M15_OHLC.htm"
+      "report_path": "C:\\BulkBackTest\\Updated set files\\IndicesUBSonechartSets\\1mOHLC reports\\VolatilityBreakout_NAS_VOL_M15_B_USTEC.a_M15_OHLC.htm"
     },
     {
       "ea_id": "VolatilityBreakout_NAS_VOL_M15_C_USTEC.a_M15_OHLC",
       "strategy": "VolatilityBreakout_NAS_VOL_M15_C",
-      "family": "IndicesUBSonechartSets",
+      "family": "Volatility Breakout NAS100",
       "symbol": "USTEC.a",
       "timeframe": "M15",
       "force_symbol": "USTEC.a",
@@ -3819,12 +3819,12 @@
       "hist_max_win_streak": 7,
       "largest_single_loss": 500.75,
       "dd_vs_target": 0.83,
-      "report_path": "C:\\Users\\pc\\AppData\\Local\\Temp\\claude\\C--BulkBackTest\\42d0231a-2e8f-4695-a7a4-77ae63b808cc\\scratchpad\\compile_stage\\ohlc\\IndicesUBSonechartSets\\VolatilityBreakout_NAS_VOL_M15_C_USTEC.a_M15_OHLC.htm"
+      "report_path": "C:\\BulkBackTest\\Updated set files\\IndicesUBSonechartSets\\1mOHLC reports\\VolatilityBreakout_NAS_VOL_M15_C_USTEC.a_M15_OHLC.htm"
     },
     {
       "ea_id": "VolatilityBreakout_NAS_VOL_M15_D_USTEC.a_M15_OHLC",
       "strategy": "VolatilityBreakout_NAS_VOL_M15_D",
-      "family": "IndicesUBSonechartSets",
+      "family": "Volatility Breakout NAS100",
       "symbol": "USTEC.a",
       "timeframe": "M15",
       "force_symbol": "USTEC.a",
@@ -3848,12 +3848,12 @@
       "hist_max_win_streak": 6,
       "largest_single_loss": 834.53,
       "dd_vs_target": 0.95,
-      "report_path": "C:\\Users\\pc\\AppData\\Local\\Temp\\claude\\C--BulkBackTest\\42d0231a-2e8f-4695-a7a4-77ae63b808cc\\scratchpad\\compile_stage\\ohlc\\IndicesUBSonechartSets\\VolatilityBreakout_NAS_VOL_M15_D_USTEC.a_M15_OHLC.htm"
+      "report_path": "C:\\BulkBackTest\\Updated set files\\IndicesUBSonechartSets\\1mOHLC reports\\VolatilityBreakout_NAS_VOL_M15_D_USTEC.a_M15_OHLC.htm"
     },
     {
       "ea_id": "VolatilityBreakout_NAS_VOL_M15_E_USTEC.a_M15_OHLC",
       "strategy": "VolatilityBreakout_NAS_VOL_M15_E",
-      "family": "IndicesUBSonechartSets",
+      "family": "Volatility Breakout NAS100",
       "symbol": "USTEC.a",
       "timeframe": "M15",
       "force_symbol": "USTEC.a",
@@ -3877,12 +3877,12 @@
       "hist_max_win_streak": 5,
       "largest_single_loss": 571.46,
       "dd_vs_target": 0.82,
-      "report_path": "C:\\Users\\pc\\AppData\\Local\\Temp\\claude\\C--BulkBackTest\\42d0231a-2e8f-4695-a7a4-77ae63b808cc\\scratchpad\\compile_stage\\ohlc\\IndicesUBSonechartSets\\VolatilityBreakout_NAS_VOL_M15_E_USTEC.a_M15_OHLC.htm"
+      "report_path": "C:\\BulkBackTest\\Updated set files\\IndicesUBSonechartSets\\1mOHLC reports\\VolatilityBreakout_NAS_VOL_M15_E_USTEC.a_M15_OHLC.htm"
     },
     {
       "ea_id": "VolatilityBreakout_US30_VOL_M15_a_US30.a_M15_OHLC",
       "strategy": "VolatilityBreakout_US30_VOL_M15_a",
-      "family": "IndicesUBSonechartSets",
+      "family": "Volatility Breakout US30",
       "symbol": "US30.a",
       "timeframe": "M15",
       "force_symbol": "US30.a",
@@ -3906,12 +3906,12 @@
       "hist_max_win_streak": 12,
       "largest_single_loss": 2063.47,
       "dd_vs_target": 1.15,
-      "report_path": "C:\\Users\\pc\\AppData\\Local\\Temp\\claude\\C--BulkBackTest\\42d0231a-2e8f-4695-a7a4-77ae63b808cc\\scratchpad\\compile_stage\\ohlc\\IndicesUBSonechartSets\\VolatilityBreakout_US30_VOL_M15_a_US30.a_M15_OHLC.htm"
+      "report_path": "C:\\BulkBackTest\\Updated set files\\IndicesUBSonechartSets\\1mOHLC reports\\VolatilityBreakout_US30_VOL_M15_a_US30.a_M15_OHLC.htm"
     },
     {
       "ea_id": "VolatilityBreakout_US30_VOL_M15_b_US30.a_M15_OHLC",
       "strategy": "VolatilityBreakout_US30_VOL_M15_b",
-      "family": "IndicesUBSonechartSets",
+      "family": "Volatility Breakout US30",
       "symbol": "US30.a",
       "timeframe": "M15",
       "force_symbol": "US30.a",
@@ -3935,12 +3935,12 @@
       "hist_max_win_streak": 17,
       "largest_single_loss": 2417.21,
       "dd_vs_target": 0.47,
-      "report_path": "C:\\Users\\pc\\AppData\\Local\\Temp\\claude\\C--BulkBackTest\\42d0231a-2e8f-4695-a7a4-77ae63b808cc\\scratchpad\\compile_stage\\ohlc\\IndicesUBSonechartSets\\VolatilityBreakout_US30_VOL_M15_b_US30.a_M15_OHLC.htm"
+      "report_path": "C:\\BulkBackTest\\Updated set files\\IndicesUBSonechartSets\\1mOHLC reports\\VolatilityBreakout_US30_VOL_M15_b_US30.a_M15_OHLC.htm"
     },
     {
       "ea_id": "VolatilityBreakout_US30_VOL_M15_c_US30.a_M15_OHLC",
       "strategy": "VolatilityBreakout_US30_VOL_M15_c",
-      "family": "IndicesUBSonechartSets",
+      "family": "Volatility Breakout US30",
       "symbol": "US30.a",
       "timeframe": "M15",
       "force_symbol": "US30.a",
@@ -3964,12 +3964,12 @@
       "hist_max_win_streak": 10,
       "largest_single_loss": 1250.82,
       "dd_vs_target": 0.39,
-      "report_path": "C:\\Users\\pc\\AppData\\Local\\Temp\\claude\\C--BulkBackTest\\42d0231a-2e8f-4695-a7a4-77ae63b808cc\\scratchpad\\compile_stage\\ohlc\\IndicesUBSonechartSets\\VolatilityBreakout_US30_VOL_M15_c_US30.a_M15_OHLC.htm"
+      "report_path": "C:\\BulkBackTest\\Updated set files\\IndicesUBSonechartSets\\1mOHLC reports\\VolatilityBreakout_US30_VOL_M15_c_US30.a_M15_OHLC.htm"
     },
     {
       "ea_id": "VolatilityBreakout_US30_VOL_M15_g_US30.a_M15_OHLC",
       "strategy": "VolatilityBreakout_US30_VOL_M15_g",
-      "family": "IndicesUBSonechartSets",
+      "family": "Volatility Breakout US30",
       "symbol": "US30.a",
       "timeframe": "M15",
       "force_symbol": "US30.a",
@@ -3993,12 +3993,12 @@
       "hist_max_win_streak": 17,
       "largest_single_loss": 2425.85,
       "dd_vs_target": 0.89,
-      "report_path": "C:\\Users\\pc\\AppData\\Local\\Temp\\claude\\C--BulkBackTest\\42d0231a-2e8f-4695-a7a4-77ae63b808cc\\scratchpad\\compile_stage\\ohlc\\IndicesUBSonechartSets\\VolatilityBreakout_US30_VOL_M15_g_US30.a_M15_OHLC.htm"
+      "report_path": "C:\\BulkBackTest\\Updated set files\\IndicesUBSonechartSets\\1mOHLC reports\\VolatilityBreakout_US30_VOL_M15_g_US30.a_M15_OHLC.htm"
     },
     {
-      "ea_id": "VolatilityBreakout_VolUS500_a_M15_US500.a_M15_OHLC",
+      "ea_id": "VolatilityBreakout_VolUS500_a_M15_US500.a_M15_REALTICKS",
       "strategy": "VolatilityBreakout_VolUS500_a_M15",
-      "family": "IndicesUBSonechartSets",
+      "family": "Volatility Breakout US500",
       "symbol": "US500.a",
       "timeframe": "M15",
       "force_symbol": "US500.a",
@@ -4007,27 +4007,27 @@
       "risk_pct_target": 5.0,
       "hist_max_dd": 15.0,
       "lot_step": 300.0,
-      "net_profit": 27304.8,
-      "realized_dd": 3339.95,
-      "realized_dd_pct": 3.04,
-      "equity_dd_pct": 4.37,
-      "trades": 269,
+      "net_profit": 27139.32,
+      "realized_dd": 3302.49,
+      "realized_dd_pct": 3.01,
+      "equity_dd_pct": 4.38,
+      "trades": 268,
       "first_trade": "2018-02-14 15:58:40",
-      "last_trade": "2026-08-07 19:31:40",
-      "win_rate_pct": 52.4,
+      "last_trade": "2026-08-07 19:31:54",
+      "win_rate_pct": 51.5,
       "hist_max_loss_streak": 4,
       "hist_max_loss_streak_days": 4,
-      "hist_max_streak_cost": 3298.93,
+      "hist_max_streak_cost": 3302.49,
       "hist_avg_loss_streak": 1.83,
       "hist_max_win_streak": 8,
-      "largest_single_loss": 1545.58,
-      "dd_vs_target": 0.61,
-      "report_path": "C:\\Users\\pc\\AppData\\Local\\Temp\\claude\\C--BulkBackTest\\42d0231a-2e8f-4695-a7a4-77ae63b808cc\\scratchpad\\compile_stage\\ohlc\\IndicesUBSonechartSets\\VolatilityBreakout_VolUS500_a_M15_US500.a_M15_OHLC.htm"
+      "largest_single_loss": 1546.3,
+      "dd_vs_target": 0.6,
+      "report_path": "C:\\BulkBackTest\\Updated set files\\IndicesUBSonechartSets\\1mOHLC reports\\VolatilityBreakout_VolUS500_a_M15_US500.a_M15_REALTICKS.htm"
     },
     {
-      "ea_id": "VolatilityBreakout_VolUS500_c_M15_US500.a_M15_OHLC",
+      "ea_id": "VolatilityBreakout_VolUS500_c_M15_US500.a_M15_REALTICKS",
       "strategy": "VolatilityBreakout_VolUS500_c_M15",
-      "family": "IndicesUBSonechartSets",
+      "family": "Volatility Breakout US500",
       "symbol": "US500.a",
       "timeframe": "M15",
       "force_symbol": "US500.a",
@@ -4036,27 +4036,27 @@
       "risk_pct_target": 5.0,
       "hist_max_dd": 40.0,
       "lot_step": 800.0,
-      "net_profit": 24901.72,
-      "realized_dd": 4102.75,
+      "net_profit": 24763.9,
+      "realized_dd": 4105.18,
       "realized_dd_pct": 4.05,
-      "equity_dd_pct": 4.28,
+      "equity_dd_pct": 4.29,
       "trades": 305,
-      "first_trade": "2018-01-30 16:26:20",
-      "last_trade": "2026-08-05 15:13:40",
+      "first_trade": "2018-01-30 16:26:00",
+      "last_trade": "2026-08-05 15:13:42",
       "win_rate_pct": 47.9,
       "hist_max_loss_streak": 9,
       "hist_max_loss_streak_days": 11,
-      "hist_max_streak_cost": 2921.56,
+      "hist_max_streak_cost": 2940.9,
       "hist_avg_loss_streak": 2.52,
       "hist_max_win_streak": 7,
-      "largest_single_loss": 930.44,
+      "largest_single_loss": 930.56,
       "dd_vs_target": 0.81,
-      "report_path": "C:\\Users\\pc\\AppData\\Local\\Temp\\claude\\C--BulkBackTest\\42d0231a-2e8f-4695-a7a4-77ae63b808cc\\scratchpad\\compile_stage\\ohlc\\IndicesUBSonechartSets\\VolatilityBreakout_VolUS500_c_M15_US500.a_M15_OHLC.htm"
+      "report_path": "C:\\BulkBackTest\\Updated set files\\IndicesUBSonechartSets\\1mOHLC reports\\VolatilityBreakout_VolUS500_c_M15_US500.a_M15_REALTICKS.htm"
     },
     {
-      "ea_id": "VolatilityBreakout_VolUS500_g_M15_US500.a_M15_OHLC",
+      "ea_id": "VolatilityBreakout_VolUS500_g_M15_US500.a_M15_REALTICKS",
       "strategy": "VolatilityBreakout_VolUS500_g_M15",
-      "family": "IndicesUBSonechartSets",
+      "family": "Volatility Breakout US500",
       "symbol": "US500.a",
       "timeframe": "M15",
       "force_symbol": "US500.a",
@@ -4065,22 +4065,22 @@
       "risk_pct_target": 5.0,
       "hist_max_dd": 40.0,
       "lot_step": 800.0,
-      "net_profit": 36132.45,
-      "realized_dd": 4751.47,
-      "realized_dd_pct": 4.5,
-      "equity_dd_pct": 4.88,
+      "net_profit": 33240.57,
+      "realized_dd": 4841.08,
+      "realized_dd_pct": 4.59,
+      "equity_dd_pct": 4.97,
       "trades": 1538,
       "first_trade": "2018-01-16 23:32:00",
-      "last_trade": "2026-08-05 17:53:40",
-      "win_rate_pct": 46.6,
+      "last_trade": "2026-08-05 17:53:33",
+      "win_rate_pct": 46.0,
       "hist_max_loss_streak": 15,
       "hist_max_loss_streak_days": 14,
-      "hist_max_streak_cost": 1956.48,
-      "hist_avg_loss_streak": 2.91,
+      "hist_max_streak_cost": 1967.58,
+      "hist_avg_loss_streak": 2.97,
       "hist_max_win_streak": 10,
-      "largest_single_loss": 232.66,
-      "dd_vs_target": 0.9,
-      "report_path": "C:\\Users\\pc\\AppData\\Local\\Temp\\claude\\C--BulkBackTest\\42d0231a-2e8f-4695-a7a4-77ae63b808cc\\scratchpad\\compile_stage\\ohlc\\IndicesUBSonechartSets\\VolatilityBreakout_VolUS500_g_M15_US500.a_M15_OHLC.htm"
+      "largest_single_loss": 1030.33,
+      "dd_vs_target": 0.92,
+      "report_path": "C:\\BulkBackTest\\Updated set files\\IndicesUBSonechartSets\\1mOHLC reports\\VolatilityBreakout_VolUS500_g_M15_US500.a_M15_REALTICKS.htm"
     }
   ]
 }

@@ -62,9 +62,9 @@
         "VolatilityBreakout_US30_VOL_M15_b_US30.a_M15_OHLC",
         "VolatilityBreakout_US30_VOL_M15_c_US30.a_M15_OHLC",
         "VolatilityBreakout_US30_VOL_M15_g_US30.a_M15_OHLC",
-        "VolatilityBreakout_VolUS500_a_M15_US500.a_M15_OHLC",
-        "VolatilityBreakout_VolUS500_c_M15_US500.a_M15_OHLC",
-        "VolatilityBreakout_VolUS500_g_M15_US500.a_M15_OHLC"
+        "VolatilityBreakout_VolUS500_a_M15_US500.a_M15_REALTICKS",
+        "VolatilityBreakout_VolUS500_c_M15_US500.a_M15_REALTICKS",
+        "VolatilityBreakout_VolUS500_g_M15_US500.a_M15_REALTICKS"
       ],
       "package_ea": "",
       "package_timeline": "",
