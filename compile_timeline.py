@@ -108,9 +108,11 @@ def streak_stats(trades):
 
 
 def compile_reports(reports_dir, out_dir):
-    htm_files = sorted(glob.glob(os.path.join(reports_dir, '**', '*.htm'), recursive=True))
+    htm_files = sorted(
+        glob.glob(os.path.join(reports_dir, '**', '*.htm'), recursive=True) +
+        glob.glob(os.path.join(reports_dir, '**', '*.html'), recursive=True))
     if not htm_files:
-        print(f"  ERROR: no .htm reports found under {reports_dir}")
+        print(f"  ERROR: no .htm/.html reports found under {reports_dir}")
         sys.exit(1)
 
     print(f"  Found {len(htm_files)} report(s) under {reports_dir}")

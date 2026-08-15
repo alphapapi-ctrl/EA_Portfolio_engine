@@ -509,10 +509,16 @@ elif page == '🗂 Data':
                                    'safe to hard-code this suite off the main '
                                    'pool.')
                     else:
-                        st.warning('Meaningful discrepancy — check the member '
-                                   'list (missing/extra strategies?), then '
-                                   'magic-number or symbol differences in the '
-                                   'packaged set file.')
+                        st.warning('Meaningful discrepancy — the grouping is '
+                                   'directional, not a replication. Check the '
+                                   'member list first (missing/extra '
+                                   'strategies?); if that\'s right, the '
+                                   'package itself differs structurally — '
+                                   'e.g. a TradeFrequency throttle or one '
+                                   'shared risk budget across the book (see '
+                                   'the suite\'s notes). For package-level '
+                                   'questions, prefer the package\'s own '
+                                   'timeline.')
 
     # ── Compile / update ──────────────────────────────────────────────────
     st.subheader('Create or update a timeline')
@@ -538,8 +544,10 @@ e.g. a gold-only pool and a full pool side by side.
         from compile_timeline import compile_reports
         if not os.path.isdir(folder):
             st.error(f'Folder not found: {folder}')
-        elif not glob.glob(os.path.join(folder, '**', '*.htm'), recursive=True):
-            st.error('No .htm reports found in that folder.')
+        elif not (glob.glob(os.path.join(folder, '**', '*.htm'), recursive=True)
+                  or glob.glob(os.path.join(folder, '**', '*.html'),
+                               recursive=True)):
+            st.error('No .htm/.html reports found in that folder.')
         else:
             buf = _io.StringIO()
             out_dir = os.path.join(ENGINE_DIR, 'timeline', new_name.strip())

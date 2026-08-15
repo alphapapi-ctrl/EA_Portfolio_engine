@@ -1,0 +1,211 @@
+entity,type,indicator,state,days,total_pnl,avg_daily,sharpe,pnl_share_pct
+GoldBotOne_Pkg,ea,DXY,strong dollar,590,26236.84,44.47,2.76,50.6
+GoldBotOne_Pkg,ea,DXY,weak dollar,516,25639.07,49.69,2.76,49.4
+GoldBotOne_Pkg,ea,SP500,stocks bear,216,11490.57,53.2,2.85,23.4
+GoldBotOne_Pkg,ea,SP500,stocks bull,821,37593.99,45.79,2.8,76.6
+GoldBotOne_Pkg,ea,GOLD,gold downtrend,272,9655.81,35.5,2.04,19.7
+GoldBotOne_Pkg,ea,GOLD,gold uptrend,765,39428.75,51.54,3.09,80.3
+GoldBotOne_Pkg,ea,BTC,crypto bear,456,19690.88,43.18,2.36,37.1
+GoldBotOne_Pkg,ea,BTC,crypto bull,622,33390.93,53.68,3.33,62.9
+GoldBotOne_Pkg,ea,US10Y,rates falling,413,24243.23,58.7,3.46,46.7
+GoldBotOne_Pkg,ea,US10Y,rates rising,693,27632.68,39.87,2.34,53.3
+GoldBotOne_Pkg,ea,OIL,oil downtrend,522,26148.29,50.09,3.2,53.3
+GoldBotOne_Pkg,ea,OIL,oil uptrend,515,22936.27,44.54,2.47,46.7
+GoldBotOne_Pkg,ea,VIX,calm,258,11447.68,44.37,2.51,20.7
+GoldBotOne_Pkg,ea,VIX,normal,679,35653.58,52.51,3.23,64.5
+GoldBotOne_Pkg,ea,VIX,stressed,228,8193.05,35.93,1.99,14.8
+GoldPhantom_Pkg_Conservative,ea,DXY,strong dollar,591,37973.48,64.25,3.17,46.4
+GoldPhantom_Pkg_Conservative,ea,DXY,weak dollar,516,43822.85,84.93,3.15,53.6
+GoldPhantom_Pkg_Conservative,ea,SP500,stocks bear,216,16141.55,74.73,3.63,20.9
+GoldPhantom_Pkg_Conservative,ea,SP500,stocks bull,822,61176.31,74.42,3.18,79.1
+GoldPhantom_Pkg_Conservative,ea,GOLD,gold downtrend,272,13438.34,49.41,2.54,17.4
+GoldPhantom_Pkg_Conservative,ea,GOLD,gold uptrend,766,63879.52,83.39,3.49,82.6
+GoldPhantom_Pkg_Conservative,ea,BTC,crypto bear,457,30033.96,65.72,2.74,35.9
+GoldPhantom_Pkg_Conservative,ea,BTC,crypto bull,622,53619.31,86.2,3.67,64.1
+GoldPhantom_Pkg_Conservative,ea,US10Y,rates falling,413,38582.29,93.42,3.68,47.2
+GoldPhantom_Pkg_Conservative,ea,US10Y,rates rising,694,43214.04,62.27,2.77,52.8
+GoldPhantom_Pkg_Conservative,ea,OIL,oil downtrend,522,45163.03,86.52,3.73,58.4
+GoldPhantom_Pkg_Conservative,ea,OIL,oil uptrend,516,32154.83,62.32,2.78,41.6
+GoldPhantom_Pkg_Conservative,ea,VIX,calm,259,19020.32,73.44,2.7,22.0
+GoldPhantom_Pkg_Conservative,ea,VIX,normal,679,54013.84,79.55,3.42,62.4
+GoldPhantom_Pkg_Conservative,ea,VIX,stressed,228,13551.04,59.43,2.84,15.7
+GoldPhantom_Pkg_ExtremeConservative,ea,DXY,strong dollar,590,29815.01,50.53,2.69,45.3
+GoldPhantom_Pkg_ExtremeConservative,ea,DXY,weak dollar,516,36043.93,69.85,2.54,54.7
+GoldPhantom_Pkg_ExtremeConservative,ea,SP500,stocks bear,216,10026.89,46.42,2.51,16.5
+GoldPhantom_Pkg_ExtremeConservative,ea,SP500,stocks bull,821,50899.77,62.0,2.74,83.5
+GoldPhantom_Pkg_ExtremeConservative,ea,GOLD,gold downtrend,272,9962.55,36.63,2.05,16.4
+GoldPhantom_Pkg_ExtremeConservative,ea,GOLD,gold uptrend,765,50964.11,66.62,2.89,83.6
+GoldPhantom_Pkg_ExtremeConservative,ea,BTC,crypto bear,456,20660.31,45.31,1.99,30.4
+GoldPhantom_Pkg_ExtremeConservative,ea,BTC,crypto bull,622,47228.89,75.93,3.19,69.6
+GoldPhantom_Pkg_ExtremeConservative,ea,US10Y,rates falling,413,32678.31,79.12,3.08,49.6
+GoldPhantom_Pkg_ExtremeConservative,ea,US10Y,rates rising,693,33180.63,47.88,2.21,50.4
+GoldPhantom_Pkg_ExtremeConservative,ea,OIL,oil downtrend,522,35358.13,67.74,3.14,58.0
+GoldPhantom_Pkg_ExtremeConservative,ea,OIL,oil uptrend,515,25568.53,49.65,2.25,42.0
+GoldPhantom_Pkg_ExtremeConservative,ea,VIX,calm,258,17733.36,68.73,2.35,24.9
+GoldPhantom_Pkg_ExtremeConservative,ea,VIX,normal,679,44402.31,65.39,2.97,62.4
+GoldPhantom_Pkg_ExtremeConservative,ea,VIX,stressed,228,8991.46,39.44,1.91,12.6
+GoldPhantom_Pkg_Moderate,ea,DXY,strong dollar,591,42455.32,71.84,3.71,48.0
+GoldPhantom_Pkg_Moderate,ea,DXY,weak dollar,516,45928.33,89.01,3.47,52.0
+GoldPhantom_Pkg_Moderate,ea,SP500,stocks bear,216,17938.76,83.05,4.09,21.5
+GoldPhantom_Pkg_Moderate,ea,SP500,stocks bull,822,65490.45,79.67,3.52,78.5
+GoldPhantom_Pkg_Moderate,ea,GOLD,gold downtrend,272,16534.86,60.79,3.35,19.8
+GoldPhantom_Pkg_Moderate,ea,GOLD,gold uptrend,766,66894.35,87.33,3.73,80.2
+GoldPhantom_Pkg_Moderate,ea,BTC,crypto bear,457,33264.94,72.79,3.22,37.1
+GoldPhantom_Pkg_Moderate,ea,BTC,crypto bull,622,56349.13,90.59,3.98,62.9
+GoldPhantom_Pkg_Moderate,ea,US10Y,rates falling,413,39780.21,96.32,3.99,45.0
+GoldPhantom_Pkg_Moderate,ea,US10Y,rates rising,694,48603.44,70.03,3.26,55.0
+GoldPhantom_Pkg_Moderate,ea,OIL,oil downtrend,522,47941.12,91.84,4.02,57.5
+GoldPhantom_Pkg_Moderate,ea,OIL,oil uptrend,516,35488.09,68.78,3.22,42.5
+GoldPhantom_Pkg_Moderate,ea,VIX,calm,259,19300.98,74.52,3.03,20.9
+GoldPhantom_Pkg_Moderate,ea,VIX,normal,679,58164.8,85.66,3.82,62.9
+GoldPhantom_Pkg_Moderate,ea,VIX,stressed,228,15037.64,65.95,3.18,16.3
+GoldReaper_Pkg_Conservative,ea,DXY,strong dollar,591,57423.95,97.16,3.73,49.7
+GoldReaper_Pkg_Conservative,ea,DXY,weak dollar,516,58162.18,112.72,3.6,50.3
+GoldReaper_Pkg_Conservative,ea,SP500,stocks bear,216,28518.01,132.03,4.82,26.4
+GoldReaper_Pkg_Conservative,ea,SP500,stocks bull,822,79597.03,96.83,3.28,73.6
+GoldReaper_Pkg_Conservative,ea,GOLD,gold downtrend,272,20159.08,74.11,3.29,18.6
+GoldReaper_Pkg_Conservative,ea,GOLD,gold uptrend,766,87955.96,114.83,3.69,81.4
+GoldReaper_Pkg_Conservative,ea,BTC,crypto bear,457,55961.65,122.45,3.96,49.1
+GoldReaper_Pkg_Conservative,ea,BTC,crypto bull,622,58011.61,93.27,3.41,50.9
+GoldReaper_Pkg_Conservative,ea,US10Y,rates falling,413,46292.89,112.09,3.94,40.1
+GoldReaper_Pkg_Conservative,ea,US10Y,rates rising,694,69293.24,99.85,3.48,59.9
+GoldReaper_Pkg_Conservative,ea,OIL,oil downtrend,522,63334.28,121.33,3.72,58.6
+GoldReaper_Pkg_Conservative,ea,OIL,oil uptrend,516,44780.76,86.78,3.46,41.4
+GoldReaper_Pkg_Conservative,ea,VIX,calm,259,22401.83,86.49,3.27,18.7
+GoldReaper_Pkg_Conservative,ea,VIX,normal,679,76788.89,113.09,3.66,64.3
+GoldReaper_Pkg_Conservative,ea,VIX,stressed,228,20288.83,88.99,3.77,17.0
+GoldReaper_Pkg_ExtremeConservative,ea,DXY,strong dollar,587,37050.35,63.12,2.21,44.6
+GoldReaper_Pkg_ExtremeConservative,ea,DXY,weak dollar,515,46055.32,89.43,2.36,55.4
+GoldReaper_Pkg_ExtremeConservative,ea,SP500,stocks bear,216,12945.17,59.93,1.77,17.1
+GoldReaper_Pkg_ExtremeConservative,ea,SP500,stocks bull,817,62757.56,76.81,2.29,82.9
+GoldReaper_Pkg_ExtremeConservative,ea,GOLD,gold downtrend,268,5710.0,21.31,0.78,7.5
+GoldReaper_Pkg_ExtremeConservative,ea,GOLD,gold uptrend,765,69992.73,91.49,2.58,92.5
+GoldReaper_Pkg_ExtremeConservative,ea,BTC,crypto bear,452,32855.66,72.69,2.27,40.0
+GoldReaper_Pkg_ExtremeConservative,ea,BTC,crypto bull,622,49280.51,79.23,2.29,60.0
+GoldReaper_Pkg_ExtremeConservative,ea,US10Y,rates falling,413,37462.21,90.71,2.99,45.1
+GoldReaper_Pkg_ExtremeConservative,ea,US10Y,rates rising,689,45643.46,66.25,1.9,54.9
+GoldReaper_Pkg_ExtremeConservative,ea,OIL,oil downtrend,522,40935.44,78.42,2.1,54.1
+GoldReaper_Pkg_ExtremeConservative,ea,OIL,oil uptrend,511,34767.29,68.04,2.32,45.9
+GoldReaper_Pkg_ExtremeConservative,ea,VIX,calm,257,16767.85,65.24,1.8,19.1
+GoldReaper_Pkg_ExtremeConservative,ea,VIX,normal,676,60011.88,88.77,2.61,68.5
+GoldReaper_Pkg_ExtremeConservative,ea,VIX,stressed,228,10805.83,47.39,1.78,12.3
+GoldReaper_Pkg_Intense,ea,DXY,strong dollar,591,67189.49,113.69,4.07,61.1
+GoldReaper_Pkg_Intense,ea,DXY,weak dollar,516,42768.66,82.89,2.53,38.9
+GoldReaper_Pkg_Intense,ea,SP500,stocks bear,216,30556.28,141.46,5.42,29.0
+GoldReaper_Pkg_Intense,ea,SP500,stocks bull,822,74820.98,91.02,2.84,71.0
+GoldReaper_Pkg_Intense,ea,GOLD,gold downtrend,272,18010.71,66.22,2.66,17.1
+GoldReaper_Pkg_Intense,ea,GOLD,gold uptrend,766,87366.55,114.06,3.48,82.9
+GoldReaper_Pkg_Intense,ea,BTC,crypto bear,457,46299.46,101.31,3.24,42.8
+GoldReaper_Pkg_Intense,ea,BTC,crypto bull,622,61934.28,99.57,3.31,57.2
+GoldReaper_Pkg_Intense,ea,US10Y,rates falling,413,37709.99,91.31,2.97,34.3
+GoldReaper_Pkg_Intense,ea,US10Y,rates rising,694,72248.16,104.1,3.46,65.7
+GoldReaper_Pkg_Intense,ea,OIL,oil downtrend,522,54029.82,103.51,3.0,51.3
+GoldReaper_Pkg_Intense,ea,OIL,oil uptrend,516,51347.44,99.51,3.7,48.7
+GoldReaper_Pkg_Intense,ea,VIX,calm,259,23212.23,89.62,3.11,20.3
+GoldReaper_Pkg_Intense,ea,VIX,normal,679,67939.63,100.06,3.16,59.3
+GoldReaper_Pkg_Intense,ea,VIX,stressed,228,23385.87,102.57,3.9,20.4
+GoldReaper_Pkg_Moderate,ea,DXY,strong dollar,591,68728.81,116.29,4.25,57.1
+GoldReaper_Pkg_Moderate,ea,DXY,weak dollar,516,51572.75,99.95,3.15,42.9
+GoldReaper_Pkg_Moderate,ea,SP500,stocks bear,216,32823.12,151.96,5.4,28.6
+GoldReaper_Pkg_Moderate,ea,SP500,stocks bull,822,82000.02,99.76,3.26,71.4
+GoldReaper_Pkg_Moderate,ea,GOLD,gold downtrend,272,20072.07,73.79,2.99,17.5
+GoldReaper_Pkg_Moderate,ea,GOLD,gold uptrend,766,94751.07,123.7,3.88,82.5
+GoldReaper_Pkg_Moderate,ea,BTC,crypto bear,457,57181.82,125.12,4.08,48.1
+GoldReaper_Pkg_Moderate,ea,BTC,crypto bull,622,61736.01,99.25,3.41,51.9
+GoldReaper_Pkg_Moderate,ea,US10Y,rates falling,413,43191.77,104.58,3.52,35.9
+GoldReaper_Pkg_Moderate,ea,US10Y,rates rising,694,77109.79,111.11,3.79,64.1
+GoldReaper_Pkg_Moderate,ea,OIL,oil downtrend,522,55688.04,106.68,3.13,48.5
+GoldReaper_Pkg_Moderate,ea,OIL,oil uptrend,516,59135.1,114.6,4.48,51.5
+GoldReaper_Pkg_Moderate,ea,VIX,calm,259,20142.73,77.77,2.71,16.2
+GoldReaper_Pkg_Moderate,ea,VIX,normal,679,81188.57,119.57,3.91,65.4
+GoldReaper_Pkg_Moderate,ea,VIX,stressed,228,22763.74,99.84,3.72,18.3
+GoldTradePro_Pkg,ea,DXY,strong dollar,590,13864.17,23.5,2.6,45.8
+GoldTradePro_Pkg,ea,DXY,weak dollar,516,16388.23,31.76,3.5,54.2
+GoldTradePro_Pkg,ea,SP500,stocks bear,216,7007.11,32.44,3.11,25.2
+GoldTradePro_Pkg,ea,SP500,stocks bull,821,20823.79,25.36,2.98,74.8
+GoldTradePro_Pkg,ea,GOLD,gold downtrend,272,4820.15,17.72,2.1,17.3
+GoldTradePro_Pkg,ea,GOLD,gold uptrend,765,23010.75,30.08,3.3,82.7
+GoldTradePro_Pkg,ea,BTC,crypto bear,456,13051.43,28.62,3.09,42.8
+GoldTradePro_Pkg,ea,BTC,crypto bull,622,17455.36,28.06,3.12,57.2
+GoldTradePro_Pkg,ea,US10Y,rates falling,413,11310.62,27.39,3.07,37.4
+GoldTradePro_Pkg,ea,US10Y,rates rising,693,18941.78,27.33,2.99,62.6
+GoldTradePro_Pkg,ea,OIL,oil downtrend,522,11339.07,21.72,2.66,40.7
+GoldTradePro_Pkg,ea,OIL,oil uptrend,515,16491.83,32.02,3.31,59.3
+GoldTradePro_Pkg,ea,VIX,calm,258,7460.56,28.92,3.18,23.0
+GoldTradePro_Pkg,ea,VIX,normal,679,18959.68,27.92,3.04,58.4
+GoldTradePro_Pkg,ea,VIX,stressed,228,6042.47,26.5,2.85,18.6
+FAMILY: Gold Phantom Packaged,family,DXY,strong dollar,591,110243.81,186.54,3.27,46.7
+FAMILY: Gold Phantom Packaged,family,DXY,weak dollar,516,125795.11,243.79,3.11,53.3
+FAMILY: Gold Phantom Packaged,family,SP500,stocks bear,216,44107.2,204.2,3.52,19.9
+FAMILY: Gold Phantom Packaged,family,SP500,stocks bull,822,177566.53,216.02,3.22,80.1
+FAMILY: Gold Phantom Packaged,family,GOLD,gold downtrend,272,39935.75,146.82,2.71,18.0
+FAMILY: Gold Phantom Packaged,family,GOLD,gold uptrend,766,181737.98,237.26,3.45,82.0
+FAMILY: Gold Phantom Packaged,family,BTC,crypto bear,457,83959.21,183.72,2.72,34.8
+FAMILY: Gold Phantom Packaged,family,BTC,crypto bull,622,157197.33,252.73,3.68,65.2
+FAMILY: Gold Phantom Packaged,family,US10Y,rates falling,413,111040.81,268.86,3.66,47.0
+FAMILY: Gold Phantom Packaged,family,US10Y,rates rising,694,124998.11,180.11,2.8,53.0
+FAMILY: Gold Phantom Packaged,family,OIL,oil downtrend,522,128462.28,246.1,3.73,58.0
+FAMILY: Gold Phantom Packaged,family,OIL,oil uptrend,516,93211.45,180.64,2.8,42.0
+FAMILY: Gold Phantom Packaged,family,VIX,calm,259,56054.66,216.43,2.71,22.4
+FAMILY: Gold Phantom Packaged,family,VIX,normal,679,156580.95,230.61,3.49,62.6
+FAMILY: Gold Phantom Packaged,family,VIX,stressed,228,37580.14,164.83,2.71,15.0
+FAMILY: Gold Reaper Packaged,family,DXY,strong dollar,591,230392.6,389.84,4.16,53.7
+FAMILY: Gold Reaper Packaged,family,DXY,weak dollar,516,198558.91,384.8,3.38,46.3
+FAMILY: Gold Reaper Packaged,family,SP500,stocks bear,216,104842.58,485.38,4.8,25.9
+FAMILY: Gold Reaper Packaged,family,SP500,stocks bull,822,299175.59,363.96,3.42,74.1
+FAMILY: Gold Reaper Packaged,family,GOLD,gold downtrend,272,63951.86,235.12,2.81,15.8
+FAMILY: Gold Reaper Packaged,family,GOLD,gold uptrend,766,340066.31,443.95,3.97,84.2
+FAMILY: Gold Reaper Packaged,family,BTC,crypto bear,457,192298.59,420.78,3.91,45.4
+FAMILY: Gold Reaper Packaged,family,BTC,crypto bull,622,230962.41,371.32,3.63,54.6
+FAMILY: Gold Reaper Packaged,family,US10Y,rates falling,413,164656.86,398.68,3.91,38.4
+FAMILY: Gold Reaper Packaged,family,US10Y,rates rising,694,264294.65,380.83,3.64,61.6
+FAMILY: Gold Reaper Packaged,family,OIL,oil downtrend,522,213987.58,409.94,3.49,53.0
+FAMILY: Gold Reaper Packaged,family,OIL,oil uptrend,516,190030.59,368.28,4.03,47.0
+FAMILY: Gold Reaper Packaged,family,VIX,calm,259,82524.64,318.63,3.23,18.5
+FAMILY: Gold Reaper Packaged,family,VIX,normal,679,285928.97,421.1,3.84,64.2
+FAMILY: Gold Reaper Packaged,family,VIX,stressed,228,77244.27,338.79,3.83,17.3
+FAMILY: GoldBotOne Packaged,family,DXY,strong dollar,591,26236.84,44.39,2.76,50.6
+FAMILY: GoldBotOne Packaged,family,DXY,weak dollar,516,25639.07,49.69,2.76,49.4
+FAMILY: GoldBotOne Packaged,family,SP500,stocks bear,216,11490.57,53.2,2.85,23.4
+FAMILY: GoldBotOne Packaged,family,SP500,stocks bull,822,37593.99,45.73,2.8,76.6
+FAMILY: GoldBotOne Packaged,family,GOLD,gold downtrend,272,9655.81,35.5,2.04,19.7
+FAMILY: GoldBotOne Packaged,family,GOLD,gold uptrend,766,39428.75,51.47,3.09,80.3
+FAMILY: GoldBotOne Packaged,family,BTC,crypto bear,457,19690.88,43.09,2.35,37.1
+FAMILY: GoldBotOne Packaged,family,BTC,crypto bull,622,33390.93,53.68,3.33,62.9
+FAMILY: GoldBotOne Packaged,family,US10Y,rates falling,413,24243.23,58.7,3.46,46.7
+FAMILY: GoldBotOne Packaged,family,US10Y,rates rising,694,27632.68,39.82,2.34,53.3
+FAMILY: GoldBotOne Packaged,family,OIL,oil downtrend,522,26148.29,50.09,3.2,53.3
+FAMILY: GoldBotOne Packaged,family,OIL,oil uptrend,516,22936.27,44.45,2.47,46.7
+FAMILY: GoldBotOne Packaged,family,VIX,calm,259,11447.68,44.2,2.5,20.7
+FAMILY: GoldBotOne Packaged,family,VIX,normal,679,35653.58,52.51,3.23,64.5
+FAMILY: GoldBotOne Packaged,family,VIX,stressed,228,8193.05,35.93,1.99,14.8
+FAMILY: GoldTradePro Packaged,family,DXY,strong dollar,591,13864.17,23.46,2.6,45.8
+FAMILY: GoldTradePro Packaged,family,DXY,weak dollar,516,16388.23,31.76,3.5,54.2
+FAMILY: GoldTradePro Packaged,family,SP500,stocks bear,216,7007.11,32.44,3.11,25.2
+FAMILY: GoldTradePro Packaged,family,SP500,stocks bull,822,20823.79,25.33,2.98,74.8
+FAMILY: GoldTradePro Packaged,family,GOLD,gold downtrend,272,4820.15,17.72,2.1,17.3
+FAMILY: GoldTradePro Packaged,family,GOLD,gold uptrend,766,23010.75,30.04,3.3,82.7
+FAMILY: GoldTradePro Packaged,family,BTC,crypto bear,457,13051.43,28.56,3.08,42.8
+FAMILY: GoldTradePro Packaged,family,BTC,crypto bull,622,17455.36,28.06,3.12,57.2
+FAMILY: GoldTradePro Packaged,family,US10Y,rates falling,413,11310.62,27.39,3.07,37.4
+FAMILY: GoldTradePro Packaged,family,US10Y,rates rising,694,18941.78,27.29,2.99,62.6
+FAMILY: GoldTradePro Packaged,family,OIL,oil downtrend,522,11339.07,21.72,2.66,40.7
+FAMILY: GoldTradePro Packaged,family,OIL,oil uptrend,516,16491.83,31.96,3.3,59.3
+FAMILY: GoldTradePro Packaged,family,VIX,calm,259,7460.56,28.81,3.17,23.0
+FAMILY: GoldTradePro Packaged,family,VIX,normal,679,18959.68,27.92,3.04,58.4
+FAMILY: GoldTradePro Packaged,family,VIX,stressed,228,6042.47,26.5,2.85,18.6
+POOL: all robots,pool,DXY,strong dollar,591,380737.42,644.23,4.54,51.0
+POOL: all robots,pool,DXY,weak dollar,516,366381.32,710.04,4.09,49.0
+POOL: all robots,pool,SP500,stocks bear,216,167447.46,775.22,5.18,23.8
+POOL: all robots,pool,SP500,stocks bull,822,535159.9,651.05,4.1,76.2
+POOL: all robots,pool,GOLD,gold downtrend,272,118363.57,435.16,3.26,16.8
+POOL: all robots,pool,GOLD,gold uptrend,766,584243.79,762.72,4.64,83.2
+POOL: all robots,pool,BTC,crypto bear,457,309000.11,676.15,4.15,41.3
+POOL: all robots,pool,BTC,crypto bull,622,439006.03,705.8,4.54,58.7
+POOL: all robots,pool,US10Y,rates falling,413,311251.52,753.64,4.87,41.7
+POOL: all robots,pool,US10Y,rates rising,694,435867.22,628.05,3.95,58.3
+POOL: all robots,pool,OIL,oil downtrend,522,379937.22,727.85,4.36,54.1
+POOL: all robots,pool,OIL,oil uptrend,516,322670.14,625.33,4.27,45.9
+POOL: all robots,pool,VIX,calm,259,157487.54,608.06,3.77,20.1
+POOL: all robots,pool,VIX,normal,679,497123.18,732.14,4.5,63.4
+POOL: all robots,pool,VIX,stressed,228,129059.93,566.05,4.03,16.5
