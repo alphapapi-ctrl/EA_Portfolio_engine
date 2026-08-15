@@ -89,7 +89,8 @@ def dataset_selector(widget_key, show_desc=False):
         return None
     cur = st.session_state.get('dataset')
     if cur not in timelines:
-        cur = 'main_pool' if 'main_pool' in timelines else timelines[0]
+        cur = next((p for p in ('main_pool_2018', 'main_pool')
+                    if p in timelines), timelines[0])
     st.session_state['dataset'] = cur
     # Keyed widgets ignore index= once they hold state, so push the canonical
     # choice into the widget's own state before rendering.
@@ -449,8 +450,13 @@ elif page == '🗂 Data':
                         'the \\$100k linear basis. High daily correlation and '
                         'similar drawdown = the grouping is a faithful stand-in '
                         'and the package can be "hard-coded off main".')
-            v_suite = st.selectbox('Suite', [s['name'] for s in suites])
-            sdef = next(s for s in suites if s['name'] == v_suite)
+            v_names = [s['name'] for s in suites if s.get('package_ea')]
+            if not v_names:
+                st.info('No suite has a standalone packaged backtest linked '
+                        '(package_ea) — nothing to validate against.')
+            v_suite = st.selectbox('Suite', v_names) if v_names else None
+            sdef = (next(s for s in suites if s['name'] == v_suite)
+                    if v_suite else {})
             tls = list_timelines()
             vc1, vc2 = st.columns(2)
             v_main = vc1.selectbox(
@@ -956,6 +962,22 @@ elif page == '🛠 Build a Run':
         else:
             states = pd.read_csv(reg_path, parse_dates=['date']).set_index('date')
             start_ts = pd.Timestamp(start_date)
+            if len(daily[daily.index < start_ts]) < 90 and len(daily) > 90:
+                # The pick judges form on history BEFORE the start, so an
+                # early start has nothing to judge with — default ~4 months
+                # in and ask, rather than just warning.
+                auto_start = daily.index[90].date()
+                start_date = st.date_input(
+                    'Start date for this run', auto_start,
+                    min_value=auto_start, max_value=daily.index[-1].date(),
+                    key='regime_pick_start',
+                    help='The regime pick ranks robots on history BEFORE the '
+                         'start date, so the run begins ~4 months into the '
+                         'dataset at the earliest. This overrides the start '
+                         'date in section 1 for this run.')
+                start_ts = pd.Timestamp(start_date)
+                st.caption(f'📅 Run starts **{start_ts:%d %b %Y}** (the first '
+                           '~4 months stay reserved as pre-start evidence).')
             hist = daily[daily.index < start_ts]
             known = states[states.index < start_ts]
             if len(hist) < 90 or known.empty:
@@ -1018,12 +1040,12 @@ elif page == '🛠 Build a Run':
         suite_default = []
         if suites:
             suite_sel = st.selectbox(
-                'Packaged suite quick-pick', ['(no suite)'] +
+                'Suite / portfolio quick-pick', ['(no suite)'] +
                 [s['name'] for s in suites],
-                help='Suites defined in packaged_suites.json — each is a '
-                     'packaged-EA configuration (product × risk level) '
-                     'expressed as its list of main-pool strategies. Picking '
-                     'one pre-selects those robots below.')
+                help='Defined in packaged_suites.json — packaged-EA '
+                     'configurations (product × risk level) and curated '
+                     'portfolios like Wim\'s. Picking one pre-selects those '
+                     'robots below.')
             if suite_sel != '(no suite)':
                 s = next(s for s in suites if s['name'] == suite_sel)
                 members = s.get('members', [])
