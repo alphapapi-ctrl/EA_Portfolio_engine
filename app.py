@@ -1564,6 +1564,23 @@ elif page == '🏁 Results & Compare':
         'ann_per_unit': 'Per year per robot (%)',
         'sharpe': 'Sharpe', 'max_dd_pct': 'Worst drop (%)',
         'turnover_units': 'Churn', 'events': 'Decisions'})
+
+    # ── Baseline ──────────────────────────────────────────────────────────
+    base_default = next((n for n in ('wim_hold_37', 'bench_equal_weight')
+                         if n in df.index), df.index[0])
+    baseline = st.selectbox(
+        'Baseline run — everything below is measured against it',
+        list(df.index), index=list(df.index).index(base_default),
+        help='Pick your do-nothing (or reference) portfolio: e.g. the '
+             'passive hold of the same book, or the equal-weight bench. '
+             'The Δ columns show what each management style adds or costs '
+             'versus this baseline, and it is always drawn in the charts '
+             'below.')
+    df.insert(4, 'Δ Sharpe vs base',
+              (df['Sharpe'] - df.loc[baseline, 'Sharpe']).round(2))
+    df.insert(4, 'Δ %/robot vs base',
+              (df['Per year per robot (%)']
+               - df.loc[baseline, 'Per year per robot (%)']).round(2))
     st.dataframe(df, use_container_width=True,
                  column_config={c: st.column_config.NumberColumn(help=h, format='%.2f') for c, h in {
                      'Risk units'    : ('How many robots-at-full-backtested-size '
@@ -1584,6 +1601,15 @@ elif page == '🏁 Results & Compare':
                          'is misleading for multi-robot books: a 37-robot run '
                          'shows 37× this number against the same fixed base.)'),
                      'Sharpe'        : METRIC_HELP['sharpe'],
+                     'Δ %/robot vs base': ('Per-robot yearly return minus the '
+                                           'baseline\'s — what the management '
+                                           'style adds (or costs) per robot '
+                                           'against your chosen do-nothing '
+                                           'reference.'),
+                     'Δ Sharpe vs base': ('Sharpe minus the baseline\'s — '
+                                          'positive = smoother profit per '
+                                          'unit of wobble than the '
+                                          'baseline.'),
                      'Worst drop (%)': METRIC_HELP['max_dd_pct'],
                      'Churn'         : METRIC_HELP['turnover_units'],
                  }.items()})
@@ -1655,6 +1681,22 @@ is what stops the panic-and-shelve cycle.
             st.dataframe(friendly_mc_table(pd.read_csv(mc2_path)),
                          use_container_width=True, hide_index=True)
 
+    with st.expander('🗂 Manage runs (delete old experiments)'):
+        del_sel = st.multiselect('Runs to delete', list(df.index),
+                                 help='Removes the saved run folder '
+                                      '(runs/<name>: config, equity, events, '
+                                      'summary). The compiled datasets are '
+                                      'not touched — you can always re-run '
+                                      'the same configuration.')
+        sure_runs = st.checkbox('Yes, delete the selected run(s) permanently',
+                                key='del_runs_confirm')
+        if st.button('🗑 Delete selected runs', type='primary',
+                     disabled=not (del_sel and sure_runs)):
+            for name in del_sel:
+                shutil.rmtree(os.path.join(RUNS_DIR, name), ignore_errors=True)
+            st.success(f'{len(del_sel)} run(s) deleted.')
+            st.rerun()
+
     comp_view = st.toggle(
         '💹 Compounding view — lot size tracks the balance', value=False,
         help='The simulations run on a FIXED balance (linear, fair comparisons, '
@@ -1676,8 +1718,11 @@ is what stops the panic-and-shelve cycle.
         out['equity'] = basis * (1 + out['pnl'] / basis).cumprod()
         return out
 
+    pick_default = [baseline] + [n for n in df.index if n != baseline][:2]
     picks = st.multiselect('Overlay equity curves',
-                           list(df.index), default=list(df.index)[:3])
+                           list(df.index), default=pick_default,
+                           help='The baseline is included by default so every '
+                                'comparison is against it.')
     frames = {}
     for name in picks:
         p = os.path.join(RUNS_DIR, name, 'equity.csv')
