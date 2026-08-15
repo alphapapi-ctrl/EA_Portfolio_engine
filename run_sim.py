@@ -113,6 +113,8 @@ def build_regime(cfg, daily):
             tradebook           = tradebook,
             capacity            = int(cfg.get('capacity', 0)) or None,
             fill_blanks_after   = int(cfg.get('fill_blanks_after', 0)),
+            pick_from_top       = int(params.get('pick_from_top', 1)),
+            seed                = int(cfg.get('seed', 42)),
         )
     raise ValueError(f"Unknown regime: {name}")
 

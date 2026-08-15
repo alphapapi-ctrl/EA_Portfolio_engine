@@ -1260,6 +1260,16 @@ elif page == '🛠 Build a Run':
                                  disabled=not use_corr)
             cooldown = st.slider('Cooldown before a benched robot can return (days)',
                                  0, 63, 21)
+            pick_top = st.slider('Promote randomly from the top K candidates',
+                                 1, 10, 1,
+                                 help='1 = always promote the single best '
+                                      'available — deterministic, so every '
+                                      'run gravitates to the same star '
+                                      'robots. Above 1, each refill picks at '
+                                      'random among the K best eligible, '
+                                      'spreading promotions across '
+                                      'near-equals. Reproducible: the same '
+                                      'run gives the same picks.')
         params.update({
             'streak_mode'        : streak_mode,
             'loss_streak_limit'  : streak if use_streak else None,
@@ -1269,6 +1279,7 @@ elif page == '🛠 Build a Run':
             'ea_dd_limit_pct'    : dd_lim if use_dd else None,
             'corr_cap'           : corr_cap if use_corr else None,
             'cooldown_days'      : cooldown,
+            'pick_from_top'      : int(pick_top),
         })
 
     if regime == 'momentum':

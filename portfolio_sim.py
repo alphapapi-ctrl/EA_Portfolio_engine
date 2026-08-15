@@ -329,7 +329,8 @@ class Rules:
                  loss_count_limit=None, loss_count_window=21,
                  tradebook=None, relative_ratio=None, rel_baselines=None,
                  rel_expanding=False, basis=100_000,
-                 capacity=None, fill_blanks_after=0):
+                 capacity=None, fill_blanks_after=0,
+                 pick_from_top=1, seed=42):
         self.active      = list(portfolio)
         self.subs        = list(substitutes)
         self.gross       = gross
@@ -341,6 +342,11 @@ class Rules:
         self.start_len   = len(portfolio)
         self.fill_after  = int(fill_blanks_after or 0)
         self._h0         = None
+        # pick_from_top > 1: each refill chooses at random among the K best
+        # eligible candidates instead of always the single best — spreads
+        # promotions across near-equals. Seeded → reproducible.
+        self.pick_top    = max(1, int(pick_from_top or 1))
+        self._rng        = np.random.default_rng(seed)
         self.lookback    = lookback
         self.metric      = metric
         self.streak_lim  = loss_streak_limit
@@ -432,33 +438,51 @@ class Rules:
 
         # 2. Refills from substitutes (and recovered benched EAs)
         ranked = rank_metric(stats, self.metric).sort_values(ascending=False)
-        for ea in ranked.index:
-            if len(self.active) >= cap:
+        logged = set()
+        while len(self.active) < cap:
+            # Collect the K best eligible candidates for this slot
+            elig = []
+            for ea in ranked.index:
+                if ea in self.active:
+                    continue
+                benched_on = self._benched.get(ea)
+                if benched_on is not None:
+                    days_out = len(hist.loc[benched_on:])
+                    if days_out < self.cooldown:
+                        continue
+                if self.max_sym:
+                    sym    = symbol_of(ea)
+                    n_same = sum(1 for a in self.active if symbol_of(a) == sym)
+                    if n_same >= self.max_sym:
+                        if ea not in logged:
+                            logged.add(ea)
+                            events.append({'date': date, 'action': 'reject', 'ea_id': ea,
+                                           'detail': f'symbol cap: already {n_same} on {sym}'})
+                        continue
+                if self.corr_cap is not None:
+                    c = correlations_vs(window, ea, self.active)
+                    if c > self.corr_cap:
+                        if ea not in logged:
+                            logged.add(ea)
+                            events.append({'date': date, 'action': 'reject', 'ea_id': ea,
+                                           'detail': f'corr {c:.2f} > cap {self.corr_cap}'})
+                        continue
+                elig.append(ea)
+                if len(elig) >= self.pick_top:
+                    break
+            if not elig:
                 break
-            if ea in self.active:
-                continue
-            benched_on = self._benched.get(ea)
-            if benched_on is not None:
-                days_out = len(hist.loc[benched_on:])
-                if days_out < self.cooldown:
-                    continue
-            if self.max_sym:
-                sym    = symbol_of(ea)
-                n_same = sum(1 for a in self.active if symbol_of(a) == sym)
-                if n_same >= self.max_sym:
-                    events.append({'date': date, 'action': 'reject', 'ea_id': ea,
-                                   'detail': f'symbol cap: already {n_same} on {sym}'})
-                    continue
-            if self.corr_cap is not None:
-                c = correlations_vs(window, ea, self.active)
-                if c > self.corr_cap:
-                    events.append({'date': date, 'action': 'reject', 'ea_id': ea,
-                                   'detail': f'corr {c:.2f} > cap {self.corr_cap}'})
-                    continue
-            self.active.append(ea)
-            self._benched.pop(ea, None)
-            events.append({'date': date, 'action': 'add', 'ea_id': ea,
-                           'detail': f'best available by {self.metric}'})
+            if self.pick_top > 1 and len(elig) > 1:
+                pick = elig[int(self._rng.integers(len(elig)))]
+                why  = (f'random pick from top {len(elig)} by {self.metric} '
+                        f'(ranked #{elig.index(pick) + 1})')
+            else:
+                pick = elig[0]
+                why  = f'best available by {self.metric}'
+            self.active.append(pick)
+            self._benched.pop(pick, None)
+            events.append({'date': date, 'action': 'add', 'ea_id': pick,
+                           'detail': why})
 
         w = pd.Series(0.0, index=weights.index)
         if self.active:
