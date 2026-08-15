@@ -66,7 +66,12 @@ def build_regime(cfg, daily):
     params  = dict(cfg.get('params', {}))
 
     max_sym    = params.get('max_per_symbol')
-    candidates = resolve_pool(cfg.get('portfolio', 'all'), daily, warmup,
+    # Optional candidate pool: restricts a 'topN_metric'/'all' portfolio spec
+    # to a filtered subset (e.g. auto-pick the top N gold robots only).
+    pool_cols  = cfg.get('candidate_pool')
+    rdaily     = (daily[[c for c in pool_cols if c in daily.columns]]
+                  if pool_cols else daily)
+    candidates = resolve_pool(cfg.get('portfolio', 'all'), rdaily, warmup,
                               max_per_symbol=max_sym)
 
     if name == 'equal_weight':

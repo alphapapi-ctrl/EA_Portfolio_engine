@@ -945,12 +945,38 @@ elif page == '🛠 Build a Run':
                               'timeframe) plus a hand-pick list.')
     n_slots = 10
     portfolio_spec = 'top10_sharpe'
+    candidate_pool = None
     if pick_mode == 'Auto-pick the top N':
+        af1, af2 = st.columns(2)
+        ap_fams = af1.multiselect(
+            'Family filter (auto-pick pool)', sorted(meta.family.unique()),
+            help='Auto-pick ranks only robots from these families — e.g. '
+                 'pick the gold families for "the top N gold robots". Empty '
+                 '= the whole pool (careful: unfiltered early-Sharpe ranking '
+                 'historically picks ~9 Bitcoin robots — the concentration '
+                 'trap).')
+        ap_syms = af2.multiselect(
+            'Market filter (auto-pick pool)', sorted(meta.symbol.unique()),
+            help='Only robots trading these markets. Empty = all markets.')
         n_slots = st.number_input('Team size (N slots)', 2, 40, 10,
                                   help='How many robots trade at once. Each filled '
                                        'slot carries one risk unit (~5% historical '
                                        'DD).')
         portfolio_spec = f'top{int(n_slots)}_sharpe'
+        if ap_fams or ap_syms:
+            ap_meta = meta
+            if ap_fams:
+                ap_meta = ap_meta[ap_meta.family.isin(ap_fams)]
+            if ap_syms:
+                ap_meta = ap_meta[ap_meta.symbol.isin(ap_syms)]
+            candidate_pool = ap_meta.ea_id.tolist()
+            if len(candidate_pool) < int(n_slots):
+                st.warning(f'Only {len(candidate_pool)} robot(s) match the '
+                           'filter — fewer than the team size.')
+            else:
+                st.caption(f'🎯 Auto-pick will choose the top {int(n_slots)} '
+                           f'from the {len(candidate_pool)} robot(s) matching '
+                           'the filter.')
     if pick_mode == 'Auto-pick for the regime':
         portfolio_spec = []
         reg_path = os.path.join(ENGINE_DIR, 'timeline', timeline_name,
@@ -1145,7 +1171,14 @@ elif page == '🛠 Build a Run':
     if regime == 'rules':
         sub_mode = st.radio('Substitutes bench', ['All other robots', 'Choose manually'],
                             horizontal=True,
-                            help='Who can be promoted when someone is benched.')
+                            help='Who can be promoted when someone is benched. '
+                                 'Note: your STARTING team is always eligible '
+                                 'to return from the bench after its cooldown, '
+                                 'even if not in this list — so a gold-only '
+                                 'bench only keeps out gold-only NEWCOMERS; '
+                                 'restrict the starting team too (auto-pick '
+                                 'filter / pick yourself) for a fully '
+                                 'gold-only book.')
         if sub_mode == 'Choose manually':
             sub_fams = st.multiselect(
                 'Substitute family filter', sorted(meta.family.unique()),
@@ -1313,6 +1346,7 @@ elif page == '🛠 Build a Run':
                  disabled=bool(problems)):
         cfg = {'timeline': timeline_name, 'regime': regime,
                'portfolio': portfolio_spec, 'substitutes': subs_spec,
+               'candidate_pool': candidate_pool,
                'n_slots': int(capacity),
                'capacity': int(capacity),
                'fill_blanks_after': int(fill_after),
