@@ -1535,6 +1535,12 @@ elif page == '▶ Interactive Replay':
 elif page == '🏁 Results & Compare':
     st.title('🏁 Results & compare')
 
+    @st.cache_data(show_spinner=False)
+    def _underwater_pct(run, mtime):
+        eq = pd.read_csv(os.path.join(RUNS_DIR, run, 'equity.csv'),
+                         index_col=0, parse_dates=True)['equity']
+        return float((eq < eq.cummax()).mean() * 100)
+
     rows = {}
     for d in sorted(os.listdir(RUNS_DIR)) if os.path.isdir(RUNS_DIR) else []:
         p = os.path.join(RUNS_DIR, d, 'summary.json')
@@ -1546,23 +1552,27 @@ elif page == '🏁 Results & Compare':
         if os.path.isfile(cp):
             with open(cp) as f:
                 rows[d]['risk_units'] = json.load(f).get('gross_budget')
+        ep = os.path.join(RUNS_DIR, d, 'equity.csv')
+        if os.path.isfile(ep):
+            rows[d]['underwater_pct'] = _underwater_pct(d, os.path.getmtime(ep))
     if not rows:
         st.info('No completed runs yet — build one on the **Build a Run** page.')
         st.stop()
 
     df = pd.DataFrame(rows).T[['risk_units', 'net_profit', 'ann_return_pct',
-                               'sharpe', 'max_dd_pct', 'turnover_units',
-                               'events']]
+                               'sharpe', 'max_dd_pct', 'underwater_pct',
+                               'turnover_units', 'events']]
     df['ann_per_unit'] = np.where(df['risk_units'].astype(float) > 0,
                                   df['ann_return_pct'].astype(float)
                                   / df['risk_units'].astype(float), np.nan)
     df = df[['risk_units', 'net_profit', 'ann_per_unit', 'sharpe',
-             'max_dd_pct', 'turnover_units', 'events']]
+             'max_dd_pct', 'underwater_pct', 'turnover_units', 'events']]
     df = df.sort_values('sharpe', ascending=False).rename(columns={
         'risk_units': 'Risk units',
         'net_profit': 'Profit ($)',
         'ann_per_unit': 'Per year per robot (%)',
         'sharpe': 'Sharpe', 'max_dd_pct': 'Worst drop (%)',
+        'underwater_pct': 'Under water (%)',
         'turnover_units': 'Churn', 'events': 'Decisions'})
 
     # ── Baseline ──────────────────────────────────────────────────────────
@@ -1611,6 +1621,13 @@ elif page == '🏁 Results & Compare':
                                           'unit of wobble than the '
                                           'baseline.'),
                      'Worst drop (%)': METRIC_HELP['max_dd_pct'],
+                     'Under water (%)': ('Share of trading days spent below '
+                                         'the running equity peak. Worst drop '
+                                         'is the pain; this is how LONG you '
+                                         'sit in it — the endurance stat. '
+                                         'Rules-managed books typically cut '
+                                         'it to about half of a passive '
+                                         'hold\'s.'),
                      'Churn'         : METRIC_HELP['turnover_units'],
                  }.items()})
 
@@ -1729,7 +1746,39 @@ is what stops the panic-and-shelve cycle.
         if os.path.isfile(p):
             frames[name] = apply_view(pd.read_csv(p, index_col=0, parse_dates=True))
     if frames:
-        st.plotly_chart(equity_chart(frames), use_container_width=True)
+        eqfig = equity_chart(frames)
+        # Decision markers — when the management style actually acted
+        any_ev = False
+        for label, f in frames.items():
+            evp = os.path.join(RUNS_DIR, label, 'events.csv')
+            if not (os.path.isfile(evp) and os.path.getsize(evp) > 2):
+                continue
+            try:
+                ev = pd.read_csv(evp, parse_dates=['date'])
+            except (ValueError, pd.errors.ParserError):
+                continue
+            if ev.empty:
+                continue
+            per_day = ev.groupby(ev['date'].dt.normalize()).size()
+            days = per_day.index.intersection(f.index)
+            if not len(days):
+                continue
+            any_ev = True
+            eqfig.add_trace(go.Scatter(
+                x=days, y=f.loc[days, 'equity'],
+                mode='markers',
+                marker=dict(symbol='triangle-down', size=6, opacity=0.55),
+                name=f'{label} — decisions',
+                customdata=per_day.loc[days],
+                hovertemplate='%{x|%d %b %Y}: %{customdata} decision(s)'
+                              '<extra>' + label + '</extra>'))
+        st.plotly_chart(eqfig, use_container_width=True)
+        if any_ev:
+            st.caption('▾ markers = review days where the management style '
+                       'actually acted (benched or promoted robots) — hover '
+                       'for how many decisions; the Decision journal in the '
+                       'drill-down lists each one. Toggle markers off via '
+                       'the legend.')
         if comp_view:
             st.caption('Same strategies, same days, same percentage moves — '
                        'only the sizing rule changed. On a log axis this would '
