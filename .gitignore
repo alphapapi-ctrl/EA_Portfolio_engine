@@ -10,6 +10,8 @@ reports_in/*
 timeline/test_partial/
 runs/*
 !runs/.gitkeep
+# Example runs ship with the repo — name a run "example_..." to include it
+!runs/example_*/
 reference/*
 !reference/.gitkeep
 excluded/
