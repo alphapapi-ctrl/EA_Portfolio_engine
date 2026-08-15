@@ -1,0 +1,1 @@
+Original pool — 130 robots, 1-min OHLC backtests, 2020–2026. Superseded by main_pool_2018 for analysis; kept for comparison with the earlier findings.

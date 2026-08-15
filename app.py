@@ -12,6 +12,7 @@ import os
 import sys
 import json
 import glob
+import shutil
 
 import numpy as np
 import pandas as pd
@@ -37,6 +38,75 @@ def list_timelines():
         return []
     return sorted(d for d in os.listdir(base)
                   if os.path.isfile(os.path.join(base, d, 'daily_pnl.csv')))
+
+
+def _desc_path(name):
+    return os.path.join(ENGINE_DIR, 'timeline', name, 'description.txt')
+
+
+def read_desc(name):
+    p = _desc_path(name)
+    if os.path.isfile(p):
+        with open(p, encoding='utf-8') as f:
+            return f.read().strip()
+    return ''
+
+
+def write_desc(name, text):
+    with open(_desc_path(name), 'w', encoding='utf-8') as f:
+        f.write(text.strip() + '\n')
+
+
+SUITES_PATH = os.path.join(os.path.dirname(ENGINE_DIR), 'packaged_suites.json')
+
+
+def load_suites():
+    """Packaged-EA suite definitions shared with MT5Tools (see file _readme)."""
+    if not os.path.isfile(SUITES_PATH):
+        return []
+    try:
+        with open(SUITES_PATH, encoding='utf-8') as f:
+            return [s for s in json.load(f).get('suites', [])
+                    if isinstance(s, dict) and s.get('name')]
+    except (json.JSONDecodeError, OSError):
+        return []
+
+
+def _sync_dataset(widget_key):
+    st.session_state['dataset'] = st.session_state[widget_key]
+
+
+def dataset_selector(widget_key, show_desc=False):
+    """Render a dataset selectbox synced across the sidebar and pages.
+
+    The chosen name lives in st.session_state['dataset']; each rendered
+    widget gets its own key and writes back through _sync_dataset, so the
+    sidebar copy and an on-page copy always agree.
+    """
+    timelines = list_timelines()
+    if not timelines:
+        st.warning('No timelines found. Compile one on the 🗂 Data page.')
+        return None
+    cur = st.session_state.get('dataset')
+    if cur not in timelines:
+        cur = 'main_pool' if 'main_pool' in timelines else timelines[0]
+    st.session_state['dataset'] = cur
+    # Keyed widgets ignore index= once they hold state, so push the canonical
+    # choice into the widget's own state before rendering.
+    st.session_state[widget_key] = cur
+    st.selectbox(
+        'Dataset (timeline)', timelines,
+        key=widget_key, on_change=_sync_dataset, args=(widget_key,),
+        help='A timeline is a compiled bundle of backtests. Build, describe '
+             'or delete them on the 🗂 Data page.')
+    name = st.session_state['dataset']
+    if show_desc:
+        d = read_desc(name)
+        if d:
+            st.caption(f'📂 {d}')
+        else:
+            st.caption('📂 No description yet — add one on the 🗂 Data page.')
+    return name
 
 
 @st.cache_data(show_spinner=False)
@@ -135,16 +205,7 @@ with st.sidebar:
                              '🏁 Results & Compare'],
                     label_visibility='collapsed')
     st.divider()
-    timelines = list_timelines()
-    if timelines:
-        default_ix = timelines.index('main_pool') if 'main_pool' in timelines else 0
-        timeline_name = st.selectbox(
-            'Dataset (timeline)', timelines, index=default_ix,
-            help='A timeline is a compiled bundle of backtests. Build new ones '
-                 'with compile_timeline.py — see the README.')
-    else:
-        timeline_name = None
-        st.warning('No timelines found. Compile one first (see README).')
+    timeline_name = dataset_selector('dataset_sidebar')
 
 
 # ══════════════════════════════════════════════════════════════════════════════
@@ -196,6 +257,7 @@ comparisons fair, and it means "run robot X at half size" is exactly half the P&
 | **Static top-N** | Pick the N best-looking robots once, never touch them again. Set-and-forget. |
 | **Momentum** | Every review, re-rank everyone by recent form and field the current top N. The "performance chaser". |
 | **Rules (rotation)** | Only bench a robot when it breaks a written rule (losing streak too long, drawdown too deep), then promote the best available substitute. The "disciplined manager". |
+| **Inverse volatility** | Everyone plays, but calmer robots get more size and wilder robots get less. No benching — just automatic size trimming. |
 | **Random** | Swap robots by dice roll. Sounds silly — it's the control test. Any style worth using must beat random *by a lot*. |
 """)
 
@@ -313,7 +375,7 @@ elif page == '🗂 Data':
     tl_rows = []
     for name in list_timelines():
         mpath = os.path.join(ENGINE_DIR, 'timeline', name, 'manifest.json')
-        row = {'Timeline': name}
+        row = {'Timeline': name, 'Description': read_desc(name) or '—'}
         if os.path.isfile(mpath):
             with open(mpath, encoding='utf-8') as f:
                 d = json.load(f).get('dataset', {})
@@ -325,6 +387,132 @@ elif page == '🗂 Data':
         st.dataframe(pd.DataFrame(tl_rows), use_container_width=True, hide_index=True)
     else:
         st.info('No timelines yet — compile one below.')
+
+    # ── Describe / delete ─────────────────────────────────────────────────
+    if tl_rows:
+        st.subheader('Manage a timeline')
+        mng = st.selectbox('Timeline to manage', list_timelines(),
+                           help='Pick a timeline, then edit its description or '
+                                'delete it below.')
+
+        new_desc = st.text_area(
+            'Description', value=read_desc(mng), height=80, key=f'desc_{mng}',
+            help='A plain-language note about what this dataset is — e.g. which '
+                 'reports went in, the date range, tick quality. Shown in the '
+                 'table above and under the dataset selector on Build a Run.')
+        if st.button('💾 Save description'):
+            write_desc(mng, new_desc)
+            st.success(f'Description saved for **{mng}**.')
+            st.rerun()
+
+        with st.expander('🗑 Delete this timeline'):
+            st.markdown(f'This permanently removes the compiled dataset '
+                        f'**{mng}** (`timeline/{mng}/`). The original `.htm` '
+                        f'reports are **not** touched, so you can always '
+                        f'recompile. Saved runs that used it stay in `runs/` '
+                        f'but can no longer be re-run against it.')
+            sure = st.checkbox(f'Yes, I want to delete **{mng}**',
+                               key=f'del_confirm_{mng}')
+            if st.button('🗑 Delete permanently', type='primary', disabled=not sure):
+                shutil.rmtree(os.path.join(ENGINE_DIR, 'timeline', mng))
+                cached_timeline.clear()
+                cached_tradebook.clear()
+                if st.session_state.get('dataset') == mng:
+                    del st.session_state['dataset']
+                st.success(f'Timeline **{mng}** deleted.')
+                st.rerun()
+
+    # ── Packaged suites ───────────────────────────────────────────────────
+    st.subheader('📦 Packaged suites')
+    suites = load_suites()
+    st.caption(f'Defined in `{SUITES_PATH}` (shared with MT5Tools). A suite = '
+               'one packaged-EA configuration (product × risk level) expressed '
+               'as its list of individual main-pool strategies. The separate '
+               'packaged backtests exist to (a) confirm which strategies each '
+               'risk level runs and (b) validate below that grouping those '
+               'strategies off the main pool matches the real package.')
+    if not suites:
+        st.info('No suites defined yet — see the `_readme` inside the file '
+                'for the schema.')
+    else:
+        st.dataframe(pd.DataFrame([{
+            'Suite': s['name'], 'Family': s.get('family', ''),
+            'Strategies': len(s.get('members', [])) or 'not confirmed yet',
+            'Package backtest (ea_id)': s.get('package_ea') or '—',
+            'Notes': s.get('notes', '')} for s in suites]),
+            use_container_width=True, hide_index=True)
+
+        with st.expander('🔬 Validate a suite against its packaged backtest'):
+            st.markdown('Compares the **sum of the suite\'s member strategies** '
+                        '(from a main timeline) against the **standalone '
+                        'packaged backtest** (from its own timeline), both on '
+                        'the \\$100k linear basis. High daily correlation and '
+                        'similar drawdown = the grouping is a faithful stand-in '
+                        'and the package can be "hard-coded off main".')
+            v_suite = st.selectbox('Suite', [s['name'] for s in suites])
+            sdef = next(s for s in suites if s['name'] == v_suite)
+            tls = list_timelines()
+            vc1, vc2 = st.columns(2)
+            v_main = vc1.selectbox(
+                'Main timeline (suite members)', tls,
+                index=tls.index('main_pool_2018') if 'main_pool_2018' in tls
+                      else 0)
+            pk_default = sdef.get('package_timeline', '')
+            v_pkg = vc2.selectbox(
+                'Package timeline (standalone backtests)', tls,
+                index=tls.index(pk_default) if pk_default in tls else 0)
+            members = sdef.get('members', [])
+            if not members:
+                st.info('This suite has no member list yet — nothing to '
+                        'validate.')
+            else:
+                m_daily, _ = cached_timeline(v_main)
+                p_daily, p_meta = cached_timeline(v_pkg)
+                have = [m for m in members if m in m_daily.columns]
+                pk_opts = list(p_daily.columns)
+                pk_ix = (pk_opts.index(sdef['package_ea'])
+                         if sdef.get('package_ea') in pk_opts else 0)
+                v_ea = st.selectbox('Packaged backtest to compare against',
+                                    pk_opts, index=pk_ix,
+                                    format_func=lambda e: friendly_name(e, p_meta))
+                if len(have) < len(members):
+                    st.warning(f'{len(members) - len(have)} member(s) missing '
+                               f'from {v_main} — comparing the {len(have)} '
+                               'present.')
+                if have and st.button('Compare'):
+                    g = m_daily[have].sum(axis=1)
+                    p = p_daily[v_ea]
+                    idx = g.index.intersection(p.index)
+                    g, p = g.loc[idx], p.loc[idx]
+                    corr = g.corr(p)
+                    def _dd(x):
+                        cum = x.cumsum() + 100_000
+                        return float((cum - cum.cummax()).min())
+                    stats = pd.DataFrame({
+                        'Grouped off main': [g.sum(), _dd(g)],
+                        'Packaged backtest': [p.sum(), _dd(p)],
+                    }, index=['Total P&L ($)', 'Max drawdown ($)']).round(0)
+                    st.metric('Daily P&L correlation', f'{corr:.3f}',
+                              help='1.0 = the grouped strategies move '
+                                   'identically to the package. Above ~0.95 '
+                                   'the grouping is a faithful stand-in.')
+                    st.dataframe(stats, use_container_width=True)
+                    eq = pd.DataFrame({
+                        'equity': g.cumsum() + 100_000}, index=idx)
+                    ep = pd.DataFrame({
+                        'equity': p.cumsum() + 100_000}, index=idx)
+                    st.plotly_chart(equity_chart(
+                        {'Grouped off main': eq, 'Packaged backtest': ep}),
+                        use_container_width=True)
+                    if corr >= 0.95:
+                        st.success('The grouping tracks the package closely — '
+                                   'safe to hard-code this suite off the main '
+                                   'pool.')
+                    else:
+                        st.warning('Meaningful discrepancy — check the member '
+                                   'list (missing/extra strategies?), then '
+                                   'magic-number or symbol differences in the '
+                                   'packaged set file.')
 
     # ── Compile / update ──────────────────────────────────────────────────
     st.subheader('Create or update a timeline')
@@ -617,6 +805,7 @@ which is exactly how the "team of 9 Bitcoin robots" trap happens.
 
 elif page == '🛠 Build a Run':
     st.title('🛠 Build a management style and test it')
+    timeline_name = dataset_selector('dataset_build_run', show_desc=True)
     if not timeline_name:
         st.stop()
     daily, meta = cached_timeline(timeline_name)
@@ -699,39 +888,176 @@ elif page == '🛠 Build a Run':
     # ── Team selection ────────────────────────────────────────────────────
     st.subheader('2 — Pick the team')
     pick_mode = st.radio('Starting team',
-                         ['Auto-pick the top N', 'Whole strategy family', 'Choose manually'],
+                         ['Auto-pick the top N', 'Auto-pick for the regime',
+                          'Pick the team yourself'],
                          horizontal=True,
-                         help='Auto-pick ranks robots by early-history Sharpe '
-                              '(first ~3 months) and takes the best N. Whole '
-                              'strategy family fields every robot from one source '
-                              'folder — the "just run the Gold Reaper suite" '
-                              'style. Manual lets you hand-pick.')
-    n_slots = st.number_input('Team size (N slots)', 2, 40, 10,
-                              help='How many robots trade at once. Each filled slot '
-                                   'carries one risk unit (~5% historical DD).',
-                              disabled=(pick_mode != 'Auto-pick the top N'))
-    portfolio_spec = f'top{int(n_slots)}_sharpe'
-    if pick_mode == 'Whole strategy family':
-        fam_pick = st.multiselect('Strategy families', sorted(meta.family.unique()),
-                                  help='All robots whose reports came from these '
+                         help='Auto-pick (top N) ranks robots by early-history '
+                              'Sharpe (first ~3 months). Auto-pick (regime) '
+                              'reads the market regime at your start date — '
+                              'dollar trend, stocks, gold, VIX etc. — and '
+                              'fields the N robots with the best form in that '
+                              'regime, judged only on history before the start. '
+                              'Pick yourself gives you filters (family, market, '
+                              'timeframe) plus a hand-pick list.')
+    n_slots = 10
+    portfolio_spec = 'top10_sharpe'
+    if pick_mode == 'Auto-pick the top N':
+        n_slots = st.number_input('Team size (N slots)', 2, 40, 10,
+                                  help='How many robots trade at once. Each filled '
+                                       'slot carries one risk unit (~5% historical '
+                                       'DD).')
+        portfolio_spec = f'top{int(n_slots)}_sharpe'
+    if pick_mode == 'Auto-pick for the regime':
+        portfolio_spec = []
+        reg_path = os.path.join(ENGINE_DIR, 'timeline', timeline_name,
+                                'regime_states.csv')
+        if not os.path.isfile(reg_path):
+            st.info('No regime data for this timeline yet. From the engine '
+                    'folder run:\n\n```\npython build_regime_matrix.py '
+                    f'--timeline {timeline_name}\n```')
+        else:
+            states = pd.read_csv(reg_path, parse_dates=['date']).set_index('date')
+            start_ts = pd.Timestamp(start_date)
+            hist = daily[daily.index < start_ts]
+            known = states[states.index < start_ts]
+            if len(hist) < 90 or known.empty:
+                st.warning('Not enough history before your start date to judge '
+                           'regime form — move the start date at least ~4 '
+                           'months into the dataset.')
+            else:
+                now_state = known.iloc[-1]
+                n_slots = int(st.number_input(
+                    'Team size (N slots)', 2, 40, 10,
+                    help='How many robots trade at once. Each filled slot '
+                         'carries one risk unit (~5% historical DD).'))
+                cond = st.selectbox(
+                    'Judge form against which regime?',
+                    ['All markets combined'] + list(states.columns),
+                    help='"All markets combined" scores each robot in every '
+                         'current regime state (dollar, stocks, gold, crypto, '
+                         'rates, oil, VIX) and averages. Or condition on a '
+                         'single market\'s state — e.g. only "how does it do '
+                         'while gold is in an uptrend".')
+                st_hist = states.reindex(hist.index, method='ffill')
+                inds = (list(states.columns) if cond == 'All markets combined'
+                        else [cond])
+                score = pd.DataFrame(index=hist.columns)
+                slice_txt, thin = [], []
+                for i in inds:
+                    mask = (st_hist[i] == now_state[i]).values
+                    sub = hist[mask]
+                    slice_txt.append(f'{now_state[i]} · {int(mask.sum())}d')
+                    if mask.sum() < 40:
+                        thin.append(str(now_state[i]))
+                    mu, sd = sub.mean(), sub.std()
+                    score[i] = np.where(sd > 0, mu / sd * np.sqrt(252), np.nan)
+                ranked = (score.mean(axis=1, skipna=True)
+                          .sort_values(ascending=False).dropna())
+                chosen = ranked.head(n_slots).index.tolist()
+                portfolio_spec = chosen
+                st.caption(f'Regime at your start date ({start_ts:%d %b %Y}): '
+                           f'**{" — ".join(slice_txt)}** (state · matching '
+                           'pre-start trading days). Robots are ranked by '
+                           'Sharpe on those days only.')
+                if thin:
+                    st.warning('Thin evidence: fewer than 40 pre-start days '
+                               'match ' + ', '.join(f'**{t}**' for t in thin) +
+                               ' — form judged on so few days is mostly noise.')
+                with st.expander(f'The {len(chosen)} robots the regime pick '
+                                 'chose', expanded=False):
+                    for e in chosen:
+                        st.markdown(f'- {friendly_name(e, meta)} — regime '
+                                    f'Sharpe {ranked[e]:.1f}')
+                st.info('**Honest note:** this is *descriptive*, not '
+                        'predictive — it fields the robots that historically '
+                        'did well in conditions like the start date\'s, but '
+                        'regimes flip without warning and the tool has no way '
+                        'of knowing when. Compare it against a plain top-N '
+                        'pick before trusting it.')
+
+    elif pick_mode == 'Pick the team yourself':
+        suites = load_suites()
+        suite_default = []
+        if suites:
+            suite_sel = st.selectbox(
+                'Packaged suite quick-pick', ['(no suite)'] +
+                [s['name'] for s in suites],
+                help='Suites defined in packaged_suites.json — each is a '
+                     'packaged-EA configuration (product × risk level) '
+                     'expressed as its list of main-pool strategies. Picking '
+                     'one pre-selects those robots below.')
+            if suite_sel != '(no suite)':
+                s = next(s for s in suites if s['name'] == suite_sel)
+                members = s.get('members', [])
+                if not members:
+                    st.info('This suite has no strategy list yet — fill in '
+                            'its "members" in packaged_suites.json once the '
+                            'packaged backtest confirms which strategies the '
+                            'risk level runs.')
+                suite_default = [m for m in members if m in ea_ids]
+                missing = [m for m in members if m not in ea_ids]
+                if missing:
+                    st.warning(f'{len(missing)} suite member(s) not in this '
+                               'dataset: ' + ', '.join(missing[:5]) +
+                               ('…' if len(missing) > 5 else ''))
+        f1, f2, f3 = st.columns(3)
+        fam_pick = f1.multiselect('Strategy family', sorted(meta.family.unique()),
+                                  help='Robots whose reports came from these '
                                        'folders. Pick several to combine suites — '
-                                       'e.g. Gold Reaper + Goldtrade Pro.')
-        fam_meta = meta[meta.family.isin(fam_pick)]
-        chosen = fam_meta.ea_id.tolist()
+                                       'e.g. Gold Reaper + Goldtrade Pro. Empty '
+                                       '= all families.')
+        sym_pick = f2.multiselect('Market (symbol)', sorted(meta.symbol.unique()),
+                                  help='Only robots trading these markets. '
+                                       'Empty = all markets.')
+        tf_pick  = f3.multiselect('Timeframe', sorted(meta.timeframe.unique()),
+                                  help='Only robots running on these chart '
+                                       'timeframes. Empty = all timeframes.')
+        fmeta = meta
         if fam_pick:
+            fmeta = fmeta[fmeta.family.isin(fam_pick)]
+        if sym_pick:
+            fmeta = fmeta[fmeta.symbol.isin(sym_pick)]
+        if tf_pick:
+            fmeta = fmeta[fmeta.timeframe.isin(tf_pick)]
+        pool = fmeta.ea_id.tolist()
+        filtered = bool(fam_pick or sym_pick or tf_pick)
+        suite_default = [m for m in suite_default if m in pool]
+        chosen = st.multiselect(
+            'Team robots', pool,
+            default=suite_default or (pool if filtered else []),
+            format_func=lambda e: friendly_name(e, meta),
+            help='With a filter on, every match starts selected — deselect any '
+                 'you don\'t want. With no filter, hand-pick from the whole '
+                 'pool. (Changing a filter resets this list to the new '
+                 'matches.)')
+        if chosen:
             per_fam = ' · '.join(f"{f}: {n}" for f, n in
-                                 fam_meta.family.value_counts().items())
-            st.caption(f'**{len(chosen)} robot(s)** across '
-                       f'{len(fam_pick)} family(ies) — {per_fam}')
+                                 meta[meta.ea_id.isin(chosen)]
+                                 .family.value_counts().items())
+            st.caption(f'**{len(chosen)} robot(s)** on the team — {per_fam}')
         portfolio_spec = chosen
-        if chosen:
+
+    if pick_mode == 'Pick the team yourself' and chosen:
+        if regime in ('equal_weight', 'inverse_vol'):
             n_slots = len(chosen)
-    elif pick_mode == 'Choose manually':
-        chosen = st.multiselect('Team robots', ea_ids,
-                                format_func=lambda e: friendly_name(e, meta))
-        portfolio_spec = chosen
-        if chosen:
+            st.number_input('Team size (N slots)', value=len(chosen), disabled=True,
+                            help='With this management style every picked robot '
+                                 'plays, so team size is simply how many you '
+                                 'picked.')
+        elif len(chosen) < 3:
             n_slots = len(chosen)
+        else:
+            n_slots = int(st.number_input(
+                'Team size (N slots)', 2, len(chosen), len(chosen),
+                help='How many of your picked robots are fielded at once. '
+                     'Leave it at the maximum to field everyone. Lower it and '
+                     'the style chooses within your pool: top-N / momentum / '
+                     'random rank or draw from your picks, rules starts with '
+                     'the first N you selected (the rest can still come in as '
+                     'substitutes).'))
+            if n_slots < len(chosen):
+                st.caption(f'⚖️ Fielding **{n_slots} of {len(chosen)}** picked '
+                           'robots — the management style decides which.')
 
     subs_spec = 'all'
     if regime == 'rules':
@@ -866,7 +1192,11 @@ elif page == '🛠 Build a Run':
     if not run_name.strip():
         problems.append('**give the run a name** (the box at the top of the page — '
                         'results are saved under it)')
-    if pick_mode != 'Auto-pick the top N' and not portfolio_spec:
+    if pick_mode == 'Auto-pick for the regime' and not portfolio_spec:
+        problems.append('**the regime pick has no team yet** — it needs regime '
+                        'data for this dataset and enough history before the '
+                        'start date (see the message in section 2)')
+    elif pick_mode != 'Auto-pick the top N' and not portfolio_spec:
         problems.append('**pick at least one robot** for the team '
                         f'(the "{pick_mode}" box is empty)')
     if regime == 'rules' and isinstance(subs_spec, list) and not subs_spec:

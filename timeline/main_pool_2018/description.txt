@@ -1,0 +1,1 @@
+Main analysis dataset — 140 robots, 1-min OHLC backtests, 2018–2026. The long-history baseline all current findings are built on.

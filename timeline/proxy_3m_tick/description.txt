@@ -1,0 +1,1 @@
+Recent-form proxy — 138 robots, every-tick quality, last ~3 months (May–Aug 2026). Short but high fidelity; used for the live layer's recent-form checks, not long-run stats.

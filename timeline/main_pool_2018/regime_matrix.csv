@@ -1,0 +1,2176 @@
+entity,type,indicator,state,days,total_pnl,avg_daily,sharpe,pnl_share_pct
+AdvScal_eurusd_H1_SL17_EURUSD.a_H1_OHLC,ea,DXY,strong dollar,987,16306.97,16.52,2.64,55.2
+AdvScal_eurusd_H1_SL17_EURUSD.a_H1_OHLC,ea,DXY,weak dollar,891,13239.5,14.86,2.38,44.8
+AdvScal_eurusd_H1_SL17_EURUSD.a_H1_OHLC,ea,SP500,stocks bear,379,15180.0,40.05,5.26,51.0
+AdvScal_eurusd_H1_SL17_EURUSD.a_H1_OHLC,ea,SP500,stocks bull,1396,14579.73,10.44,1.78,49.0
+AdvScal_eurusd_H1_SL17_EURUSD.a_H1_OHLC,ea,GOLD,gold downtrend,439,9075.94,20.67,3.59,30.5
+AdvScal_eurusd_H1_SL17_EURUSD.a_H1_OHLC,ea,GOLD,gold uptrend,1336,20683.79,15.48,2.38,69.5
+AdvScal_eurusd_H1_SL17_EURUSD.a_H1_OHLC,ea,BTC,crypto bear,785,16169.51,20.6,3.08,55.1
+AdvScal_eurusd_H1_SL17_EURUSD.a_H1_OHLC,ea,BTC,crypto bull,1053,13173.46,12.51,2.09,44.9
+AdvScal_eurusd_H1_SL17_EURUSD.a_H1_OHLC,ea,US10Y,rates falling,716,12061.72,16.85,2.65,40.8
+AdvScal_eurusd_H1_SL17_EURUSD.a_H1_OHLC,ea,US10Y,rates rising,1162,17484.75,15.05,2.43,59.2
+AdvScal_eurusd_H1_SL17_EURUSD.a_H1_OHLC,ea,OIL,oil downtrend,928,16355.74,17.62,2.65,55.0
+AdvScal_eurusd_H1_SL17_EURUSD.a_H1_OHLC,ea,OIL,oil uptrend,847,13403.99,15.83,2.64,45.0
+AdvScal_eurusd_H1_SL17_EURUSD.a_H1_OHLC,ea,VIX,calm,405,1521.08,3.76,0.64,5.2
+AdvScal_eurusd_H1_SL17_EURUSD.a_H1_OHLC,ea,VIX,normal,1204,14633.87,12.15,1.97,50.2
+AdvScal_eurusd_H1_SL17_EURUSD.a_H1_OHLC,ea,VIX,stressed,370,13025.13,35.2,5.33,44.6
+AdvScalp_eurusd_H1_SL14_EURUSD.a_H1_OHLC,ea,DXY,strong dollar,987,24429.69,24.75,2.76,46.8
+AdvScalp_eurusd_H1_SL14_EURUSD.a_H1_OHLC,ea,DXY,weak dollar,891,27789.96,31.19,3.28,53.2
+AdvScalp_eurusd_H1_SL14_EURUSD.a_H1_OHLC,ea,SP500,stocks bear,379,20118.59,53.08,5.06,38.5
+AdvScalp_eurusd_H1_SL14_EURUSD.a_H1_OHLC,ea,SP500,stocks bull,1396,32161.45,23.04,2.56,61.5
+AdvScalp_eurusd_H1_SL14_EURUSD.a_H1_OHLC,ea,GOLD,gold downtrend,439,12639.8,28.79,3.64,24.2
+AdvScalp_eurusd_H1_SL14_EURUSD.a_H1_OHLC,ea,GOLD,gold uptrend,1336,39640.24,29.67,3.02,75.8
+AdvScalp_eurusd_H1_SL14_EURUSD.a_H1_OHLC,ea,BTC,crypto bear,785,24170.25,30.79,3.18,46.5
+AdvScalp_eurusd_H1_SL14_EURUSD.a_H1_OHLC,ea,BTC,crypto bull,1053,27756.69,26.36,2.93,53.5
+AdvScalp_eurusd_H1_SL14_EURUSD.a_H1_OHLC,ea,US10Y,rates falling,716,23873.76,33.34,3.56,45.7
+AdvScalp_eurusd_H1_SL14_EURUSD.a_H1_OHLC,ea,US10Y,rates rising,1162,28345.89,24.39,2.67,54.3
+AdvScalp_eurusd_H1_SL14_EURUSD.a_H1_OHLC,ea,OIL,oil downtrend,928,32974.27,35.53,3.74,63.1
+AdvScalp_eurusd_H1_SL14_EURUSD.a_H1_OHLC,ea,OIL,oil uptrend,847,19305.77,22.79,2.47,36.9
+AdvScalp_eurusd_H1_SL14_EURUSD.a_H1_OHLC,ea,VIX,calm,405,7047.36,17.4,2.16,13.2
+AdvScalp_eurusd_H1_SL14_EURUSD.a_H1_OHLC,ea,VIX,normal,1204,27536.8,22.87,2.36,51.7
+AdvScalp_eurusd_H1_SL14_EURUSD.a_H1_OHLC,ea,VIX,stressed,370,18676.05,50.48,5.95,35.1
+AdvScalp_eurusd_H1_SL18_EURUSD.a_H1_OHLC,ea,DXY,strong dollar,987,13002.84,13.17,2.77,50.3
+AdvScalp_eurusd_H1_SL18_EURUSD.a_H1_OHLC,ea,DXY,weak dollar,891,12830.59,14.4,2.93,49.7
+AdvScalp_eurusd_H1_SL18_EURUSD.a_H1_OHLC,ea,SP500,stocks bear,379,10778.61,28.44,4.71,42.2
+AdvScalp_eurusd_H1_SL18_EURUSD.a_H1_OHLC,ea,SP500,stocks bull,1396,14746.4,10.56,2.34,57.8
+AdvScalp_eurusd_H1_SL18_EURUSD.a_H1_OHLC,ea,GOLD,gold downtrend,439,7803.47,17.78,4.42,30.6
+AdvScalp_eurusd_H1_SL18_EURUSD.a_H1_OHLC,ea,GOLD,gold uptrend,1336,17721.54,13.26,2.57,69.4
+AdvScalp_eurusd_H1_SL18_EURUSD.a_H1_OHLC,ea,BTC,crypto bear,785,13737.63,17.5,3.42,53.8
+AdvScalp_eurusd_H1_SL18_EURUSD.a_H1_OHLC,ea,BTC,crypto bull,1053,11790.03,11.2,2.4,46.2
+AdvScalp_eurusd_H1_SL18_EURUSD.a_H1_OHLC,ea,US10Y,rates falling,716,9776.77,13.65,2.64,37.8
+AdvScalp_eurusd_H1_SL18_EURUSD.a_H1_OHLC,ea,US10Y,rates rising,1162,16056.66,13.82,2.99,62.2
+AdvScalp_eurusd_H1_SL18_EURUSD.a_H1_OHLC,ea,OIL,oil downtrend,928,13166.44,14.19,2.72,51.6
+AdvScalp_eurusd_H1_SL18_EURUSD.a_H1_OHLC,ea,OIL,oil uptrend,847,12358.57,14.59,3.21,48.4
+AdvScalp_eurusd_H1_SL18_EURUSD.a_H1_OHLC,ea,VIX,calm,405,2386.3,5.89,1.28,9.4
+AdvScalp_eurusd_H1_SL18_EURUSD.a_H1_OHLC,ea,VIX,normal,1204,13465.07,11.18,2.25,53.3
+AdvScalp_eurusd_H1_SL18_EURUSD.a_H1_OHLC,ea,VIX,stressed,370,9421.81,25.46,5.69,37.3
+AdvScalp_eurusd_H1_SL22_EURUSD.a_H1_OHLC,ea,DXY,strong dollar,987,35323.47,35.79,2.81,49.9
+AdvScalp_eurusd_H1_SL22_EURUSD.a_H1_OHLC,ea,DXY,weak dollar,891,35420.81,39.75,3.03,50.1
+AdvScalp_eurusd_H1_SL22_EURUSD.a_H1_OHLC,ea,SP500,stocks bear,379,23898.9,63.06,4.06,33.8
+AdvScalp_eurusd_H1_SL22_EURUSD.a_H1_OHLC,ea,SP500,stocks bull,1396,46710.51,33.46,2.71,66.2
+AdvScalp_eurusd_H1_SL22_EURUSD.a_H1_OHLC,ea,GOLD,gold downtrend,439,18950.65,43.17,4.24,26.8
+AdvScalp_eurusd_H1_SL22_EURUSD.a_H1_OHLC,ea,GOLD,gold uptrend,1336,51658.76,38.67,2.78,73.2
+AdvScalp_eurusd_H1_SL22_EURUSD.a_H1_OHLC,ea,BTC,crypto bear,785,34556.79,44.02,3.26,49.2
+AdvScalp_eurusd_H1_SL22_EURUSD.a_H1_OHLC,ea,BTC,crypto bull,1053,35730.61,33.93,2.68,50.8
+AdvScalp_eurusd_H1_SL22_EURUSD.a_H1_OHLC,ea,US10Y,rates falling,716,27575.95,38.51,2.93,39.0
+AdvScalp_eurusd_H1_SL22_EURUSD.a_H1_OHLC,ea,US10Y,rates rising,1162,43168.33,37.15,2.9,61.0
+AdvScalp_eurusd_H1_SL22_EURUSD.a_H1_OHLC,ea,OIL,oil downtrend,928,42476.66,45.77,3.37,60.2
+AdvScalp_eurusd_H1_SL22_EURUSD.a_H1_OHLC,ea,OIL,oil uptrend,847,28132.75,33.21,2.64,39.8
+AdvScalp_eurusd_H1_SL22_EURUSD.a_H1_OHLC,ea,VIX,calm,405,14025.85,34.63,2.95,19.5
+AdvScalp_eurusd_H1_SL22_EURUSD.a_H1_OHLC,ea,VIX,normal,1204,36064.51,29.95,2.23,50.2
+AdvScalp_eurusd_H1_SL22_EURUSD.a_H1_OHLC,ea,VIX,stressed,370,21820.91,58.98,5.06,30.3
+AdvScalp_gbpusd_H1_GBPUSD.a_H1_OHLC,ea,DXY,strong dollar,990,65997.91,66.66,4.41,53.6
+AdvScalp_gbpusd_H1_GBPUSD.a_H1_OHLC,ea,DXY,weak dollar,891,57030.02,64.01,3.92,46.4
+AdvScalp_gbpusd_H1_GBPUSD.a_H1_OHLC,ea,SP500,stocks bear,379,34142.75,90.09,4.86,30.4
+AdvScalp_gbpusd_H1_GBPUSD.a_H1_OHLC,ea,SP500,stocks bull,1399,78257.89,55.94,3.93,69.6
+AdvScalp_gbpusd_H1_GBPUSD.a_H1_OHLC,ea,GOLD,gold downtrend,441,35750.25,81.07,5.49,31.8
+AdvScalp_gbpusd_H1_GBPUSD.a_H1_OHLC,ea,GOLD,gold uptrend,1337,76650.39,57.33,3.71,68.2
+AdvScalp_gbpusd_H1_GBPUSD.a_H1_OHLC,ea,BTC,crypto bear,788,57388.13,72.83,4.81,48.1
+AdvScalp_gbpusd_H1_GBPUSD.a_H1_OHLC,ea,BTC,crypto bull,1053,61918.75,58.8,3.81,51.9
+AdvScalp_gbpusd_H1_GBPUSD.a_H1_OHLC,ea,US10Y,rates falling,716,43094.82,60.19,3.81,35.0
+AdvScalp_gbpusd_H1_GBPUSD.a_H1_OHLC,ea,US10Y,rates rising,1165,79933.11,68.61,4.39,65.0
+AdvScalp_gbpusd_H1_GBPUSD.a_H1_OHLC,ea,OIL,oil downtrend,928,60959.35,65.69,4.14,54.2
+AdvScalp_gbpusd_H1_GBPUSD.a_H1_OHLC,ea,OIL,oil uptrend,850,51441.29,60.52,4.13,45.8
+AdvScalp_gbpusd_H1_GBPUSD.a_H1_OHLC,ea,VIX,calm,406,31265.74,77.01,4.44,23.6
+AdvScalp_gbpusd_H1_GBPUSD.a_H1_OHLC,ea,VIX,normal,1206,74983.92,62.18,4.07,56.6
+AdvScalp_gbpusd_H1_GBPUSD.a_H1_OHLC,ea,VIX,stressed,370,26334.11,71.17,4.86,19.9
+AdvScalp_usdjpy_H1_SL22_USDJPY.a_H1_OHLC,ea,DXY,strong dollar,990,55279.7,55.84,3.63,40.0
+AdvScalp_usdjpy_H1_SL22_USDJPY.a_H1_OHLC,ea,DXY,weak dollar,891,82853.72,92.99,5.15,60.0
+AdvScalp_usdjpy_H1_SL22_USDJPY.a_H1_OHLC,ea,SP500,stocks bear,379,38143.11,100.64,4.91,29.1
+AdvScalp_usdjpy_H1_SL22_USDJPY.a_H1_OHLC,ea,SP500,stocks bull,1399,92762.58,66.31,4.34,70.9
+AdvScalp_usdjpy_H1_SL22_USDJPY.a_H1_OHLC,ea,GOLD,gold downtrend,441,30884.75,70.03,3.93,23.6
+AdvScalp_usdjpy_H1_SL22_USDJPY.a_H1_OHLC,ea,GOLD,gold uptrend,1337,100020.94,74.81,4.64,76.4
+AdvScalp_usdjpy_H1_SL22_USDJPY.a_H1_OHLC,ea,BTC,crypto bear,788,61393.23,77.91,4.31,44.6
+AdvScalp_usdjpy_H1_SL22_USDJPY.a_H1_OHLC,ea,BTC,crypto bull,1053,76195.2,72.36,4.61,55.4
+AdvScalp_usdjpy_H1_SL22_USDJPY.a_H1_OHLC,ea,US10Y,rates falling,716,61259.8,85.56,4.57,44.3
+AdvScalp_usdjpy_H1_SL22_USDJPY.a_H1_OHLC,ea,US10Y,rates rising,1165,76873.62,65.99,4.29,55.7
+AdvScalp_usdjpy_H1_SL22_USDJPY.a_H1_OHLC,ea,OIL,oil downtrend,928,83789.63,90.29,4.63,64.0
+AdvScalp_usdjpy_H1_SL22_USDJPY.a_H1_OHLC,ea,OIL,oil uptrend,850,47116.06,55.43,4.43,36.0
+AdvScalp_usdjpy_H1_SL22_USDJPY.a_H1_OHLC,ea,VIX,calm,406,25715.45,63.34,4.41,18.1
+AdvScalp_usdjpy_H1_SL22_USDJPY.a_H1_OHLC,ea,VIX,normal,1206,86297.71,71.56,4.47,60.6
+AdvScalp_usdjpy_H1_SL22_USDJPY.a_H1_OHLC,ea,VIX,stressed,370,30304.71,81.9,4.12,21.3
+AdvScalp_usdjpy_H1_SL30_USDJPY.a_H1_OHLC,ea,DXY,strong dollar,990,22954.77,23.19,2.43,34.2
+AdvScalp_usdjpy_H1_SL30_USDJPY.a_H1_OHLC,ea,DXY,weak dollar,891,44211.0,49.62,4.63,65.8
+AdvScalp_usdjpy_H1_SL30_USDJPY.a_H1_OHLC,ea,SP500,stocks bear,379,16455.7,43.42,3.55,26.5
+AdvScalp_usdjpy_H1_SL30_USDJPY.a_H1_OHLC,ea,SP500,stocks bull,1399,45659.12,32.64,3.42,73.5
+AdvScalp_usdjpy_H1_SL30_USDJPY.a_H1_OHLC,ea,GOLD,gold downtrend,441,14485.38,32.85,3.13,23.3
+AdvScalp_usdjpy_H1_SL30_USDJPY.a_H1_OHLC,ea,GOLD,gold uptrend,1337,47629.44,35.62,3.54,76.7
+AdvScalp_usdjpy_H1_SL30_USDJPY.a_H1_OHLC,ea,BTC,crypto bear,788,25489.18,32.35,3.02,38.6
+AdvScalp_usdjpy_H1_SL30_USDJPY.a_H1_OHLC,ea,BTC,crypto bull,1053,40598.97,38.56,3.93,61.4
+AdvScalp_usdjpy_H1_SL30_USDJPY.a_H1_OHLC,ea,US10Y,rates falling,716,34603.63,48.33,4.31,51.5
+AdvScalp_usdjpy_H1_SL30_USDJPY.a_H1_OHLC,ea,US10Y,rates rising,1165,32562.14,27.95,2.97,48.5
+AdvScalp_usdjpy_H1_SL30_USDJPY.a_H1_OHLC,ea,OIL,oil downtrend,928,41147.37,44.34,3.74,66.2
+AdvScalp_usdjpy_H1_SL30_USDJPY.a_H1_OHLC,ea,OIL,oil uptrend,850,20967.45,24.67,3.13,33.8
+AdvScalp_usdjpy_H1_SL30_USDJPY.a_H1_OHLC,ea,VIX,calm,406,11871.81,29.24,3.36,17.3
+AdvScalp_usdjpy_H1_SL30_USDJPY.a_H1_OHLC,ea,VIX,normal,1206,42058.22,34.87,3.56,61.2
+AdvScalp_usdjpy_H1_SL30_USDJPY.a_H1_OHLC,ea,VIX,stressed,370,14831.21,40.08,3.29,21.6
+AdvScalp_usdjpy_H4_SL14_USDJPY.a_H4_OHLC,ea,DXY,strong dollar,990,17746.69,17.93,2.21,37.3
+AdvScalp_usdjpy_H4_SL14_USDJPY.a_H4_OHLC,ea,DXY,weak dollar,891,29843.72,33.49,3.52,62.7
+AdvScalp_usdjpy_H4_SL14_USDJPY.a_H4_OHLC,ea,SP500,stocks bear,379,16062.43,42.38,4.16,34.5
+AdvScalp_usdjpy_H4_SL14_USDJPY.a_H4_OHLC,ea,SP500,stocks bull,1399,30465.3,21.78,2.64,65.5
+AdvScalp_usdjpy_H4_SL14_USDJPY.a_H4_OHLC,ea,GOLD,gold downtrend,441,11056.13,25.07,2.68,23.8
+AdvScalp_usdjpy_H4_SL14_USDJPY.a_H4_OHLC,ea,GOLD,gold uptrend,1337,35471.6,26.53,3.13,76.2
+AdvScalp_usdjpy_H4_SL14_USDJPY.a_H4_OHLC,ea,BTC,crypto bear,788,22280.32,28.27,3.09,45.4
+AdvScalp_usdjpy_H4_SL14_USDJPY.a_H4_OHLC,ea,BTC,crypto bull,1053,26822.59,25.47,2.98,54.6
+AdvScalp_usdjpy_H4_SL14_USDJPY.a_H4_OHLC,ea,US10Y,rates falling,716,22221.15,31.04,3.11,46.7
+AdvScalp_usdjpy_H4_SL14_USDJPY.a_H4_OHLC,ea,US10Y,rates rising,1165,25369.26,21.78,2.72,53.3
+AdvScalp_usdjpy_H4_SL14_USDJPY.a_H4_OHLC,ea,OIL,oil downtrend,928,30318.53,32.67,3.41,65.2
+AdvScalp_usdjpy_H4_SL14_USDJPY.a_H4_OHLC,ea,OIL,oil uptrend,850,16209.2,19.07,2.5,34.8
+AdvScalp_usdjpy_H4_SL14_USDJPY.a_H4_OHLC,ea,VIX,calm,406,7235.12,17.82,2.26,14.3
+AdvScalp_usdjpy_H4_SL14_USDJPY.a_H4_OHLC,ea,VIX,normal,1206,32187.75,26.69,3.08,63.8
+AdvScalp_usdjpy_H4_SL14_USDJPY.a_H4_OHLC,ea,VIX,stressed,370,11011.93,29.76,2.91,21.8
+AdvScalp_usdjpy_H4_SL17_USDJPY.a_H4_OHLC,ea,DXY,strong dollar,990,10926.64,11.04,2.52,41.4
+AdvScalp_usdjpy_H4_SL17_USDJPY.a_H4_OHLC,ea,DXY,weak dollar,891,15475.39,17.37,3.69,58.6
+AdvScalp_usdjpy_H4_SL17_USDJPY.a_H4_OHLC,ea,SP500,stocks bear,379,8886.98,23.45,4.43,34.6
+AdvScalp_usdjpy_H4_SL17_USDJPY.a_H4_OHLC,ea,SP500,stocks bull,1399,16776.31,11.99,2.81,65.4
+AdvScalp_usdjpy_H4_SL17_USDJPY.a_H4_OHLC,ea,GOLD,gold downtrend,441,6404.03,14.52,2.99,25.0
+AdvScalp_usdjpy_H4_SL17_USDJPY.a_H4_OHLC,ea,GOLD,gold uptrend,1337,19259.26,14.4,3.28,75.0
+AdvScalp_usdjpy_H4_SL17_USDJPY.a_H4_OHLC,ea,BTC,crypto bear,788,12051.54,15.29,3.23,45.0
+AdvScalp_usdjpy_H4_SL17_USDJPY.a_H4_OHLC,ea,BTC,crypto bull,1053,14736.75,14.0,3.17,55.0
+AdvScalp_usdjpy_H4_SL17_USDJPY.a_H4_OHLC,ea,US10Y,rates falling,716,13188.39,18.42,3.72,50.0
+AdvScalp_usdjpy_H4_SL17_USDJPY.a_H4_OHLC,ea,US10Y,rates rising,1165,13213.64,11.34,2.67,50.0
+AdvScalp_usdjpy_H4_SL17_USDJPY.a_H4_OHLC,ea,OIL,oil downtrend,928,16134.77,17.39,3.67,62.9
+AdvScalp_usdjpy_H4_SL17_USDJPY.a_H4_OHLC,ea,OIL,oil uptrend,850,9528.52,11.21,2.64,37.1
+AdvScalp_usdjpy_H4_SL17_USDJPY.a_H4_OHLC,ea,VIX,calm,406,5585.46,13.76,3.15,19.6
+AdvScalp_usdjpy_H4_SL17_USDJPY.a_H4_OHLC,ea,VIX,normal,1206,16992.03,14.09,3.16,59.7
+AdvScalp_usdjpy_H4_SL17_USDJPY.a_H4_OHLC,ea,VIX,stressed,370,5863.85,15.85,3.09,20.6
+BTC_Reaper_Aggr_1_H1_BTCUSD.a_H1_OHLC,ea,DXY,strong dollar,990,72201.06,72.93,4.45,54.0
+BTC_Reaper_Aggr_1_H1_BTCUSD.a_H1_OHLC,ea,DXY,weak dollar,891,61531.53,69.06,4.73,46.0
+BTC_Reaper_Aggr_1_H1_BTCUSD.a_H1_OHLC,ea,SP500,stocks bear,379,23738.29,62.63,3.88,18.6
+BTC_Reaper_Aggr_1_H1_BTCUSD.a_H1_OHLC,ea,SP500,stocks bull,1399,103994.2,74.33,4.8,81.4
+BTC_Reaper_Aggr_1_H1_BTCUSD.a_H1_OHLC,ea,GOLD,gold downtrend,441,40250.19,91.27,5.16,31.5
+BTC_Reaper_Aggr_1_H1_BTCUSD.a_H1_OHLC,ea,GOLD,gold uptrend,1337,87482.3,65.43,4.4,68.5
+BTC_Reaper_Aggr_1_H1_BTCUSD.a_H1_OHLC,ea,BTC,crypto bear,788,54431.32,69.08,4.22,41.9
+BTC_Reaper_Aggr_1_H1_BTCUSD.a_H1_OHLC,ea,BTC,crypto bull,1053,75437.77,71.64,4.8,58.1
+BTC_Reaper_Aggr_1_H1_BTCUSD.a_H1_OHLC,ea,US10Y,rates falling,716,50408.28,70.4,4.77,37.7
+BTC_Reaper_Aggr_1_H1_BTCUSD.a_H1_OHLC,ea,US10Y,rates rising,1165,83324.31,71.52,4.46,62.3
+BTC_Reaper_Aggr_1_H1_BTCUSD.a_H1_OHLC,ea,OIL,oil downtrend,928,62567.76,67.42,4.65,49.0
+BTC_Reaper_Aggr_1_H1_BTCUSD.a_H1_OHLC,ea,OIL,oil uptrend,850,65164.73,76.66,4.57,51.0
+BTC_Reaper_Aggr_1_H1_BTCUSD.a_H1_OHLC,ea,VIX,calm,406,30769.58,75.79,4.51,21.5
+BTC_Reaper_Aggr_1_H1_BTCUSD.a_H1_OHLC,ea,VIX,normal,1206,83234.67,69.02,4.84,58.2
+BTC_Reaper_Aggr_1_H1_BTCUSD.a_H1_OHLC,ea,VIX,stressed,370,29092.91,78.63,4.44,20.3
+BTC_Reaper_Aggr_2_H1_BTCUSD.a_H1_OHLC,ea,DXY,strong dollar,988,50382.77,50.99,3.86,55.1
+BTC_Reaper_Aggr_2_H1_BTCUSD.a_H1_OHLC,ea,DXY,weak dollar,891,41005.37,46.02,4.21,44.9
+BTC_Reaper_Aggr_2_H1_BTCUSD.a_H1_OHLC,ea,SP500,stocks bear,379,16319.41,43.06,4.01,18.7
+BTC_Reaper_Aggr_2_H1_BTCUSD.a_H1_OHLC,ea,SP500,stocks bull,1397,70987.43,50.81,3.98,81.3
+BTC_Reaper_Aggr_2_H1_BTCUSD.a_H1_OHLC,ea,GOLD,gold downtrend,440,26299.48,59.77,4.06,30.1
+BTC_Reaper_Aggr_2_H1_BTCUSD.a_H1_OHLC,ea,GOLD,gold uptrend,1336,61007.36,45.66,3.98,69.9
+BTC_Reaper_Aggr_2_H1_BTCUSD.a_H1_OHLC,ea,BTC,crypto bear,786,39429.71,50.17,3.96,44.2
+BTC_Reaper_Aggr_2_H1_BTCUSD.a_H1_OHLC,ea,BTC,crypto bull,1053,49863.13,47.35,3.99,55.8
+BTC_Reaper_Aggr_2_H1_BTCUSD.a_H1_OHLC,ea,US10Y,rates falling,716,37411.69,52.25,4.38,40.9
+BTC_Reaper_Aggr_2_H1_BTCUSD.a_H1_OHLC,ea,US10Y,rates rising,1163,53976.45,46.41,3.76,59.1
+BTC_Reaper_Aggr_2_H1_BTCUSD.a_H1_OHLC,ea,OIL,oil downtrend,928,40133.47,43.25,4.02,46.0
+BTC_Reaper_Aggr_2_H1_BTCUSD.a_H1_OHLC,ea,OIL,oil uptrend,848,47173.37,55.63,4.0,54.0
+BTC_Reaper_Aggr_2_H1_BTCUSD.a_H1_OHLC,ea,VIX,calm,405,27932.07,68.97,4.76,28.3
+BTC_Reaper_Aggr_2_H1_BTCUSD.a_H1_OHLC,ea,VIX,normal,1205,49054.98,40.71,3.7,49.8
+BTC_Reaper_Aggr_2_H1_BTCUSD.a_H1_OHLC,ea,VIX,stressed,370,21589.19,58.35,4.47,21.9
+BTC_Reaper_Aggr_3_H1_BTCUSD.a_H1_OHLC,ea,DXY,strong dollar,989,90762.14,91.77,6.85,61.7
+BTC_Reaper_Aggr_3_H1_BTCUSD.a_H1_OHLC,ea,DXY,weak dollar,891,56379.5,63.28,5.44,38.3
+BTC_Reaper_Aggr_3_H1_BTCUSD.a_H1_OHLC,ea,SP500,stocks bear,379,31743.41,83.76,6.43,22.3
+BTC_Reaper_Aggr_3_H1_BTCUSD.a_H1_OHLC,ea,SP500,stocks bull,1398,110322.93,78.91,6.19,77.7
+BTC_Reaper_Aggr_3_H1_BTCUSD.a_H1_OHLC,ea,GOLD,gold downtrend,441,40410.07,91.63,6.92,28.4
+BTC_Reaper_Aggr_3_H1_BTCUSD.a_H1_OHLC,ea,GOLD,gold uptrend,1336,101656.27,76.09,6.02,71.6
+BTC_Reaper_Aggr_3_H1_BTCUSD.a_H1_OHLC,ea,BTC,crypto bear,787,71344.07,90.65,7.07,49.6
+BTC_Reaper_Aggr_3_H1_BTCUSD.a_H1_OHLC,ea,BTC,crypto bull,1053,72556.67,68.9,5.52,50.4
+BTC_Reaper_Aggr_3_H1_BTCUSD.a_H1_OHLC,ea,US10Y,rates falling,716,54658.68,76.34,5.94,37.1
+BTC_Reaper_Aggr_3_H1_BTCUSD.a_H1_OHLC,ea,US10Y,rates rising,1164,92482.96,79.45,6.36,62.9
+BTC_Reaper_Aggr_3_H1_BTCUSD.a_H1_OHLC,ea,OIL,oil downtrend,928,57791.92,62.28,5.25,40.7
+BTC_Reaper_Aggr_3_H1_BTCUSD.a_H1_OHLC,ea,OIL,oil uptrend,849,84274.42,99.26,7.27,59.3
+BTC_Reaper_Aggr_3_H1_BTCUSD.a_H1_OHLC,ea,VIX,calm,405,27003.71,66.68,5.38,17.6
+BTC_Reaper_Aggr_3_H1_BTCUSD.a_H1_OHLC,ea,VIX,normal,1206,95049.16,78.81,6.32,62.0
+BTC_Reaper_Aggr_3_H1_BTCUSD.a_H1_OHLC,ea,VIX,stressed,370,31349.77,84.73,6.69,20.4
+BTC_Reaper_Aggr_4_H1_BTCUSD.a_H1_OHLC,ea,DXY,strong dollar,990,81974.44,82.8,5.57,55.1
+BTC_Reaper_Aggr_4_H1_BTCUSD.a_H1_OHLC,ea,DXY,weak dollar,891,66824.9,75.0,5.16,44.9
+BTC_Reaper_Aggr_4_H1_BTCUSD.a_H1_OHLC,ea,SP500,stocks bear,379,32959.8,86.97,5.44,23.6
+BTC_Reaper_Aggr_4_H1_BTCUSD.a_H1_OHLC,ea,SP500,stocks bull,1399,106492.04,76.12,5.25,76.4
+BTC_Reaper_Aggr_4_H1_BTCUSD.a_H1_OHLC,ea,GOLD,gold downtrend,441,33429.56,75.8,4.85,24.0
+BTC_Reaper_Aggr_4_H1_BTCUSD.a_H1_OHLC,ea,GOLD,gold uptrend,1337,106022.28,79.3,5.45,76.0
+BTC_Reaper_Aggr_4_H1_BTCUSD.a_H1_OHLC,ea,BTC,crypto bear,788,62427.31,79.22,5.01,43.1
+BTC_Reaper_Aggr_4_H1_BTCUSD.a_H1_OHLC,ea,BTC,crypto bull,1053,82539.85,78.39,5.65,56.9
+BTC_Reaper_Aggr_4_H1_BTCUSD.a_H1_OHLC,ea,US10Y,rates falling,716,61190.99,85.46,6.35,41.1
+BTC_Reaper_Aggr_4_H1_BTCUSD.a_H1_OHLC,ea,US10Y,rates rising,1165,87608.35,75.2,4.88,58.9
+BTC_Reaper_Aggr_4_H1_BTCUSD.a_H1_OHLC,ea,OIL,oil downtrend,928,65938.2,71.05,4.91,47.3
+BTC_Reaper_Aggr_4_H1_BTCUSD.a_H1_OHLC,ea,OIL,oil uptrend,850,73513.64,86.49,5.7,52.7
+BTC_Reaper_Aggr_4_H1_BTCUSD.a_H1_OHLC,ea,VIX,calm,406,34738.24,85.56,6.0,21.0
+BTC_Reaper_Aggr_4_H1_BTCUSD.a_H1_OHLC,ea,VIX,normal,1206,92089.77,76.36,5.07,55.6
+BTC_Reaper_Aggr_4_H1_BTCUSD.a_H1_OHLC,ea,VIX,stressed,370,38876.54,105.07,7.69,23.5
+BTC_Reaper_Aggr_5_H1_BTCUSD.a_H1_OHLC,ea,DXY,strong dollar,989,33957.14,34.33,1.74,47.5
+BTC_Reaper_Aggr_5_H1_BTCUSD.a_H1_OHLC,ea,DXY,weak dollar,891,37589.22,42.19,2.18,52.5
+BTC_Reaper_Aggr_5_H1_BTCUSD.a_H1_OHLC,ea,SP500,stocks bear,379,11134.22,29.38,1.67,16.2
+BTC_Reaper_Aggr_5_H1_BTCUSD.a_H1_OHLC,ea,SP500,stocks bull,1398,57481.5,41.12,2.01,83.8
+BTC_Reaper_Aggr_5_H1_BTCUSD.a_H1_OHLC,ea,GOLD,gold downtrend,441,12497.53,28.34,1.4,18.2
+BTC_Reaper_Aggr_5_H1_BTCUSD.a_H1_OHLC,ea,GOLD,gold uptrend,1336,56118.19,42.0,2.13,81.8
+BTC_Reaper_Aggr_5_H1_BTCUSD.a_H1_OHLC,ea,BTC,crypto bear,787,27530.07,34.98,1.76,38.4
+BTC_Reaper_Aggr_5_H1_BTCUSD.a_H1_OHLC,ea,BTC,crypto bull,1053,44131.68,41.91,2.13,61.6
+BTC_Reaper_Aggr_5_H1_BTCUSD.a_H1_OHLC,ea,US10Y,rates falling,716,36086.24,50.4,2.41,50.4
+BTC_Reaper_Aggr_5_H1_BTCUSD.a_H1_OHLC,ea,US10Y,rates rising,1164,35460.12,30.46,1.63,49.6
+BTC_Reaper_Aggr_5_H1_BTCUSD.a_H1_OHLC,ea,OIL,oil downtrend,928,41962.72,45.22,2.3,61.2
+BTC_Reaper_Aggr_5_H1_BTCUSD.a_H1_OHLC,ea,OIL,oil uptrend,849,26653.0,31.39,1.56,38.8
+BTC_Reaper_Aggr_5_H1_BTCUSD.a_H1_OHLC,ea,VIX,calm,405,22482.04,55.51,2.86,28.7
+BTC_Reaper_Aggr_5_H1_BTCUSD.a_H1_OHLC,ea,VIX,normal,1206,39569.51,32.81,1.68,50.5
+BTC_Reaper_Aggr_5_H1_BTCUSD.a_H1_OHLC,ea,VIX,stressed,370,16241.51,43.9,2.35,20.7
+BTC_Reaper_Aggr_6_H1_BTCUSD.a_H1_OHLC,ea,DXY,strong dollar,990,133638.95,134.99,6.43,53.1
+BTC_Reaper_Aggr_6_H1_BTCUSD.a_H1_OHLC,ea,DXY,weak dollar,891,117909.67,132.33,6.43,46.9
+BTC_Reaper_Aggr_6_H1_BTCUSD.a_H1_OHLC,ea,SP500,stocks bear,379,69601.98,183.65,7.88,29.2
+BTC_Reaper_Aggr_6_H1_BTCUSD.a_H1_OHLC,ea,SP500,stocks bull,1399,168812.25,120.67,5.9,70.8
+BTC_Reaper_Aggr_6_H1_BTCUSD.a_H1_OHLC,ea,GOLD,gold downtrend,441,75342.37,170.84,7.74,31.6
+BTC_Reaper_Aggr_6_H1_BTCUSD.a_H1_OHLC,ea,GOLD,gold uptrend,1337,163071.86,121.97,5.87,68.4
+BTC_Reaper_Aggr_6_H1_BTCUSD.a_H1_OHLC,ea,BTC,crypto bear,788,121876.69,154.67,7.13,49.6
+BTC_Reaper_Aggr_6_H1_BTCUSD.a_H1_OHLC,ea,BTC,crypto bull,1053,123971.02,117.73,5.83,50.4
+BTC_Reaper_Aggr_6_H1_BTCUSD.a_H1_OHLC,ea,US10Y,rates falling,716,98469.71,137.53,6.73,39.1
+BTC_Reaper_Aggr_6_H1_BTCUSD.a_H1_OHLC,ea,US10Y,rates rising,1165,153078.91,131.4,6.26,60.9
+BTC_Reaper_Aggr_6_H1_BTCUSD.a_H1_OHLC,ea,OIL,oil downtrend,928,112505.71,121.23,5.86,47.2
+BTC_Reaper_Aggr_6_H1_BTCUSD.a_H1_OHLC,ea,OIL,oil uptrend,850,125908.52,148.13,6.86,52.8
+BTC_Reaper_Aggr_6_H1_BTCUSD.a_H1_OHLC,ea,VIX,calm,406,51532.21,126.93,5.94,19.0
+BTC_Reaper_Aggr_6_H1_BTCUSD.a_H1_OHLC,ea,VIX,normal,1206,152659.73,126.58,6.23,56.3
+BTC_Reaper_Aggr_6_H1_BTCUSD.a_H1_OHLC,ea,VIX,stressed,370,66965.36,180.99,8.65,24.7
+BTC_Reaper_Aggr_7_H1_BTCUSD.a_H1_OHLC,ea,DXY,strong dollar,990,88273.02,89.16,7.54,54.1
+BTC_Reaper_Aggr_7_H1_BTCUSD.a_H1_OHLC,ea,DXY,weak dollar,891,74843.79,84.0,6.93,45.9
+BTC_Reaper_Aggr_7_H1_BTCUSD.a_H1_OHLC,ea,SP500,stocks bear,379,42248.09,111.47,8.35,27.9
+BTC_Reaper_Aggr_7_H1_BTCUSD.a_H1_OHLC,ea,SP500,stocks bull,1399,109051.23,77.95,6.79,72.1
+BTC_Reaper_Aggr_7_H1_BTCUSD.a_H1_OHLC,ea,GOLD,gold downtrend,441,42632.8,96.67,7.87,28.2
+BTC_Reaper_Aggr_7_H1_BTCUSD.a_H1_OHLC,ea,GOLD,gold uptrend,1337,108666.52,81.28,6.88,71.8
+BTC_Reaper_Aggr_7_H1_BTCUSD.a_H1_OHLC,ea,BTC,crypto bear,788,74492.23,94.53,7.56,47.4
+BTC_Reaper_Aggr_7_H1_BTCUSD.a_H1_OHLC,ea,BTC,crypto bull,1053,82814.81,78.65,6.94,52.6
+BTC_Reaper_Aggr_7_H1_BTCUSD.a_H1_OHLC,ea,US10Y,rates falling,716,66009.04,92.19,8.13,40.5
+BTC_Reaper_Aggr_7_H1_BTCUSD.a_H1_OHLC,ea,US10Y,rates rising,1165,97107.77,83.35,6.76,59.5
+BTC_Reaper_Aggr_7_H1_BTCUSD.a_H1_OHLC,ea,OIL,oil downtrend,928,73543.05,79.25,6.47,48.6
+BTC_Reaper_Aggr_7_H1_BTCUSD.a_H1_OHLC,ea,OIL,oil uptrend,850,77756.27,91.48,7.9,51.4
+BTC_Reaper_Aggr_7_H1_BTCUSD.a_H1_OHLC,ea,VIX,calm,406,38735.9,95.41,7.52,20.8
+BTC_Reaper_Aggr_7_H1_BTCUSD.a_H1_OHLC,ea,VIX,normal,1206,100529.64,83.36,6.84,54.0
+BTC_Reaper_Aggr_7_H1_BTCUSD.a_H1_OHLC,ea,VIX,stressed,370,46759.92,126.38,10.31,25.1
+BTC_Reaper_Aggr_8_H1_BTCUSD.a_H1_OHLC,ea,DXY,strong dollar,990,54689.42,55.24,3.31,51.7
+BTC_Reaper_Aggr_8_H1_BTCUSD.a_H1_OHLC,ea,DXY,weak dollar,891,51143.64,57.4,3.38,48.3
+BTC_Reaper_Aggr_8_H1_BTCUSD.a_H1_OHLC,ea,SP500,stocks bear,379,29001.13,76.52,4.54,27.5
+BTC_Reaper_Aggr_8_H1_BTCUSD.a_H1_OHLC,ea,SP500,stocks bull,1399,76370.45,54.59,3.19,72.5
+BTC_Reaper_Aggr_8_H1_BTCUSD.a_H1_OHLC,ea,GOLD,gold downtrend,441,25438.39,57.68,3.52,24.1
+BTC_Reaper_Aggr_8_H1_BTCUSD.a_H1_OHLC,ea,GOLD,gold uptrend,1337,79933.19,59.79,3.46,75.9
+BTC_Reaper_Aggr_8_H1_BTCUSD.a_H1_OHLC,ea,BTC,crypto bear,788,46858.79,59.47,3.58,44.9
+BTC_Reaper_Aggr_8_H1_BTCUSD.a_H1_OHLC,ea,BTC,crypto bull,1053,57608.78,54.71,3.18,55.1
+BTC_Reaper_Aggr_8_H1_BTCUSD.a_H1_OHLC,ea,US10Y,rates falling,716,37630.62,52.56,3.21,35.6
+BTC_Reaper_Aggr_8_H1_BTCUSD.a_H1_OHLC,ea,US10Y,rates rising,1165,68202.44,58.54,3.42,64.4
+BTC_Reaper_Aggr_8_H1_BTCUSD.a_H1_OHLC,ea,OIL,oil downtrend,928,48152.98,51.89,3.04,45.7
+BTC_Reaper_Aggr_8_H1_BTCUSD.a_H1_OHLC,ea,OIL,oil uptrend,850,57218.6,67.32,3.95,54.3
+BTC_Reaper_Aggr_8_H1_BTCUSD.a_H1_OHLC,ea,VIX,calm,406,18756.56,46.2,2.87,16.8
+BTC_Reaper_Aggr_8_H1_BTCUSD.a_H1_OHLC,ea,VIX,normal,1206,69823.07,57.9,3.38,62.6
+BTC_Reaper_Aggr_8_H1_BTCUSD.a_H1_OHLC,ea,VIX,stressed,370,22879.29,61.84,3.92,20.5
+BTC_Reaper_Aggr_9_H1_BTCUSD.a_H1_OHLC,ea,DXY,strong dollar,988,18848.45,19.08,0.98,44.4
+BTC_Reaper_Aggr_9_H1_BTCUSD.a_H1_OHLC,ea,DXY,weak dollar,891,23642.77,26.54,1.51,55.6
+BTC_Reaper_Aggr_9_H1_BTCUSD.a_H1_OHLC,ea,SP500,stocks bear,379,13305.82,35.11,2.25,33.4
+BTC_Reaper_Aggr_9_H1_BTCUSD.a_H1_OHLC,ea,SP500,stocks bull,1397,26591.68,19.03,0.96,66.6
+BTC_Reaper_Aggr_9_H1_BTCUSD.a_H1_OHLC,ea,GOLD,gold downtrend,440,9812.51,22.3,1.1,24.6
+BTC_Reaper_Aggr_9_H1_BTCUSD.a_H1_OHLC,ea,GOLD,gold uptrend,1336,30084.99,22.52,1.21,75.4
+BTC_Reaper_Aggr_9_H1_BTCUSD.a_H1_OHLC,ea,BTC,crypto bear,786,15980.7,20.33,1.09,38.0
+BTC_Reaper_Aggr_9_H1_BTCUSD.a_H1_OHLC,ea,BTC,crypto bull,1053,26107.02,24.79,1.32,62.0
+BTC_Reaper_Aggr_9_H1_BTCUSD.a_H1_OHLC,ea,US10Y,rates falling,716,12380.12,17.29,0.96,29.1
+BTC_Reaper_Aggr_9_H1_BTCUSD.a_H1_OHLC,ea,US10Y,rates rising,1163,30111.1,25.89,1.36,70.9
+BTC_Reaper_Aggr_9_H1_BTCUSD.a_H1_OHLC,ea,OIL,oil downtrend,928,26122.4,28.15,1.53,65.5
+BTC_Reaper_Aggr_9_H1_BTCUSD.a_H1_OHLC,ea,OIL,oil uptrend,848,13775.1,16.24,0.83,34.5
+BTC_Reaper_Aggr_9_H1_BTCUSD.a_H1_OHLC,ea,VIX,calm,405,14166.85,34.98,1.83,31.1
+BTC_Reaper_Aggr_9_H1_BTCUSD.a_H1_OHLC,ea,VIX,normal,1205,24131.22,20.03,1.08,52.9
+BTC_Reaper_Aggr_9_H1_BTCUSD.a_H1_OHLC,ea,VIX,stressed,370,7295.89,19.72,1.16,16.0
+BitcoinReaper_10_H1_BTCUSD.a_H1_OHLC,ea,DXY,strong dollar,989,40700.49,41.15,3.9,57.3
+BitcoinReaper_10_H1_BTCUSD.a_H1_OHLC,ea,DXY,weak dollar,891,30361.84,34.08,3.12,42.7
+BitcoinReaper_10_H1_BTCUSD.a_H1_OHLC,ea,SP500,stocks bear,379,20724.37,54.68,5.21,29.2
+BitcoinReaper_10_H1_BTCUSD.a_H1_OHLC,ea,SP500,stocks bull,1398,50250.19,35.94,3.29,70.8
+BitcoinReaper_10_H1_BTCUSD.a_H1_OHLC,ea,GOLD,gold downtrend,441,21600.59,48.98,4.5,30.4
+BitcoinReaper_10_H1_BTCUSD.a_H1_OHLC,ea,GOLD,gold uptrend,1336,49373.97,36.96,3.41,69.6
+BitcoinReaper_10_H1_BTCUSD.a_H1_OHLC,ea,BTC,crypto bear,787,36443.39,46.31,4.36,51.9
+BitcoinReaper_10_H1_BTCUSD.a_H1_OHLC,ea,BTC,crypto bull,1053,33757.85,32.06,2.94,48.1
+BitcoinReaper_10_H1_BTCUSD.a_H1_OHLC,ea,US10Y,rates falling,716,20698.25,28.91,2.68,29.1
+BitcoinReaper_10_H1_BTCUSD.a_H1_OHLC,ea,US10Y,rates rising,1164,50364.08,43.27,4.05,70.9
+BitcoinReaper_10_H1_BTCUSD.a_H1_OHLC,ea,OIL,oil downtrend,928,30343.13,32.7,3.08,42.8
+BitcoinReaper_10_H1_BTCUSD.a_H1_OHLC,ea,OIL,oil uptrend,849,40631.43,47.86,4.32,57.2
+BitcoinReaper_10_H1_BTCUSD.a_H1_OHLC,ea,VIX,calm,405,15539.88,38.37,3.46,19.9
+BitcoinReaper_10_H1_BTCUSD.a_H1_OHLC,ea,VIX,normal,1206,44929.19,37.25,3.47,57.6
+BitcoinReaper_10_H1_BTCUSD.a_H1_OHLC,ea,VIX,stressed,370,17502.0,47.3,4.59,22.4
+BitcoinReaper_1_H1_BTCUSD.a_H1_OHLC,ea,DXY,strong dollar,990,67880.89,68.57,2.76,47.7
+BitcoinReaper_1_H1_BTCUSD.a_H1_OHLC,ea,DXY,weak dollar,891,74411.48,83.51,3.78,52.3
+BitcoinReaper_1_H1_BTCUSD.a_H1_OHLC,ea,SP500,stocks bear,379,26063.52,68.77,3.25,18.6
+BitcoinReaper_1_H1_BTCUSD.a_H1_OHLC,ea,SP500,stocks bull,1399,113848.18,81.38,3.32,81.4
+BitcoinReaper_1_H1_BTCUSD.a_H1_OHLC,ea,GOLD,gold downtrend,441,30917.26,70.11,2.97,22.1
+BitcoinReaper_1_H1_BTCUSD.a_H1_OHLC,ea,GOLD,gold uptrend,1337,108994.44,81.52,3.41,77.9
+BitcoinReaper_1_H1_BTCUSD.a_H1_OHLC,ea,BTC,crypto bear,788,58634.09,74.41,3.29,42.0
+BitcoinReaper_1_H1_BTCUSD.a_H1_OHLC,ea,BTC,crypto bull,1053,81090.87,77.01,3.15,58.0
+BitcoinReaper_1_H1_BTCUSD.a_H1_OHLC,ea,US10Y,rates falling,716,49836.85,69.6,2.79,35.0
+BitcoinReaper_1_H1_BTCUSD.a_H1_OHLC,ea,US10Y,rates rising,1165,92455.52,79.36,3.5,65.0
+BitcoinReaper_1_H1_BTCUSD.a_H1_OHLC,ea,OIL,oil downtrend,928,80034.08,86.24,3.65,57.2
+BitcoinReaper_1_H1_BTCUSD.a_H1_OHLC,ea,OIL,oil uptrend,850,59877.62,70.44,2.93,42.8
+BitcoinReaper_1_H1_BTCUSD.a_H1_OHLC,ea,VIX,calm,406,41647.6,102.58,4.02,27.4
+BitcoinReaper_1_H1_BTCUSD.a_H1_OHLC,ea,VIX,normal,1206,80403.3,66.67,2.97,52.9
+BitcoinReaper_1_H1_BTCUSD.a_H1_OHLC,ea,VIX,stressed,370,29993.36,81.06,3.54,19.7
+BitcoinReaper_2_H1_BTCUSD.a_H1_OHLC,ea,DXY,strong dollar,988,54347.14,55.01,3.79,52.7
+BitcoinReaper_2_H1_BTCUSD.a_H1_OHLC,ea,DXY,weak dollar,891,48813.65,54.79,4.34,47.3
+BitcoinReaper_2_H1_BTCUSD.a_H1_OHLC,ea,SP500,stocks bear,379,18688.37,49.31,3.91,18.9
+BitcoinReaper_2_H1_BTCUSD.a_H1_OHLC,ea,SP500,stocks bull,1397,80408.92,57.56,4.05,81.1
+BitcoinReaper_2_H1_BTCUSD.a_H1_OHLC,ea,GOLD,gold downtrend,440,27282.42,62.01,4.04,27.5
+BitcoinReaper_2_H1_BTCUSD.a_H1_OHLC,ea,GOLD,gold uptrend,1336,71814.87,53.75,4.02,72.5
+BitcoinReaper_2_H1_BTCUSD.a_H1_OHLC,ea,BTC,crypto bear,786,44482.86,56.59,4.06,44.0
+BitcoinReaper_2_H1_BTCUSD.a_H1_OHLC,ea,BTC,crypto bull,1053,56709.03,53.85,3.97,56.0
+BitcoinReaper_2_H1_BTCUSD.a_H1_OHLC,ea,US10Y,rates falling,716,42691.26,59.62,4.38,41.4
+BitcoinReaper_2_H1_BTCUSD.a_H1_OHLC,ea,US10Y,rates rising,1163,60469.53,51.99,3.8,58.6
+BitcoinReaper_2_H1_BTCUSD.a_H1_OHLC,ea,OIL,oil downtrend,928,48393.28,52.15,4.09,48.8
+BitcoinReaper_2_H1_BTCUSD.a_H1_OHLC,ea,OIL,oil uptrend,848,50704.01,59.79,3.98,51.2
+BitcoinReaper_2_H1_BTCUSD.a_H1_OHLC,ea,VIX,calm,405,31140.69,76.89,4.84,28.3
+BitcoinReaper_2_H1_BTCUSD.a_H1_OHLC,ea,VIX,normal,1205,54371.02,45.12,3.66,49.4
+BitcoinReaper_2_H1_BTCUSD.a_H1_OHLC,ea,VIX,stressed,370,24614.58,66.53,4.53,22.4
+BitcoinReaper_3_H1_BTCUSD.a_H1_OHLC,ea,DXY,strong dollar,989,88620.06,89.61,6.25,60.3
+BitcoinReaper_3_H1_BTCUSD.a_H1_OHLC,ea,DXY,weak dollar,891,58229.86,65.35,4.97,39.7
+BitcoinReaper_3_H1_BTCUSD.a_H1_OHLC,ea,SP500,stocks bear,379,30194.35,79.67,6.01,21.3
+BitcoinReaper_3_H1_BTCUSD.a_H1_OHLC,ea,SP500,stocks bull,1398,111541.47,79.79,5.61,78.7
+BitcoinReaper_3_H1_BTCUSD.a_H1_OHLC,ea,GOLD,gold downtrend,441,38544.35,87.4,6.26,27.2
+BitcoinReaper_3_H1_BTCUSD.a_H1_OHLC,ea,GOLD,gold uptrend,1336,103191.47,77.24,5.51,72.8
+BitcoinReaper_3_H1_BTCUSD.a_H1_OHLC,ea,BTC,crypto bear,787,69567.44,88.4,6.43,48.3
+BitcoinReaper_3_H1_BTCUSD.a_H1_OHLC,ea,BTC,crypto bull,1053,74412.58,70.67,5.07,51.7
+BitcoinReaper_3_H1_BTCUSD.a_H1_OHLC,ea,US10Y,rates falling,716,56319.47,78.66,5.59,38.4
+BitcoinReaper_3_H1_BTCUSD.a_H1_OHLC,ea,US10Y,rates rising,1164,90530.45,77.78,5.71,61.6
+BitcoinReaper_3_H1_BTCUSD.a_H1_OHLC,ea,OIL,oil downtrend,928,57462.74,61.92,4.66,40.5
+BitcoinReaper_3_H1_BTCUSD.a_H1_OHLC,ea,OIL,oil uptrend,849,84273.08,99.26,6.77,59.5
+BitcoinReaper_3_H1_BTCUSD.a_H1_OHLC,ea,VIX,calm,405,29686.19,73.3,5.02,19.5
+BitcoinReaper_3_H1_BTCUSD.a_H1_OHLC,ea,VIX,normal,1206,92292.29,76.53,5.7,60.6
+BitcoinReaper_3_H1_BTCUSD.a_H1_OHLC,ea,VIX,stressed,370,30251.2,81.76,6.26,19.9
+BitcoinReaper_4_H1_BTCUSD.a_H1_OHLC,ea,DXY,strong dollar,990,69274.46,69.97,3.28,52.6
+BitcoinReaper_4_H1_BTCUSD.a_H1_OHLC,ea,DXY,weak dollar,891,62452.6,70.09,3.49,47.4
+BitcoinReaper_4_H1_BTCUSD.a_H1_OHLC,ea,SP500,stocks bear,379,33469.87,88.31,4.09,27.1
+BitcoinReaper_4_H1_BTCUSD.a_H1_OHLC,ea,SP500,stocks bull,1399,90000.02,64.33,3.08,72.9
+BitcoinReaper_4_H1_BTCUSD.a_H1_OHLC,ea,GOLD,gold downtrend,441,27073.66,61.39,2.77,21.9
+BitcoinReaper_4_H1_BTCUSD.a_H1_OHLC,ea,GOLD,gold uptrend,1337,96396.23,72.1,3.49,78.1
+BitcoinReaper_4_H1_BTCUSD.a_H1_OHLC,ea,BTC,crypto bear,788,51277.96,65.07,3.08,39.9
+BitcoinReaper_4_H1_BTCUSD.a_H1_OHLC,ea,BTC,crypto bull,1053,77156.55,73.27,3.56,60.1
+BitcoinReaper_4_H1_BTCUSD.a_H1_OHLC,ea,US10Y,rates falling,716,61334.8,85.66,4.59,46.6
+BitcoinReaper_4_H1_BTCUSD.a_H1_OHLC,ea,US10Y,rates rising,1165,70392.26,60.42,2.76,53.4
+BitcoinReaper_4_H1_BTCUSD.a_H1_OHLC,ea,OIL,oil downtrend,928,63018.7,67.91,3.2,51.0
+BitcoinReaper_4_H1_BTCUSD.a_H1_OHLC,ea,OIL,oil uptrend,850,60451.19,71.12,3.41,49.0
+BitcoinReaper_4_H1_BTCUSD.a_H1_OHLC,ea,VIX,calm,406,31719.74,78.13,3.72,21.3
+BitcoinReaper_4_H1_BTCUSD.a_H1_OHLC,ea,VIX,normal,1206,75318.43,62.45,3.03,50.6
+BitcoinReaper_4_H1_BTCUSD.a_H1_OHLC,ea,VIX,stressed,370,41710.12,112.73,5.75,28.0
+BitcoinReaper_5_H1_BTCUSD.a_H1_OHLC,ea,DXY,strong dollar,989,33170.73,33.54,1.53,46.2
+BitcoinReaper_5_H1_BTCUSD.a_H1_OHLC,ea,DXY,weak dollar,891,38602.41,43.32,1.96,53.8
+BitcoinReaper_5_H1_BTCUSD.a_H1_OHLC,ea,SP500,stocks bear,379,10795.92,28.49,1.41,15.6
+BitcoinReaper_5_H1_BTCUSD.a_H1_OHLC,ea,SP500,stocks bull,1398,58228.67,41.65,1.82,84.4
+BitcoinReaper_5_H1_BTCUSD.a_H1_OHLC,ea,GOLD,gold downtrend,441,14831.37,33.63,1.53,21.5
+BitcoinReaper_5_H1_BTCUSD.a_H1_OHLC,ea,GOLD,gold uptrend,1336,54193.22,40.56,1.8,78.5
+BitcoinReaper_5_H1_BTCUSD.a_H1_OHLC,ea,BTC,crypto bear,787,19058.41,24.22,1.09,26.8
+BitcoinReaper_5_H1_BTCUSD.a_H1_OHLC,ea,BTC,crypto bull,1053,51978.89,49.36,2.22,73.2
+BitcoinReaper_5_H1_BTCUSD.a_H1_OHLC,ea,US10Y,rates falling,716,41864.47,58.47,2.55,58.3
+BitcoinReaper_5_H1_BTCUSD.a_H1_OHLC,ea,US10Y,rates rising,1164,29908.67,25.69,1.2,41.7
+BitcoinReaper_5_H1_BTCUSD.a_H1_OHLC,ea,OIL,oil downtrend,928,48119.37,51.85,2.3,69.7
+BitcoinReaper_5_H1_BTCUSD.a_H1_OHLC,ea,OIL,oil uptrend,849,20905.22,24.62,1.11,30.3
+BitcoinReaper_5_H1_BTCUSD.a_H1_OHLC,ea,VIX,calm,405,23309.49,57.55,2.5,29.8
+BitcoinReaper_5_H1_BTCUSD.a_H1_OHLC,ea,VIX,normal,1206,41272.01,34.22,1.6,52.8
+BitcoinReaper_5_H1_BTCUSD.a_H1_OHLC,ea,VIX,stressed,370,13622.7,36.82,1.74,17.4
+BitcoinReaper_6_H1_BTCUSD.a_H1_OHLC,ea,DXY,strong dollar,990,148882.06,150.39,5.15,52.4
+BitcoinReaper_6_H1_BTCUSD.a_H1_OHLC,ea,DXY,weak dollar,891,135488.12,152.06,5.15,47.6
+BitcoinReaper_6_H1_BTCUSD.a_H1_OHLC,ea,SP500,stocks bear,379,75276.77,198.62,6.7,27.8
+BitcoinReaper_6_H1_BTCUSD.a_H1_OHLC,ea,SP500,stocks bull,1399,195860.12,140.0,4.66,72.2
+BitcoinReaper_6_H1_BTCUSD.a_H1_OHLC,ea,GOLD,gold downtrend,441,84290.43,191.13,6.4,31.1
+BitcoinReaper_6_H1_BTCUSD.a_H1_OHLC,ea,GOLD,gold uptrend,1337,186846.46,139.75,4.65,68.9
+BitcoinReaper_6_H1_BTCUSD.a_H1_OHLC,ea,BTC,crypto bear,788,130814.45,166.01,5.74,47.0
+BitcoinReaper_6_H1_BTCUSD.a_H1_OHLC,ea,BTC,crypto bull,1053,147291.86,139.88,4.66,53.0
+BitcoinReaper_6_H1_BTCUSD.a_H1_OHLC,ea,US10Y,rates falling,716,116224.09,162.32,5.78,40.9
+BitcoinReaper_6_H1_BTCUSD.a_H1_OHLC,ea,US10Y,rates rising,1165,168146.09,144.33,4.79,59.1
+BitcoinReaper_6_H1_BTCUSD.a_H1_OHLC,ea,OIL,oil downtrend,928,136472.03,147.06,4.85,50.3
+BitcoinReaper_6_H1_BTCUSD.a_H1_OHLC,ea,OIL,oil uptrend,850,134664.86,158.43,5.34,49.7
+BitcoinReaper_6_H1_BTCUSD.a_H1_OHLC,ea,VIX,calm,406,49891.7,122.89,4.12,16.4
+BitcoinReaper_6_H1_BTCUSD.a_H1_OHLC,ea,VIX,normal,1206,176519.29,146.37,4.96,57.9
+BitcoinReaper_6_H1_BTCUSD.a_H1_OHLC,ea,VIX,stressed,370,78356.34,211.77,8.21,25.7
+BitcoinReaper_7_H1_BTCUSD.a_H1_OHLC,ea,DXY,strong dollar,990,101538.39,102.56,4.61,55.7
+BitcoinReaper_7_H1_BTCUSD.a_H1_OHLC,ea,DXY,weak dollar,891,80913.85,90.81,4.05,44.3
+BitcoinReaper_7_H1_BTCUSD.a_H1_OHLC,ea,SP500,stocks bear,379,45927.05,121.18,5.79,26.2
+BitcoinReaper_7_H1_BTCUSD.a_H1_OHLC,ea,SP500,stocks bull,1399,129247.36,92.39,4.06,73.8
+BitcoinReaper_7_H1_BTCUSD.a_H1_OHLC,ea,GOLD,gold downtrend,441,49415.26,112.05,5.08,28.2
+BitcoinReaper_7_H1_BTCUSD.a_H1_OHLC,ea,GOLD,gold uptrend,1337,125759.15,94.06,4.18,71.8
+BitcoinReaper_7_H1_BTCUSD.a_H1_OHLC,ea,BTC,crypto bear,788,80631.82,102.32,4.61,45.2
+BitcoinReaper_7_H1_BTCUSD.a_H1_OHLC,ea,BTC,crypto bull,1053,97818.12,92.89,4.13,54.8
+BitcoinReaper_7_H1_BTCUSD.a_H1_OHLC,ea,US10Y,rates falling,716,69192.06,96.64,4.5,37.9
+BitcoinReaper_7_H1_BTCUSD.a_H1_OHLC,ea,US10Y,rates rising,1165,113260.18,97.22,4.26,62.1
+BitcoinReaper_7_H1_BTCUSD.a_H1_OHLC,ea,OIL,oil downtrend,928,81403.26,87.72,3.89,46.5
+BitcoinReaper_7_H1_BTCUSD.a_H1_OHLC,ea,OIL,oil uptrend,850,93771.15,110.32,4.98,53.5
+BitcoinReaper_7_H1_BTCUSD.a_H1_OHLC,ea,VIX,calm,406,30651.4,75.5,3.33,14.8
+BitcoinReaper_7_H1_BTCUSD.a_H1_OHLC,ea,VIX,normal,1206,127494.8,105.72,4.62,61.7
+BitcoinReaper_7_H1_BTCUSD.a_H1_OHLC,ea,VIX,stressed,370,48588.4,131.32,6.73,23.5
+BitcoinReaper_8_H1_BTCUSD.a_H1_OHLC,ea,DXY,strong dollar,990,47123.02,47.6,2.82,49.6
+BitcoinReaper_8_H1_BTCUSD.a_H1_OHLC,ea,DXY,weak dollar,891,47911.18,53.77,3.11,50.4
+BitcoinReaper_8_H1_BTCUSD.a_H1_OHLC,ea,SP500,stocks bear,379,21890.96,57.76,3.57,23.2
+BitcoinReaper_8_H1_BTCUSD.a_H1_OHLC,ea,SP500,stocks bull,1399,72348.07,51.71,2.94,76.8
+BitcoinReaper_8_H1_BTCUSD.a_H1_OHLC,ea,GOLD,gold downtrend,441,22680.75,51.43,2.99,24.1
+BitcoinReaper_8_H1_BTCUSD.a_H1_OHLC,ea,GOLD,gold uptrend,1337,71558.28,53.52,3.08,75.9
+BitcoinReaper_8_H1_BTCUSD.a_H1_OHLC,ea,BTC,crypto bear,788,41455.35,52.61,3.14,44.1
+BitcoinReaper_8_H1_BTCUSD.a_H1_OHLC,ea,BTC,crypto bull,1053,52499.56,49.86,2.85,55.9
+BitcoinReaper_8_H1_BTCUSD.a_H1_OHLC,ea,US10Y,rates falling,716,34139.9,47.68,2.91,35.9
+BitcoinReaper_8_H1_BTCUSD.a_H1_OHLC,ea,US10Y,rates rising,1165,60894.3,52.27,3.0,64.1
+BitcoinReaper_8_H1_BTCUSD.a_H1_OHLC,ea,OIL,oil downtrend,928,45787.8,49.34,2.87,48.6
+BitcoinReaper_8_H1_BTCUSD.a_H1_OHLC,ea,OIL,oil uptrend,850,48451.23,57.0,3.27,51.4
+BitcoinReaper_8_H1_BTCUSD.a_H1_OHLC,ea,VIX,calm,406,18164.97,44.74,2.72,17.8
+BitcoinReaper_8_H1_BTCUSD.a_H1_OHLC,ea,VIX,normal,1206,67312.32,55.81,3.2,65.8
+BitcoinReaper_8_H1_BTCUSD.a_H1_OHLC,ea,VIX,stressed,370,16828.62,45.48,3.02,16.4
+BitcoinReaper_9_H1_BTCUSD.a_H1_OHLC,ea,DXY,strong dollar,988,27377.82,27.71,1.36,51.4
+BitcoinReaper_9_H1_BTCUSD.a_H1_OHLC,ea,DXY,weak dollar,891,25848.76,29.01,1.54,48.6
+BitcoinReaper_9_H1_BTCUSD.a_H1_OHLC,ea,SP500,stocks bear,379,13660.31,36.04,2.17,27.3
+BitcoinReaper_9_H1_BTCUSD.a_H1_OHLC,ea,SP500,stocks bull,1397,36424.83,26.07,1.25,72.7
+BitcoinReaper_9_H1_BTCUSD.a_H1_OHLC,ea,GOLD,gold downtrend,440,10261.05,23.32,1.11,20.5
+BitcoinReaper_9_H1_BTCUSD.a_H1_OHLC,ea,GOLD,gold uptrend,1336,39824.09,29.81,1.51,79.5
+BitcoinReaper_9_H1_BTCUSD.a_H1_OHLC,ea,BTC,crypto bear,786,17594.12,22.38,1.16,33.3
+BitcoinReaper_9_H1_BTCUSD.a_H1_OHLC,ea,BTC,crypto bull,1053,35228.96,33.46,1.66,66.7
+BitcoinReaper_9_H1_BTCUSD.a_H1_OHLC,ea,US10Y,rates falling,716,19333.06,27.0,1.44,36.3
+BitcoinReaper_9_H1_BTCUSD.a_H1_OHLC,ea,US10Y,rates rising,1163,33893.52,29.14,1.45,63.7
+BitcoinReaper_9_H1_BTCUSD.a_H1_OHLC,ea,OIL,oil downtrend,928,34937.5,37.65,1.92,69.8
+BitcoinReaper_9_H1_BTCUSD.a_H1_OHLC,ea,OIL,oil uptrend,848,15147.64,17.86,0.87,30.2
+BitcoinReaper_9_H1_BTCUSD.a_H1_OHLC,ea,VIX,calm,405,15592.02,38.5,1.91,27.5
+BitcoinReaper_9_H1_BTCUSD.a_H1_OHLC,ea,VIX,normal,1205,33679.91,27.95,1.43,59.4
+BitcoinReaper_9_H1_BTCUSD.a_H1_OHLC,ea,VIX,stressed,370,7470.69,20.19,1.14,13.2
+BitcoinScalpPro_a_H1_BTCUSD.a_H1_OHLC,ea,DXY,strong dollar,989,58592.89,59.24,3.74,61.1
+BitcoinScalpPro_a_H1_BTCUSD.a_H1_OHLC,ea,DXY,weak dollar,891,37374.11,41.95,2.61,38.9
+BitcoinScalpPro_a_H1_BTCUSD.a_H1_OHLC,ea,SP500,stocks bear,379,28536.46,75.29,4.84,29.7
+BitcoinScalpPro_a_H1_BTCUSD.a_H1_OHLC,ea,SP500,stocks bull,1398,67507.58,48.29,2.95,70.3
+BitcoinScalpPro_a_H1_BTCUSD.a_H1_OHLC,ea,GOLD,gold downtrend,441,32828.97,74.44,4.43,34.2
+BitcoinScalpPro_a_H1_BTCUSD.a_H1_OHLC,ea,GOLD,gold uptrend,1336,63215.07,47.32,2.96,65.8
+BitcoinScalpPro_a_H1_BTCUSD.a_H1_OHLC,ea,BTC,crypto bear,787,48882.63,62.11,3.94,51.2
+BitcoinScalpPro_a_H1_BTCUSD.a_H1_OHLC,ea,BTC,crypto bull,1053,46628.0,44.28,2.71,48.8
+BitcoinScalpPro_a_H1_BTCUSD.a_H1_OHLC,ea,US10Y,rates falling,716,23537.9,32.87,2.09,24.5
+BitcoinScalpPro_a_H1_BTCUSD.a_H1_OHLC,ea,US10Y,rates rising,1164,72429.1,62.22,3.87,75.5
+BitcoinScalpPro_a_H1_BTCUSD.a_H1_OHLC,ea,OIL,oil downtrend,928,35740.66,38.51,2.45,37.2
+BitcoinScalpPro_a_H1_BTCUSD.a_H1_OHLC,ea,OIL,oil uptrend,849,60303.38,71.03,4.24,62.8
+BitcoinScalpPro_a_H1_BTCUSD.a_H1_OHLC,ea,VIX,calm,405,18011.82,44.47,2.76,17.2
+BitcoinScalpPro_a_H1_BTCUSD.a_H1_OHLC,ea,VIX,normal,1206,63642.89,52.77,3.28,60.9
+BitcoinScalpPro_a_H1_BTCUSD.a_H1_OHLC,ea,VIX,stressed,370,22817.17,61.67,4.14,21.8
+DTP2_eurusd_a_EURUSD.a_Daily_OHLC,ea,DXY,strong dollar,990,799.47,0.81,0.18,43.4
+DTP2_eurusd_a_EURUSD.a_Daily_OHLC,ea,DXY,weak dollar,891,1044.64,1.17,0.25,56.6
+DTP2_eurusd_a_EURUSD.a_Daily_OHLC,ea,SP500,stocks bear,379,-453.28,-1.2,-0.3,-27.0
+DTP2_eurusd_a_EURUSD.a_Daily_OHLC,ea,SP500,stocks bull,1399,2134.42,1.53,0.32,127.0
+DTP2_eurusd_a_EURUSD.a_Daily_OHLC,ea,GOLD,gold downtrend,441,-1784.92,-4.05,-0.8,-106.2
+DTP2_eurusd_a_EURUSD.a_Daily_OHLC,ea,GOLD,gold uptrend,1337,3466.06,2.59,0.58,206.2
+DTP2_eurusd_a_EURUSD.a_Daily_OHLC,ea,BTC,crypto bear,788,1813.35,2.3,0.53,74.4
+DTP2_eurusd_a_EURUSD.a_Daily_OHLC,ea,BTC,crypto bull,1053,624.05,0.59,0.12,25.6
+DTP2_eurusd_a_EURUSD.a_Daily_OHLC,ea,US10Y,rates falling,716,1639.74,2.29,0.52,88.9
+DTP2_eurusd_a_EURUSD.a_Daily_OHLC,ea,US10Y,rates rising,1165,204.37,0.18,0.04,11.1
+DTP2_eurusd_a_EURUSD.a_Daily_OHLC,ea,OIL,oil downtrend,928,169.69,0.18,0.04,10.1
+DTP2_eurusd_a_EURUSD.a_Daily_OHLC,ea,OIL,oil uptrend,850,1511.45,1.78,0.4,89.9
+DTP2_eurusd_a_EURUSD.a_Daily_OHLC,ea,VIX,calm,406,-1189.68,-2.93,-0.57,-220.0
+DTP2_eurusd_a_EURUSD.a_Daily_OHLC,ea,VIX,normal,1206,2495.21,2.07,0.45,461.4
+DTP2_eurusd_a_EURUSD.a_Daily_OHLC,ea,VIX,stressed,370,-764.73,-2.07,-0.43,-141.4
+DTP2_eurusd_b_EURUSD.a_Daily_OHLC,ea,DXY,strong dollar,954,341.36,0.36,0.04,4.0
+DTP2_eurusd_b_EURUSD.a_Daily_OHLC,ea,DXY,weak dollar,889,8226.48,9.25,1.1,96.0
+DTP2_eurusd_b_EURUSD.a_Daily_OHLC,ea,SP500,stocks bear,379,2419.7,6.38,0.72,41.1
+DTP2_eurusd_b_EURUSD.a_Daily_OHLC,ea,SP500,stocks bull,1361,3466.3,2.55,0.28,58.9
+DTP2_eurusd_b_EURUSD.a_Daily_OHLC,ea,GOLD,gold downtrend,404,482.96,1.2,0.12,8.2
+DTP2_eurusd_b_EURUSD.a_Daily_OHLC,ea,GOLD,gold uptrend,1336,5403.04,4.04,0.46,91.8
+DTP2_eurusd_b_EURUSD.a_Daily_OHLC,ea,BTC,crypto bear,750,5723.48,7.63,0.84,58.0
+DTP2_eurusd_b_EURUSD.a_Daily_OHLC,ea,BTC,crypto bull,1053,4147.74,3.94,0.44,42.0
+DTP2_eurusd_b_EURUSD.a_Daily_OHLC,ea,US10Y,rates falling,716,5471.36,7.64,0.79,63.9
+DTP2_eurusd_b_EURUSD.a_Daily_OHLC,ea,US10Y,rates rising,1127,3096.48,2.75,0.31,36.1
+DTP2_eurusd_b_EURUSD.a_Daily_OHLC,ea,OIL,oil downtrend,913,7388.3,8.09,0.91,125.5
+DTP2_eurusd_b_EURUSD.a_Daily_OHLC,ea,OIL,oil uptrend,827,-1502.3,-1.82,-0.2,-25.5
+DTP2_eurusd_b_EURUSD.a_Daily_OHLC,ea,VIX,calm,404,748.02,1.85,0.18,7.7
+DTP2_eurusd_b_EURUSD.a_Daily_OHLC,ea,VIX,normal,1170,2771.93,2.37,0.26,28.6
+DTP2_eurusd_b_EURUSD.a_Daily_OHLC,ea,VIX,stressed,370,6166.63,16.67,2.28,63.7
+DTP2_eurusd_c_EURUSD.a_Daily_OHLC,ea,DXY,strong dollar,954,-1375.25,-1.44,-0.19,-22.8
+DTP2_eurusd_c_EURUSD.a_Daily_OHLC,ea,DXY,weak dollar,889,7399.99,8.32,1.11,122.8
+DTP2_eurusd_c_EURUSD.a_Daily_OHLC,ea,SP500,stocks bear,379,2248.37,5.93,0.9,70.6
+DTP2_eurusd_c_EURUSD.a_Daily_OHLC,ea,SP500,stocks bull,1361,938.0,0.69,0.09,29.4
+DTP2_eurusd_c_EURUSD.a_Daily_OHLC,ea,GOLD,gold downtrend,404,-73.93,-0.18,-0.02,-2.3
+DTP2_eurusd_c_EURUSD.a_Daily_OHLC,ea,GOLD,gold uptrend,1336,3260.3,2.44,0.34,102.3
+DTP2_eurusd_c_EURUSD.a_Daily_OHLC,ea,BTC,crypto bear,750,4949.46,6.6,0.86,71.2
+DTP2_eurusd_c_EURUSD.a_Daily_OHLC,ea,BTC,crypto bull,1053,2000.43,1.9,0.25,28.8
+DTP2_eurusd_c_EURUSD.a_Daily_OHLC,ea,US10Y,rates falling,716,7030.08,9.82,1.26,116.7
+DTP2_eurusd_c_EURUSD.a_Daily_OHLC,ea,US10Y,rates rising,1127,-1005.34,-0.89,-0.12,-16.7
+DTP2_eurusd_c_EURUSD.a_Daily_OHLC,ea,OIL,oil downtrend,913,3885.12,4.26,0.56,121.9
+DTP2_eurusd_c_EURUSD.a_Daily_OHLC,ea,OIL,oil uptrend,827,-698.75,-0.84,-0.12,-21.9
+DTP2_eurusd_c_EURUSD.a_Daily_OHLC,ea,VIX,calm,404,857.31,2.12,0.29,12.4
+DTP2_eurusd_c_EURUSD.a_Daily_OHLC,ea,VIX,normal,1170,521.2,0.45,0.06,7.5
+DTP2_eurusd_c_EURUSD.a_Daily_OHLC,ea,VIX,stressed,370,5541.41,14.98,2.09,80.1
+DTP2_eurusd_d_EURUSD.a_Daily_OHLC,ea,DXY,strong dollar,954,341.36,0.36,0.04,4.0
+DTP2_eurusd_d_EURUSD.a_Daily_OHLC,ea,DXY,weak dollar,889,8226.48,9.25,1.1,96.0
+DTP2_eurusd_d_EURUSD.a_Daily_OHLC,ea,SP500,stocks bear,379,2419.7,6.38,0.72,41.1
+DTP2_eurusd_d_EURUSD.a_Daily_OHLC,ea,SP500,stocks bull,1361,3466.3,2.55,0.28,58.9
+DTP2_eurusd_d_EURUSD.a_Daily_OHLC,ea,GOLD,gold downtrend,404,482.96,1.2,0.12,8.2
+DTP2_eurusd_d_EURUSD.a_Daily_OHLC,ea,GOLD,gold uptrend,1336,5403.04,4.04,0.46,91.8
+DTP2_eurusd_d_EURUSD.a_Daily_OHLC,ea,BTC,crypto bear,750,5723.48,7.63,0.84,58.0
+DTP2_eurusd_d_EURUSD.a_Daily_OHLC,ea,BTC,crypto bull,1053,4147.74,3.94,0.44,42.0
+DTP2_eurusd_d_EURUSD.a_Daily_OHLC,ea,US10Y,rates falling,716,5471.36,7.64,0.79,63.9
+DTP2_eurusd_d_EURUSD.a_Daily_OHLC,ea,US10Y,rates rising,1127,3096.48,2.75,0.31,36.1
+DTP2_eurusd_d_EURUSD.a_Daily_OHLC,ea,OIL,oil downtrend,913,7388.3,8.09,0.91,125.5
+DTP2_eurusd_d_EURUSD.a_Daily_OHLC,ea,OIL,oil uptrend,827,-1502.3,-1.82,-0.2,-25.5
+DTP2_eurusd_d_EURUSD.a_Daily_OHLC,ea,VIX,calm,404,748.02,1.85,0.18,7.7
+DTP2_eurusd_d_EURUSD.a_Daily_OHLC,ea,VIX,normal,1170,2771.93,2.37,0.26,28.6
+DTP2_eurusd_d_EURUSD.a_Daily_OHLC,ea,VIX,stressed,370,6166.63,16.67,2.28,63.7
+DTP2_gbpusd_a_GBPUSD.a_Daily_OHLC,ea,DXY,strong dollar,960,7472.76,7.78,0.94,65.9
+DTP2_gbpusd_a_GBPUSD.a_Daily_OHLC,ea,DXY,weak dollar,889,3865.1,4.35,0.49,34.1
+DTP2_gbpusd_a_GBPUSD.a_Daily_OHLC,ea,SP500,stocks bear,379,3583.64,9.46,1.31,30.3
+DTP2_gbpusd_a_GBPUSD.a_Daily_OHLC,ea,SP500,stocks bull,1367,8256.64,6.04,0.71,69.7
+DTP2_gbpusd_a_GBPUSD.a_Daily_OHLC,ea,GOLD,gold downtrend,410,1656.23,4.04,0.52,14.0
+DTP2_gbpusd_a_GBPUSD.a_Daily_OHLC,ea,GOLD,gold uptrend,1336,10184.05,7.62,0.9,86.0
+DTP2_gbpusd_a_GBPUSD.a_Daily_OHLC,ea,BTC,crypto bear,756,6750.87,8.93,1.08,62.4
+DTP2_gbpusd_a_GBPUSD.a_Daily_OHLC,ea,BTC,crypto bull,1053,4067.96,3.86,0.43,37.6
+DTP2_gbpusd_a_GBPUSD.a_Daily_OHLC,ea,US10Y,rates falling,716,1884.96,2.63,0.29,16.6
+DTP2_gbpusd_a_GBPUSD.a_Daily_OHLC,ea,US10Y,rates rising,1133,9452.9,8.34,1.02,83.4
+DTP2_gbpusd_a_GBPUSD.a_Daily_OHLC,ea,OIL,oil downtrend,919,8275.57,9.0,1.23,69.9
+DTP2_gbpusd_a_GBPUSD.a_Daily_OHLC,ea,OIL,oil uptrend,827,3564.71,4.31,0.47,30.1
+DTP2_gbpusd_a_GBPUSD.a_Daily_OHLC,ea,VIX,calm,404,2566.02,6.35,0.75,21.8
+DTP2_gbpusd_a_GBPUSD.a_Daily_OHLC,ea,VIX,normal,1176,4709.31,4.0,0.43,39.9
+DTP2_gbpusd_a_GBPUSD.a_Daily_OHLC,ea,VIX,stressed,370,4517.52,12.21,1.59,38.3
+DaytradePro_AUDJPY_AUDJPY.a_Daily_OHLC,ea,DXY,strong dollar,986,8336.3,8.45,0.69,42.4
+DaytradePro_AUDJPY_AUDJPY.a_Daily_OHLC,ea,DXY,weak dollar,889,11319.45,12.73,0.96,57.6
+DaytradePro_AUDJPY_AUDJPY.a_Daily_OHLC,ea,SP500,stocks bear,379,1777.05,4.69,1.1,12.9
+DaytradePro_AUDJPY_AUDJPY.a_Daily_OHLC,ea,SP500,stocks bull,1393,11959.77,8.59,0.64,87.1
+DaytradePro_AUDJPY_AUDJPY.a_Daily_OHLC,ea,GOLD,gold downtrend,436,1068.41,2.45,0.16,7.8
+DaytradePro_AUDJPY_AUDJPY.a_Daily_OHLC,ea,GOLD,gold uptrend,1336,12668.41,9.48,0.87,92.2
+DaytradePro_AUDJPY_AUDJPY.a_Daily_OHLC,ea,BTC,crypto bear,782,1408.07,1.8,0.18,8.2
+DaytradePro_AUDJPY_AUDJPY.a_Daily_OHLC,ea,BTC,crypto bull,1053,15824.17,15.03,1.08,91.8
+DaytradePro_AUDJPY_AUDJPY.a_Daily_OHLC,ea,US10Y,rates falling,716,5216.18,7.29,0.69,26.5
+DaytradePro_AUDJPY_AUDJPY.a_Daily_OHLC,ea,US10Y,rates rising,1159,14439.57,12.46,0.9,73.5
+DaytradePro_AUDJPY_AUDJPY.a_Daily_OHLC,ea,OIL,oil downtrend,927,6194.59,6.68,0.91,45.1
+DaytradePro_AUDJPY_AUDJPY.a_Daily_OHLC,ea,OIL,oil uptrend,845,7542.23,8.93,0.57,54.9
+DaytradePro_AUDJPY_AUDJPY.a_Daily_OHLC,ea,VIX,calm,404,7980.04,19.75,1.69,38.7
+DaytradePro_AUDJPY_AUDJPY.a_Daily_OHLC,ea,VIX,normal,1202,7860.04,6.54,0.48,38.1
+DaytradePro_AUDJPY_AUDJPY.a_Daily_OHLC,ea,VIX,stressed,370,4787.45,12.94,1.4,23.2
+DaytradePro_AUDUSD_AUDUSD.a_Daily_OHLC,ea,DXY,strong dollar,990,5139.16,5.19,1.16,51.5
+DaytradePro_AUDUSD_AUDUSD.a_Daily_OHLC,ea,DXY,weak dollar,891,4843.96,5.44,0.91,48.5
+DaytradePro_AUDUSD_AUDUSD.a_Daily_OHLC,ea,SP500,stocks bear,379,3480.65,9.18,3.76,45.1
+DaytradePro_AUDUSD_AUDUSD.a_Daily_OHLC,ea,SP500,stocks bull,1399,4239.48,3.03,0.53,54.9
+DaytradePro_AUDUSD_AUDUSD.a_Daily_OHLC,ea,GOLD,gold downtrend,441,1505.34,3.41,0.72,19.5
+DaytradePro_AUDUSD_AUDUSD.a_Daily_OHLC,ea,GOLD,gold uptrend,1337,6214.79,4.65,0.88,80.5
+DaytradePro_AUDUSD_AUDUSD.a_Daily_OHLC,ea,BTC,crypto bear,788,692.58,0.88,0.13,7.6
+DaytradePro_AUDUSD_AUDUSD.a_Daily_OHLC,ea,BTC,crypto bull,1053,8434.99,8.01,2.22,92.4
+DaytradePro_AUDUSD_AUDUSD.a_Daily_OHLC,ea,US10Y,rates falling,716,3275.42,4.57,0.71,32.8
+DaytradePro_AUDUSD_AUDUSD.a_Daily_OHLC,ea,US10Y,rates rising,1165,6707.7,5.76,1.34,67.2
+DaytradePro_AUDUSD_AUDUSD.a_Daily_OHLC,ea,OIL,oil downtrend,928,5515.52,5.94,1.29,71.4
+DaytradePro_AUDUSD_AUDUSD.a_Daily_OHLC,ea,OIL,oil uptrend,850,2204.61,2.59,0.45,28.6
+DaytradePro_AUDUSD_AUDUSD.a_Daily_OHLC,ea,VIX,calm,406,491.73,1.21,0.18,4.6
+DaytradePro_AUDUSD_AUDUSD.a_Daily_OHLC,ea,VIX,normal,1206,5938.19,4.92,1.23,55.9
+DaytradePro_AUDUSD_AUDUSD.a_Daily_OHLC,ea,VIX,stressed,370,4198.68,11.35,1.87,39.5
+DaytradePro_CHFJPY_CHFJPY.a_Daily_OHLC,ea,DXY,strong dollar,982,4332.27,4.41,0.52,31.3
+DaytradePro_CHFJPY_CHFJPY.a_Daily_OHLC,ea,DXY,weak dollar,889,9511.16,10.7,1.35,68.7
+DaytradePro_CHFJPY_CHFJPY.a_Daily_OHLC,ea,SP500,stocks bear,379,7448.95,19.65,1.92,56.6
+DaytradePro_CHFJPY_CHFJPY.a_Daily_OHLC,ea,SP500,stocks bull,1389,5710.14,4.11,0.6,43.4
+DaytradePro_CHFJPY_CHFJPY.a_Daily_OHLC,ea,GOLD,gold downtrend,432,565.92,1.31,0.16,4.3
+DaytradePro_CHFJPY_CHFJPY.a_Daily_OHLC,ea,GOLD,gold uptrend,1336,12593.17,9.43,1.23,95.7
+DaytradePro_CHFJPY_CHFJPY.a_Daily_OHLC,ea,BTC,crypto bear,778,4868.74,6.26,0.7,38.8
+DaytradePro_CHFJPY_CHFJPY.a_Daily_OHLC,ea,BTC,crypto bull,1053,7674.34,7.29,1.06,61.2
+DaytradePro_CHFJPY_CHFJPY.a_Daily_OHLC,ea,US10Y,rates falling,716,1312.01,1.83,0.22,9.5
+DaytradePro_CHFJPY_CHFJPY.a_Daily_OHLC,ea,US10Y,rates rising,1155,12531.42,10.85,1.33,90.5
+DaytradePro_CHFJPY_CHFJPY.a_Daily_OHLC,ea,OIL,oil downtrend,926,9199.74,9.93,1.68,69.9
+DaytradePro_CHFJPY_CHFJPY.a_Daily_OHLC,ea,OIL,oil uptrend,842,3959.35,4.7,0.5,30.1
+DaytradePro_CHFJPY_CHFJPY.a_Daily_OHLC,ea,VIX,calm,404,3722.62,9.21,1.23,25.6
+DaytradePro_CHFJPY_CHFJPY.a_Daily_OHLC,ea,VIX,normal,1198,5728.61,4.78,0.62,39.5
+DaytradePro_CHFJPY_CHFJPY.a_Daily_OHLC,ea,VIX,stressed,370,5069.83,13.7,1.27,34.9
+DaytradePro_EURAUD_EURAUD.a_Daily_OHLC,ea,DXY,strong dollar,975,2837.04,2.91,0.36,33.3
+DaytradePro_EURAUD_EURAUD.a_Daily_OHLC,ea,DXY,weak dollar,889,5693.38,6.4,1.03,66.7
+DaytradePro_EURAUD_EURAUD.a_Daily_OHLC,ea,SP500,stocks bear,379,5699.6,15.04,1.2,86.8
+DaytradePro_EURAUD_EURAUD.a_Daily_OHLC,ea,SP500,stocks bull,1382,865.42,0.63,0.14,13.2
+DaytradePro_EURAUD_EURAUD.a_Daily_OHLC,ea,GOLD,gold downtrend,425,1229.95,2.89,1.35,18.7
+DaytradePro_EURAUD_EURAUD.a_Daily_OHLC,ea,GOLD,gold uptrend,1336,5335.07,3.99,0.5,81.3
+DaytradePro_EURAUD_EURAUD.a_Daily_OHLC,ea,BTC,crypto bear,771,7021.65,9.11,0.97,81.6
+DaytradePro_EURAUD_EURAUD.a_Daily_OHLC,ea,BTC,crypto bull,1053,1578.53,1.5,0.29,18.4
+DaytradePro_EURAUD_EURAUD.a_Daily_OHLC,ea,US10Y,rates falling,716,5169.21,7.22,1.04,60.6
+DaytradePro_EURAUD_EURAUD.a_Daily_OHLC,ea,US10Y,rates rising,1148,3361.21,2.93,0.4,39.4
+DaytradePro_EURAUD_EURAUD.a_Daily_OHLC,ea,OIL,oil downtrend,926,1374.83,1.48,0.24,20.9
+DaytradePro_EURAUD_EURAUD.a_Daily_OHLC,ea,OIL,oil uptrend,835,5190.19,6.22,0.78,79.1
+DaytradePro_EURAUD_EURAUD.a_Daily_OHLC,ea,VIX,calm,404,-879.14,-2.18,-0.47,-10.7
+DaytradePro_EURAUD_EURAUD.a_Daily_OHLC,ea,VIX,normal,1191,1523.58,1.28,0.49,18.5
+DaytradePro_EURAUD_EURAUD.a_Daily_OHLC,ea,VIX,stressed,370,7608.07,20.56,1.38,92.2
+DaytradePro_EURJPY_EURJPY.a_Daily_OHLC,ea,DXY,strong dollar,986,-1692.11,-1.72,-0.25,-55.0
+DaytradePro_EURJPY_EURJPY.a_Daily_OHLC,ea,DXY,weak dollar,889,4770.61,5.37,0.52,155.0
+DaytradePro_EURJPY_EURJPY.a_Daily_OHLC,ea,SP500,stocks bear,379,-2521.74,-6.65,-0.95,-134.4
+DaytradePro_EURJPY_EURJPY.a_Daily_OHLC,ea,SP500,stocks bull,1393,4398.0,3.16,0.39,234.4
+DaytradePro_EURJPY_EURJPY.a_Daily_OHLC,ea,GOLD,gold downtrend,436,-139.33,-0.32,-0.04,-7.4
+DaytradePro_EURJPY_EURJPY.a_Daily_OHLC,ea,GOLD,gold uptrend,1336,2015.59,1.51,0.2,107.4
+DaytradePro_EURJPY_EURJPY.a_Daily_OHLC,ea,BTC,crypto bear,782,-1827.82,-2.34,-0.34,-852.0
+DaytradePro_EURJPY_EURJPY.a_Daily_OHLC,ea,BTC,crypto bull,1053,2042.36,1.94,0.23,952.0
+DaytradePro_EURJPY_EURJPY.a_Daily_OHLC,ea,US10Y,rates falling,716,-2144.5,-3.0,-0.44,-69.7
+DaytradePro_EURJPY_EURJPY.a_Daily_OHLC,ea,US10Y,rates rising,1159,5223.0,4.51,0.46,169.7
+DaytradePro_EURJPY_EURJPY.a_Daily_OHLC,ea,OIL,oil downtrend,927,286.79,0.31,0.05,15.3
+DaytradePro_EURJPY_EURJPY.a_Daily_OHLC,ea,OIL,oil uptrend,845,1589.47,1.88,0.21,84.7
+DaytradePro_EURJPY_EURJPY.a_Daily_OHLC,ea,VIX,calm,404,4142.23,10.25,0.89,147.7
+DaytradePro_EURJPY_EURJPY.a_Daily_OHLC,ea,VIX,normal,1202,1141.18,0.95,0.13,40.7
+DaytradePro_EURJPY_EURJPY.a_Daily_OHLC,ea,VIX,stressed,370,-2477.99,-6.7,-0.81,-88.3
+DaytradePro_EURNZD_EURNZD.a_Daily_OHLC,ea,DXY,strong dollar,990,-1275.67,-1.29,-0.1,-21.6
+DaytradePro_EURNZD_EURNZD.a_Daily_OHLC,ea,DXY,weak dollar,891,7171.46,8.05,1.09,121.6
+DaytradePro_EURNZD_EURNZD.a_Daily_OHLC,ea,SP500,stocks bear,379,-2815.46,-7.43,-0.44,-83.7
+DaytradePro_EURNZD_EURNZD.a_Daily_OHLC,ea,SP500,stocks bull,1399,6179.59,4.42,0.54,183.7
+DaytradePro_EURNZD_EURNZD.a_Daily_OHLC,ea,GOLD,gold downtrend,441,1652.6,3.75,0.38,49.1
+DaytradePro_EURNZD_EURNZD.a_Daily_OHLC,ea,GOLD,gold uptrend,1337,1711.53,1.28,0.12,50.9
+DaytradePro_EURNZD_EURNZD.a_Daily_OHLC,ea,BTC,crypto bear,788,-968.67,-1.23,-0.09,-18.1
+DaytradePro_EURNZD_EURNZD.a_Daily_OHLC,ea,BTC,crypto bull,1053,6323.14,6.0,0.7,118.1
+DaytradePro_EURNZD_EURNZD.a_Daily_OHLC,ea,US10Y,rates falling,716,3259.43,4.55,0.57,55.3
+DaytradePro_EURNZD_EURNZD.a_Daily_OHLC,ea,US10Y,rates rising,1165,2636.36,2.26,0.19,44.7
+DaytradePro_EURNZD_EURNZD.a_Daily_OHLC,ea,OIL,oil downtrend,928,3702.99,3.99,0.53,110.1
+DaytradePro_EURNZD_EURNZD.a_Daily_OHLC,ea,OIL,oil uptrend,850,-338.86,-0.4,-0.03,-10.1
+DaytradePro_EURNZD_EURNZD.a_Daily_OHLC,ea,VIX,calm,406,-157.52,-0.39,-0.04,-2.1
+DaytradePro_EURNZD_EURNZD.a_Daily_OHLC,ea,VIX,normal,1206,10327.8,8.56,1.39,138.4
+DaytradePro_EURNZD_EURNZD.a_Daily_OHLC,ea,VIX,stressed,370,-2705.61,-7.31,-0.38,-36.2
+DaytradePro_EURUSD_EURUSD.a_Daily_OHLC,ea,DXY,strong dollar,982,24620.49,25.07,1.48,73.6
+DaytradePro_EURUSD_EURUSD.a_Daily_OHLC,ea,DXY,weak dollar,889,8819.0,9.92,1.08,26.4
+DaytradePro_EURUSD_EURUSD.a_Daily_OHLC,ea,SP500,stocks bear,379,3235.79,8.54,1.25,13.0
+DaytradePro_EURUSD_EURUSD.a_Daily_OHLC,ea,SP500,stocks bull,1389,21693.7,15.62,1.46,87.0
+DaytradePro_EURUSD_EURUSD.a_Daily_OHLC,ea,GOLD,gold downtrend,432,8840.43,20.46,1.49,35.5
+DaytradePro_EURUSD_EURUSD.a_Daily_OHLC,ea,GOLD,gold uptrend,1336,16089.06,12.04,1.42,64.5
+DaytradePro_EURUSD_EURUSD.a_Daily_OHLC,ea,BTC,crypto bear,778,16235.93,20.87,1.68,47.2
+DaytradePro_EURUSD_EURUSD.a_Daily_OHLC,ea,BTC,crypto bull,1053,18190.2,17.27,1.16,52.8
+DaytradePro_EURUSD_EURUSD.a_Daily_OHLC,ea,US10Y,rates falling,716,15540.37,21.7,1.23,46.5
+DaytradePro_EURUSD_EURUSD.a_Daily_OHLC,ea,US10Y,rates rising,1155,17899.12,15.5,1.45,53.5
+DaytradePro_EURUSD_EURUSD.a_Daily_OHLC,ea,OIL,oil downtrend,926,11129.11,12.02,1.3,44.6
+DaytradePro_EURUSD_EURUSD.a_Daily_OHLC,ea,OIL,oil uptrend,842,13800.38,16.39,1.51,55.4
+DaytradePro_EURUSD_EURUSD.a_Daily_OHLC,ea,VIX,calm,404,1295.72,3.21,0.69,3.7
+DaytradePro_EURUSD_EURUSD.a_Daily_OHLC,ea,VIX,normal,1198,31106.6,25.97,1.54,88.0
+DaytradePro_EURUSD_EURUSD.a_Daily_OHLC,ea,VIX,stressed,370,2937.35,7.94,1.21,8.3
+DaytradePro_GBPJPY_GBPJPY.a_Daily_OHLC,ea,DXY,strong dollar,987,6078.47,6.16,0.66,87.9
+DaytradePro_GBPJPY_GBPJPY.a_Daily_OHLC,ea,DXY,weak dollar,890,833.74,0.94,0.08,12.1
+DaytradePro_GBPJPY_GBPJPY.a_Daily_OHLC,ea,SP500,stocks bear,379,2291.19,6.05,0.5,32.9
+DaytradePro_GBPJPY_GBPJPY.a_Daily_OHLC,ea,SP500,stocks bull,1395,4681.8,3.36,0.35,67.1
+DaytradePro_GBPJPY_GBPJPY.a_Daily_OHLC,ea,GOLD,gold downtrend,438,5421.54,12.38,0.97,77.8
+DaytradePro_GBPJPY_GBPJPY.a_Daily_OHLC,ea,GOLD,gold uptrend,1336,1551.45,1.16,0.13,22.2
+DaytradePro_GBPJPY_GBPJPY.a_Daily_OHLC,ea,BTC,crypto bear,784,2537.1,3.24,0.3,36.7
+DaytradePro_GBPJPY_GBPJPY.a_Daily_OHLC,ea,BTC,crypto bull,1053,4375.11,4.15,0.41,63.3
+DaytradePro_GBPJPY_GBPJPY.a_Daily_OHLC,ea,US10Y,rates falling,716,59.18,0.08,0.01,0.9
+DaytradePro_GBPJPY_GBPJPY.a_Daily_OHLC,ea,US10Y,rates rising,1161,6853.03,5.9,0.57,99.1
+DaytradePro_GBPJPY_GBPJPY.a_Daily_OHLC,ea,OIL,oil downtrend,928,3098.51,3.34,0.31,44.4
+DaytradePro_GBPJPY_GBPJPY.a_Daily_OHLC,ea,OIL,oil uptrend,846,3874.48,4.58,0.48,55.6
+DaytradePro_GBPJPY_GBPJPY.a_Daily_OHLC,ea,VIX,calm,404,2863.69,7.09,0.78,24.1
+DaytradePro_GBPJPY_GBPJPY.a_Daily_OHLC,ea,VIX,normal,1204,-123.04,-0.1,-0.01,-1.0
+DaytradePro_GBPJPY_GBPJPY.a_Daily_OHLC,ea,VIX,stressed,370,9125.72,24.66,1.71,76.9
+DaytradePro_GBPUSD_GBPUSD.a_Daily_OHLC,ea,DXY,strong dollar,990,367.92,0.37,0.03,2.2
+DaytradePro_GBPUSD_GBPUSD.a_Daily_OHLC,ea,DXY,weak dollar,891,16234.58,18.22,0.83,97.8
+DaytradePro_GBPUSD_GBPUSD.a_Daily_OHLC,ea,SP500,stocks bear,379,4302.54,11.35,1.67,50.6
+DaytradePro_GBPUSD_GBPUSD.a_Daily_OHLC,ea,SP500,stocks bull,1399,4198.52,3.0,0.18,49.4
+DaytradePro_GBPUSD_GBPUSD.a_Daily_OHLC,ea,GOLD,gold downtrend,441,6965.78,15.8,0.75,81.9
+DaytradePro_GBPUSD_GBPUSD.a_Daily_OHLC,ea,GOLD,gold uptrend,1337,1535.28,1.15,0.1,18.1
+DaytradePro_GBPUSD_GBPUSD.a_Daily_OHLC,ea,BTC,crypto bear,788,2218.92,2.82,0.23,20.7
+DaytradePro_GBPUSD_GBPUSD.a_Daily_OHLC,ea,BTC,crypto bull,1053,8480.06,8.05,0.49,79.3
+DaytradePro_GBPUSD_GBPUSD.a_Daily_OHLC,ea,US10Y,rates falling,716,7723.8,10.79,0.89,46.5
+DaytradePro_GBPUSD_GBPUSD.a_Daily_OHLC,ea,US10Y,rates rising,1165,8878.7,7.62,0.39,53.5
+DaytradePro_GBPUSD_GBPUSD.a_Daily_OHLC,ea,OIL,oil downtrend,928,2997.31,3.23,0.28,35.3
+DaytradePro_GBPUSD_GBPUSD.a_Daily_OHLC,ea,OIL,oil uptrend,850,5503.75,6.47,0.37,64.7
+DaytradePro_GBPUSD_GBPUSD.a_Daily_OHLC,ea,VIX,calm,406,5717.82,14.08,0.75,25.5
+DaytradePro_GBPUSD_GBPUSD.a_Daily_OHLC,ea,VIX,normal,1206,11746.77,9.74,0.47,52.4
+DaytradePro_GBPUSD_GBPUSD.a_Daily_OHLC,ea,VIX,stressed,370,4972.07,13.44,1.43,22.2
+DaytradePro_NZDUSD_NZDUSD.a_Daily_OHLC,ea,DXY,strong dollar,985,4484.86,4.55,2.88,82.4
+DaytradePro_NZDUSD_NZDUSD.a_Daily_OHLC,ea,DXY,weak dollar,889,961.01,1.08,0.19,17.6
+DaytradePro_NZDUSD_NZDUSD.a_Daily_OHLC,ea,SP500,stocks bear,379,-1071.07,-2.83,-0.33,-20.1
+DaytradePro_NZDUSD_NZDUSD.a_Daily_OHLC,ea,SP500,stocks bull,1392,6389.83,4.59,2.78,120.1
+DaytradePro_NZDUSD_NZDUSD.a_Daily_OHLC,ea,GOLD,gold downtrend,435,1578.58,3.63,2.5,29.7
+DaytradePro_NZDUSD_NZDUSD.a_Daily_OHLC,ea,GOLD,gold uptrend,1336,3740.18,2.8,0.58,70.3
+DaytradePro_NZDUSD_NZDUSD.a_Daily_OHLC,ea,BTC,crypto bear,781,1136.88,1.46,0.24,21.4
+DaytradePro_NZDUSD_NZDUSD.a_Daily_OHLC,ea,BTC,crypto bull,1053,4181.88,3.97,2.89,78.6
+DaytradePro_NZDUSD_NZDUSD.a_Daily_OHLC,ea,US10Y,rates falling,716,684.02,0.96,0.15,12.6
+DaytradePro_NZDUSD_NZDUSD.a_Daily_OHLC,ea,US10Y,rates rising,1158,4761.85,4.11,2.82,87.4
+DaytradePro_NZDUSD_NZDUSD.a_Daily_OHLC,ea,OIL,oil downtrend,926,1443.4,1.56,0.28,27.1
+DaytradePro_NZDUSD_NZDUSD.a_Daily_OHLC,ea,OIL,oil uptrend,845,3875.36,4.59,2.8,72.9
+DaytradePro_NZDUSD_NZDUSD.a_Daily_OHLC,ea,VIX,calm,404,1899.85,4.7,3.07,32.1
+DaytradePro_NZDUSD_NZDUSD.a_Daily_OHLC,ea,VIX,normal,1201,5280.09,4.4,2.71,89.3
+DaytradePro_NZDUSD_NZDUSD.a_Daily_OHLC,ea,VIX,stressed,370,-1268.24,-3.43,-0.4,-21.5
+DaytradePro_USDCAD_USDCAD.a_Daily_OHLC,ea,DXY,strong dollar,987,6921.01,7.01,0.96,141.1
+DaytradePro_USDCAD_USDCAD.a_Daily_OHLC,ea,DXY,weak dollar,891,-2016.94,-2.26,-0.23,-41.1
+DaytradePro_USDCAD_USDCAD.a_Daily_OHLC,ea,SP500,stocks bear,379,1857.71,4.9,0.6,41.7
+DaytradePro_USDCAD_USDCAD.a_Daily_OHLC,ea,SP500,stocks bull,1396,2597.38,1.86,0.21,58.3
+DaytradePro_USDCAD_USDCAD.a_Daily_OHLC,ea,GOLD,gold downtrend,439,3406.17,7.76,1.84,76.5
+DaytradePro_USDCAD_USDCAD.a_Daily_OHLC,ea,GOLD,gold uptrend,1336,1048.92,0.79,0.08,23.5
+DaytradePro_USDCAD_USDCAD.a_Daily_OHLC,ea,BTC,crypto bear,785,6552.96,8.35,1.09,133.6
+DaytradePro_USDCAD_USDCAD.a_Daily_OHLC,ea,BTC,crypto bull,1053,-1648.89,-1.57,-0.17,-33.6
+DaytradePro_USDCAD_USDCAD.a_Daily_OHLC,ea,US10Y,rates falling,716,-5029.82,-7.02,-0.63,-102.6
+DaytradePro_USDCAD_USDCAD.a_Daily_OHLC,ea,US10Y,rates rising,1162,9933.89,8.55,1.33,202.6
+DaytradePro_USDCAD_USDCAD.a_Daily_OHLC,ea,OIL,oil downtrend,928,1284.59,1.38,0.15,28.8
+DaytradePro_USDCAD_USDCAD.a_Daily_OHLC,ea,OIL,oil uptrend,847,3170.5,3.74,0.46,71.2
+DaytradePro_USDCAD_USDCAD.a_Daily_OHLC,ea,VIX,calm,405,4823.03,11.91,1.62,84.6
+DaytradePro_USDCAD_USDCAD.a_Daily_OHLC,ea,VIX,normal,1204,632.06,0.52,0.06,11.1
+DaytradePro_USDCAD_USDCAD.a_Daily_OHLC,ea,VIX,stressed,370,245.8,0.66,0.08,4.3
+DaytradePro_USDJPY_USDJPY.a_Daily_OHLC,ea,DXY,strong dollar,982,14787.32,15.06,1.48,117.1
+DaytradePro_USDJPY_USDJPY.a_Daily_OHLC,ea,DXY,weak dollar,889,-2157.45,-2.43,-0.36,-17.1
+DaytradePro_USDJPY_USDJPY.a_Daily_OHLC,ea,SP500,stocks bear,379,4926.23,13.0,1.23,40.6
+DaytradePro_USDJPY_USDJPY.a_Daily_OHLC,ea,SP500,stocks bull,1389,7217.63,5.2,0.64,59.4
+DaytradePro_USDJPY_USDJPY.a_Daily_OHLC,ea,GOLD,gold downtrend,432,10467.25,24.23,1.94,86.2
+DaytradePro_USDJPY_USDJPY.a_Daily_OHLC,ea,GOLD,gold uptrend,1336,1676.61,1.25,0.18,13.8
+DaytradePro_USDJPY_USDJPY.a_Daily_OHLC,ea,BTC,crypto bear,778,6145.96,7.9,0.94,48.6
+DaytradePro_USDJPY_USDJPY.a_Daily_OHLC,ea,BTC,crypto bull,1053,6506.17,6.18,0.68,51.4
+DaytradePro_USDJPY_USDJPY.a_Daily_OHLC,ea,US10Y,rates falling,716,-894.62,-1.25,-0.21,-7.1
+DaytradePro_USDJPY_USDJPY.a_Daily_OHLC,ea,US10Y,rates rising,1155,13524.49,11.71,1.16,107.1
+DaytradePro_USDJPY_USDJPY.a_Daily_OHLC,ea,OIL,oil downtrend,926,3147.92,3.4,0.62,25.9
+DaytradePro_USDJPY_USDJPY.a_Daily_OHLC,ea,OIL,oil uptrend,842,8995.94,10.68,0.95,74.1
+DaytradePro_USDJPY_USDJPY.a_Daily_OHLC,ea,VIX,calm,404,-1773.48,-4.39,-0.7,-14.4
+DaytradePro_USDJPY_USDJPY.a_Daily_OHLC,ea,VIX,normal,1198,6792.6,5.67,0.7,55.1
+DaytradePro_USDJPY_USDJPY.a_Daily_OHLC,ea,VIX,stressed,370,7303.66,19.74,1.73,59.3
+DaytradePro_XAUUSD_XAUUSD.a_Daily_OHLC,ea,DXY,strong dollar,989,11946.17,12.08,1.58,52.1
+DaytradePro_XAUUSD_XAUUSD.a_Daily_OHLC,ea,DXY,weak dollar,891,10962.91,12.3,1.65,47.9
+DaytradePro_XAUUSD_XAUUSD.a_Daily_OHLC,ea,SP500,stocks bear,379,963.21,2.54,0.36,4.8
+DaytradePro_XAUUSD_XAUUSD.a_Daily_OHLC,ea,SP500,stocks bull,1398,19285.76,13.8,1.91,95.2
+DaytradePro_XAUUSD_XAUUSD.a_Daily_OHLC,ea,GOLD,gold downtrend,441,6705.34,15.2,1.99,33.1
+DaytradePro_XAUUSD_XAUUSD.a_Daily_OHLC,ea,GOLD,gold uptrend,1336,13543.63,10.14,1.44,66.9
+DaytradePro_XAUUSD_XAUUSD.a_Daily_OHLC,ea,BTC,crypto bear,787,11811.71,15.01,1.93,50.8
+DaytradePro_XAUUSD_XAUUSD.a_Daily_OHLC,ea,BTC,crypto bull,1053,11424.17,10.85,1.47,49.2
+DaytradePro_XAUUSD_XAUUSD.a_Daily_OHLC,ea,US10Y,rates falling,716,7474.33,10.44,1.34,32.6
+DaytradePro_XAUUSD_XAUUSD.a_Daily_OHLC,ea,US10Y,rates rising,1164,15434.75,13.26,1.8,67.4
+DaytradePro_XAUUSD_XAUUSD.a_Daily_OHLC,ea,OIL,oil downtrend,928,7195.33,7.75,1.31,35.5
+DaytradePro_XAUUSD_XAUUSD.a_Daily_OHLC,ea,OIL,oil uptrend,849,13053.64,15.38,1.84,64.5
+DaytradePro_XAUUSD_XAUUSD.a_Daily_OHLC,ea,VIX,calm,405,6519.7,16.1,1.71,27.2
+DaytradePro_XAUUSD_XAUUSD.a_Daily_OHLC,ea,VIX,normal,1206,16075.29,13.33,1.92,67.2
+DaytradePro_XAUUSD_XAUUSD.a_Daily_OHLC,ea,VIX,stressed,370,1336.21,3.61,0.5,5.6
+GOLDTRADEPROH4_b_XAUUSD.a_H4_OHLC,ea,DXY,strong dollar,987,27081.4,27.44,1.27,51.3
+GOLDTRADEPROH4_b_XAUUSD.a_H4_OHLC,ea,DXY,weak dollar,890,25748.5,28.93,1.14,48.7
+GOLDTRADEPROH4_b_XAUUSD.a_H4_OHLC,ea,SP500,stocks bear,379,22320.89,58.89,2.57,45.2
+GOLDTRADEPROH4_b_XAUUSD.a_H4_OHLC,ea,SP500,stocks bull,1395,27067.07,19.4,0.82,54.8
+GOLDTRADEPROH4_b_XAUUSD.a_H4_OHLC,ea,GOLD,gold downtrend,438,11592.65,26.47,1.14,23.5
+GOLDTRADEPROH4_b_XAUUSD.a_H4_OHLC,ea,GOLD,gold uptrend,1336,37795.31,28.29,1.21,76.5
+GOLDTRADEPROH4_b_XAUUSD.a_H4_OHLC,ea,BTC,crypto bear,784,18635.61,23.77,1.07,34.2
+GOLDTRADEPROH4_b_XAUUSD.a_H4_OHLC,ea,BTC,crypto bull,1053,35851.08,34.05,1.39,65.8
+GOLDTRADEPROH4_b_XAUUSD.a_H4_OHLC,ea,US10Y,rates falling,716,16358.37,22.85,1.19,31.0
+GOLDTRADEPROH4_b_XAUUSD.a_H4_OHLC,ea,US10Y,rates rising,1161,36471.53,31.41,1.22,69.0
+GOLDTRADEPROH4_b_XAUUSD.a_H4_OHLC,ea,OIL,oil downtrend,928,23232.82,25.04,1.35,47.0
+GOLDTRADEPROH4_b_XAUUSD.a_H4_OHLC,ea,OIL,oil uptrend,846,26155.14,30.92,1.11,53.0
+GOLDTRADEPROH4_b_XAUUSD.a_H4_OHLC,ea,VIX,calm,404,4475.81,11.08,0.6,8.7
+GOLDTRADEPROH4_b_XAUUSD.a_H4_OHLC,ea,VIX,normal,1204,26544.33,22.05,1.09,51.7
+GOLDTRADEPROH4_b_XAUUSD.a_H4_OHLC,ea,VIX,stressed,370,20282.44,54.82,1.6,39.5
+GOLDTRADEPRO_E_XAUUSD.a_Daily_OHLC,ea,DXY,strong dollar,958,23231.73,24.25,1.49,39.9
+GOLDTRADEPRO_E_XAUUSD.a_Daily_OHLC,ea,DXY,weak dollar,889,35047.6,39.42,2.16,60.1
+GOLDTRADEPRO_E_XAUUSD.a_Daily_OHLC,ea,SP500,stocks bear,379,15956.57,42.1,2.07,29.2
+GOLDTRADEPRO_E_XAUUSD.a_Daily_OHLC,ea,SP500,stocks bull,1365,38599.5,28.28,1.77,70.8
+GOLDTRADEPRO_E_XAUUSD.a_Daily_OHLC,ea,GOLD,gold downtrend,408,10199.08,25.0,1.56,18.7
+GOLDTRADEPRO_E_XAUUSD.a_Daily_OHLC,ea,GOLD,gold uptrend,1336,44356.99,33.2,1.92,81.3
+GOLDTRADEPRO_E_XAUUSD.a_Daily_OHLC,ea,BTC,crypto bear,754,33296.81,44.16,2.34,57.1
+GOLDTRADEPRO_E_XAUUSD.a_Daily_OHLC,ea,BTC,crypto bull,1053,25010.51,23.75,1.45,42.9
+GOLDTRADEPRO_E_XAUUSD.a_Daily_OHLC,ea,US10Y,rates falling,716,20755.04,28.99,1.86,35.6
+GOLDTRADEPRO_E_XAUUSD.a_Daily_OHLC,ea,US10Y,rates rising,1131,37524.29,33.18,1.82,64.4
+GOLDTRADEPRO_E_XAUUSD.a_Daily_OHLC,ea,OIL,oil downtrend,917,22759.25,24.82,1.6,41.7
+GOLDTRADEPRO_E_XAUUSD.a_Daily_OHLC,ea,OIL,oil uptrend,827,31796.82,38.45,2.08,58.3
+GOLDTRADEPRO_E_XAUUSD.a_Daily_OHLC,ea,VIX,calm,404,18391.81,45.52,2.34,29.1
+GOLDTRADEPRO_E_XAUUSD.a_Daily_OHLC,ea,VIX,normal,1174,33128.57,28.22,1.73,52.4
+GOLDTRADEPRO_E_XAUUSD.a_Daily_OHLC,ea,VIX,stressed,370,11759.15,31.78,1.69,18.6
+GOLDTRADEPRO_F_XAUUSD.a_Daily_OHLC,ea,DXY,strong dollar,958,14850.12,15.5,1.02,33.7
+GOLDTRADEPRO_F_XAUUSD.a_Daily_OHLC,ea,DXY,weak dollar,889,29158.01,32.8,2.15,66.3
+GOLDTRADEPRO_F_XAUUSD.a_Daily_OHLC,ea,SP500,stocks bear,379,4133.63,10.91,0.91,9.6
+GOLDTRADEPRO_F_XAUUSD.a_Daily_OHLC,ea,SP500,stocks bull,1365,39121.18,28.66,1.87,90.4
+GOLDTRADEPRO_F_XAUUSD.a_Daily_OHLC,ea,GOLD,gold downtrend,408,8375.08,20.53,1.32,19.4
+GOLDTRADEPRO_F_XAUUSD.a_Daily_OHLC,ea,GOLD,gold uptrend,1336,34879.73,26.11,1.82,80.6
+GOLDTRADEPRO_F_XAUUSD.a_Daily_OHLC,ea,BTC,crypto bear,754,17230.95,22.85,1.57,38.5
+GOLDTRADEPRO_F_XAUUSD.a_Daily_OHLC,ea,BTC,crypto bull,1053,27555.91,26.17,1.65,61.5
+GOLDTRADEPRO_F_XAUUSD.a_Daily_OHLC,ea,US10Y,rates falling,716,19151.74,26.75,1.59,43.5
+GOLDTRADEPRO_F_XAUUSD.a_Daily_OHLC,ea,US10Y,rates rising,1131,24856.39,21.98,1.56,56.5
+GOLDTRADEPRO_F_XAUUSD.a_Daily_OHLC,ea,OIL,oil downtrend,917,15505.0,16.91,1.33,35.8
+GOLDTRADEPRO_F_XAUUSD.a_Daily_OHLC,ea,OIL,oil uptrend,827,27749.81,33.55,2.03,64.2
+GOLDTRADEPRO_F_XAUUSD.a_Daily_OHLC,ea,VIX,calm,404,13354.44,33.06,1.95,25.4
+GOLDTRADEPRO_F_XAUUSD.a_Daily_OHLC,ea,VIX,normal,1174,39223.77,33.41,2.02,74.6
+GOLDTRADEPRO_F_XAUUSD.a_Daily_OHLC,ea,VIX,stressed,370,18.1,0.05,0.0,0.0
+GOLDTRADEPRO_G_XAUUSD.a_Daily_OHLC,ea,DXY,strong dollar,958,16194.78,16.9,0.89,37.2
+GOLDTRADEPRO_G_XAUUSD.a_Daily_OHLC,ea,DXY,weak dollar,889,27326.71,30.74,1.87,62.8
+GOLDTRADEPRO_G_XAUUSD.a_Daily_OHLC,ea,SP500,stocks bear,379,9736.28,25.69,1.49,24.1
+GOLDTRADEPRO_G_XAUUSD.a_Daily_OHLC,ea,SP500,stocks bull,1365,30616.52,22.43,1.34,75.9
+GOLDTRADEPRO_G_XAUUSD.a_Daily_OHLC,ea,GOLD,gold downtrend,408,9441.42,23.14,1.19,23.4
+GOLDTRADEPRO_G_XAUUSD.a_Daily_OHLC,ea,GOLD,gold uptrend,1336,30911.38,23.14,1.45,76.6
+GOLDTRADEPRO_G_XAUUSD.a_Daily_OHLC,ea,BTC,crypto bear,754,26462.17,35.1,2.03,60.0
+GOLDTRADEPRO_G_XAUUSD.a_Daily_OHLC,ea,BTC,crypto bull,1053,17664.32,16.78,0.91,40.0
+GOLDTRADEPRO_G_XAUUSD.a_Daily_OHLC,ea,US10Y,rates falling,716,15026.91,20.99,1.17,34.5
+GOLDTRADEPRO_G_XAUUSD.a_Daily_OHLC,ea,US10Y,rates rising,1131,28494.58,25.19,1.42,65.5
+GOLDTRADEPRO_G_XAUUSD.a_Daily_OHLC,ea,OIL,oil downtrend,917,14953.71,16.31,1.16,37.1
+GOLDTRADEPRO_G_XAUUSD.a_Daily_OHLC,ea,OIL,oil uptrend,827,25399.09,30.71,1.58,62.9
+GOLDTRADEPRO_G_XAUUSD.a_Daily_OHLC,ea,VIX,calm,404,15314.39,37.91,1.8,31.5
+GOLDTRADEPRO_G_XAUUSD.a_Daily_OHLC,ea,VIX,normal,1174,21779.34,18.55,1.11,44.8
+GOLDTRADEPRO_G_XAUUSD.a_Daily_OHLC,ea,VIX,stressed,370,11484.63,31.04,1.69,23.6
+GOLDTRADEPRO_H_XAUUSD.a_Daily_OHLC,ea,DXY,strong dollar,986,18653.57,18.92,1.02,35.3
+GOLDTRADEPRO_H_XAUUSD.a_Daily_OHLC,ea,DXY,weak dollar,890,34234.08,38.47,1.97,64.7
+GOLDTRADEPRO_H_XAUUSD.a_Daily_OHLC,ea,SP500,stocks bear,379,7722.45,20.38,1.59,16.4
+GOLDTRADEPRO_H_XAUUSD.a_Daily_OHLC,ea,SP500,stocks bull,1394,39433.19,28.29,1.45,83.6
+GOLDTRADEPRO_H_XAUUSD.a_Daily_OHLC,ea,GOLD,gold downtrend,437,13993.69,32.02,1.37,29.7
+GOLDTRADEPRO_H_XAUUSD.a_Daily_OHLC,ea,GOLD,gold uptrend,1336,33161.95,24.82,1.53,70.3
+GOLDTRADEPRO_H_XAUUSD.a_Daily_OHLC,ea,BTC,crypto bear,783,21342.79,27.26,1.42,41.0
+GOLDTRADEPRO_H_XAUUSD.a_Daily_OHLC,ea,BTC,crypto bull,1053,30746.89,29.2,1.52,59.0
+GOLDTRADEPRO_H_XAUUSD.a_Daily_OHLC,ea,US10Y,rates falling,716,25590.18,35.74,1.68,48.4
+GOLDTRADEPRO_H_XAUUSD.a_Daily_OHLC,ea,US10Y,rates rising,1160,27297.47,23.53,1.34,51.6
+GOLDTRADEPRO_H_XAUUSD.a_Daily_OHLC,ea,OIL,oil downtrend,928,23278.74,25.08,1.61,49.4
+GOLDTRADEPRO_H_XAUUSD.a_Daily_OHLC,ea,OIL,oil uptrend,845,23876.9,28.26,1.36,50.6
+GOLDTRADEPRO_H_XAUUSD.a_Daily_OHLC,ea,VIX,calm,404,9776.37,24.2,1.23,17.3
+GOLDTRADEPRO_H_XAUUSD.a_Daily_OHLC,ea,VIX,normal,1203,37013.5,30.77,1.68,65.4
+GOLDTRADEPRO_H_XAUUSD.a_Daily_OHLC,ea,VIX,stressed,370,9823.18,26.55,1.34,17.4
+GOLDTRADEPRO_a_XAUUSD.a_Daily_OHLC,ea,DXY,strong dollar,989,46926.11,47.45,1.22,46.8
+GOLDTRADEPRO_a_XAUUSD.a_Daily_OHLC,ea,DXY,weak dollar,891,53442.99,59.98,1.86,53.2
+GOLDTRADEPRO_a_XAUUSD.a_Daily_OHLC,ea,SP500,stocks bear,379,24648.31,65.04,1.61,27.4
+GOLDTRADEPRO_a_XAUUSD.a_Daily_OHLC,ea,SP500,stocks bull,1398,65411.0,46.79,1.4,72.6
+GOLDTRADEPRO_a_XAUUSD.a_Daily_OHLC,ea,GOLD,gold downtrend,441,24404.72,55.34,1.65,27.1
+GOLDTRADEPRO_a_XAUUSD.a_Daily_OHLC,ea,GOLD,gold uptrend,1336,65654.59,49.14,1.38,72.9
+GOLDTRADEPRO_a_XAUUSD.a_Daily_OHLC,ea,BTC,crypto bear,787,49874.08,63.37,1.64,49.3
+GOLDTRADEPRO_a_XAUUSD.a_Daily_OHLC,ea,BTC,crypto bull,1053,51319.85,48.74,1.42,50.7
+GOLDTRADEPRO_a_XAUUSD.a_Daily_OHLC,ea,US10Y,rates falling,716,26330.03,36.77,1.21,26.2
+GOLDTRADEPRO_a_XAUUSD.a_Daily_OHLC,ea,US10Y,rates rising,1164,74039.07,63.61,1.63,73.8
+GOLDTRADEPRO_a_XAUUSD.a_Daily_OHLC,ea,OIL,oil downtrend,928,35825.93,38.61,1.18,39.8
+GOLDTRADEPRO_a_XAUUSD.a_Daily_OHLC,ea,OIL,oil uptrend,849,54233.38,63.88,1.71,60.2
+GOLDTRADEPRO_a_XAUUSD.a_Daily_OHLC,ea,VIX,calm,405,13513.9,33.37,0.82,12.7
+GOLDTRADEPRO_a_XAUUSD.a_Daily_OHLC,ea,VIX,normal,1206,74100.85,61.44,1.84,69.8
+GOLDTRADEPRO_a_XAUUSD.a_Daily_OHLC,ea,VIX,stressed,370,18623.0,50.33,1.3,17.5
+GOLDTRADEPRO_c_XAUUSD.a_Daily_OHLC,ea,DXY,strong dollar,958,26494.95,27.66,1.12,41.8
+GOLDTRADEPRO_c_XAUUSD.a_Daily_OHLC,ea,DXY,weak dollar,889,36828.43,41.43,1.91,58.2
+GOLDTRADEPRO_c_XAUUSD.a_Daily_OHLC,ea,SP500,stocks bear,379,15240.69,40.21,1.56,24.2
+GOLDTRADEPRO_c_XAUUSD.a_Daily_OHLC,ea,SP500,stocks bull,1365,47697.34,34.94,1.56,75.8
+GOLDTRADEPRO_c_XAUUSD.a_Daily_OHLC,ea,GOLD,gold downtrend,408,11776.5,28.86,1.17,18.7
+GOLDTRADEPRO_c_XAUUSD.a_Daily_OHLC,ea,GOLD,gold uptrend,1336,51161.53,38.29,1.69,81.3
+GOLDTRADEPRO_c_XAUUSD.a_Daily_OHLC,ea,BTC,crypto bear,754,32694.4,43.36,1.76,50.5
+GOLDTRADEPRO_c_XAUUSD.a_Daily_OHLC,ea,BTC,crypto bull,1053,32043.33,30.43,1.35,49.5
+GOLDTRADEPRO_c_XAUUSD.a_Daily_OHLC,ea,US10Y,rates falling,716,23778.94,33.21,1.7,37.6
+GOLDTRADEPRO_c_XAUUSD.a_Daily_OHLC,ea,US10Y,rates rising,1131,39544.44,34.96,1.38,62.4
+GOLDTRADEPRO_c_XAUUSD.a_Daily_OHLC,ea,OIL,oil downtrend,917,19431.93,21.19,1.05,30.9
+GOLDTRADEPRO_c_XAUUSD.a_Daily_OHLC,ea,OIL,oil uptrend,827,43506.1,52.61,2.02,69.1
+GOLDTRADEPRO_c_XAUUSD.a_Daily_OHLC,ea,VIX,calm,404,22562.79,55.85,2.41,32.0
+GOLDTRADEPRO_c_XAUUSD.a_Daily_OHLC,ea,VIX,normal,1174,36728.62,31.29,1.28,52.1
+GOLDTRADEPRO_c_XAUUSD.a_Daily_OHLC,ea,VIX,stressed,370,11208.03,30.29,1.3,15.9
+GOLDTRADEPRO_d_XAUUSD.a_Daily_OHLC,ea,DXY,strong dollar,989,24277.55,24.55,1.74,53.1
+GOLDTRADEPRO_d_XAUUSD.a_Daily_OHLC,ea,DXY,weak dollar,891,21471.35,24.1,1.69,46.9
+GOLDTRADEPRO_d_XAUUSD.a_Daily_OHLC,ea,SP500,stocks bear,379,9088.28,23.98,1.71,20.7
+GOLDTRADEPRO_d_XAUUSD.a_Daily_OHLC,ea,SP500,stocks bull,1398,34860.43,24.94,1.81,79.3
+GOLDTRADEPRO_d_XAUUSD.a_Daily_OHLC,ea,GOLD,gold downtrend,441,9653.88,21.89,1.65,22.0
+GOLDTRADEPRO_d_XAUUSD.a_Daily_OHLC,ea,GOLD,gold uptrend,1336,34294.83,25.67,1.83,78.0
+GOLDTRADEPRO_d_XAUUSD.a_Daily_OHLC,ea,BTC,crypto bear,787,18890.49,24.0,1.71,40.9
+GOLDTRADEPRO_d_XAUUSD.a_Daily_OHLC,ea,BTC,crypto bull,1053,27310.27,25.94,1.81,59.1
+GOLDTRADEPRO_d_XAUUSD.a_Daily_OHLC,ea,US10Y,rates falling,716,14316.65,20.0,1.4,31.3
+GOLDTRADEPRO_d_XAUUSD.a_Daily_OHLC,ea,US10Y,rates rising,1164,31432.25,27.0,1.92,68.7
+GOLDTRADEPRO_d_XAUUSD.a_Daily_OHLC,ea,OIL,oil downtrend,928,17232.83,18.57,1.54,39.2
+GOLDTRADEPRO_d_XAUUSD.a_Daily_OHLC,ea,OIL,oil uptrend,849,26715.88,31.47,2.03,60.8
+GOLDTRADEPRO_d_XAUUSD.a_Daily_OHLC,ea,VIX,calm,405,9576.31,23.65,1.61,19.7
+GOLDTRADEPRO_d_XAUUSD.a_Daily_OHLC,ea,VIX,normal,1206,27515.4,22.82,1.63,56.7
+GOLDTRADEPRO_d_XAUUSD.a_Daily_OHLC,ea,VIX,stressed,370,11469.83,31.0,2.08,23.6
+GoldBotOne_dailyA_XAUUSD.a_Daily_OHLC,ea,DXY,strong dollar,986,17539.1,17.79,1.28,59.1
+GoldBotOne_dailyA_XAUUSD.a_Daily_OHLC,ea,DXY,weak dollar,890,12149.47,13.65,0.93,40.9
+GoldBotOne_dailyA_XAUUSD.a_Daily_OHLC,ea,SP500,stocks bear,379,5364.72,14.15,0.97,16.7
+GoldBotOne_dailyA_XAUUSD.a_Daily_OHLC,ea,SP500,stocks bull,1394,26754.9,19.19,1.4,83.3
+GoldBotOne_dailyA_XAUUSD.a_Daily_OHLC,ea,GOLD,gold downtrend,437,6980.88,15.97,1.16,21.7
+GoldBotOne_dailyA_XAUUSD.a_Daily_OHLC,ea,GOLD,gold uptrend,1336,25138.74,18.82,1.34,78.3
+GoldBotOne_dailyA_XAUUSD.a_Daily_OHLC,ea,BTC,crypto bear,783,10751.8,13.73,0.93,33.7
+GoldBotOne_dailyA_XAUUSD.a_Daily_OHLC,ea,BTC,crypto bull,1053,21167.53,20.1,1.46,66.3
+GoldBotOne_dailyA_XAUUSD.a_Daily_OHLC,ea,US10Y,rates falling,716,9607.33,13.42,0.99,32.4
+GoldBotOne_dailyA_XAUUSD.a_Daily_OHLC,ea,US10Y,rates rising,1160,20081.24,17.31,1.18,67.6
+GoldBotOne_dailyA_XAUUSD.a_Daily_OHLC,ea,OIL,oil downtrend,928,12848.96,13.85,1.06,40.0
+GoldBotOne_dailyA_XAUUSD.a_Daily_OHLC,ea,OIL,oil uptrend,845,19270.66,22.81,1.53,60.0
+GoldBotOne_dailyA_XAUUSD.a_Daily_OHLC,ea,VIX,calm,404,5156.52,12.76,0.91,15.8
+GoldBotOne_dailyA_XAUUSD.a_Daily_OHLC,ea,VIX,normal,1203,22273.33,18.51,1.3,68.2
+GoldBotOne_dailyA_XAUUSD.a_Daily_OHLC,ea,VIX,stressed,370,5205.84,14.07,0.91,16.0
+GoldBotOne_dailyB_XAUUSD.a_Daily_OHLC,ea,DXY,strong dollar,958,11945.67,12.47,0.78,26.2
+GoldBotOne_dailyB_XAUUSD.a_Daily_OHLC,ea,DXY,weak dollar,889,33634.49,37.83,1.65,73.8
+GoldBotOne_dailyB_XAUUSD.a_Daily_OHLC,ea,SP500,stocks bear,379,18589.7,49.05,2.04,44.2
+GoldBotOne_dailyB_XAUUSD.a_Daily_OHLC,ea,SP500,stocks bull,1365,23499.26,17.22,1.01,55.8
+GoldBotOne_dailyB_XAUUSD.a_Daily_OHLC,ea,GOLD,gold downtrend,408,8404.77,20.6,1.01,20.0
+GoldBotOne_dailyB_XAUUSD.a_Daily_OHLC,ea,GOLD,gold uptrend,1336,33684.19,25.21,1.38,80.0
+GoldBotOne_dailyB_XAUUSD.a_Daily_OHLC,ea,BTC,crypto bear,754,20649.14,27.39,1.28,44.2
+GoldBotOne_dailyB_XAUUSD.a_Daily_OHLC,ea,BTC,crypto bull,1053,26094.69,24.78,1.34,55.8
+GoldBotOne_dailyB_XAUUSD.a_Daily_OHLC,ea,US10Y,rates falling,716,22436.5,31.34,1.57,49.2
+GoldBotOne_dailyB_XAUUSD.a_Daily_OHLC,ea,US10Y,rates rising,1131,23143.66,20.46,1.05,50.8
+GoldBotOne_dailyB_XAUUSD.a_Daily_OHLC,ea,OIL,oil downtrend,917,24851.64,27.1,1.38,59.0
+GoldBotOne_dailyB_XAUUSD.a_Daily_OHLC,ea,OIL,oil uptrend,827,17237.32,20.84,1.17,41.0
+GoldBotOne_dailyB_XAUUSD.a_Daily_OHLC,ea,VIX,calm,404,13606.79,33.68,1.59,29.6
+GoldBotOne_dailyB_XAUUSD.a_Daily_OHLC,ea,VIX,normal,1174,15965.96,13.6,0.79,34.7
+GoldBotOne_dailyB_XAUUSD.a_Daily_OHLC,ea,VIX,stressed,370,16438.14,44.43,1.79,35.7
+GoldBotOne_dailyC_XAUUSD.a_Daily_OHLC,ea,DXY,strong dollar,958,12380.27,12.92,1.74,56.0
+GoldBotOne_dailyC_XAUUSD.a_Daily_OHLC,ea,DXY,weak dollar,889,9726.73,10.94,1.17,44.0
+GoldBotOne_dailyC_XAUUSD.a_Daily_OHLC,ea,SP500,stocks bear,379,5453.61,14.39,1.82,29.5
+GoldBotOne_dailyC_XAUUSD.a_Daily_OHLC,ea,SP500,stocks bull,1365,13036.1,9.55,1.45,70.5
+GoldBotOne_dailyC_XAUUSD.a_Daily_OHLC,ea,GOLD,gold downtrend,408,6397.63,15.68,2.03,34.6
+GoldBotOne_dailyC_XAUUSD.a_Daily_OHLC,ea,GOLD,gold uptrend,1336,12092.08,9.05,1.37,65.4
+GoldBotOne_dailyC_XAUUSD.a_Daily_OHLC,ea,BTC,crypto bear,754,11183.56,14.83,1.5,50.5
+GoldBotOne_dailyC_XAUUSD.a_Daily_OHLC,ea,BTC,crypto bull,1053,10946.86,10.4,1.41,49.5
+GoldBotOne_dailyC_XAUUSD.a_Daily_OHLC,ea,US10Y,rates falling,716,6027.15,8.42,1.37,27.3
+GoldBotOne_dailyC_XAUUSD.a_Daily_OHLC,ea,US10Y,rates rising,1131,16079.85,14.22,1.49,72.7
+GoldBotOne_dailyC_XAUUSD.a_Daily_OHLC,ea,OIL,oil downtrend,917,7474.92,8.15,1.39,40.4
+GoldBotOne_dailyC_XAUUSD.a_Daily_OHLC,ea,OIL,oil uptrend,827,11014.79,13.32,1.69,59.6
+GoldBotOne_dailyC_XAUUSD.a_Daily_OHLC,ea,VIX,calm,404,7544.2,18.67,1.42,30.5
+GoldBotOne_dailyC_XAUUSD.a_Daily_OHLC,ea,VIX,normal,1174,12513.12,10.66,1.65,50.6
+GoldBotOne_dailyC_XAUUSD.a_Daily_OHLC,ea,VIX,stressed,370,4677.91,12.64,1.66,18.9
+GoldBotOne_dailyD_XAUUSD.a_Daily_OHLC,ea,DXY,strong dollar,958,27944.44,29.17,1.3,42.5
+GoldBotOne_dailyD_XAUUSD.a_Daily_OHLC,ea,DXY,weak dollar,889,37797.78,42.52,1.48,57.5
+GoldBotOne_dailyD_XAUUSD.a_Daily_OHLC,ea,SP500,stocks bear,379,7793.29,20.56,0.81,13.5
+GoldBotOne_dailyD_XAUUSD.a_Daily_OHLC,ea,SP500,stocks bull,1365,49722.1,36.43,1.58,86.5
+GoldBotOne_dailyD_XAUUSD.a_Daily_OHLC,ea,GOLD,gold downtrend,408,6885.34,16.88,0.75,12.0
+GoldBotOne_dailyD_XAUUSD.a_Daily_OHLC,ea,GOLD,gold uptrend,1336,50630.05,37.9,1.58,88.0
+GoldBotOne_dailyD_XAUUSD.a_Daily_OHLC,ea,BTC,crypto bear,754,22331.04,29.62,1.14,32.6
+GoldBotOne_dailyD_XAUUSD.a_Daily_OHLC,ea,BTC,crypto bull,1053,46078.52,43.76,1.71,67.4
+GoldBotOne_dailyD_XAUUSD.a_Daily_OHLC,ea,US10Y,rates falling,716,32311.13,45.13,1.49,49.1
+GoldBotOne_dailyD_XAUUSD.a_Daily_OHLC,ea,US10Y,rates rising,1131,33431.09,29.56,1.33,50.9
+GoldBotOne_dailyD_XAUUSD.a_Daily_OHLC,ea,OIL,oil downtrend,917,24500.18,26.72,1.17,42.6
+GoldBotOne_dailyD_XAUUSD.a_Daily_OHLC,ea,OIL,oil uptrend,827,33015.21,39.92,1.63,57.4
+GoldBotOne_dailyD_XAUUSD.a_Daily_OHLC,ea,VIX,calm,404,17884.44,44.27,1.41,25.9
+GoldBotOne_dailyD_XAUUSD.a_Daily_OHLC,ea,VIX,normal,1174,43257.47,36.85,1.63,62.6
+GoldBotOne_dailyD_XAUUSD.a_Daily_OHLC,ea,VIX,stressed,370,7963.35,21.52,0.78,11.5
+GoldBotOne_dailyE_XAUUSD.a_Daily_OHLC,ea,DXY,strong dollar,986,51821.35,52.56,1.45,61.7
+GoldBotOne_dailyE_XAUUSD.a_Daily_OHLC,ea,DXY,weak dollar,890,32111.29,36.08,1.01,38.3
+GoldBotOne_dailyE_XAUUSD.a_Daily_OHLC,ea,SP500,stocks bear,379,4060.7,10.71,0.38,5.2
+GoldBotOne_dailyE_XAUUSD.a_Daily_OHLC,ea,SP500,stocks bull,1394,74712.09,53.6,1.43,94.8
+GoldBotOne_dailyE_XAUUSD.a_Daily_OHLC,ea,GOLD,gold downtrend,437,16870.64,38.61,1.14,21.4
+GoldBotOne_dailyE_XAUUSD.a_Daily_OHLC,ea,GOLD,gold uptrend,1336,61902.15,46.33,1.28,78.6
+GoldBotOne_dailyE_XAUUSD.a_Daily_OHLC,ea,BTC,crypto bear,783,32739.17,41.81,1.18,38.4
+GoldBotOne_dailyE_XAUUSD.a_Daily_OHLC,ea,BTC,crypto bull,1053,52584.11,49.94,1.37,61.6
+GoldBotOne_dailyE_XAUUSD.a_Daily_OHLC,ea,US10Y,rates falling,716,38793.29,54.18,1.49,46.2
+GoldBotOne_dailyE_XAUUSD.a_Daily_OHLC,ea,US10Y,rates rising,1160,45139.35,38.91,1.09,53.8
+GoldBotOne_dailyE_XAUUSD.a_Daily_OHLC,ea,OIL,oil downtrend,928,35503.66,38.26,1.17,45.1
+GoldBotOne_dailyE_XAUUSD.a_Daily_OHLC,ea,OIL,oil uptrend,845,43269.13,51.21,1.32,54.9
+GoldBotOne_dailyE_XAUUSD.a_Daily_OHLC,ea,VIX,calm,404,5041.39,12.48,0.37,5.7
+GoldBotOne_dailyE_XAUUSD.a_Daily_OHLC,ea,VIX,normal,1203,80326.07,66.77,1.74,90.2
+GoldBotOne_dailyE_XAUUSD.a_Daily_OHLC,ea,VIX,stressed,370,3671.1,9.92,0.33,4.1
+GoldBotOne_dailyH_XAUUSD.a_Daily_OHLC,ea,DXY,strong dollar,988,23114.59,23.4,1.79,67.9
+GoldBotOne_dailyH_XAUUSD.a_Daily_OHLC,ea,DXY,weak dollar,891,10906.71,12.24,0.93,32.1
+GoldBotOne_dailyH_XAUUSD.a_Daily_OHLC,ea,SP500,stocks bear,379,7495.53,19.78,1.48,22.8
+GoldBotOne_dailyH_XAUUSD.a_Daily_OHLC,ea,SP500,stocks bull,1397,25449.27,18.22,1.42,77.2
+GoldBotOne_dailyH_XAUUSD.a_Daily_OHLC,ea,GOLD,gold downtrend,440,11119.39,25.27,1.52,33.8
+GoldBotOne_dailyH_XAUUSD.a_Daily_OHLC,ea,GOLD,gold uptrend,1336,21825.41,16.34,1.42,66.2
+GoldBotOne_dailyH_XAUUSD.a_Daily_OHLC,ea,BTC,crypto bear,786,14875.82,18.93,1.6,42.1
+GoldBotOne_dailyH_XAUUSD.a_Daily_OHLC,ea,BTC,crypto bull,1053,20420.74,19.39,1.39,57.9
+GoldBotOne_dailyH_XAUUSD.a_Daily_OHLC,ea,US10Y,rates falling,716,13823.95,19.31,1.35,40.6
+GoldBotOne_dailyH_XAUUSD.a_Daily_OHLC,ea,US10Y,rates rising,1163,20197.35,17.37,1.41,59.4
+GoldBotOne_dailyH_XAUUSD.a_Daily_OHLC,ea,OIL,oil downtrend,928,8854.03,9.54,1.2,26.9
+GoldBotOne_dailyH_XAUUSD.a_Daily_OHLC,ea,OIL,oil uptrend,848,24090.77,28.41,1.69,73.1
+GoldBotOne_dailyH_XAUUSD.a_Daily_OHLC,ea,VIX,calm,405,6921.27,17.09,1.23,19.7
+GoldBotOne_dailyH_XAUUSD.a_Daily_OHLC,ea,VIX,normal,1205,21668.64,17.98,1.67,61.8
+GoldBotOne_dailyH_XAUUSD.a_Daily_OHLC,ea,VIX,stressed,370,6469.62,17.49,0.99,18.5
+GoldBotOne_dailyI_XAUUSD.a_Daily_OHLC,ea,DXY,strong dollar,989,21478.8,21.72,2.06,71.1
+GoldBotOne_dailyI_XAUUSD.a_Daily_OHLC,ea,DXY,weak dollar,891,8750.97,9.82,0.93,28.9
+GoldBotOne_dailyI_XAUUSD.a_Daily_OHLC,ea,SP500,stocks bear,379,2427.5,6.41,0.65,8.3
+GoldBotOne_dailyI_XAUUSD.a_Daily_OHLC,ea,SP500,stocks bull,1398,26767.57,19.15,1.82,91.7
+GoldBotOne_dailyI_XAUUSD.a_Daily_OHLC,ea,GOLD,gold downtrend,441,9728.6,22.06,1.87,33.3
+GoldBotOne_dailyI_XAUUSD.a_Daily_OHLC,ea,GOLD,gold uptrend,1336,19466.47,14.57,1.47,66.7
+GoldBotOne_dailyI_XAUUSD.a_Daily_OHLC,ea,BTC,crypto bear,787,8490.32,10.79,1.06,26.7
+GoldBotOne_dailyI_XAUUSD.a_Daily_OHLC,ea,BTC,crypto bull,1053,23300.77,22.13,2.03,73.3
+GoldBotOne_dailyI_XAUUSD.a_Daily_OHLC,ea,US10Y,rates falling,716,13092.75,18.29,1.56,43.3
+GoldBotOne_dailyI_XAUUSD.a_Daily_OHLC,ea,US10Y,rates rising,1164,17137.02,14.72,1.5,56.7
+GoldBotOne_dailyI_XAUUSD.a_Daily_OHLC,ea,OIL,oil downtrend,928,12403.01,13.37,1.41,42.5
+GoldBotOne_dailyI_XAUUSD.a_Daily_OHLC,ea,OIL,oil uptrend,849,16792.06,19.78,1.75,57.5
+GoldBotOne_dailyI_XAUUSD.a_Daily_OHLC,ea,VIX,calm,405,7427.2,18.34,1.55,22.2
+GoldBotOne_dailyI_XAUUSD.a_Daily_OHLC,ea,VIX,normal,1206,26152.26,21.69,2.0,78.1
+GoldBotOne_dailyI_XAUUSD.a_Daily_OHLC,ea,VIX,stressed,370,-102.34,-0.28,-0.03,-0.3
+GoldBotOne_dailyK_XAUUSD.a_Daily_OHLC,ea,DXY,strong dollar,989,29075.17,29.4,1.88,61.1
+GoldBotOne_dailyK_XAUUSD.a_Daily_OHLC,ea,DXY,weak dollar,891,18529.31,20.8,1.35,38.9
+GoldBotOne_dailyK_XAUUSD.a_Daily_OHLC,ea,SP500,stocks bear,379,5893.5,15.55,0.99,12.5
+GoldBotOne_dailyK_XAUUSD.a_Daily_OHLC,ea,SP500,stocks bull,1398,41190.19,29.46,1.94,87.5
+GoldBotOne_dailyK_XAUUSD.a_Daily_OHLC,ea,GOLD,gold downtrend,441,9704.1,22.0,1.46,20.6
+GoldBotOne_dailyK_XAUUSD.a_Daily_OHLC,ea,GOLD,gold uptrend,1336,37379.59,27.98,1.82,79.4
+GoldBotOne_dailyK_XAUUSD.a_Daily_OHLC,ea,BTC,crypto bear,787,16763.35,21.3,1.29,34.1
+GoldBotOne_dailyK_XAUUSD.a_Daily_OHLC,ea,BTC,crypto bull,1053,32420.39,30.79,2.1,65.9
+GoldBotOne_dailyK_XAUUSD.a_Daily_OHLC,ea,US10Y,rates falling,716,22072.98,30.83,2.03,46.4
+GoldBotOne_dailyK_XAUUSD.a_Daily_OHLC,ea,US10Y,rates rising,1164,25531.5,21.93,1.4,53.6
+GoldBotOne_dailyK_XAUUSD.a_Daily_OHLC,ea,OIL,oil downtrend,928,24082.81,25.95,1.76,51.1
+GoldBotOne_dailyK_XAUUSD.a_Daily_OHLC,ea,OIL,oil uptrend,849,23000.88,27.09,1.7,48.9
+GoldBotOne_dailyK_XAUUSD.a_Daily_OHLC,ea,VIX,calm,405,6060.87,14.97,1.08,11.6
+GoldBotOne_dailyK_XAUUSD.a_Daily_OHLC,ea,VIX,normal,1206,42921.56,35.59,2.31,81.9
+GoldBotOne_dailyK_XAUUSD.a_Daily_OHLC,ea,VIX,stressed,370,3397.89,9.18,0.53,6.5
+GoldPhantom_Gold_a_XAUUSD.a_Daily_OHLC,ea,DXY,strong dollar,986,37047.66,37.57,1.36,45.4
+GoldPhantom_Gold_a_XAUUSD.a_Daily_OHLC,ea,DXY,weak dollar,890,44605.26,50.12,1.54,54.6
+GoldPhantom_Gold_a_XAUUSD.a_Daily_OHLC,ea,SP500,stocks bear,379,2357.87,6.22,0.34,3.3
+GoldPhantom_Gold_a_XAUUSD.a_Daily_OHLC,ea,SP500,stocks bull,1394,69441.31,49.81,1.77,96.7
+GoldPhantom_Gold_a_XAUUSD.a_Daily_OHLC,ea,GOLD,gold downtrend,437,11274.96,25.8,1.12,15.7
+GoldPhantom_Gold_a_XAUUSD.a_Daily_OHLC,ea,GOLD,gold uptrend,1336,60524.22,45.3,1.66,84.3
+GoldPhantom_Gold_a_XAUUSD.a_Daily_OHLC,ea,BTC,crypto bear,783,26540.65,33.9,1.31,30.8
+GoldPhantom_Gold_a_XAUUSD.a_Daily_OHLC,ea,BTC,crypto bull,1053,59579.85,56.58,1.72,69.2
+GoldPhantom_Gold_a_XAUUSD.a_Daily_OHLC,ea,US10Y,rates falling,716,43801.62,61.18,1.73,53.6
+GoldPhantom_Gold_a_XAUUSD.a_Daily_OHLC,ea,US10Y,rates rising,1160,37851.3,32.63,1.25,46.4
+GoldPhantom_Gold_a_XAUUSD.a_Daily_OHLC,ea,OIL,oil downtrend,928,38273.66,41.24,1.7,53.3
+GoldPhantom_Gold_a_XAUUSD.a_Daily_OHLC,ea,OIL,oil uptrend,845,33525.52,39.68,1.4,46.7
+GoldPhantom_Gold_a_XAUUSD.a_Daily_OHLC,ea,VIX,calm,404,14231.35,35.23,0.91,15.7
+GoldPhantom_Gold_a_XAUUSD.a_Daily_OHLC,ea,VIX,normal,1203,69906.44,58.11,2.07,77.3
+GoldPhantom_Gold_a_XAUUSD.a_Daily_OHLC,ea,VIX,stressed,370,6306.28,17.04,0.56,7.0
+GoldPhantom_Gold_b_XAUUSD.a_Daily_OHLC,ea,DXY,strong dollar,958,21249.35,22.18,1.0,32.8
+GoldPhantom_Gold_b_XAUUSD.a_Daily_OHLC,ea,DXY,weak dollar,889,43568.35,49.01,1.84,67.2
+GoldPhantom_Gold_b_XAUUSD.a_Daily_OHLC,ea,SP500,stocks bear,379,7971.49,21.03,1.08,15.3
+GoldPhantom_Gold_b_XAUUSD.a_Daily_OHLC,ea,SP500,stocks bull,1365,44193.0,32.38,1.64,84.7
+GoldPhantom_Gold_b_XAUUSD.a_Daily_OHLC,ea,GOLD,gold downtrend,408,9252.26,22.68,1.08,17.7
+GoldPhantom_Gold_b_XAUUSD.a_Daily_OHLC,ea,GOLD,gold uptrend,1336,42912.23,32.12,1.67,82.3
+GoldPhantom_Gold_b_XAUUSD.a_Daily_OHLC,ea,BTC,crypto bear,754,19433.94,25.77,1.08,29.2
+GoldPhantom_Gold_b_XAUUSD.a_Daily_OHLC,ea,BTC,crypto bull,1053,47127.75,44.76,1.77,70.8
+GoldPhantom_Gold_b_XAUUSD.a_Daily_OHLC,ea,US10Y,rates falling,716,30750.99,42.95,1.56,47.4
+GoldPhantom_Gold_b_XAUUSD.a_Daily_OHLC,ea,US10Y,rates rising,1131,34066.71,30.12,1.35,52.6
+GoldPhantom_Gold_b_XAUUSD.a_Daily_OHLC,ea,OIL,oil downtrend,917,24839.16,27.09,1.5,47.6
+GoldPhantom_Gold_b_XAUUSD.a_Daily_OHLC,ea,OIL,oil uptrend,827,27325.33,33.04,1.55,52.4
+GoldPhantom_Gold_b_XAUUSD.a_Daily_OHLC,ea,VIX,calm,404,21440.9,53.07,1.65,29.4
+GoldPhantom_Gold_b_XAUUSD.a_Daily_OHLC,ea,VIX,normal,1174,35057.74,29.86,1.56,48.0
+GoldPhantom_Gold_b_XAUUSD.a_Daily_OHLC,ea,VIX,stressed,370,16483.19,44.55,1.39,22.6
+GoldPhantom_Gold_c_XAUUSD.a_Daily_OHLC,ea,DXY,strong dollar,989,37697.0,38.12,1.93,55.8
+GoldPhantom_Gold_c_XAUUSD.a_Daily_OHLC,ea,DXY,weak dollar,891,29878.61,33.53,1.61,44.2
+GoldPhantom_Gold_c_XAUUSD.a_Daily_OHLC,ea,SP500,stocks bear,379,18545.82,48.93,2.32,28.3
+GoldPhantom_Gold_c_XAUUSD.a_Daily_OHLC,ea,SP500,stocks bull,1398,47035.5,33.64,1.73,71.7
+GoldPhantom_Gold_c_XAUUSD.a_Daily_OHLC,ea,GOLD,gold downtrend,441,15287.32,34.67,1.62,23.3
+GoldPhantom_Gold_c_XAUUSD.a_Daily_OHLC,ea,GOLD,gold uptrend,1336,50294.0,37.65,1.95,76.7
+GoldPhantom_Gold_c_XAUUSD.a_Daily_OHLC,ea,BTC,crypto bear,787,29695.75,37.73,1.78,42.8
+GoldPhantom_Gold_c_XAUUSD.a_Daily_OHLC,ea,BTC,crypto bull,1053,39702.76,37.7,1.95,57.2
+GoldPhantom_Gold_c_XAUUSD.a_Daily_OHLC,ea,US10Y,rates falling,716,33289.94,46.49,2.29,49.3
+GoldPhantom_Gold_c_XAUUSD.a_Daily_OHLC,ea,US10Y,rates rising,1164,34285.67,29.46,1.46,50.7
+GoldPhantom_Gold_c_XAUUSD.a_Daily_OHLC,ea,OIL,oil downtrend,928,39963.19,43.06,2.25,60.9
+GoldPhantom_Gold_c_XAUUSD.a_Daily_OHLC,ea,OIL,oil uptrend,849,25618.13,30.17,1.47,39.1
+GoldPhantom_Gold_c_XAUUSD.a_Daily_OHLC,ea,VIX,calm,405,14562.95,35.96,1.65,20.7
+GoldPhantom_Gold_c_XAUUSD.a_Daily_OHLC,ea,VIX,normal,1206,45287.63,37.55,1.97,64.5
+GoldPhantom_Gold_c_XAUUSD.a_Daily_OHLC,ea,VIX,stressed,370,10413.61,28.14,1.26,14.8
+GoldReaper_strategy1_Daily_XAUUSD.a_Daily_OHLC,ea,DXY,strong dollar,958,32480.51,33.9,1.21,42.1
+GoldReaper_strategy1_Daily_XAUUSD.a_Daily_OHLC,ea,DXY,weak dollar,889,44734.95,50.32,1.58,57.9
+GoldReaper_strategy1_Daily_XAUUSD.a_Daily_OHLC,ea,SP500,stocks bear,379,16687.19,44.03,1.6,25.8
+GoldReaper_strategy1_Daily_XAUUSD.a_Daily_OHLC,ea,SP500,stocks bull,1365,47882.0,35.08,1.22,74.2
+GoldReaper_strategy1_Daily_XAUUSD.a_Daily_OHLC,ea,GOLD,gold downtrend,408,88.73,0.22,0.01,0.1
+GoldReaper_strategy1_Daily_XAUUSD.a_Daily_OHLC,ea,GOLD,gold uptrend,1336,64480.46,48.26,1.6,99.9
+GoldReaper_strategy1_Daily_XAUUSD.a_Daily_OHLC,ea,BTC,crypto bear,754,32499.19,43.1,1.52,42.8
+GoldReaper_strategy1_Daily_XAUUSD.a_Daily_OHLC,ea,BTC,crypto bull,1053,43474.7,41.29,1.31,57.2
+GoldReaper_strategy1_Daily_XAUUSD.a_Daily_OHLC,ea,US10Y,rates falling,716,37308.6,52.11,1.95,48.3
+GoldReaper_strategy1_Daily_XAUUSD.a_Daily_OHLC,ea,US10Y,rates rising,1131,39906.86,35.28,1.11,51.7
+GoldReaper_strategy1_Daily_XAUUSD.a_Daily_OHLC,ea,OIL,oil downtrend,917,48541.17,52.93,1.62,75.2
+GoldReaper_strategy1_Daily_XAUUSD.a_Daily_OHLC,ea,OIL,oil uptrend,827,16028.02,19.38,0.84,24.8
+GoldReaper_strategy1_Daily_XAUUSD.a_Daily_OHLC,ea,VIX,calm,404,11639.03,28.81,0.94,14.5
+GoldReaper_strategy1_Daily_XAUUSD.a_Daily_OHLC,ea,VIX,normal,1174,56878.59,48.45,1.51,70.9
+GoldReaper_strategy1_Daily_XAUUSD.a_Daily_OHLC,ea,VIX,stressed,370,11669.93,31.54,1.5,14.6
+GoldReaper_strategy2_Daily_XAUUSD.a_Daily_OHLC,ea,DXY,strong dollar,958,41216.65,43.02,1.31,37.4
+GoldReaper_strategy2_Daily_XAUUSD.a_Daily_OHLC,ea,DXY,weak dollar,889,68986.79,77.6,1.86,62.6
+GoldReaper_strategy2_Daily_XAUUSD.a_Daily_OHLC,ea,SP500,stocks bear,379,7635.72,20.15,0.72,7.6
+GoldReaper_strategy2_Daily_XAUUSD.a_Daily_OHLC,ea,SP500,stocks bull,1365,93027.54,68.15,1.78,92.4
+GoldReaper_strategy2_Daily_XAUUSD.a_Daily_OHLC,ea,GOLD,gold downtrend,408,14310.38,35.07,1.19,14.2
+GoldReaper_strategy2_Daily_XAUUSD.a_Daily_OHLC,ea,GOLD,gold uptrend,1336,86352.88,64.64,1.69,85.8
+GoldReaper_strategy2_Daily_XAUUSD.a_Daily_OHLC,ea,BTC,crypto bear,754,47932.7,63.57,1.96,42.2
+GoldReaper_strategy2_Daily_XAUUSD.a_Daily_OHLC,ea,BTC,crypto bull,1053,65609.23,62.31,1.52,57.8
+GoldReaper_strategy2_Daily_XAUUSD.a_Daily_OHLC,ea,US10Y,rates falling,716,56102.62,78.36,1.87,50.9
+GoldReaper_strategy2_Daily_XAUUSD.a_Daily_OHLC,ea,US10Y,rates rising,1131,54100.82,47.83,1.4,49.1
+GoldReaper_strategy2_Daily_XAUUSD.a_Daily_OHLC,ea,OIL,oil downtrend,917,52334.24,57.07,1.66,52.0
+GoldReaper_strategy2_Daily_XAUUSD.a_Daily_OHLC,ea,OIL,oil uptrend,827,48329.02,58.44,1.52,48.0
+GoldReaper_strategy2_Daily_XAUUSD.a_Daily_OHLC,ea,VIX,calm,404,44551.39,110.28,2.06,38.5
+GoldReaper_strategy2_Daily_XAUUSD.a_Daily_OHLC,ea,VIX,normal,1174,57802.62,49.24,1.53,49.9
+GoldReaper_strategy2_Daily_XAUUSD.a_Daily_OHLC,ea,VIX,stressed,370,13396.47,36.21,1.17,11.6
+GoldReaper_strategy3_Daily_XAUUSD.a_Daily_OHLC,ea,DXY,strong dollar,986,29709.52,30.13,1.57,55.0
+GoldReaper_strategy3_Daily_XAUUSD.a_Daily_OHLC,ea,DXY,weak dollar,890,24297.87,27.3,1.38,45.0
+GoldReaper_strategy3_Daily_XAUUSD.a_Daily_OHLC,ea,SP500,stocks bear,379,4372.38,11.54,0.71,8.5
+GoldReaper_strategy3_Daily_XAUUSD.a_Daily_OHLC,ea,SP500,stocks bull,1394,46811.27,33.58,1.7,91.5
+GoldReaper_strategy3_Daily_XAUUSD.a_Daily_OHLC,ea,GOLD,gold downtrend,437,13264.02,30.35,1.54,25.9
+GoldReaper_strategy3_Daily_XAUUSD.a_Daily_OHLC,ea,GOLD,gold uptrend,1336,37919.63,28.38,1.5,74.1
+GoldReaper_strategy3_Daily_XAUUSD.a_Daily_OHLC,ea,BTC,crypto bear,783,25121.36,32.08,1.69,47.2
+GoldReaper_strategy3_Daily_XAUUSD.a_Daily_OHLC,ea,BTC,crypto bull,1053,28128.7,26.71,1.35,52.8
+GoldReaper_strategy3_Daily_XAUUSD.a_Daily_OHLC,ea,US10Y,rates falling,716,14983.21,20.93,1.12,27.7
+GoldReaper_strategy3_Daily_XAUUSD.a_Daily_OHLC,ea,US10Y,rates rising,1160,39024.18,33.64,1.68,72.3
+GoldReaper_strategy3_Daily_XAUUSD.a_Daily_OHLC,ea,OIL,oil downtrend,928,12833.88,13.83,0.86,25.1
+GoldReaper_strategy3_Daily_XAUUSD.a_Daily_OHLC,ea,OIL,oil uptrend,845,38349.77,45.38,2.09,74.9
+GoldReaper_strategy3_Daily_XAUUSD.a_Daily_OHLC,ea,VIX,calm,404,11208.99,27.75,1.27,18.4
+GoldReaper_strategy3_Daily_XAUUSD.a_Daily_OHLC,ea,VIX,normal,1203,47907.23,39.82,1.97,78.5
+GoldReaper_strategy3_Daily_XAUUSD.a_Daily_OHLC,ea,VIX,stressed,370,1895.95,5.12,0.3,3.1
+GoldReaper_strategy4_H4_XAUUSD.a_H4_OHLC,ea,DXY,strong dollar,986,48293.65,48.98,1.51,47.5
+GoldReaper_strategy4_H4_XAUUSD.a_H4_OHLC,ea,DXY,weak dollar,890,53277.54,59.86,1.69,52.5
+GoldReaper_strategy4_H4_XAUUSD.a_H4_OHLC,ea,SP500,stocks bear,379,21716.66,57.3,1.77,23.2
+GoldReaper_strategy4_H4_XAUUSD.a_H4_OHLC,ea,SP500,stocks bull,1394,71706.88,51.44,1.53,76.8
+GoldReaper_strategy4_H4_XAUUSD.a_H4_OHLC,ea,GOLD,gold downtrend,437,13605.13,31.13,1.12,14.6
+GoldReaper_strategy4_H4_XAUUSD.a_H4_OHLC,ea,GOLD,gold uptrend,1336,79818.41,59.74,1.71,85.4
+GoldReaper_strategy4_H4_XAUUSD.a_H4_OHLC,ea,BTC,crypto bear,783,48172.39,61.52,1.71,48.5
+GoldReaper_strategy4_H4_XAUUSD.a_H4_OHLC,ea,BTC,crypto bull,1053,51070.86,48.5,1.5,51.5
+GoldReaper_strategy4_H4_XAUUSD.a_H4_OHLC,ea,US10Y,rates falling,716,31216.19,43.6,1.31,30.7
+GoldReaper_strategy4_H4_XAUUSD.a_H4_OHLC,ea,US10Y,rates rising,1160,70355.0,60.65,1.77,69.3
+GoldReaper_strategy4_H4_XAUUSD.a_H4_OHLC,ea,OIL,oil downtrend,928,48575.55,52.34,1.53,52.0
+GoldReaper_strategy4_H4_XAUUSD.a_H4_OHLC,ea,OIL,oil uptrend,845,44847.99,53.07,1.64,48.0
+GoldReaper_strategy4_H4_XAUUSD.a_H4_OHLC,ea,VIX,calm,404,12692.98,31.42,1.09,11.7
+GoldReaper_strategy4_H4_XAUUSD.a_H4_OHLC,ea,VIX,normal,1203,72768.01,60.49,1.68,67.0
+GoldReaper_strategy4_H4_XAUUSD.a_H4_OHLC,ea,VIX,stressed,370,23164.71,62.61,1.72,21.3
+GoldReaper_strategy5_H1_XAUUSD.a_H1_OHLC,ea,DXY,strong dollar,990,36567.59,36.94,2.55,55.1
+GoldReaper_strategy5_H1_XAUUSD.a_H1_OHLC,ea,DXY,weak dollar,891,29816.18,33.46,2.05,44.9
+GoldReaper_strategy5_H1_XAUUSD.a_H1_OHLC,ea,SP500,stocks bear,379,17215.53,45.42,2.93,28.0
+GoldReaper_strategy5_H1_XAUUSD.a_H1_OHLC,ea,SP500,stocks bull,1399,44341.98,31.7,2.03,72.0
+GoldReaper_strategy5_H1_XAUUSD.a_H1_OHLC,ea,GOLD,gold downtrend,441,14824.62,33.62,2.45,24.1
+GoldReaper_strategy5_H1_XAUUSD.a_H1_OHLC,ea,GOLD,gold uptrend,1337,46732.89,34.95,2.16,75.9
+GoldReaper_strategy5_H1_XAUUSD.a_H1_OHLC,ea,BTC,crypto bear,788,26689.32,33.87,2.16,41.1
+GoldReaper_strategy5_H1_XAUUSD.a_H1_OHLC,ea,BTC,crypto bull,1053,38218.56,36.29,2.38,58.9
+GoldReaper_strategy5_H1_XAUUSD.a_H1_OHLC,ea,US10Y,rates falling,716,27088.51,37.83,2.31,40.8
+GoldReaper_strategy5_H1_XAUUSD.a_H1_OHLC,ea,US10Y,rates rising,1165,39295.26,33.73,2.28,59.2
+GoldReaper_strategy5_H1_XAUUSD.a_H1_OHLC,ea,OIL,oil downtrend,928,33780.94,36.4,2.17,54.9
+GoldReaper_strategy5_H1_XAUUSD.a_H1_OHLC,ea,OIL,oil uptrend,850,27776.57,32.68,2.29,45.1
+GoldReaper_strategy5_H1_XAUUSD.a_H1_OHLC,ea,VIX,calm,406,17635.97,43.44,2.7,26.3
+GoldReaper_strategy5_H1_XAUUSD.a_H1_OHLC,ea,VIX,normal,1206,39842.2,33.04,2.24,59.3
+GoldReaper_strategy5_H1_XAUUSD.a_H1_OHLC,ea,VIX,stressed,370,9673.74,26.15,1.54,14.4
+GoldReaper_strategy6_H1_XAUUSD.a_H1_OHLC,ea,DXY,strong dollar,990,39258.16,39.65,2.52,68.3
+GoldReaper_strategy6_H1_XAUUSD.a_H1_OHLC,ea,DXY,weak dollar,891,18187.42,20.41,1.12,31.7
+GoldReaper_strategy6_H1_XAUUSD.a_H1_OHLC,ea,SP500,stocks bear,379,18248.23,48.15,3.68,33.1
+GoldReaper_strategy6_H1_XAUUSD.a_H1_OHLC,ea,SP500,stocks bull,1399,36849.55,26.34,1.45,66.9
+GoldReaper_strategy6_H1_XAUUSD.a_H1_OHLC,ea,GOLD,gold downtrend,441,13435.19,30.47,2.11,24.4
+GoldReaper_strategy6_H1_XAUUSD.a_H1_OHLC,ea,GOLD,gold uptrend,1337,41662.59,31.16,1.73,75.6
+GoldReaper_strategy6_H1_XAUUSD.a_H1_OHLC,ea,BTC,crypto bear,788,23958.68,30.4,1.92,42.8
+GoldReaper_strategy6_H1_XAUUSD.a_H1_OHLC,ea,BTC,crypto bull,1053,32003.34,30.39,1.69,57.2
+GoldReaper_strategy6_H1_XAUUSD.a_H1_OHLC,ea,US10Y,rates falling,716,17916.49,25.02,1.37,31.2
+GoldReaper_strategy6_H1_XAUUSD.a_H1_OHLC,ea,US10Y,rates rising,1165,39529.09,33.93,2.09,68.8
+GoldReaper_strategy6_H1_XAUUSD.a_H1_OHLC,ea,OIL,oil downtrend,928,23446.69,25.27,1.39,42.6
+GoldReaper_strategy6_H1_XAUUSD.a_H1_OHLC,ea,OIL,oil uptrend,850,31651.09,37.24,2.31,57.4
+GoldReaper_strategy6_H1_XAUUSD.a_H1_OHLC,ea,VIX,calm,406,14995.76,36.94,2.14,26.0
+GoldReaper_strategy6_H1_XAUUSD.a_H1_OHLC,ea,VIX,normal,1206,34712.28,28.78,1.74,60.2
+GoldReaper_strategy6_H1_XAUUSD.a_H1_OHLC,ea,VIX,stressed,370,7968.5,21.54,1.19,13.8
+GoldReaper_strategy7_H1_XAUUSD.a_H1_OHLC,ea,DXY,strong dollar,990,53841.35,54.39,2.23,69.2
+GoldReaper_strategy7_H1_XAUUSD.a_H1_OHLC,ea,DXY,weak dollar,891,23918.3,26.84,1.27,30.8
+GoldReaper_strategy7_H1_XAUUSD.a_H1_OHLC,ea,SP500,stocks bear,379,29030.36,76.6,3.42,38.7
+GoldReaper_strategy7_H1_XAUUSD.a_H1_OHLC,ea,SP500,stocks bull,1399,46073.64,32.93,1.41,61.3
+GoldReaper_strategy7_H1_XAUUSD.a_H1_OHLC,ea,GOLD,gold downtrend,441,8834.03,20.03,0.8,11.8
+GoldReaper_strategy7_H1_XAUUSD.a_H1_OHLC,ea,GOLD,gold uptrend,1337,66269.97,49.57,2.2,88.2
+GoldReaper_strategy7_H1_XAUUSD.a_H1_OHLC,ea,BTC,crypto bear,788,30452.57,38.65,1.79,41.4
+GoldReaper_strategy7_H1_XAUUSD.a_H1_OHLC,ea,BTC,crypto bull,1053,43079.9,40.91,1.71,58.6
+GoldReaper_strategy7_H1_XAUUSD.a_H1_OHLC,ea,US10Y,rates falling,716,27369.02,38.22,1.66,35.2
+GoldReaper_strategy7_H1_XAUUSD.a_H1_OHLC,ea,US10Y,rates rising,1165,50390.63,43.25,1.89,64.8
+GoldReaper_strategy7_H1_XAUUSD.a_H1_OHLC,ea,OIL,oil downtrend,928,40494.66,43.64,1.99,53.9
+GoldReaper_strategy7_H1_XAUUSD.a_H1_OHLC,ea,OIL,oil uptrend,850,34609.34,40.72,1.67,46.1
+GoldReaper_strategy7_H1_XAUUSD.a_H1_OHLC,ea,VIX,calm,406,10253.51,25.25,1.18,13.2
+GoldReaper_strategy7_H1_XAUUSD.a_H1_OHLC,ea,VIX,normal,1206,55670.53,46.16,1.98,71.5
+GoldReaper_strategy7_H1_XAUUSD.a_H1_OHLC,ea,VIX,stressed,370,11986.41,32.4,1.28,15.4
+GoldReaper_strategy8_H1_XAUUSD.a_H1_OHLC,ea,DXY,strong dollar,990,37228.8,37.6,2.03,54.0
+GoldReaper_strategy8_H1_XAUUSD.a_H1_OHLC,ea,DXY,weak dollar,891,31689.25,35.57,1.66,46.0
+GoldReaper_strategy8_H1_XAUUSD.a_H1_OHLC,ea,SP500,stocks bear,379,14659.39,38.68,2.22,22.0
+GoldReaper_strategy8_H1_XAUUSD.a_H1_OHLC,ea,SP500,stocks bull,1399,51899.34,37.1,1.78,78.0
+GoldReaper_strategy8_H1_XAUUSD.a_H1_OHLC,ea,GOLD,gold downtrend,441,4728.55,10.72,0.64,7.1
+GoldReaper_strategy8_H1_XAUUSD.a_H1_OHLC,ea,GOLD,gold uptrend,1337,61830.18,46.25,2.18,92.9
+GoldReaper_strategy8_H1_XAUUSD.a_H1_OHLC,ea,BTC,crypto bear,788,26930.62,34.18,1.86,39.3
+GoldReaper_strategy8_H1_XAUUSD.a_H1_OHLC,ea,BTC,crypto bull,1053,41514.45,39.42,1.87,60.7
+GoldReaper_strategy8_H1_XAUUSD.a_H1_OHLC,ea,US10Y,rates falling,716,25785.34,36.01,1.78,37.4
+GoldReaper_strategy8_H1_XAUUSD.a_H1_OHLC,ea,US10Y,rates rising,1165,43132.71,37.02,1.88,62.6
+GoldReaper_strategy8_H1_XAUUSD.a_H1_OHLC,ea,OIL,oil downtrend,928,32041.71,34.53,1.7,48.1
+GoldReaper_strategy8_H1_XAUUSD.a_H1_OHLC,ea,OIL,oil uptrend,850,34517.02,40.61,2.03,51.9
+GoldReaper_strategy8_H1_XAUUSD.a_H1_OHLC,ea,VIX,calm,406,14718.24,36.25,1.77,20.5
+GoldReaper_strategy8_H1_XAUUSD.a_H1_OHLC,ea,VIX,normal,1206,44174.44,36.63,1.87,61.5
+GoldReaper_strategy8_H1_XAUUSD.a_H1_OHLC,ea,VIX,stressed,370,12896.76,34.86,1.71,18.0
+GoldReaper_strategy9_H1_XAUUSD.a_H1_OHLC,ea,DXY,strong dollar,990,18322.95,18.51,2.78,71.5
+GoldReaper_strategy9_H1_XAUUSD.a_H1_OHLC,ea,DXY,weak dollar,891,7308.44,8.2,1.15,28.5
+GoldReaper_strategy9_H1_XAUUSD.a_H1_OHLC,ea,SP500,stocks bear,379,4275.05,11.28,1.71,17.6
+GoldReaper_strategy9_H1_XAUUSD.a_H1_OHLC,ea,SP500,stocks bull,1399,20051.14,14.33,2.13,82.4
+GoldReaper_strategy9_H1_XAUUSD.a_H1_OHLC,ea,GOLD,gold downtrend,441,5086.16,11.53,1.82,20.9
+GoldReaper_strategy9_H1_XAUUSD.a_H1_OHLC,ea,GOLD,gold uptrend,1337,19240.03,14.39,2.11,79.1
+GoldReaper_strategy9_H1_XAUUSD.a_H1_OHLC,ea,BTC,crypto bear,788,13640.49,17.31,2.38,51.9
+GoldReaper_strategy9_H1_XAUUSD.a_H1_OHLC,ea,BTC,crypto bull,1053,12643.5,12.01,1.95,48.1
+GoldReaper_strategy9_H1_XAUUSD.a_H1_OHLC,ea,US10Y,rates falling,716,9317.65,13.01,1.96,36.4
+GoldReaper_strategy9_H1_XAUUSD.a_H1_OHLC,ea,US10Y,rates rising,1165,16313.74,14.0,1.98,63.6
+GoldReaper_strategy9_H1_XAUUSD.a_H1_OHLC,ea,OIL,oil downtrend,928,9689.81,10.44,1.52,39.8
+GoldReaper_strategy9_H1_XAUUSD.a_H1_OHLC,ea,OIL,oil uptrend,850,14636.38,17.22,2.64,60.2
+GoldReaper_strategy9_H1_XAUUSD.a_H1_OHLC,ea,VIX,calm,406,3553.26,8.75,1.27,12.9
+GoldReaper_strategy9_H1_XAUUSD.a_H1_OHLC,ea,VIX,normal,1206,18084.27,15.0,2.07,65.6
+GoldReaper_strategy9_H1_XAUUSD.a_H1_OHLC,ea,VIX,stressed,370,5931.61,16.03,2.56,21.5
+GoldScalp_H1_A_XAUUSD.a_H1_OHLC,ea,DXY,strong dollar,990,282806.07,285.66,6.05,53.4
+GoldScalp_H1_A_XAUUSD.a_H1_OHLC,ea,DXY,weak dollar,891,247227.07,277.47,5.61,46.6
+GoldScalp_H1_A_XAUUSD.a_H1_OHLC,ea,SP500,stocks bear,379,100736.0,265.79,6.23,19.7
+GoldScalp_H1_A_XAUUSD.a_H1_OHLC,ea,SP500,stocks bull,1399,411067.14,293.83,5.78,80.3
+GoldScalp_H1_A_XAUUSD.a_H1_OHLC,ea,GOLD,gold downtrend,441,114216.0,258.99,5.59,22.3
+GoldScalp_H1_A_XAUUSD.a_H1_OHLC,ea,GOLD,gold uptrend,1337,397587.14,297.37,5.93,77.7
+GoldScalp_H1_A_XAUUSD.a_H1_OHLC,ea,BTC,crypto bear,788,320552.07,406.79,6.5,61.0
+GoldScalp_H1_A_XAUUSD.a_H1_OHLC,ea,BTC,crypto bull,1053,204813.07,194.5,5.76,39.0
+GoldScalp_H1_A_XAUUSD.a_H1_OHLC,ea,US10Y,rates falling,716,161468.0,225.51,5.65,30.5
+GoldScalp_H1_A_XAUUSD.a_H1_OHLC,ea,US10Y,rates rising,1165,368565.14,316.36,6.0,69.5
+GoldScalp_H1_A_XAUUSD.a_H1_OHLC,ea,OIL,oil downtrend,928,221756.0,238.96,6.15,43.3
+GoldScalp_H1_A_XAUUSD.a_H1_OHLC,ea,OIL,oil uptrend,850,290047.14,341.23,5.85,56.7
+GoldScalp_H1_A_XAUUSD.a_H1_OHLC,ea,VIX,calm,406,71070.0,175.05,5.6,13.2
+GoldScalp_H1_A_XAUUSD.a_H1_OHLC,ea,VIX,normal,1206,352578.07,292.35,5.81,65.6
+GoldScalp_H1_A_XAUUSD.a_H1_OHLC,ea,VIX,stressed,370,113467.07,306.67,5.87,21.1
+GoldScalp_H1_B_XAUUSD.a_H1_OHLC,ea,DXY,strong dollar,990,267200.64,269.9,5.58,51.8
+GoldScalp_H1_B_XAUUSD.a_H1_OHLC,ea,DXY,weak dollar,891,248733.48,279.16,5.73,48.2
+GoldScalp_H1_B_XAUUSD.a_H1_OHLC,ea,SP500,stocks bear,379,97621.4,257.58,5.8,19.4
+GoldScalp_H1_B_XAUUSD.a_H1_OHLC,ea,SP500,stocks bull,1399,405388.26,289.77,5.73,80.6
+GoldScalp_H1_B_XAUUSD.a_H1_OHLC,ea,GOLD,gold downtrend,441,112616.18,255.37,5.31,22.4
+GoldScalp_H1_B_XAUUSD.a_H1_OHLC,ea,GOLD,gold uptrend,1337,390393.48,291.99,5.87,77.6
+GoldScalp_H1_B_XAUUSD.a_H1_OHLC,ea,BTC,crypto bear,788,300441.62,381.27,6.29,58.8
+GoldScalp_H1_B_XAUUSD.a_H1_OHLC,ea,BTC,crypto bull,1053,210331.56,199.75,5.41,41.2
+GoldScalp_H1_B_XAUUSD.a_H1_OHLC,ea,US10Y,rates falling,716,178591.17,249.43,5.84,34.6
+GoldScalp_H1_B_XAUUSD.a_H1_OHLC,ea,US10Y,rates rising,1165,337342.95,289.56,5.59,65.4
+GoldScalp_H1_B_XAUUSD.a_H1_OHLC,ea,OIL,oil downtrend,928,234064.6,252.22,6.21,46.5
+GoldScalp_H1_B_XAUUSD.a_H1_OHLC,ea,OIL,oil uptrend,850,268945.06,316.41,5.52,53.5
+GoldScalp_H1_B_XAUUSD.a_H1_OHLC,ea,VIX,calm,406,69681.69,171.63,4.63,13.3
+GoldScalp_H1_B_XAUUSD.a_H1_OHLC,ea,VIX,normal,1206,349974.46,290.19,5.73,66.6
+GoldScalp_H1_B_XAUUSD.a_H1_OHLC,ea,VIX,stressed,370,106140.86,286.87,5.69,20.2
+GoldScalp_H1_C_XAUUSD.a_H1_OHLC,ea,DXY,strong dollar,990,233136.88,235.49,4.08,53.6
+GoldScalp_H1_C_XAUUSD.a_H1_OHLC,ea,DXY,weak dollar,891,201924.04,226.63,4.11,46.4
+GoldScalp_H1_C_XAUUSD.a_H1_OHLC,ea,SP500,stocks bear,379,55049.09,145.25,3.1,12.9
+GoldScalp_H1_C_XAUUSD.a_H1_OHLC,ea,SP500,stocks bull,1399,370576.39,264.89,4.4,87.1
+GoldScalp_H1_C_XAUUSD.a_H1_OHLC,ea,GOLD,gold downtrend,441,87774.66,199.04,3.71,20.6
+GoldScalp_H1_C_XAUUSD.a_H1_OHLC,ea,GOLD,gold uptrend,1337,337850.82,252.69,4.29,79.4
+GoldScalp_H1_C_XAUUSD.a_H1_OHLC,ea,BTC,crypto bear,788,308434.39,391.41,5.31,71.1
+GoldScalp_H1_C_XAUUSD.a_H1_OHLC,ea,BTC,crypto bull,1053,125076.44,118.78,3.07,28.9
+GoldScalp_H1_C_XAUUSD.a_H1_OHLC,ea,US10Y,rates falling,716,111876.43,156.25,3.3,25.7
+GoldScalp_H1_C_XAUUSD.a_H1_OHLC,ea,US10Y,rates rising,1165,323184.49,277.41,4.53,74.3
+GoldScalp_H1_C_XAUUSD.a_H1_OHLC,ea,OIL,oil downtrend,928,165969.93,178.85,3.62,39.0
+GoldScalp_H1_C_XAUUSD.a_H1_OHLC,ea,OIL,oil uptrend,850,259655.55,305.48,4.68,61.0
+GoldScalp_H1_C_XAUUSD.a_H1_OHLC,ea,VIX,calm,406,41596.45,102.45,2.72,9.5
+GoldScalp_H1_C_XAUUSD.a_H1_OHLC,ea,VIX,normal,1206,317373.41,263.16,4.42,72.7
+GoldScalp_H1_C_XAUUSD.a_H1_OHLC,ea,VIX,stressed,370,77497.87,209.45,3.63,17.8
+Indicement_US100_1_H1_USTEC.a_H1_OHLC,ea,DXY,strong dollar,990,80971.73,81.79,3.15,61.9
+Indicement_US100_1_H1_USTEC.a_H1_OHLC,ea,DXY,weak dollar,891,49918.96,56.03,2.24,38.1
+Indicement_US100_1_H1_USTEC.a_H1_OHLC,ea,SP500,stocks bear,379,45578.46,120.26,4.17,35.9
+Indicement_US100_1_H1_USTEC.a_H1_OHLC,ea,SP500,stocks bull,1399,81315.04,58.12,2.39,64.1
+Indicement_US100_1_H1_USTEC.a_H1_OHLC,ea,GOLD,gold downtrend,441,33130.0,75.12,2.72,26.1
+Indicement_US100_1_H1_USTEC.a_H1_OHLC,ea,GOLD,gold uptrend,1337,93763.5,70.13,2.85,73.9
+Indicement_US100_1_H1_USTEC.a_H1_OHLC,ea,BTC,crypto bear,788,50055.42,63.52,2.32,38.7
+Indicement_US100_1_H1_USTEC.a_H1_OHLC,ea,BTC,crypto bull,1053,79173.66,75.19,3.14,61.3
+Indicement_US100_1_H1_USTEC.a_H1_OHLC,ea,US10Y,rates falling,716,54376.6,75.94,3.1,41.5
+Indicement_US100_1_H1_USTEC.a_H1_OHLC,ea,US10Y,rates rising,1165,76514.09,65.68,2.51,58.5
+Indicement_US100_1_H1_USTEC.a_H1_OHLC,ea,OIL,oil downtrend,928,72787.53,78.43,2.97,57.4
+Indicement_US100_1_H1_USTEC.a_H1_OHLC,ea,OIL,oil uptrend,850,54105.97,63.65,2.63,42.6
+Indicement_US100_1_H1_USTEC.a_H1_OHLC,ea,VIX,calm,406,19431.04,47.86,1.91,14.2
+Indicement_US100_1_H1_USTEC.a_H1_OHLC,ea,VIX,normal,1206,81810.09,67.84,2.71,59.8
+Indicement_US100_1_H1_USTEC.a_H1_OHLC,ea,VIX,stressed,370,35509.99,95.97,3.37,26.0
+Indicement_US100_2_H1_USTEC.a_H1_OHLC,ea,DXY,strong dollar,990,22486.28,22.71,1.85,43.7
+Indicement_US100_2_H1_USTEC.a_H1_OHLC,ea,DXY,weak dollar,891,28945.34,32.49,2.57,56.3
+Indicement_US100_2_H1_USTEC.a_H1_OHLC,ea,SP500,stocks bear,379,10706.21,28.25,2.3,22.6
+Indicement_US100_2_H1_USTEC.a_H1_OHLC,ea,SP500,stocks bull,1399,36686.11,26.22,2.11,77.4
+Indicement_US100_2_H1_USTEC.a_H1_OHLC,ea,GOLD,gold downtrend,441,16169.35,36.67,2.55,34.1
+Indicement_US100_2_H1_USTEC.a_H1_OHLC,ea,GOLD,gold uptrend,1337,31222.97,23.35,2.0,65.9
+Indicement_US100_2_H1_USTEC.a_H1_OHLC,ea,BTC,crypto bear,788,18822.58,23.89,1.91,37.3
+Indicement_US100_2_H1_USTEC.a_H1_OHLC,ea,BTC,crypto bull,1053,31608.16,30.02,2.41,62.7
+Indicement_US100_2_H1_USTEC.a_H1_OHLC,ea,US10Y,rates falling,716,18540.68,25.89,2.09,36.0
+Indicement_US100_2_H1_USTEC.a_H1_OHLC,ea,US10Y,rates rising,1165,32890.94,28.23,2.25,64.0
+Indicement_US100_2_H1_USTEC.a_H1_OHLC,ea,OIL,oil downtrend,928,30165.52,32.51,2.47,63.7
+Indicement_US100_2_H1_USTEC.a_H1_OHLC,ea,OIL,oil uptrend,850,17226.8,20.27,1.77,36.3
+Indicement_US100_2_H1_USTEC.a_H1_OHLC,ea,VIX,calm,406,15454.94,38.07,3.14,27.8
+Indicement_US100_2_H1_USTEC.a_H1_OHLC,ea,VIX,normal,1206,36078.44,29.92,2.36,65.0
+Indicement_US100_2_H1_USTEC.a_H1_OHLC,ea,VIX,stressed,370,3967.24,10.72,0.88,7.1
+Indicement_US100_3_H1_USTEC.a_H1_OHLC,ea,DXY,strong dollar,990,51272.25,51.79,2.81,65.5
+Indicement_US100_3_H1_USTEC.a_H1_OHLC,ea,DXY,weak dollar,891,27011.36,30.32,1.69,34.5
+Indicement_US100_3_H1_USTEC.a_H1_OHLC,ea,SP500,stocks bear,379,24582.17,64.86,3.17,33.8
+Indicement_US100_3_H1_USTEC.a_H1_OHLC,ea,SP500,stocks bull,1399,48189.17,34.45,1.98,66.2
+Indicement_US100_3_H1_USTEC.a_H1_OHLC,ea,GOLD,gold downtrend,441,26381.01,59.82,2.95,36.3
+Indicement_US100_3_H1_USTEC.a_H1_OHLC,ea,GOLD,gold uptrend,1337,46390.33,34.7,2.01,63.7
+Indicement_US100_3_H1_USTEC.a_H1_OHLC,ea,BTC,crypto bear,788,28944.51,36.73,1.92,38.7
+Indicement_US100_3_H1_USTEC.a_H1_OHLC,ea,BTC,crypto bull,1053,45840.25,43.53,2.52,61.3
+Indicement_US100_3_H1_USTEC.a_H1_OHLC,ea,US10Y,rates falling,716,26868.56,37.53,2.07,34.3
+Indicement_US100_3_H1_USTEC.a_H1_OHLC,ea,US10Y,rates rising,1165,51415.05,44.13,2.42,65.7
+Indicement_US100_3_H1_USTEC.a_H1_OHLC,ea,OIL,oil downtrend,928,34482.49,37.16,1.99,47.4
+Indicement_US100_3_H1_USTEC.a_H1_OHLC,ea,OIL,oil uptrend,850,38288.85,45.05,2.59,52.6
+Indicement_US100_3_H1_USTEC.a_H1_OHLC,ea,VIX,calm,406,13786.3,33.96,2.03,17.1
+Indicement_US100_3_H1_USTEC.a_H1_OHLC,ea,VIX,normal,1206,39920.23,33.1,1.89,49.6
+Indicement_US100_3_H1_USTEC.a_H1_OHLC,ea,VIX,stressed,370,26757.6,72.32,3.4,33.3
+Indicement_US100_4_H1_USTEC.a_H1_OHLC,ea,DXY,strong dollar,990,32816.3,33.15,2.07,63.9
+Indicement_US100_4_H1_USTEC.a_H1_OHLC,ea,DXY,weak dollar,891,18557.22,20.83,1.3,36.1
+Indicement_US100_4_H1_USTEC.a_H1_OHLC,ea,SP500,stocks bear,379,3526.69,9.31,0.57,8.2
+Indicement_US100_4_H1_USTEC.a_H1_OHLC,ea,SP500,stocks bull,1399,39475.2,28.22,1.79,91.8
+Indicement_US100_4_H1_USTEC.a_H1_OHLC,ea,GOLD,gold downtrend,441,10751.1,24.38,1.62,25.0
+Indicement_US100_4_H1_USTEC.a_H1_OHLC,ea,GOLD,gold uptrend,1337,32250.79,24.12,1.49,75.0
+Indicement_US100_4_H1_USTEC.a_H1_OHLC,ea,BTC,crypto bear,788,17239.25,21.88,1.4,34.0
+Indicement_US100_4_H1_USTEC.a_H1_OHLC,ea,BTC,crypto bull,1053,33432.44,31.75,1.94,66.0
+Indicement_US100_4_H1_USTEC.a_H1_OHLC,ea,US10Y,rates falling,716,21526.67,30.07,1.91,41.9
+Indicement_US100_4_H1_USTEC.a_H1_OHLC,ea,US10Y,rates rising,1165,29846.85,25.62,1.58,58.1
+Indicement_US100_4_H1_USTEC.a_H1_OHLC,ea,OIL,oil downtrend,928,21668.14,23.35,1.44,50.4
+Indicement_US100_4_H1_USTEC.a_H1_OHLC,ea,OIL,oil uptrend,850,21333.75,25.1,1.62,49.6
+Indicement_US100_4_H1_USTEC.a_H1_OHLC,ea,VIX,calm,406,16695.24,41.12,2.78,29.5
+Indicement_US100_4_H1_USTEC.a_H1_OHLC,ea,VIX,normal,1206,30540.19,25.32,1.65,54.0
+Indicement_US100_4_H1_USTEC.a_H1_OHLC,ea,VIX,stressed,370,9305.7,25.15,1.27,16.5
+Indicement_US30_1_Daily_US30.a_Daily_OHLC,ea,DXY,strong dollar,986,15864.96,16.09,1.38,56.2
+Indicement_US30_1_Daily_US30.a_Daily_OHLC,ea,DXY,weak dollar,889,12382.63,13.93,1.19,43.8
+Indicement_US30_1_Daily_US30.a_Daily_OHLC,ea,SP500,stocks bear,379,8634.06,22.78,2.15,32.4
+Indicement_US30_1_Daily_US30.a_Daily_OHLC,ea,SP500,stocks bull,1393,17989.39,12.91,1.08,67.6
+Indicement_US30_1_Daily_US30.a_Daily_OHLC,ea,GOLD,gold downtrend,436,4664.44,10.7,0.9,17.5
+Indicement_US30_1_Daily_US30.a_Daily_OHLC,ea,GOLD,gold uptrend,1336,21959.01,16.44,1.41,82.5
+Indicement_US30_1_Daily_US30.a_Daily_OHLC,ea,BTC,crypto bear,782,8714.32,11.14,0.96,31.3
+Indicement_US30_1_Daily_US30.a_Daily_OHLC,ea,BTC,crypto bull,1053,19083.65,18.12,1.57,68.7
+Indicement_US30_1_Daily_US30.a_Daily_OHLC,ea,US10Y,rates falling,716,7612.42,10.63,0.93,26.9
+Indicement_US30_1_Daily_US30.a_Daily_OHLC,ea,US10Y,rates rising,1159,20635.17,17.8,1.5,73.1
+Indicement_US30_1_Daily_US30.a_Daily_OHLC,ea,OIL,oil downtrend,927,15388.45,16.6,1.43,57.8
+Indicement_US30_1_Daily_US30.a_Daily_OHLC,ea,OIL,oil uptrend,845,11235.0,13.3,1.13,42.2
+Indicement_US30_1_Daily_US30.a_Daily_OHLC,ea,VIX,calm,404,4132.67,10.23,1.21,13.5
+Indicement_US30_1_Daily_US30.a_Daily_OHLC,ea,VIX,normal,1202,14522.81,12.08,1.0,47.6
+Indicement_US30_1_Daily_US30.a_Daily_OHLC,ea,VIX,stressed,370,11857.11,32.05,2.48,38.9
+Indicement_US30_2_Daily_US30.a_Daily_OHLC,ea,DXY,strong dollar,986,10938.04,11.09,1.22,61.0
+Indicement_US30_2_Daily_US30.a_Daily_OHLC,ea,DXY,weak dollar,889,6999.55,7.87,0.71,39.0
+Indicement_US30_2_Daily_US30.a_Daily_OHLC,ea,SP500,stocks bear,379,7812.02,20.61,2.09,43.6
+Indicement_US30_2_Daily_US30.a_Daily_OHLC,ea,SP500,stocks bull,1393,10111.13,7.26,0.7,56.4
+Indicement_US30_2_Daily_US30.a_Daily_OHLC,ea,GOLD,gold downtrend,436,7343.41,16.84,1.32,41.0
+Indicement_US30_2_Daily_US30.a_Daily_OHLC,ea,GOLD,gold uptrend,1336,10579.74,7.92,0.85,59.0
+Indicement_US30_2_Daily_US30.a_Daily_OHLC,ea,BTC,crypto bear,782,9110.99,11.65,1.03,50.7
+Indicement_US30_2_Daily_US30.a_Daily_OHLC,ea,BTC,crypto bull,1053,8846.2,8.4,0.92,49.3
+Indicement_US30_2_Daily_US30.a_Daily_OHLC,ea,US10Y,rates falling,716,5988.46,8.36,0.9,33.4
+Indicement_US30_2_Daily_US30.a_Daily_OHLC,ea,US10Y,rates rising,1159,11949.13,10.31,0.97,66.6
+Indicement_US30_2_Daily_US30.a_Daily_OHLC,ea,OIL,oil downtrend,927,10481.52,11.31,1.1,58.5
+Indicement_US30_2_Daily_US30.a_Daily_OHLC,ea,OIL,oil uptrend,845,7441.63,8.81,0.85,41.5
+Indicement_US30_2_Daily_US30.a_Daily_OHLC,ea,VIX,calm,404,-2403.9,-5.95,-0.82,-13.2
+Indicement_US30_2_Daily_US30.a_Daily_OHLC,ea,VIX,normal,1202,5271.74,4.39,0.5,28.9
+Indicement_US30_2_Daily_US30.a_Daily_OHLC,ea,VIX,stressed,370,15359.88,41.51,2.77,84.3
+Indicement_US30_3_Daily_US30.a_Daily_OHLC,ea,DXY,strong dollar,986,13413.72,13.6,1.18,52.9
+Indicement_US30_3_Daily_US30.a_Daily_OHLC,ea,DXY,weak dollar,889,11950.21,13.44,1.03,47.1
+Indicement_US30_3_Daily_US30.a_Daily_OHLC,ea,SP500,stocks bear,379,5818.68,15.35,1.4,25.9
+Indicement_US30_3_Daily_US30.a_Daily_OHLC,ea,SP500,stocks bull,1393,16628.66,11.94,0.95,74.1
+Indicement_US30_3_Daily_US30.a_Daily_OHLC,ea,GOLD,gold downtrend,436,4364.56,10.01,0.89,19.4
+Indicement_US30_3_Daily_US30.a_Daily_OHLC,ea,GOLD,gold uptrend,1336,18082.78,13.54,1.08,80.6
+Indicement_US30_3_Daily_US30.a_Daily_OHLC,ea,BTC,crypto bear,782,7982.55,10.21,0.79,33.3
+Indicement_US30_3_Daily_US30.a_Daily_OHLC,ea,BTC,crypto bull,1053,15996.75,15.19,1.31,66.7
+Indicement_US30_3_Daily_US30.a_Daily_OHLC,ea,US10Y,rates falling,716,6425.58,8.97,0.87,25.3
+Indicement_US30_3_Daily_US30.a_Daily_OHLC,ea,US10Y,rates rising,1159,18938.35,16.34,1.23,74.7
+Indicement_US30_3_Daily_US30.a_Daily_OHLC,ea,OIL,oil downtrend,927,19064.81,20.57,1.58,84.9
+Indicement_US30_3_Daily_US30.a_Daily_OHLC,ea,OIL,oil uptrend,845,3382.53,4.0,0.36,15.1
+Indicement_US30_3_Daily_US30.a_Daily_OHLC,ea,VIX,calm,404,6764.86,16.74,1.9,26.5
+Indicement_US30_3_Daily_US30.a_Daily_OHLC,ea,VIX,normal,1202,8386.07,6.98,0.53,32.9
+Indicement_US30_3_Daily_US30.a_Daily_OHLC,ea,VIX,stressed,370,10360.62,28.0,2.36,40.6
+Indicement_US30_4_Daily_US30.a_Daily_OHLC,ea,DXY,strong dollar,990,10488.95,10.59,1.33,71.8
+Indicement_US30_4_Daily_US30.a_Daily_OHLC,ea,DXY,weak dollar,891,4126.28,4.63,0.62,28.2
+Indicement_US30_4_Daily_US30.a_Daily_OHLC,ea,SP500,stocks bear,379,5836.59,15.4,1.9,49.3
+Indicement_US30_4_Daily_US30.a_Daily_OHLC,ea,SP500,stocks bull,1399,6001.1,4.29,0.58,50.7
+Indicement_US30_4_Daily_US30.a_Daily_OHLC,ea,GOLD,gold downtrend,441,5366.06,12.17,1.56,45.3
+Indicement_US30_4_Daily_US30.a_Daily_OHLC,ea,GOLD,gold uptrend,1337,6471.63,4.84,0.65,54.7
+Indicement_US30_4_Daily_US30.a_Daily_OHLC,ea,BTC,crypto bear,788,5852.97,7.43,0.99,40.9
+Indicement_US30_4_Daily_US30.a_Daily_OHLC,ea,BTC,crypto bull,1053,8440.4,8.02,1.0,59.1
+Indicement_US30_4_Daily_US30.a_Daily_OHLC,ea,US10Y,rates falling,716,6875.27,9.6,1.23,47.0
+Indicement_US30_4_Daily_US30.a_Daily_OHLC,ea,US10Y,rates rising,1165,7739.96,6.64,0.86,53.0
+Indicement_US30_4_Daily_US30.a_Daily_OHLC,ea,OIL,oil downtrend,928,9065.05,9.77,1.27,76.6
+Indicement_US30_4_Daily_US30.a_Daily_OHLC,ea,OIL,oil uptrend,850,2772.64,3.26,0.44,23.4
+Indicement_US30_4_Daily_US30.a_Daily_OHLC,ea,VIX,calm,406,4944.32,12.18,1.65,36.1
+Indicement_US30_4_Daily_US30.a_Daily_OHLC,ea,VIX,normal,1206,2426.06,2.01,0.26,17.7
+Indicement_US30_4_Daily_US30.a_Daily_OHLC,ea,VIX,stressed,370,6332.03,17.11,2.18,46.2
+Indicement_US500a_H1_US500.a_H1_OHLC,ea,DXY,strong dollar,989,40008.35,40.45,2.67,58.2
+Indicement_US500a_H1_US500.a_H1_OHLC,ea,DXY,weak dollar,891,28778.47,32.3,2.29,41.8
+Indicement_US500a_H1_US500.a_H1_OHLC,ea,SP500,stocks bear,379,25390.51,66.99,4.03,40.0
+Indicement_US500a_H1_US500.a_H1_OHLC,ea,SP500,stocks bull,1398,38051.75,27.22,1.97,60.0
+Indicement_US500a_H1_US500.a_H1_OHLC,ea,GOLD,gold downtrend,441,19305.34,43.78,2.95,30.4
+Indicement_US500a_H1_US500.a_H1_OHLC,ea,GOLD,gold uptrend,1336,44136.92,33.04,2.3,69.6
+Indicement_US500a_H1_US500.a_H1_OHLC,ea,BTC,crypto bear,787,25707.12,32.66,2.21,37.9
+Indicement_US500a_H1_US500.a_H1_OHLC,ea,BTC,crypto bull,1053,42045.4,39.93,2.73,62.1
+Indicement_US500a_H1_US500.a_H1_OHLC,ea,US10Y,rates falling,716,26778.16,37.4,2.39,38.9
+Indicement_US500a_H1_US500.a_H1_OHLC,ea,US10Y,rates rising,1164,42008.66,36.09,2.57,61.1
+Indicement_US500a_H1_US500.a_H1_OHLC,ea,OIL,oil downtrend,928,35140.62,37.87,2.42,55.4
+Indicement_US500a_H1_US500.a_H1_OHLC,ea,OIL,oil uptrend,849,28301.64,33.34,2.54,44.6
+Indicement_US500a_H1_US500.a_H1_OHLC,ea,VIX,calm,405,11718.64,28.93,2.21,16.4
+Indicement_US500a_H1_US500.a_H1_OHLC,ea,VIX,normal,1206,36970.62,30.66,2.1,51.6
+Indicement_US500a_H1_US500.a_H1_OHLC,ea,VIX,stressed,370,22932.03,61.98,3.52,32.0
+Indicement_US500b_M15_US500.a_M15_OHLC,ea,DXY,strong dollar,990,22436.85,22.66,1.62,66.5
+Indicement_US500b_M15_US500.a_M15_OHLC,ea,DXY,weak dollar,891,11318.77,12.7,1.05,33.5
+Indicement_US500b_M15_US500.a_M15_OHLC,ea,SP500,stocks bear,379,13386.08,35.32,2.19,41.1
+Indicement_US500b_M15_US500.a_M15_OHLC,ea,SP500,stocks bull,1399,19184.1,13.71,1.11,58.9
+Indicement_US500b_M15_US500.a_M15_OHLC,ea,GOLD,gold downtrend,441,14883.05,33.75,2.22,45.7
+Indicement_US500b_M15_US500.a_M15_OHLC,ea,GOLD,gold uptrend,1337,17687.13,13.23,1.06,54.3
+Indicement_US500b_M15_US500.a_M15_OHLC,ea,BTC,crypto bear,788,15544.32,19.73,1.41,47.4
+Indicement_US500b_M15_US500.a_M15_OHLC,ea,BTC,crypto bull,1053,17273.45,16.4,1.31,52.6
+Indicement_US500b_M15_US500.a_M15_OHLC,ea,US10Y,rates falling,716,10979.88,15.34,1.2,32.5
+Indicement_US500b_M15_US500.a_M15_OHLC,ea,US10Y,rates rising,1165,22775.74,19.55,1.46,67.5
+Indicement_US500b_M15_US500.a_M15_OHLC,ea,OIL,oil downtrend,928,10558.92,11.38,0.89,32.4
+Indicement_US500b_M15_US500.a_M15_OHLC,ea,OIL,oil uptrend,850,22011.26,25.9,1.88,67.6
+Indicement_US500b_M15_US500.a_M15_OHLC,ea,VIX,calm,406,5149.87,12.68,1.11,13.2
+Indicement_US500b_M15_US500.a_M15_OHLC,ea,VIX,normal,1206,23760.07,19.7,1.49,61.1
+Indicement_US500b_M15_US500.a_M15_OHLC,ea,VIX,stressed,370,9985.53,26.99,1.77,25.7
+Indicement_US500c_M15_US500.a_M15_OHLC,ea,DXY,strong dollar,980,19051.85,19.44,1.7,70.9
+Indicement_US500c_M15_US500.a_M15_OHLC,ea,DXY,weak dollar,889,7825.76,8.8,0.88,29.1
+Indicement_US500c_M15_US500.a_M15_OHLC,ea,SP500,stocks bear,379,9686.88,25.56,1.91,37.5
+Indicement_US500c_M15_US500.a_M15_OHLC,ea,SP500,stocks bull,1387,16113.58,11.62,1.16,62.5
+Indicement_US500c_M15_US500.a_M15_OHLC,ea,GOLD,gold downtrend,430,12312.31,28.63,2.21,47.7
+Indicement_US500c_M15_US500.a_M15_OHLC,ea,GOLD,gold uptrend,1336,13488.15,10.1,1.01,52.3
+Indicement_US500c_M15_US500.a_M15_OHLC,ea,BTC,crypto bear,776,11952.17,15.4,1.32,45.9
+Indicement_US500c_M15_US500.a_M15_OHLC,ea,BTC,crypto bull,1053,14102.86,13.39,1.31,54.1
+Indicement_US500c_M15_US500.a_M15_OHLC,ea,US10Y,rates falling,716,7429.96,10.38,1.03,27.6
+Indicement_US500c_M15_US500.a_M15_OHLC,ea,US10Y,rates rising,1153,19447.65,16.87,1.5,72.4
+Indicement_US500c_M15_US500.a_M15_OHLC,ea,OIL,oil downtrend,926,12551.82,13.55,1.26,48.6
+Indicement_US500c_M15_US500.a_M15_OHLC,ea,OIL,oil uptrend,840,13248.64,15.77,1.44,51.4
+Indicement_US500c_M15_US500.a_M15_OHLC,ea,VIX,calm,404,2918.15,7.22,0.81,9.8
+Indicement_US500c_M15_US500.a_M15_OHLC,ea,VIX,normal,1196,19424.89,16.24,1.48,65.4
+Indicement_US500c_M15_US500.a_M15_OHLC,ea,VIX,stressed,370,7365.68,19.91,1.59,24.8
+Indicement_US500d_H1_US500.a_H1_OHLC,ea,DXY,strong dollar,983,8596.46,8.75,1.58,72.1
+Indicement_US500d_H1_US500.a_H1_OHLC,ea,DXY,weak dollar,889,3319.41,3.73,0.62,27.9
+Indicement_US500d_H1_US500.a_H1_OHLC,ea,SP500,stocks bear,379,5293.11,13.97,2.42,41.3
+Indicement_US500d_H1_US500.a_H1_OHLC,ea,SP500,stocks bull,1390,7521.28,5.41,0.96,58.7
+Indicement_US500d_H1_US500.a_H1_OHLC,ea,GOLD,gold downtrend,433,5564.14,12.85,2.35,43.4
+Indicement_US500d_H1_US500.a_H1_OHLC,ea,GOLD,gold uptrend,1336,7250.25,5.43,0.95,56.6
+Indicement_US500d_H1_US500.a_H1_OHLC,ea,BTC,crypto bear,779,4316.76,5.54,0.92,35.4
+Indicement_US500d_H1_US500.a_H1_OHLC,ea,BTC,crypto bull,1053,7884.52,7.49,1.34,64.6
+Indicement_US500d_H1_US500.a_H1_OHLC,ea,US10Y,rates falling,716,3858.25,5.39,0.93,32.4
+Indicement_US500d_H1_US500.a_H1_OHLC,ea,US10Y,rates rising,1156,8057.62,6.97,1.2,67.6
+Indicement_US500d_H1_US500.a_H1_OHLC,ea,OIL,oil downtrend,926,5416.93,5.85,1.0,42.3
+Indicement_US500d_H1_US500.a_H1_OHLC,ea,OIL,oil uptrend,843,7397.46,8.78,1.61,57.7
+Indicement_US500d_H1_US500.a_H1_OHLC,ea,VIX,calm,404,1775.54,4.39,0.83,13.2
+Indicement_US500d_H1_US500.a_H1_OHLC,ea,VIX,normal,1199,7166.94,5.98,1.04,53.3
+Indicement_US500d_H1_US500.a_H1_OHLC,ea,VIX,stressed,370,4509.89,12.19,1.9,33.5
+Indicement_US500e_Daily_US500.a_Daily_OHLC,ea,DXY,strong dollar,985,6793.14,6.9,1.24,74.0
+Indicement_US500e_Daily_US500.a_Daily_OHLC,ea,DXY,weak dollar,889,2389.7,2.69,0.51,26.0
+Indicement_US500e_Daily_US500.a_Daily_OHLC,ea,SP500,stocks bear,379,6303.84,16.63,2.83,61.2
+Indicement_US500e_Daily_US500.a_Daily_OHLC,ea,SP500,stocks bull,1392,3995.28,2.87,0.56,38.8
+Indicement_US500e_Daily_US500.a_Daily_OHLC,ea,GOLD,gold downtrend,435,5555.16,12.77,2.29,53.9
+Indicement_US500e_Daily_US500.a_Daily_OHLC,ea,GOLD,gold uptrend,1336,4743.96,3.55,0.68,46.1
+Indicement_US500e_Daily_US500.a_Daily_OHLC,ea,BTC,crypto bear,781,3600.26,4.61,0.78,40.0
+Indicement_US500e_Daily_US500.a_Daily_OHLC,ea,BTC,crypto bull,1053,5407.04,5.13,1.02,60.0
+Indicement_US500e_Daily_US500.a_Daily_OHLC,ea,US10Y,rates falling,716,2388.34,3.34,0.65,26.0
+Indicement_US500e_Daily_US500.a_Daily_OHLC,ea,US10Y,rates rising,1158,6794.5,5.87,1.05,74.0
+Indicement_US500e_Daily_US500.a_Daily_OHLC,ea,OIL,oil downtrend,926,6523.07,7.04,1.29,63.3
+Indicement_US500e_Daily_US500.a_Daily_OHLC,ea,OIL,oil uptrend,845,3776.05,4.47,0.86,36.7
+Indicement_US500e_Daily_US500.a_Daily_OHLC,ea,VIX,calm,404,-252.21,-0.62,-0.13,-2.7
+Indicement_US500e_Daily_US500.a_Daily_OHLC,ea,VIX,normal,1201,6384.76,5.32,0.98,67.2
+Indicement_US500e_Daily_US500.a_Daily_OHLC,ea,VIX,stressed,370,3374.85,9.12,1.51,35.5
+Indicement_US500f_Daily_US500.a_Daily_OHLC,ea,DXY,strong dollar,985,9173.12,9.31,1.71,61.3
+Indicement_US500f_Daily_US500.a_Daily_OHLC,ea,DXY,weak dollar,889,5786.08,6.51,1.31,38.7
+Indicement_US500f_Daily_US500.a_Daily_OHLC,ea,SP500,stocks bear,379,5872.8,15.5,2.23,42.4
+Indicement_US500f_Daily_US500.a_Daily_OHLC,ea,SP500,stocks bull,1392,7967.97,5.72,1.25,57.6
+Indicement_US500f_Daily_US500.a_Daily_OHLC,ea,GOLD,gold downtrend,435,5285.55,12.15,1.88,38.2
+Indicement_US500f_Daily_US500.a_Daily_OHLC,ea,GOLD,gold uptrend,1336,8555.22,6.4,1.37,61.8
+Indicement_US500f_Daily_US500.a_Daily_OHLC,ea,BTC,crypto bear,781,7395.87,9.47,1.49,52.5
+Indicement_US500f_Daily_US500.a_Daily_OHLC,ea,BTC,crypto bull,1053,6695.61,6.36,1.55,47.5
+Indicement_US500f_Daily_US500.a_Daily_OHLC,ea,US10Y,rates falling,716,4139.17,5.78,1.06,27.7
+Indicement_US500f_Daily_US500.a_Daily_OHLC,ea,US10Y,rates rising,1158,10820.03,9.34,1.84,72.3
+Indicement_US500f_Daily_US500.a_Daily_OHLC,ea,OIL,oil downtrend,926,8902.79,9.61,1.63,64.3
+Indicement_US500f_Daily_US500.a_Daily_OHLC,ea,OIL,oil uptrend,845,4937.98,5.84,1.39,35.7
+Indicement_US500f_Daily_US500.a_Daily_OHLC,ea,VIX,calm,404,1625.32,4.02,1.02,10.2
+Indicement_US500f_Daily_US500.a_Daily_OHLC,ea,VIX,normal,1201,7835.19,6.52,1.37,49.1
+Indicement_US500f_Daily_US500.a_Daily_OHLC,ea,VIX,stressed,370,6499.43,17.57,2.46,40.7
+ORBMASTER_DAX_M15_a_DE40.a_M15_OHLC,ea,DXY,strong dollar,989,19060.52,19.27,1.67,56.5
+ORBMASTER_DAX_M15_a_DE40.a_M15_OHLC,ea,DXY,weak dollar,891,14686.55,16.48,1.48,43.5
+ORBMASTER_DAX_M15_a_DE40.a_M15_OHLC,ea,SP500,stocks bear,379,6530.64,17.23,1.33,21.3
+ORBMASTER_DAX_M15_a_DE40.a_M15_OHLC,ea,SP500,stocks bull,1398,24133.69,17.26,1.59,78.7
+ORBMASTER_DAX_M15_a_DE40.a_M15_OHLC,ea,GOLD,gold downtrend,441,3733.03,8.46,0.75,12.2
+ORBMASTER_DAX_M15_a_DE40.a_M15_OHLC,ea,GOLD,gold uptrend,1336,26931.3,20.16,1.77,87.8
+ORBMASTER_DAX_M15_a_DE40.a_M15_OHLC,ea,BTC,crypto bear,787,10604.8,13.47,1.09,31.6
+ORBMASTER_DAX_M15_a_DE40.a_M15_OHLC,ea,BTC,crypto bull,1053,22949.61,21.79,2.03,68.4
+ORBMASTER_DAX_M15_a_DE40.a_M15_OHLC,ea,US10Y,rates falling,716,11615.25,16.22,1.33,34.4
+ORBMASTER_DAX_M15_a_DE40.a_M15_OHLC,ea,US10Y,rates rising,1164,22131.82,19.01,1.76,65.6
+ORBMASTER_DAX_M15_a_DE40.a_M15_OHLC,ea,OIL,oil downtrend,928,11820.1,12.74,1.09,38.5
+ORBMASTER_DAX_M15_a_DE40.a_M15_OHLC,ea,OIL,oil uptrend,849,18844.23,22.2,2.02,61.5
+ORBMASTER_DAX_M15_a_DE40.a_M15_OHLC,ea,VIX,calm,405,1916.98,4.73,0.53,5.4
+ORBMASTER_DAX_M15_a_DE40.a_M15_OHLC,ea,VIX,normal,1206,28445.92,23.59,2.13,79.8
+ORBMASTER_DAX_M15_a_DE40.a_M15_OHLC,ea,VIX,stressed,370,5304.15,14.34,1.04,14.9
+ORBMASTER_DAX_M15_c_DE40.a_M15_OHLC,ea,DXY,strong dollar,989,16316.4,16.5,1.26,42.9
+ORBMASTER_DAX_M15_c_DE40.a_M15_OHLC,ea,DXY,weak dollar,891,21673.15,24.32,1.79,57.1
+ORBMASTER_DAX_M15_c_DE40.a_M15_OHLC,ea,SP500,stocks bear,379,7556.53,19.94,1.41,20.9
+ORBMASTER_DAX_M15_c_DE40.a_M15_OHLC,ea,SP500,stocks bull,1398,28663.05,20.5,1.55,79.1
+ORBMASTER_DAX_M15_c_DE40.a_M15_OHLC,ea,GOLD,gold downtrend,441,5517.95,12.51,0.91,15.2
+ORBMASTER_DAX_M15_c_DE40.a_M15_OHLC,ea,GOLD,gold uptrend,1336,30701.63,22.98,1.73,84.8
+ORBMASTER_DAX_M15_c_DE40.a_M15_OHLC,ea,BTC,crypto bear,787,18513.67,23.52,1.64,49.0
+ORBMASTER_DAX_M15_c_DE40.a_M15_OHLC,ea,BTC,crypto bull,1053,19292.12,18.32,1.44,51.0
+ORBMASTER_DAX_M15_c_DE40.a_M15_OHLC,ea,US10Y,rates falling,716,11433.59,15.97,1.32,30.1
+ORBMASTER_DAX_M15_c_DE40.a_M15_OHLC,ea,US10Y,rates rising,1164,26555.96,22.81,1.63,69.9
+ORBMASTER_DAX_M15_c_DE40.a_M15_OHLC,ea,OIL,oil downtrend,928,10238.12,11.03,0.8,28.3
+ORBMASTER_DAX_M15_c_DE40.a_M15_OHLC,ea,OIL,oil uptrend,849,25981.46,30.6,2.35,71.7
+ORBMASTER_DAX_M15_c_DE40.a_M15_OHLC,ea,VIX,calm,405,1318.66,3.26,0.29,3.4
+ORBMASTER_DAX_M15_c_DE40.a_M15_OHLC,ea,VIX,normal,1206,34660.95,28.74,2.24,89.1
+ORBMASTER_DAX_M15_c_DE40.a_M15_OHLC,ea,VIX,stressed,370,2922.13,7.9,0.5,7.5
+ORBMASTER_DAX_M15_f_DE40.a_M15_OHLC,ea,DXY,strong dollar,989,26580.93,26.88,1.64,70.9
+ORBMASTER_DAX_M15_f_DE40.a_M15_OHLC,ea,DXY,weak dollar,891,10892.65,12.23,0.78,29.1
+ORBMASTER_DAX_M15_f_DE40.a_M15_OHLC,ea,SP500,stocks bear,379,9057.47,23.9,1.26,25.6
+ORBMASTER_DAX_M15_f_DE40.a_M15_OHLC,ea,SP500,stocks bull,1398,26313.03,18.82,1.24,74.4
+ORBMASTER_DAX_M15_f_DE40.a_M15_OHLC,ea,GOLD,gold downtrend,441,9386.85,21.29,1.32,26.5
+ORBMASTER_DAX_M15_f_DE40.a_M15_OHLC,ea,GOLD,gold uptrend,1336,25983.65,19.45,1.22,73.5
+ORBMASTER_DAX_M15_f_DE40.a_M15_OHLC,ea,BTC,crypto bear,787,15068.88,19.15,1.09,40.7
+ORBMASTER_DAX_M15_f_DE40.a_M15_OHLC,ea,BTC,crypto bull,1053,21995.39,20.89,1.39,59.3
+ORBMASTER_DAX_M15_f_DE40.a_M15_OHLC,ea,US10Y,rates falling,716,15502.11,21.65,1.27,41.4
+ORBMASTER_DAX_M15_f_DE40.a_M15_OHLC,ea,US10Y,rates rising,1164,21971.47,18.88,1.22,58.6
+ORBMASTER_DAX_M15_f_DE40.a_M15_OHLC,ea,OIL,oil downtrend,928,23139.0,24.93,1.49,65.4
+ORBMASTER_DAX_M15_f_DE40.a_M15_OHLC,ea,OIL,oil uptrend,849,12231.5,14.41,0.95,34.6
+ORBMASTER_DAX_M15_f_DE40.a_M15_OHLC,ea,VIX,calm,405,3947.92,9.75,0.86,9.8
+ORBMASTER_DAX_M15_f_DE40.a_M15_OHLC,ea,VIX,normal,1206,24812.94,20.57,1.34,61.5
+ORBMASTER_DAX_M15_f_DE40.a_M15_OHLC,ea,VIX,stressed,370,11616.1,31.39,1.48,28.8
+ORBMASTER_US30_M15_c_US30.a_M15_OHLC,ea,DXY,strong dollar,976,11548.58,11.83,0.77,41.7
+ORBMASTER_US30_M15_c_US30.a_M15_OHLC,ea,DXY,weak dollar,889,16151.02,18.17,1.25,58.3
+ORBMASTER_US30_M15_c_US30.a_M15_OHLC,ea,SP500,stocks bear,379,10944.01,28.88,1.73,45.0
+ORBMASTER_US30_M15_c_US30.a_M15_OHLC,ea,SP500,stocks bull,1383,13387.39,9.68,0.67,55.0
+ORBMASTER_US30_M15_c_US30.a_M15_OHLC,ea,GOLD,gold downtrend,426,5959.26,13.99,0.87,24.5
+ORBMASTER_US30_M15_c_US30.a_M15_OHLC,ea,GOLD,gold uptrend,1336,18372.14,13.75,0.94,75.5
+ORBMASTER_US30_M15_c_US30.a_M15_OHLC,ea,BTC,crypto bear,772,16406.5,21.25,1.31,59.5
+ORBMASTER_US30_M15_c_US30.a_M15_OHLC,ea,BTC,crypto bull,1053,11188.72,10.63,0.75,40.5
+ORBMASTER_US30_M15_c_US30.a_M15_OHLC,ea,US10Y,rates falling,716,2884.54,4.03,0.27,10.4
+ORBMASTER_US30_M15_c_US30.a_M15_OHLC,ea,US10Y,rates rising,1149,24815.06,21.6,1.45,89.6
+ORBMASTER_US30_M15_c_US30.a_M15_OHLC,ea,OIL,oil downtrend,926,17761.1,19.18,1.24,73.0
+ORBMASTER_US30_M15_c_US30.a_M15_OHLC,ea,OIL,oil uptrend,836,6570.3,7.86,0.54,27.0
+ORBMASTER_US30_M15_c_US30.a_M15_OHLC,ea,VIX,calm,404,8443.94,20.9,1.67,29.2
+ORBMASTER_US30_M15_c_US30.a_M15_OHLC,ea,VIX,normal,1192,9996.75,8.39,0.58,34.5
+ORBMASTER_US30_M15_c_US30.a_M15_OHLC,ea,VIX,stressed,370,10504.19,28.39,1.59,36.3
+ORBMASTER_US30_M15_f_US30.a_M15_OHLC,ea,DXY,strong dollar,975,14784.15,15.16,1.22,40.4
+ORBMASTER_US30_M15_f_US30.a_M15_OHLC,ea,DXY,weak dollar,889,21802.06,24.52,1.93,59.6
+ORBMASTER_US30_M15_f_US30.a_M15_OHLC,ea,SP500,stocks bear,379,7286.21,19.22,1.33,21.7
+ORBMASTER_US30_M15_f_US30.a_M15_OHLC,ea,SP500,stocks bull,1382,26344.94,19.06,1.58,78.3
+ORBMASTER_US30_M15_f_US30.a_M15_OHLC,ea,GOLD,gold downtrend,425,1816.34,4.27,0.3,5.4
+ORBMASTER_US30_M15_f_US30.a_M15_OHLC,ea,GOLD,gold uptrend,1336,31814.81,23.81,1.98,94.6
+ORBMASTER_US30_M15_f_US30.a_M15_OHLC,ea,BTC,crypto bear,771,14344.31,18.6,1.39,39.6
+ORBMASTER_US30_M15_f_US30.a_M15_OHLC,ea,BTC,crypto bull,1053,21846.85,20.75,1.74,60.4
+ORBMASTER_US30_M15_f_US30.a_M15_OHLC,ea,US10Y,rates falling,716,11181.58,15.62,1.24,30.6
+ORBMASTER_US30_M15_f_US30.a_M15_OHLC,ea,US10Y,rates rising,1148,25404.63,22.13,1.77,69.4
+ORBMASTER_US30_M15_f_US30.a_M15_OHLC,ea,OIL,oil downtrend,926,22286.21,24.07,1.82,66.3
+ORBMASTER_US30_M15_f_US30.a_M15_OHLC,ea,OIL,oil uptrend,835,11344.94,13.59,1.13,33.7
+ORBMASTER_US30_M15_f_US30.a_M15_OHLC,ea,VIX,calm,404,13217.05,32.72,2.94,34.7
+ORBMASTER_US30_M15_f_US30.a_M15_OHLC,ea,VIX,normal,1191,18403.72,15.45,1.26,48.3
+ORBMASTER_US30_M15_f_US30.a_M15_OHLC,ea,VIX,stressed,370,6443.06,17.41,1.23,16.9
+ORBMASTER_US30_M15_h_US30.a_M15_OHLC,ea,DXY,strong dollar,975,18240.55,18.71,1.23,45.5
+ORBMASTER_US30_M15_h_US30.a_M15_OHLC,ea,DXY,weak dollar,889,21880.91,24.61,1.6,54.5
+ORBMASTER_US30_M15_h_US30.a_M15_OHLC,ea,SP500,stocks bear,379,19779.03,52.19,2.83,53.8
+ORBMASTER_US30_M15_h_US30.a_M15_OHLC,ea,SP500,stocks bull,1382,17014.04,12.31,0.87,46.2
+ORBMASTER_US30_M15_h_US30.a_M15_OHLC,ea,GOLD,gold downtrend,425,12476.43,29.36,1.64,33.9
+ORBMASTER_US30_M15_h_US30.a_M15_OHLC,ea,GOLD,gold uptrend,1336,24316.64,18.2,1.27,66.1
+ORBMASTER_US30_M15_h_US30.a_M15_OHLC,ea,BTC,crypto bear,771,22073.68,28.63,1.74,56.9
+ORBMASTER_US30_M15_h_US30.a_M15_OHLC,ea,BTC,crypto bull,1053,16722.37,15.88,1.11,43.1
+ORBMASTER_US30_M15_h_US30.a_M15_OHLC,ea,US10Y,rates falling,716,8300.77,11.59,0.77,20.7
+ORBMASTER_US30_M15_h_US30.a_M15_OHLC,ea,US10Y,rates rising,1148,31820.69,27.72,1.8,79.3
+ORBMASTER_US30_M15_h_US30.a_M15_OHLC,ea,OIL,oil downtrend,926,22666.06,24.48,1.56,61.6
+ORBMASTER_US30_M15_h_US30.a_M15_OHLC,ea,OIL,oil uptrend,835,14127.01,16.92,1.15,38.4
+ORBMASTER_US30_M15_h_US30.a_M15_OHLC,ea,VIX,calm,404,15957.84,39.5,2.49,38.2
+ORBMASTER_US30_M15_h_US30.a_M15_OHLC,ea,VIX,normal,1191,9313.79,7.82,0.58,22.3
+ORBMASTER_US30_M15_h_US30.a_M15_OHLC,ea,VIX,stressed,370,16497.76,44.59,2.34,39.5
+ORBMASTER_US500_M15_a_US500.a_M15_OHLC,ea,DXY,strong dollar,990,33425.2,33.76,1.98,76.9
+ORBMASTER_US500_M15_a_US500.a_M15_OHLC,ea,DXY,weak dollar,891,10037.38,11.27,0.79,23.1
+ORBMASTER_US500_M15_a_US500.a_M15_OHLC,ea,SP500,stocks bear,379,13813.25,36.45,2.0,31.7
+ORBMASTER_US500_M15_a_US500.a_M15_OHLC,ea,SP500,stocks bull,1399,29805.68,21.3,1.39,68.3
+ORBMASTER_US500_M15_a_US500.a_M15_OHLC,ea,GOLD,gold downtrend,441,17555.93,39.81,2.22,40.2
+ORBMASTER_US500_M15_a_US500.a_M15_OHLC,ea,GOLD,gold uptrend,1337,26063.0,19.49,1.27,59.8
+ORBMASTER_US500_M15_a_US500.a_M15_OHLC,ea,BTC,crypto bear,788,23422.64,29.72,1.74,54.2
+ORBMASTER_US500_M15_a_US500.a_M15_OHLC,ea,BTC,crypto bull,1053,19785.87,18.79,1.25,45.8
+ORBMASTER_US500_M15_a_US500.a_M15_OHLC,ea,US10Y,rates falling,716,14633.51,20.44,1.35,33.7
+ORBMASTER_US500_M15_a_US500.a_M15_OHLC,ea,US10Y,rates rising,1165,28829.07,24.75,1.52,66.3
+ORBMASTER_US500_M15_a_US500.a_M15_OHLC,ea,OIL,oil downtrend,928,16928.76,18.24,1.2,38.8
+ORBMASTER_US500_M15_a_US500.a_M15_OHLC,ea,OIL,oil uptrend,850,26690.17,31.4,1.87,61.2
+ORBMASTER_US500_M15_a_US500.a_M15_OHLC,ea,VIX,calm,406,4217.46,10.39,0.82,8.8
+ORBMASTER_US500_M15_a_US500.a_M15_OHLC,ea,VIX,normal,1206,34552.77,28.65,1.75,72.3
+ORBMASTER_US500_M15_a_US500.a_M15_OHLC,ea,VIX,stressed,370,9019.21,24.38,1.4,18.9
+ORBMASTER_US500_M15_c_US500.a_M15_OHLC,ea,DXY,strong dollar,980,22414.18,22.87,1.5,50.6
+ORBMASTER_US500_M15_c_US500.a_M15_OHLC,ea,DXY,weak dollar,889,21879.71,24.61,1.72,49.4
+ORBMASTER_US500_M15_c_US500.a_M15_OHLC,ea,SP500,stocks bear,379,14848.66,39.18,2.17,35.4
+ORBMASTER_US500_M15_c_US500.a_M15_OHLC,ea,SP500,stocks bull,1387,27119.11,19.55,1.41,64.6
+ORBMASTER_US500_M15_c_US500.a_M15_OHLC,ea,GOLD,gold downtrend,430,13482.46,31.35,1.82,32.1
+ORBMASTER_US500_M15_c_US500.a_M15_OHLC,ea,GOLD,gold uptrend,1336,28485.31,21.32,1.52,67.9
+ORBMASTER_US500_M15_c_US500.a_M15_OHLC,ea,BTC,crypto bear,776,17804.67,22.94,1.46,41.7
+ORBMASTER_US500_M15_c_US500.a_M15_OHLC,ea,BTC,crypto bull,1053,24880.37,23.63,1.68,58.3
+ORBMASTER_US500_M15_c_US500.a_M15_OHLC,ea,US10Y,rates falling,716,15759.05,22.01,1.58,35.6
+ORBMASTER_US500_M15_c_US500.a_M15_OHLC,ea,US10Y,rates rising,1153,28534.84,24.75,1.62,64.4
+ORBMASTER_US500_M15_c_US500.a_M15_OHLC,ea,OIL,oil downtrend,926,17787.7,19.21,1.34,42.4
+ORBMASTER_US500_M15_c_US500.a_M15_OHLC,ea,OIL,oil uptrend,840,24180.07,28.79,1.86,57.6
+ORBMASTER_US500_M15_c_US500.a_M15_OHLC,ea,VIX,calm,404,4190.2,10.37,0.95,8.5
+ORBMASTER_US500_M15_c_US500.a_M15_OHLC,ea,VIX,normal,1196,34208.18,28.6,1.82,69.5
+ORBMASTER_US500_M15_c_US500.a_M15_OHLC,ea,VIX,stressed,370,10816.61,29.23,1.77,22.0
+ORBMASTER_US500_M15_d_US500.a_M15_OHLC,ea,DXY,strong dollar,990,26057.51,26.32,1.53,71.3
+ORBMASTER_US500_M15_d_US500.a_M15_OHLC,ea,DXY,weak dollar,891,10478.07,11.76,0.8,28.7
+ORBMASTER_US500_M15_d_US500.a_M15_OHLC,ea,SP500,stocks bear,379,11927.59,31.47,1.68,34.0
+ORBMASTER_US500_M15_d_US500.a_M15_OHLC,ea,SP500,stocks bull,1399,23161.72,16.56,1.08,66.0
+ORBMASTER_US500_M15_d_US500.a_M15_OHLC,ea,GOLD,gold downtrend,441,14817.66,33.6,1.87,42.2
+ORBMASTER_US500_M15_d_US500.a_M15_OHLC,ea,GOLD,gold uptrend,1337,20271.65,15.16,0.98,57.8
+ORBMASTER_US500_M15_d_US500.a_M15_OHLC,ea,BTC,crypto bear,788,16998.29,21.57,1.26,50.0
+ORBMASTER_US500_M15_d_US500.a_M15_OHLC,ea,BTC,crypto bull,1053,17001.94,16.15,1.06,50.0
+ORBMASTER_US500_M15_d_US500.a_M15_OHLC,ea,US10Y,rates falling,716,14103.22,19.7,1.22,38.6
+ORBMASTER_US500_M15_d_US500.a_M15_OHLC,ea,US10Y,rates rising,1165,22432.36,19.26,1.2,61.4
+ORBMASTER_US500_M15_d_US500.a_M15_OHLC,ea,OIL,oil downtrend,928,11963.47,12.89,0.83,34.1
+ORBMASTER_US500_M15_d_US500.a_M15_OHLC,ea,OIL,oil uptrend,850,23125.84,27.21,1.62,65.9
+ORBMASTER_US500_M15_d_US500.a_M15_OHLC,ea,VIX,calm,406,5689.43,14.01,1.0,13.6
+ORBMASTER_US500_M15_d_US500.a_M15_OHLC,ea,VIX,normal,1206,29005.19,24.05,1.49,69.1
+ORBMASTER_US500_M15_d_US500.a_M15_OHLC,ea,VIX,stressed,370,7274.32,19.66,1.07,17.3
+ORBMASTER_USTEC_M15_a_USTEC.a_M15_OHLC,ea,DXY,strong dollar,990,30232.98,30.54,2.24,64.7
+ORBMASTER_USTEC_M15_a_USTEC.a_M15_OHLC,ea,DXY,weak dollar,891,16459.17,18.47,1.44,35.3
+ORBMASTER_USTEC_M15_a_USTEC.a_M15_OHLC,ea,SP500,stocks bear,379,20004.54,52.78,3.56,42.9
+ORBMASTER_USTEC_M15_a_USTEC.a_M15_OHLC,ea,SP500,stocks bull,1399,26613.14,19.02,1.48,57.1
+ORBMASTER_USTEC_M15_a_USTEC.a_M15_OHLC,ea,GOLD,gold downtrend,441,15999.09,36.28,2.61,34.3
+ORBMASTER_USTEC_M15_a_USTEC.a_M15_OHLC,ea,GOLD,gold uptrend,1337,30618.59,22.9,1.74,65.7
+ORBMASTER_USTEC_M15_a_USTEC.a_M15_OHLC,ea,BTC,crypto bear,788,20500.72,26.02,1.84,43.5
+ORBMASTER_USTEC_M15_a_USTEC.a_M15_OHLC,ea,BTC,crypto bull,1053,26603.67,25.26,2.0,56.5
+ORBMASTER_USTEC_M15_a_USTEC.a_M15_OHLC,ea,US10Y,rates falling,716,11673.83,16.3,1.21,25.0
+ORBMASTER_USTEC_M15_a_USTEC.a_M15_OHLC,ea,US10Y,rates rising,1165,35018.32,30.06,2.28,75.0
+ORBMASTER_USTEC_M15_a_USTEC.a_M15_OHLC,ea,OIL,oil downtrend,928,17224.76,18.56,1.35,36.9
+ORBMASTER_USTEC_M15_a_USTEC.a_M15_OHLC,ea,OIL,oil uptrend,850,29392.92,34.58,2.69,63.1
+ORBMASTER_USTEC_M15_a_USTEC.a_M15_OHLC,ea,VIX,calm,406,1928.96,4.75,0.37,4.1
+ORBMASTER_USTEC_M15_a_USTEC.a_M15_OHLC,ea,VIX,normal,1206,25952.52,21.52,1.66,55.3
+ORBMASTER_USTEC_M15_a_USTEC.a_M15_OHLC,ea,VIX,stressed,370,19022.28,51.41,3.44,40.6
+ORBMASTER_USTEC_M15_e_USTEC.a_M15_OHLC,ea,DXY,strong dollar,989,13919.71,14.07,1.11,44.9
+ORBMASTER_USTEC_M15_e_USTEC.a_M15_OHLC,ea,DXY,weak dollar,891,17073.78,19.16,1.51,55.1
+ORBMASTER_USTEC_M15_e_USTEC.a_M15_OHLC,ea,SP500,stocks bear,379,10946.83,28.88,2.04,39.3
+ORBMASTER_USTEC_M15_e_USTEC.a_M15_OHLC,ea,SP500,stocks bull,1398,16922.01,12.1,0.99,60.7
+ORBMASTER_USTEC_M15_e_USTEC.a_M15_OHLC,ea,GOLD,gold downtrend,441,5621.14,12.75,1.05,20.2
+ORBMASTER_USTEC_M15_e_USTEC.a_M15_OHLC,ea,GOLD,gold uptrend,1336,22247.7,16.65,1.3,79.8
+ORBMASTER_USTEC_M15_e_USTEC.a_M15_OHLC,ea,BTC,crypto bear,787,9716.72,12.35,0.96,32.9
+ORBMASTER_USTEC_M15_e_USTEC.a_M15_OHLC,ea,BTC,crypto bull,1053,19783.67,18.79,1.48,67.1
+ORBMASTER_USTEC_M15_e_USTEC.a_M15_OHLC,ea,US10Y,rates falling,716,13910.03,19.43,1.5,44.9
+ORBMASTER_USTEC_M15_e_USTEC.a_M15_OHLC,ea,US10Y,rates rising,1164,17083.46,14.68,1.17,55.1
+ORBMASTER_USTEC_M15_e_USTEC.a_M15_OHLC,ea,OIL,oil downtrend,928,20052.1,21.61,1.68,72.0
+ORBMASTER_USTEC_M15_e_USTEC.a_M15_OHLC,ea,OIL,oil uptrend,849,7816.74,9.21,0.74,28.0
+ORBMASTER_USTEC_M15_e_USTEC.a_M15_OHLC,ea,VIX,calm,405,2557.31,6.31,0.58,8.2
+ORBMASTER_USTEC_M15_e_USTEC.a_M15_OHLC,ea,VIX,normal,1206,23638.78,19.6,1.51,75.5
+ORBMASTER_USTEC_M15_e_USTEC.a_M15_OHLC,ea,VIX,stressed,370,5117.49,13.83,1.04,16.3
+ORBMASTER_USTEC_M15_g_USTEC.a_M15_OHLC,ea,DXY,strong dollar,989,5841.14,5.91,0.54,46.8
+ORBMASTER_USTEC_M15_g_USTEC.a_M15_OHLC,ea,DXY,weak dollar,891,6639.19,7.45,0.69,53.2
+ORBMASTER_USTEC_M15_g_USTEC.a_M15_OHLC,ea,SP500,stocks bear,379,2211.1,5.83,0.49,23.1
+ORBMASTER_USTEC_M15_g_USTEC.a_M15_OHLC,ea,SP500,stocks bull,1398,7352.05,5.26,0.5,76.9
+ORBMASTER_USTEC_M15_g_USTEC.a_M15_OHLC,ea,GOLD,gold downtrend,441,-1547.96,-3.51,-0.34,-16.2
+ORBMASTER_USTEC_M15_g_USTEC.a_M15_OHLC,ea,GOLD,gold uptrend,1336,11111.11,8.32,0.76,116.2
+ORBMASTER_USTEC_M15_g_USTEC.a_M15_OHLC,ea,BTC,crypto bear,787,530.78,0.67,0.06,4.5
+ORBMASTER_USTEC_M15_g_USTEC.a_M15_OHLC,ea,BTC,crypto bull,1053,11138.81,10.58,0.98,95.5
+ORBMASTER_USTEC_M15_g_USTEC.a_M15_OHLC,ea,US10Y,rates falling,716,4753.75,6.64,0.6,38.1
+ORBMASTER_USTEC_M15_g_USTEC.a_M15_OHLC,ea,US10Y,rates rising,1164,7726.58,6.64,0.61,61.9
+ORBMASTER_USTEC_M15_g_USTEC.a_M15_OHLC,ea,OIL,oil downtrend,928,5619.44,6.06,0.54,58.8
+ORBMASTER_USTEC_M15_g_USTEC.a_M15_OHLC,ea,OIL,oil uptrend,849,3943.71,4.65,0.44,41.2
+ORBMASTER_USTEC_M15_g_USTEC.a_M15_OHLC,ea,VIX,calm,405,577.72,1.43,0.15,3.9
+ORBMASTER_USTEC_M15_g_USTEC.a_M15_OHLC,ea,VIX,normal,1206,12571.83,10.42,0.92,85.6
+ORBMASTER_USTEC_M15_g_USTEC.a_M15_OHLC,ea,VIX,stressed,370,1533.49,4.14,0.36,10.4
+OtherSets_nas100_H1_A_USTEC.a_H1_OHLC,ea,DXY,strong dollar,990,14766.15,14.92,0.96,32.6
+OtherSets_nas100_H1_A_USTEC.a_H1_OHLC,ea,DXY,weak dollar,891,30584.42,34.33,1.97,67.4
+OtherSets_nas100_H1_A_USTEC.a_H1_OHLC,ea,SP500,stocks bear,379,7933.46,20.93,1.27,17.4
+OtherSets_nas100_H1_A_USTEC.a_H1_OHLC,ea,SP500,stocks bull,1399,37739.34,26.98,1.65,82.6
+OtherSets_nas100_H1_A_USTEC.a_H1_OHLC,ea,GOLD,gold downtrend,441,6075.86,13.78,0.91,13.3
+OtherSets_nas100_H1_A_USTEC.a_H1_OHLC,ea,GOLD,gold uptrend,1337,39596.94,29.62,1.77,86.7
+OtherSets_nas100_H1_A_USTEC.a_H1_OHLC,ea,BTC,crypto bear,788,11571.06,14.68,0.89,24.9
+OtherSets_nas100_H1_A_USTEC.a_H1_OHLC,ea,BTC,crypto bull,1053,34889.16,33.13,2.02,75.1
+OtherSets_nas100_H1_A_USTEC.a_H1_OHLC,ea,US10Y,rates falling,716,27938.94,39.02,2.32,61.6
+OtherSets_nas100_H1_A_USTEC.a_H1_OHLC,ea,US10Y,rates rising,1165,17411.63,14.95,0.92,38.4
+OtherSets_nas100_H1_A_USTEC.a_H1_OHLC,ea,OIL,oil downtrend,928,31453.62,33.89,2.03,68.9
+OtherSets_nas100_H1_A_USTEC.a_H1_OHLC,ea,OIL,oil uptrend,850,14219.18,16.73,1.04,31.1
+OtherSets_nas100_H1_A_USTEC.a_H1_OHLC,ea,VIX,calm,406,6649.69,16.38,0.96,14.0
+OtherSets_nas100_H1_A_USTEC.a_H1_OHLC,ea,VIX,normal,1206,29391.23,24.37,1.49,62.0
+OtherSets_nas100_H1_A_USTEC.a_H1_OHLC,ea,VIX,stressed,370,11390.35,30.78,1.8,24.0
+OtherSets_nas100_H1_C_USTEC.a_H1_OHLC,ea,DXY,strong dollar,990,24517.69,24.77,1.41,52.7
+OtherSets_nas100_H1_C_USTEC.a_H1_OHLC,ea,DXY,weak dollar,891,21968.64,24.66,1.44,47.3
+OtherSets_nas100_H1_C_USTEC.a_H1_OHLC,ea,SP500,stocks bear,379,16255.72,42.89,2.29,37.5
+OtherSets_nas100_H1_C_USTEC.a_H1_OHLC,ea,SP500,stocks bull,1399,27145.71,19.4,1.14,62.5
+OtherSets_nas100_H1_C_USTEC.a_H1_OHLC,ea,GOLD,gold downtrend,441,15607.74,35.39,2.18,36.0
+OtherSets_nas100_H1_C_USTEC.a_H1_OHLC,ea,GOLD,gold uptrend,1337,27793.69,20.79,1.17,64.0
+OtherSets_nas100_H1_C_USTEC.a_H1_OHLC,ea,BTC,crypto bear,788,20680.24,26.24,1.51,43.9
+OtherSets_nas100_H1_C_USTEC.a_H1_OHLC,ea,BTC,crypto bull,1053,26427.27,25.1,1.43,56.1
+OtherSets_nas100_H1_C_USTEC.a_H1_OHLC,ea,US10Y,rates falling,716,21956.28,30.67,1.7,47.2
+OtherSets_nas100_H1_C_USTEC.a_H1_OHLC,ea,US10Y,rates rising,1165,24530.05,21.06,1.24,52.8
+OtherSets_nas100_H1_C_USTEC.a_H1_OHLC,ea,OIL,oil downtrend,928,24773.71,26.7,1.55,57.1
+OtherSets_nas100_H1_C_USTEC.a_H1_OHLC,ea,OIL,oil uptrend,850,18627.72,21.91,1.23,42.9
+OtherSets_nas100_H1_C_USTEC.a_H1_OHLC,ea,VIX,calm,406,-3111.9,-7.66,-0.49,-5.8
+OtherSets_nas100_H1_C_USTEC.a_H1_OHLC,ea,VIX,normal,1206,39065.59,32.39,1.8,73.2
+OtherSets_nas100_H1_C_USTEC.a_H1_OHLC,ea,VIX,stressed,370,17385.68,46.99,2.53,32.6
+OtherSets_nas100_H1_E_USTEC.a_H1_OHLC,ea,DXY,strong dollar,990,46701.98,47.17,1.5,53.8
+OtherSets_nas100_H1_E_USTEC.a_H1_OHLC,ea,DXY,weak dollar,891,40142.74,45.05,1.43,46.2
+OtherSets_nas100_H1_E_USTEC.a_H1_OHLC,ea,SP500,stocks bear,379,35220.49,92.93,2.58,40.0
+OtherSets_nas100_H1_E_USTEC.a_H1_OHLC,ea,SP500,stocks bull,1399,52916.59,37.82,1.29,60.0
+OtherSets_nas100_H1_E_USTEC.a_H1_OHLC,ea,GOLD,gold downtrend,441,28364.76,64.32,2.42,32.2
+OtherSets_nas100_H1_E_USTEC.a_H1_OHLC,ea,GOLD,gold uptrend,1337,59772.32,44.71,1.39,67.8
+OtherSets_nas100_H1_E_USTEC.a_H1_OHLC,ea,BTC,crypto bear,788,37731.27,47.88,1.43,43.5
+OtherSets_nas100_H1_E_USTEC.a_H1_OHLC,ea,BTC,crypto bull,1053,49102.12,46.63,1.57,56.5
+OtherSets_nas100_H1_E_USTEC.a_H1_OHLC,ea,US10Y,rates falling,716,39214.8,54.77,1.58,45.2
+OtherSets_nas100_H1_E_USTEC.a_H1_OHLC,ea,US10Y,rates rising,1165,47629.92,40.88,1.4,54.8
+OtherSets_nas100_H1_E_USTEC.a_H1_OHLC,ea,OIL,oil downtrend,928,54741.09,58.99,1.8,62.1
+OtherSets_nas100_H1_E_USTEC.a_H1_OHLC,ea,OIL,oil uptrend,850,33395.99,39.29,1.37,37.9
+OtherSets_nas100_H1_E_USTEC.a_H1_OHLC,ea,VIX,calm,406,-3503.02,-8.63,-0.31,-3.8
+OtherSets_nas100_H1_E_USTEC.a_H1_OHLC,ea,VIX,normal,1206,63834.62,52.93,1.7,69.9
+OtherSets_nas100_H1_E_USTEC.a_H1_OHLC,ea,VIX,stressed,370,30982.47,83.74,2.31,33.9
+OtherSets_nas100_H1_G_USTEC.a_H1_OHLC,ea,DXY,strong dollar,990,42743.77,43.18,2.16,68.3
+OtherSets_nas100_H1_G_USTEC.a_H1_OHLC,ea,DXY,weak dollar,891,19856.99,22.29,1.16,31.7
+OtherSets_nas100_H1_G_USTEC.a_H1_OHLC,ea,SP500,stocks bear,379,20756.9,54.77,2.75,34.7
+OtherSets_nas100_H1_G_USTEC.a_H1_OHLC,ea,SP500,stocks bull,1399,39097.45,27.95,1.44,65.3
+OtherSets_nas100_H1_G_USTEC.a_H1_OHLC,ea,GOLD,gold downtrend,441,23383.81,53.02,2.49,39.1
+OtherSets_nas100_H1_G_USTEC.a_H1_OHLC,ea,GOLD,gold uptrend,1337,36470.54,27.28,1.44,60.9
+OtherSets_nas100_H1_G_USTEC.a_H1_OHLC,ea,BTC,crypto bear,788,24248.34,30.77,1.82,38.5
+OtherSets_nas100_H1_G_USTEC.a_H1_OHLC,ea,BTC,crypto bull,1053,38741.07,36.79,1.73,61.5
+OtherSets_nas100_H1_G_USTEC.a_H1_OHLC,ea,US10Y,rates falling,716,17310.36,24.18,1.29,27.7
+OtherSets_nas100_H1_G_USTEC.a_H1_OHLC,ea,US10Y,rates rising,1165,45290.4,38.88,1.93,72.3
+OtherSets_nas100_H1_G_USTEC.a_H1_OHLC,ea,OIL,oil downtrend,928,24551.55,26.46,1.29,41.0
+OtherSets_nas100_H1_G_USTEC.a_H1_OHLC,ea,OIL,oil uptrend,850,35302.8,41.53,2.25,59.0
+OtherSets_nas100_H1_G_USTEC.a_H1_OHLC,ea,VIX,calm,406,7615.91,18.76,1.09,11.5
+OtherSets_nas100_H1_G_USTEC.a_H1_OHLC,ea,VIX,normal,1206,41465.0,34.38,1.77,62.6
+OtherSets_nas100_H1_G_USTEC.a_H1_OHLC,ea,VIX,stressed,370,17155.58,46.37,2.07,25.9
+OtherSets_nas100_H1_L_USTEC.a_H1_OHLC,ea,DXY,strong dollar,990,36930.52,37.3,1.6,53.5
+OtherSets_nas100_H1_L_USTEC.a_H1_OHLC,ea,DXY,weak dollar,891,32148.77,36.08,1.7,46.5
+OtherSets_nas100_H1_L_USTEC.a_H1_OHLC,ea,SP500,stocks bear,379,14233.73,37.56,1.8,23.1
+OtherSets_nas100_H1_L_USTEC.a_H1_OHLC,ea,SP500,stocks bull,1399,47423.35,33.9,1.48,76.9
+OtherSets_nas100_H1_L_USTEC.a_H1_OHLC,ea,GOLD,gold downtrend,441,19394.8,43.98,2.12,31.5
+OtherSets_nas100_H1_L_USTEC.a_H1_OHLC,ea,GOLD,gold uptrend,1337,42262.28,31.61,1.38,68.5
+OtherSets_nas100_H1_L_USTEC.a_H1_OHLC,ea,BTC,crypto bear,788,21588.58,27.4,1.33,31.7
+OtherSets_nas100_H1_L_USTEC.a_H1_OHLC,ea,BTC,crypto bull,1053,46413.68,44.08,1.88,68.3
+OtherSets_nas100_H1_L_USTEC.a_H1_OHLC,ea,US10Y,rates falling,716,28372.3,39.63,1.73,41.1
+OtherSets_nas100_H1_L_USTEC.a_H1_OHLC,ea,US10Y,rates rising,1165,40706.99,34.94,1.59,58.9
+OtherSets_nas100_H1_L_USTEC.a_H1_OHLC,ea,OIL,oil downtrend,928,32630.72,35.16,1.47,52.9
+OtherSets_nas100_H1_L_USTEC.a_H1_OHLC,ea,OIL,oil uptrend,850,29026.36,34.15,1.65,47.1
+OtherSets_nas100_H1_L_USTEC.a_H1_OHLC,ea,VIX,calm,406,6340.34,15.62,0.82,8.4
+OtherSets_nas100_H1_L_USTEC.a_H1_OHLC,ea,VIX,normal,1206,50567.9,41.93,1.85,67.1
+OtherSets_nas100_H1_L_USTEC.a_H1_OHLC,ea,VIX,stressed,370,18452.9,49.87,2.06,24.5
+VolatilityBreakout_EURUSD_e_EURUSD.a_M15_OHLC,ea,DXY,strong dollar,969,9761.92,10.07,0.93,80.1
+VolatilityBreakout_EURUSD_e_EURUSD.a_M15_OHLC,ea,DXY,weak dollar,889,2429.55,2.73,0.27,19.9
+VolatilityBreakout_EURUSD_e_EURUSD.a_M15_OHLC,ea,SP500,stocks bear,379,1248.75,3.29,0.31,9.6
+VolatilityBreakout_EURUSD_e_EURUSD.a_M15_OHLC,ea,SP500,stocks bull,1376,11703.97,8.51,0.79,90.4
+VolatilityBreakout_EURUSD_e_EURUSD.a_M15_OHLC,ea,GOLD,gold downtrend,419,4365.88,10.42,0.84,33.7
+VolatilityBreakout_EURUSD_e_EURUSD.a_M15_OHLC,ea,GOLD,gold uptrend,1336,8586.84,6.43,0.64,66.3
+VolatilityBreakout_EURUSD_e_EURUSD.a_M15_OHLC,ea,BTC,crypto bear,765,-1115.82,-1.46,-0.13,-8.6
+VolatilityBreakout_EURUSD_e_EURUSD.a_M15_OHLC,ea,BTC,crypto bull,1053,14068.54,13.36,1.33,108.6
+VolatilityBreakout_EURUSD_e_EURUSD.a_M15_OHLC,ea,US10Y,rates falling,716,3816.47,5.33,0.54,31.3
+VolatilityBreakout_EURUSD_e_EURUSD.a_M15_OHLC,ea,US10Y,rates rising,1142,8375.0,7.33,0.68,68.7
+VolatilityBreakout_EURUSD_e_EURUSD.a_M15_OHLC,ea,OIL,oil downtrend,926,6044.46,6.53,0.6,46.7
+VolatilityBreakout_EURUSD_e_EURUSD.a_M15_OHLC,ea,OIL,oil uptrend,829,6908.26,8.33,0.8,53.3
+VolatilityBreakout_EURUSD_e_EURUSD.a_M15_OHLC,ea,VIX,calm,404,2431.86,6.02,0.52,20.2
+VolatilityBreakout_EURUSD_e_EURUSD.a_M15_OHLC,ea,VIX,normal,1185,7358.27,6.21,0.62,61.1
+VolatilityBreakout_EURUSD_e_EURUSD.a_M15_OHLC,ea,VIX,stressed,370,2262.5,6.11,0.62,18.8
+VolatilityBreakout_EURUSD_f_EURUSD.a_M15_OHLC,ea,DXY,strong dollar,988,3233.53,3.27,0.23,42.3
+VolatilityBreakout_EURUSD_f_EURUSD.a_M15_OHLC,ea,DXY,weak dollar,891,4412.71,4.95,0.4,57.7
+VolatilityBreakout_EURUSD_f_EURUSD.a_M15_OHLC,ea,SP500,stocks bear,379,1067.5,2.82,0.27,12.5
+VolatilityBreakout_EURUSD_f_EURUSD.a_M15_OHLC,ea,SP500,stocks bull,1397,7484.99,5.36,0.38,87.5
+VolatilityBreakout_EURUSD_f_EURUSD.a_M15_OHLC,ea,GOLD,gold downtrend,440,4042.47,9.19,0.64,47.3
+VolatilityBreakout_EURUSD_f_EURUSD.a_M15_OHLC,ea,GOLD,gold uptrend,1336,4510.02,3.38,0.25,52.7
+VolatilityBreakout_EURUSD_f_EURUSD.a_M15_OHLC,ea,BTC,crypto bear,786,-396.91,-0.5,-0.04,-4.6
+VolatilityBreakout_EURUSD_f_EURUSD.a_M15_OHLC,ea,BTC,crypto bull,1053,8949.4,8.5,0.65,104.6
+VolatilityBreakout_EURUSD_f_EURUSD.a_M15_OHLC,ea,US10Y,rates falling,716,4092.63,5.72,0.44,53.5
+VolatilityBreakout_EURUSD_f_EURUSD.a_M15_OHLC,ea,US10Y,rates rising,1163,3553.61,3.06,0.23,46.5
+VolatilityBreakout_EURUSD_f_EURUSD.a_M15_OHLC,ea,OIL,oil downtrend,928,5648.87,6.09,0.45,66.0
+VolatilityBreakout_EURUSD_f_EURUSD.a_M15_OHLC,ea,OIL,oil uptrend,848,2903.62,3.42,0.25,34.0
+VolatilityBreakout_EURUSD_f_EURUSD.a_M15_OHLC,ea,VIX,calm,405,-155.96,-0.39,-0.03,-2.3
+VolatilityBreakout_EURUSD_f_EURUSD.a_M15_OHLC,ea,VIX,normal,1205,3430.25,2.85,0.21,49.8
+VolatilityBreakout_EURUSD_f_EURUSD.a_M15_OHLC,ea,VIX,stressed,370,3611.25,9.76,1.05,52.4
+VolatilityBreakout_EURUSD_i_EURUSD.a_M15_OHLC,ea,DXY,strong dollar,990,11306.32,11.42,1.05,70.0
+VolatilityBreakout_EURUSD_i_EURUSD.a_M15_OHLC,ea,DXY,weak dollar,891,4846.32,5.44,0.62,30.0
+VolatilityBreakout_EURUSD_i_EURUSD.a_M15_OHLC,ea,SP500,stocks bear,379,6901.07,18.21,1.9,42.6
+VolatilityBreakout_EURUSD_i_EURUSD.a_M15_OHLC,ea,SP500,stocks bull,1399,9285.52,6.64,0.65,57.4
+VolatilityBreakout_EURUSD_i_EURUSD.a_M15_OHLC,ea,GOLD,gold downtrend,441,4809.13,10.91,1.16,29.7
+VolatilityBreakout_EURUSD_i_EURUSD.a_M15_OHLC,ea,GOLD,gold uptrend,1337,11377.46,8.51,0.83,70.3
+VolatilityBreakout_EURUSD_i_EURUSD.a_M15_OHLC,ea,BTC,crypto bear,788,6113.13,7.76,0.83,40.2
+VolatilityBreakout_EURUSD_i_EURUSD.a_M15_OHLC,ea,BTC,crypto bull,1053,9101.93,8.64,0.83,59.8
+VolatilityBreakout_EURUSD_i_EURUSD.a_M15_OHLC,ea,US10Y,rates falling,716,2792.3,3.9,0.47,17.3
+VolatilityBreakout_EURUSD_i_EURUSD.a_M15_OHLC,ea,US10Y,rates rising,1165,13360.34,11.47,1.05,82.7
+VolatilityBreakout_EURUSD_i_EURUSD.a_M15_OHLC,ea,OIL,oil downtrend,928,9675.01,10.43,0.98,59.8
+VolatilityBreakout_EURUSD_i_EURUSD.a_M15_OHLC,ea,OIL,oil uptrend,850,6511.58,7.66,0.81,40.2
+VolatilityBreakout_EURUSD_i_EURUSD.a_M15_OHLC,ea,VIX,calm,406,-53.76,-0.13,-0.01,-0.3
+VolatilityBreakout_EURUSD_i_EURUSD.a_M15_OHLC,ea,VIX,normal,1206,12765.95,10.59,1.03,69.7
+VolatilityBreakout_EURUSD_i_EURUSD.a_M15_OHLC,ea,VIX,stressed,370,5600.32,15.14,1.65,30.6
+VolatilityBreakout_EURUSD_k_EURUSD.a_M15_OHLC,ea,DXY,strong dollar,989,2693.06,2.72,0.17,20.7
+VolatilityBreakout_EURUSD_k_EURUSD.a_M15_OHLC,ea,DXY,weak dollar,891,10299.03,11.56,0.81,79.3
+VolatilityBreakout_EURUSD_k_EURUSD.a_M15_OHLC,ea,SP500,stocks bear,379,2342.94,6.18,0.51,18.0
+VolatilityBreakout_EURUSD_k_EURUSD.a_M15_OHLC,ea,SP500,stocks bull,1398,10649.15,7.62,0.47,82.0
+VolatilityBreakout_EURUSD_k_EURUSD.a_M15_OHLC,ea,GOLD,gold downtrend,441,1908.4,4.33,0.26,14.7
+VolatilityBreakout_EURUSD_k_EURUSD.a_M15_OHLC,ea,GOLD,gold uptrend,1336,11083.69,8.3,0.55,85.3
+VolatilityBreakout_EURUSD_k_EURUSD.a_M15_OHLC,ea,BTC,crypto bear,787,-1292.4,-1.64,-0.11,-9.9
+VolatilityBreakout_EURUSD_k_EURUSD.a_M15_OHLC,ea,BTC,crypto bull,1053,14284.49,13.57,0.89,109.9
+VolatilityBreakout_EURUSD_k_EURUSD.a_M15_OHLC,ea,US10Y,rates falling,716,6163.06,8.61,0.56,47.4
+VolatilityBreakout_EURUSD_k_EURUSD.a_M15_OHLC,ea,US10Y,rates rising,1164,6829.03,5.87,0.39,52.6
+VolatilityBreakout_EURUSD_k_EURUSD.a_M15_OHLC,ea,OIL,oil downtrend,928,10588.16,11.41,0.67,81.5
+VolatilityBreakout_EURUSD_k_EURUSD.a_M15_OHLC,ea,OIL,oil uptrend,849,2403.93,2.83,0.2,18.5
+VolatilityBreakout_EURUSD_k_EURUSD.a_M15_OHLC,ea,VIX,calm,405,8268.34,20.42,1.16,56.9
+VolatilityBreakout_EURUSD_k_EURUSD.a_M15_OHLC,ea,VIX,normal,1206,7302.0,6.05,0.4,50.2
+VolatilityBreakout_EURUSD_k_EURUSD.a_M15_OHLC,ea,VIX,stressed,370,-1035.35,-2.8,-0.23,-7.1
+VolatilityBreakout_EURUSD_l_EURUSD.a_M15_OHLC,ea,DXY,strong dollar,969,4657.43,4.81,0.51,34.3
+VolatilityBreakout_EURUSD_l_EURUSD.a_M15_OHLC,ea,DXY,weak dollar,889,8907.74,10.02,1.06,65.7
+VolatilityBreakout_EURUSD_l_EURUSD.a_M15_OHLC,ea,SP500,stocks bear,379,1245.12,3.29,0.39,8.5
+VolatilityBreakout_EURUSD_l_EURUSD.a_M15_OHLC,ea,SP500,stocks bull,1376,13426.09,9.76,0.97,91.5
+VolatilityBreakout_EURUSD_l_EURUSD.a_M15_OHLC,ea,GOLD,gold downtrend,419,1646.86,3.93,0.36,11.2
+VolatilityBreakout_EURUSD_l_EURUSD.a_M15_OHLC,ea,GOLD,gold uptrend,1336,13024.35,9.75,1.05,88.8
+VolatilityBreakout_EURUSD_l_EURUSD.a_M15_OHLC,ea,BTC,crypto bear,765,311.16,0.41,0.04,2.2
+VolatilityBreakout_EURUSD_l_EURUSD.a_M15_OHLC,ea,BTC,crypto bull,1053,13807.03,13.11,1.38,97.8
+VolatilityBreakout_EURUSD_l_EURUSD.a_M15_OHLC,ea,US10Y,rates falling,716,5812.8,8.12,0.85,42.9
+VolatilityBreakout_EURUSD_l_EURUSD.a_M15_OHLC,ea,US10Y,rates rising,1142,7752.37,6.79,0.72,57.1
+VolatilityBreakout_EURUSD_l_EURUSD.a_M15_OHLC,ea,OIL,oil downtrend,926,8573.23,9.26,0.91,58.4
+VolatilityBreakout_EURUSD_l_EURUSD.a_M15_OHLC,ea,OIL,oil uptrend,829,6097.98,7.36,0.81,41.6
+VolatilityBreakout_EURUSD_l_EURUSD.a_M15_OHLC,ea,VIX,calm,404,4355.34,10.78,0.99,30.5
+VolatilityBreakout_EURUSD_l_EURUSD.a_M15_OHLC,ea,VIX,normal,1185,8678.5,7.32,0.76,60.8
+VolatilityBreakout_EURUSD_l_EURUSD.a_M15_OHLC,ea,VIX,stressed,370,1233.12,3.33,0.49,8.6
+VolatilityBreakout_EURUSD_m_EURUSD.a_M15_OHLC,ea,DXY,strong dollar,990,4778.92,4.83,0.48,49.7
+VolatilityBreakout_EURUSD_m_EURUSD.a_M15_OHLC,ea,DXY,weak dollar,891,4835.85,5.43,0.56,50.3
+VolatilityBreakout_EURUSD_m_EURUSD.a_M15_OHLC,ea,SP500,stocks bear,379,3852.99,10.17,1.26,40.2
+VolatilityBreakout_EURUSD_m_EURUSD.a_M15_OHLC,ea,SP500,stocks bull,1399,5731.66,4.1,0.39,59.8
+VolatilityBreakout_EURUSD_m_EURUSD.a_M15_OHLC,ea,GOLD,gold downtrend,441,6076.19,13.78,1.55,63.4
+VolatilityBreakout_EURUSD_m_EURUSD.a_M15_OHLC,ea,GOLD,gold uptrend,1337,3508.46,2.62,0.25,36.6
+VolatilityBreakout_EURUSD_m_EURUSD.a_M15_OHLC,ea,BTC,crypto bear,788,5000.21,6.35,0.73,55.3
+VolatilityBreakout_EURUSD_m_EURUSD.a_M15_OHLC,ea,BTC,crypto bull,1053,4043.3,3.84,0.36,44.7
+VolatilityBreakout_EURUSD_m_EURUSD.a_M15_OHLC,ea,US10Y,rates falling,716,1934.43,2.7,0.3,20.1
+VolatilityBreakout_EURUSD_m_EURUSD.a_M15_OHLC,ea,US10Y,rates rising,1165,7680.34,6.59,0.64,79.9
+VolatilityBreakout_EURUSD_m_EURUSD.a_M15_OHLC,ea,OIL,oil downtrend,928,3961.51,4.27,0.41,41.3
+VolatilityBreakout_EURUSD_m_EURUSD.a_M15_OHLC,ea,OIL,oil uptrend,850,5623.14,6.62,0.69,58.7
+VolatilityBreakout_EURUSD_m_EURUSD.a_M15_OHLC,ea,VIX,calm,406,177.96,0.44,0.03,1.7
+VolatilityBreakout_EURUSD_m_EURUSD.a_M15_OHLC,ea,VIX,normal,1206,5532.23,4.59,0.49,53.8
+VolatilityBreakout_EURUSD_m_EURUSD.a_M15_OHLC,ea,VIX,stressed,370,4573.95,12.36,1.63,44.5
+VolatilityBreakout_EURUSD_o_EURUSD.a_M15_OHLC,ea,DXY,strong dollar,989,1459.82,1.48,0.11,10.6
+VolatilityBreakout_EURUSD_o_EURUSD.a_M15_OHLC,ea,DXY,weak dollar,891,12316.17,13.82,1.21,89.4
+VolatilityBreakout_EURUSD_o_EURUSD.a_M15_OHLC,ea,SP500,stocks bear,379,5508.87,14.54,1.28,38.9
+VolatilityBreakout_EURUSD_o_EURUSD.a_M15_OHLC,ea,SP500,stocks bull,1398,8638.48,6.18,0.48,61.1
+VolatilityBreakout_EURUSD_o_EURUSD.a_M15_OHLC,ea,GOLD,gold downtrend,441,5305.03,12.03,1.03,37.5
+VolatilityBreakout_EURUSD_o_EURUSD.a_M15_OHLC,ea,GOLD,gold uptrend,1336,8842.32,6.62,0.51,62.5
+VolatilityBreakout_EURUSD_o_EURUSD.a_M15_OHLC,ea,BTC,crypto bear,787,1926.4,2.45,0.2,14.4
+VolatilityBreakout_EURUSD_o_EURUSD.a_M15_OHLC,ea,BTC,crypto bull,1053,11483.59,10.91,0.86,85.6
+VolatilityBreakout_EURUSD_o_EURUSD.a_M15_OHLC,ea,US10Y,rates falling,716,2804.41,3.92,0.35,20.4
+VolatilityBreakout_EURUSD_o_EURUSD.a_M15_OHLC,ea,US10Y,rates rising,1164,10971.58,9.43,0.72,79.6
+VolatilityBreakout_EURUSD_o_EURUSD.a_M15_OHLC,ea,OIL,oil downtrend,928,13756.61,14.82,1.2,97.2
+VolatilityBreakout_EURUSD_o_EURUSD.a_M15_OHLC,ea,OIL,oil uptrend,849,390.74,0.46,0.04,2.8
+VolatilityBreakout_EURUSD_o_EURUSD.a_M15_OHLC,ea,VIX,calm,405,1762.64,4.35,0.31,16.3
+VolatilityBreakout_EURUSD_o_EURUSD.a_M15_OHLC,ea,VIX,normal,1206,1949.01,1.62,0.13,18.0
+VolatilityBreakout_EURUSD_o_EURUSD.a_M15_OHLC,ea,VIX,stressed,370,7115.04,19.23,1.76,65.7
+VolatilityBreakout_H1_B_H1_BTCUSD.a_H1_OHLC,ea,DXY,strong dollar,527,3703.26,7.03,0.76,25.7
+VolatilityBreakout_H1_B_H1_BTCUSD.a_H1_OHLC,ea,DXY,weak dollar,399,10718.34,26.86,2.58,74.3
+VolatilityBreakout_H1_B_H1_BTCUSD.a_H1_OHLC,ea,SP500,stocks bear,303,4925.04,16.25,1.08,40.7
+VolatilityBreakout_H1_B_H1_BTCUSD.a_H1_OHLC,ea,SP500,stocks bull,520,7166.5,13.78,2.61,59.3
+VolatilityBreakout_H1_B_H1_BTCUSD.a_H1_OHLC,ea,GOLD,gold downtrend,363,4046.8,11.15,0.9,33.5
+VolatilityBreakout_H1_B_H1_BTCUSD.a_H1_OHLC,ea,GOLD,gold uptrend,460,8044.74,17.49,2.27,66.5
+VolatilityBreakout_H1_B_H1_BTCUSD.a_H1_OHLC,ea,BTC,crypto bear,440,7258.94,16.5,1.35,51.9
+VolatilityBreakout_H1_B_H1_BTCUSD.a_H1_OHLC,ea,BTC,crypto bull,446,6733.1,15.1,2.28,48.1
+VolatilityBreakout_H1_B_H1_BTCUSD.a_H1_OHLC,ea,US10Y,rates falling,303,8448.1,27.88,3.85,58.6
+VolatilityBreakout_H1_B_H1_BTCUSD.a_H1_OHLC,ea,US10Y,rates rising,623,5973.5,9.59,0.89,41.4
+VolatilityBreakout_H1_B_H1_BTCUSD.a_H1_OHLC,ea,OIL,oil downtrend,301,10943.64,36.36,2.54,90.5
+VolatilityBreakout_H1_B_H1_BTCUSD.a_H1_OHLC,ea,OIL,oil uptrend,522,1147.9,2.2,0.35,9.5
+VolatilityBreakout_H1_B_H1_BTCUSD.a_H1_OHLC,ea,VIX,calm,109,4193.66,38.47,4.26,22.5
+VolatilityBreakout_H1_B_H1_BTCUSD.a_H1_OHLC,ea,VIX,normal,594,6756.74,11.37,1.19,36.2
+VolatilityBreakout_H1_B_H1_BTCUSD.a_H1_OHLC,ea,VIX,stressed,324,7724.8,23.84,2.43,41.4
+VolatilityBreakout_H1_C_H1_BTCUSD.a_H1_OHLC,ea,DXY,strong dollar,990,51134.87,51.65,2.86,50.7
+VolatilityBreakout_H1_C_H1_BTCUSD.a_H1_OHLC,ea,DXY,weak dollar,891,49742.24,55.83,3.03,49.3
+VolatilityBreakout_H1_C_H1_BTCUSD.a_H1_OHLC,ea,SP500,stocks bear,379,16152.03,42.62,2.13,17.0
+VolatilityBreakout_H1_C_H1_BTCUSD.a_H1_OHLC,ea,SP500,stocks bull,1399,78866.68,56.37,3.1,83.0
+VolatilityBreakout_H1_C_H1_BTCUSD.a_H1_OHLC,ea,GOLD,gold downtrend,441,17462.86,39.6,2.21,18.4
+VolatilityBreakout_H1_C_H1_BTCUSD.a_H1_OHLC,ea,GOLD,gold uptrend,1337,77555.85,58.01,3.09,81.6
+VolatilityBreakout_H1_C_H1_BTCUSD.a_H1_OHLC,ea,BTC,crypto bear,788,44917.61,57.0,3.03,45.5
+VolatilityBreakout_H1_C_H1_BTCUSD.a_H1_OHLC,ea,BTC,crypto bull,1053,53844.3,51.13,2.85,54.5
+VolatilityBreakout_H1_C_H1_BTCUSD.a_H1_OHLC,ea,US10Y,rates falling,716,49858.44,69.63,3.95,49.4
+VolatilityBreakout_H1_C_H1_BTCUSD.a_H1_OHLC,ea,US10Y,rates rising,1165,51018.67,43.79,2.36,50.6
+VolatilityBreakout_H1_C_H1_BTCUSD.a_H1_OHLC,ea,OIL,oil downtrend,928,56178.7,60.54,3.15,59.1
+VolatilityBreakout_H1_C_H1_BTCUSD.a_H1_OHLC,ea,OIL,oil uptrend,850,38840.01,45.69,2.56,40.9
+VolatilityBreakout_H1_C_H1_BTCUSD.a_H1_OHLC,ea,VIX,calm,406,22538.21,55.51,3.08,20.8
+VolatilityBreakout_H1_C_H1_BTCUSD.a_H1_OHLC,ea,VIX,normal,1206,70250.88,58.25,3.22,64.9
+VolatilityBreakout_H1_C_H1_BTCUSD.a_H1_OHLC,ea,VIX,stressed,370,15409.12,41.65,2.45,14.2
+VolatilityBreakout_H1_E_H1_BTCUSD.a_H1_OHLC,ea,DXY,strong dollar,990,63002.36,63.64,3.47,63.5
+VolatilityBreakout_H1_E_H1_BTCUSD.a_H1_OHLC,ea,DXY,weak dollar,891,36273.6,40.71,2.3,36.5
+VolatilityBreakout_H1_E_H1_BTCUSD.a_H1_OHLC,ea,SP500,stocks bear,379,21576.08,56.93,3.14,23.3
+VolatilityBreakout_H1_E_H1_BTCUSD.a_H1_OHLC,ea,SP500,stocks bull,1399,70873.38,50.66,2.74,76.7
+VolatilityBreakout_H1_E_H1_BTCUSD.a_H1_OHLC,ea,GOLD,gold downtrend,441,17860.67,40.5,2.26,19.3
+VolatilityBreakout_H1_E_H1_BTCUSD.a_H1_OHLC,ea,GOLD,gold uptrend,1337,74588.79,55.79,3.0,80.7
+VolatilityBreakout_H1_E_H1_BTCUSD.a_H1_OHLC,ea,BTC,crypto bear,788,48910.65,62.07,3.3,49.8
+VolatilityBreakout_H1_E_H1_BTCUSD.a_H1_OHLC,ea,BTC,crypto bull,1053,49253.21,46.77,2.64,50.2
+VolatilityBreakout_H1_E_H1_BTCUSD.a_H1_OHLC,ea,US10Y,rates falling,716,46575.56,65.05,3.78,46.9
+VolatilityBreakout_H1_E_H1_BTCUSD.a_H1_OHLC,ea,US10Y,rates rising,1165,52700.4,45.24,2.43,53.1
+VolatilityBreakout_H1_E_H1_BTCUSD.a_H1_OHLC,ea,OIL,oil downtrend,928,45906.77,49.47,2.62,49.7
+VolatilityBreakout_H1_E_H1_BTCUSD.a_H1_OHLC,ea,OIL,oil uptrend,850,46542.69,54.76,3.06,50.3
+VolatilityBreakout_H1_E_H1_BTCUSD.a_H1_OHLC,ea,VIX,calm,406,20313.97,50.03,2.64,18.4
+VolatilityBreakout_H1_E_H1_BTCUSD.a_H1_OHLC,ea,VIX,normal,1206,70728.93,58.65,3.28,64.1
+VolatilityBreakout_H1_E_H1_BTCUSD.a_H1_OHLC,ea,VIX,stressed,370,19219.16,51.94,3.27,17.4
+VolatilityBreakout_H1_F_H1_BTCUSD.a_H1_OHLC,ea,DXY,strong dollar,990,66986.66,67.66,3.37,56.3
+VolatilityBreakout_H1_F_H1_BTCUSD.a_H1_OHLC,ea,DXY,weak dollar,891,51961.83,58.32,2.95,43.7
+VolatilityBreakout_H1_F_H1_BTCUSD.a_H1_OHLC,ea,SP500,stocks bear,379,18871.31,49.79,2.43,16.8
+VolatilityBreakout_H1_F_H1_BTCUSD.a_H1_OHLC,ea,SP500,stocks bull,1399,93554.88,66.87,3.31,83.2
+VolatilityBreakout_H1_F_H1_BTCUSD.a_H1_OHLC,ea,GOLD,gold downtrend,441,25089.02,56.89,2.89,22.3
+VolatilityBreakout_H1_F_H1_BTCUSD.a_H1_OHLC,ea,GOLD,gold uptrend,1337,87337.17,65.32,3.19,77.7
+VolatilityBreakout_H1_F_H1_BTCUSD.a_H1_OHLC,ea,BTC,crypto bear,788,57185.25,72.57,3.64,48.8
+VolatilityBreakout_H1_F_H1_BTCUSD.a_H1_OHLC,ea,BTC,crypto bull,1053,60103.14,57.08,2.84,51.2
+VolatilityBreakout_H1_F_H1_BTCUSD.a_H1_OHLC,ea,US10Y,rates falling,716,52380.23,73.16,3.76,44.0
+VolatilityBreakout_H1_F_H1_BTCUSD.a_H1_OHLC,ea,US10Y,rates rising,1165,66568.26,57.14,2.82,56.0
+VolatilityBreakout_H1_F_H1_BTCUSD.a_H1_OHLC,ea,OIL,oil downtrend,928,59321.66,63.92,3.02,52.8
+VolatilityBreakout_H1_F_H1_BTCUSD.a_H1_OHLC,ea,OIL,oil uptrend,850,53104.53,62.48,3.24,47.2
+VolatilityBreakout_H1_F_H1_BTCUSD.a_H1_OHLC,ea,VIX,calm,406,24609.95,60.62,2.79,18.9
+VolatilityBreakout_H1_F_H1_BTCUSD.a_H1_OHLC,ea,VIX,normal,1206,81794.51,67.82,3.52,62.9
+VolatilityBreakout_H1_F_H1_BTCUSD.a_H1_OHLC,ea,VIX,stressed,370,23579.13,63.73,3.49,18.1
+VolatilityBreakout_H1_H_H1_BTCUSD.a_M15_OHLC,ea,DXY,strong dollar,990,23972.23,24.21,2.47,59.8
+VolatilityBreakout_H1_H_H1_BTCUSD.a_M15_OHLC,ea,DXY,weak dollar,891,16098.49,18.07,1.41,40.2
+VolatilityBreakout_H1_H_H1_BTCUSD.a_M15_OHLC,ea,SP500,stocks bear,379,10069.71,26.57,2.59,27.3
+VolatilityBreakout_H1_H_H1_BTCUSD.a_M15_OHLC,ea,SP500,stocks bull,1399,26804.14,19.16,1.66,72.7
+VolatilityBreakout_H1_H_H1_BTCUSD.a_M15_OHLC,ea,GOLD,gold downtrend,441,6654.84,15.09,1.49,18.0
+VolatilityBreakout_H1_H_H1_BTCUSD.a_M15_OHLC,ea,GOLD,gold uptrend,1337,30219.01,22.6,1.94,82.0
+VolatilityBreakout_H1_H_H1_BTCUSD.a_M15_OHLC,ea,BTC,crypto bear,788,21524.22,27.32,2.66,56.5
+VolatilityBreakout_H1_H_H1_BTCUSD.a_M15_OHLC,ea,BTC,crypto bull,1053,16569.31,15.74,1.3,43.5
+VolatilityBreakout_H1_H_H1_BTCUSD.a_M15_OHLC,ea,US10Y,rates falling,716,14997.08,20.95,1.82,37.4
+VolatilityBreakout_H1_H_H1_BTCUSD.a_M15_OHLC,ea,US10Y,rates rising,1165,25073.64,21.52,1.91,62.6
+VolatilityBreakout_H1_H_H1_BTCUSD.a_M15_OHLC,ea,OIL,oil downtrend,928,29088.9,31.35,2.89,78.9
+VolatilityBreakout_H1_H_H1_BTCUSD.a_M15_OHLC,ea,OIL,oil uptrend,850,7784.95,9.16,0.78,21.1
+VolatilityBreakout_H1_H_H1_BTCUSD.a_M15_OHLC,ea,VIX,calm,406,10243.22,25.23,2.2,22.1
+VolatilityBreakout_H1_H_H1_BTCUSD.a_M15_OHLC,ea,VIX,normal,1206,27921.38,23.15,2.01,60.1
+VolatilityBreakout_H1_H_H1_BTCUSD.a_M15_OHLC,ea,VIX,stressed,370,8284.69,22.39,2.1,17.8
+VolatilityBreakout_H1_J_H1_BTCUSD.a_M15_OHLC,ea,DXY,strong dollar,988,39626.12,40.11,2.05,46.8
+VolatilityBreakout_H1_J_H1_BTCUSD.a_M15_OHLC,ea,DXY,weak dollar,891,45056.13,50.57,2.44,53.2
+VolatilityBreakout_H1_J_H1_BTCUSD.a_M15_OHLC,ea,SP500,stocks bear,379,23542.09,62.12,3.08,31.8
+VolatilityBreakout_H1_J_H1_BTCUSD.a_M15_OHLC,ea,SP500,stocks bull,1397,50556.1,36.19,1.83,68.2
+VolatilityBreakout_H1_J_H1_BTCUSD.a_M15_OHLC,ea,GOLD,gold downtrend,440,9399.07,21.36,1.05,12.7
+VolatilityBreakout_H1_J_H1_BTCUSD.a_M15_OHLC,ea,GOLD,gold uptrend,1336,64699.12,48.43,2.46,87.3
+VolatilityBreakout_H1_J_H1_BTCUSD.a_M15_OHLC,ea,BTC,crypto bear,786,35437.55,45.09,2.25,45.0
+VolatilityBreakout_H1_J_H1_BTCUSD.a_M15_OHLC,ea,BTC,crypto bull,1053,43225.34,41.05,2.1,55.0
+VolatilityBreakout_H1_J_H1_BTCUSD.a_M15_OHLC,ea,US10Y,rates falling,716,40563.52,56.65,2.82,47.9
+VolatilityBreakout_H1_J_H1_BTCUSD.a_M15_OHLC,ea,US10Y,rates rising,1163,44118.73,37.94,1.89,52.1
+VolatilityBreakout_H1_J_H1_BTCUSD.a_M15_OHLC,ea,OIL,oil downtrend,928,53272.84,57.41,2.81,71.9
+VolatilityBreakout_H1_J_H1_BTCUSD.a_M15_OHLC,ea,OIL,oil uptrend,848,20825.35,24.56,1.28,28.1
+VolatilityBreakout_H1_J_H1_BTCUSD.a_M15_OHLC,ea,VIX,calm,405,23178.03,57.23,2.53,23.4
+VolatilityBreakout_H1_J_H1_BTCUSD.a_M15_OHLC,ea,VIX,normal,1205,52968.33,43.96,2.18,53.5
+VolatilityBreakout_H1_J_H1_BTCUSD.a_M15_OHLC,ea,VIX,stressed,370,22937.04,61.99,3.24,23.1
+VolatilityBreakout_H1_M_H1_BTCUSD.a_M15_OHLC,ea,DXY,strong dollar,988,34063.94,34.48,1.65,64.5
+VolatilityBreakout_H1_M_H1_BTCUSD.a_M15_OHLC,ea,DXY,weak dollar,891,18761.36,21.06,0.94,35.5
+VolatilityBreakout_H1_M_H1_BTCUSD.a_M15_OHLC,ea,SP500,stocks bear,379,8946.21,23.6,0.96,19.1
+VolatilityBreakout_H1_M_H1_BTCUSD.a_M15_OHLC,ea,SP500,stocks bull,1397,37937.18,27.16,1.34,80.9
+VolatilityBreakout_H1_M_H1_BTCUSD.a_M15_OHLC,ea,GOLD,gold downtrend,440,12415.92,28.22,1.32,26.5
+VolatilityBreakout_H1_M_H1_BTCUSD.a_M15_OHLC,ea,GOLD,gold uptrend,1336,34467.47,25.8,1.21,73.5
+VolatilityBreakout_H1_M_H1_BTCUSD.a_M15_OHLC,ea,BTC,crypto bear,786,25206.7,32.07,1.47,49.0
+VolatilityBreakout_H1_M_H1_BTCUSD.a_M15_OHLC,ea,BTC,crypto bull,1053,26254.73,24.93,1.19,51.0
+VolatilityBreakout_H1_M_H1_BTCUSD.a_M15_OHLC,ea,US10Y,rates falling,716,30063.91,41.99,1.93,56.9
+VolatilityBreakout_H1_M_H1_BTCUSD.a_M15_OHLC,ea,US10Y,rates rising,1163,22761.39,19.57,0.91,43.1
+VolatilityBreakout_H1_M_H1_BTCUSD.a_M15_OHLC,ea,OIL,oil downtrend,928,26820.56,28.9,1.21,57.2
+VolatilityBreakout_H1_M_H1_BTCUSD.a_M15_OHLC,ea,OIL,oil uptrend,848,20062.83,23.66,1.31,42.8
+VolatilityBreakout_H1_M_H1_BTCUSD.a_M15_OHLC,ea,VIX,calm,405,19041.68,47.02,2.01,29.6
+VolatilityBreakout_H1_M_H1_BTCUSD.a_M15_OHLC,ea,VIX,normal,1205,39042.45,32.4,1.56,60.7
+VolatilityBreakout_H1_M_H1_BTCUSD.a_M15_OHLC,ea,VIX,stressed,370,6225.48,16.83,0.74,9.7
+VolatilityBreakout_H1_O_H1_BTCUSD.a_M15_OHLC,ea,DXY,strong dollar,988,-3881.79,-3.93,-0.24,-28.4
+VolatilityBreakout_H1_O_H1_BTCUSD.a_M15_OHLC,ea,DXY,weak dollar,891,17567.08,19.72,1.94,128.4
+VolatilityBreakout_H1_O_H1_BTCUSD.a_M15_OHLC,ea,SP500,stocks bear,379,4951.25,13.06,1.33,39.8
+VolatilityBreakout_H1_O_H1_BTCUSD.a_M15_OHLC,ea,SP500,stocks bull,1397,7491.44,5.36,0.36,60.2
+VolatilityBreakout_H1_O_H1_BTCUSD.a_M15_OHLC,ea,GOLD,gold downtrend,440,-2750.53,-6.25,-0.26,-22.1
+VolatilityBreakout_H1_O_H1_BTCUSD.a_M15_OHLC,ea,GOLD,gold uptrend,1336,15193.22,11.37,1.31,122.1
+VolatilityBreakout_H1_O_H1_BTCUSD.a_M15_OHLC,ea,BTC,crypto bear,786,314.24,0.4,0.02,2.4
+VolatilityBreakout_H1_O_H1_BTCUSD.a_M15_OHLC,ea,BTC,crypto bull,1053,12666.75,12.03,1.29,97.6
+VolatilityBreakout_H1_O_H1_BTCUSD.a_M15_OHLC,ea,US10Y,rates falling,716,11518.29,16.09,1.66,84.2
+VolatilityBreakout_H1_O_H1_BTCUSD.a_M15_OHLC,ea,US10Y,rates rising,1163,2167.0,1.86,0.12,15.8
+VolatilityBreakout_H1_O_H1_BTCUSD.a_M15_OHLC,ea,OIL,oil downtrend,928,20286.87,21.86,1.93,163.0
+VolatilityBreakout_H1_O_H1_BTCUSD.a_M15_OHLC,ea,OIL,oil uptrend,848,-7844.18,-9.25,-0.56,-63.0
+VolatilityBreakout_H1_O_H1_BTCUSD.a_M15_OHLC,ea,VIX,calm,405,3650.74,9.01,1.0,20.6
+VolatilityBreakout_H1_O_H1_BTCUSD.a_M15_OHLC,ea,VIX,normal,1205,7851.99,6.52,0.42,44.4
+VolatilityBreakout_H1_O_H1_BTCUSD.a_M15_OHLC,ea,VIX,stressed,370,6179.26,16.7,1.65,34.9
+VolatilityBreakout_M5_C_XAUUSD.a_M5_OHLC,ea,DXY,strong dollar,987,7522.65,7.62,0.73,45.1
+VolatilityBreakout_M5_C_XAUUSD.a_M5_OHLC,ea,DXY,weak dollar,891,9157.07,10.28,1.15,54.9
+VolatilityBreakout_M5_C_XAUUSD.a_M5_OHLC,ea,SP500,stocks bear,379,4670.97,12.32,1.16,29.9
+VolatilityBreakout_M5_C_XAUUSD.a_M5_OHLC,ea,SP500,stocks bull,1396,10935.39,7.83,0.84,70.1
+VolatilityBreakout_M5_C_XAUUSD.a_M5_OHLC,ea,GOLD,gold downtrend,439,2100.64,4.79,0.41,13.5
+VolatilityBreakout_M5_C_XAUUSD.a_M5_OHLC,ea,GOLD,gold uptrend,1336,13505.72,10.11,1.13,86.5
+VolatilityBreakout_M5_C_XAUUSD.a_M5_OHLC,ea,BTC,crypto bear,785,6257.96,7.97,0.74,38.5
+VolatilityBreakout_M5_C_XAUUSD.a_M5_OHLC,ea,BTC,crypto bull,1053,9997.75,9.49,1.08,61.5
+VolatilityBreakout_M5_C_XAUUSD.a_M5_OHLC,ea,US10Y,rates falling,716,7634.28,10.66,1.16,45.8
+VolatilityBreakout_M5_C_XAUUSD.a_M5_OHLC,ea,US10Y,rates rising,1162,9045.44,7.78,0.77,54.2
+VolatilityBreakout_M5_C_XAUUSD.a_M5_OHLC,ea,OIL,oil downtrend,928,6618.35,7.13,0.8,42.4
+VolatilityBreakout_M5_C_XAUUSD.a_M5_OHLC,ea,OIL,oil uptrend,847,8988.01,10.61,1.02,57.6
+VolatilityBreakout_M5_C_XAUUSD.a_M5_OHLC,ea,VIX,calm,405,3270.44,8.08,0.81,19.0
+VolatilityBreakout_M5_C_XAUUSD.a_M5_OHLC,ea,VIX,normal,1204,9665.94,8.03,0.82,56.2
+VolatilityBreakout_M5_C_XAUUSD.a_M5_OHLC,ea,VIX,stressed,370,4252.98,11.49,1.11,24.7
+VolatilityBreakout_M5_E_XAUUSD.a_M5_OHLC,ea,DXY,strong dollar,988,7038.15,7.12,0.79,52.5
+VolatilityBreakout_M5_E_XAUUSD.a_M5_OHLC,ea,DXY,weak dollar,891,6356.0,7.13,0.88,47.5
+VolatilityBreakout_M5_E_XAUUSD.a_M5_OHLC,ea,SP500,stocks bear,379,931.92,2.46,0.31,7.3
+VolatilityBreakout_M5_E_XAUUSD.a_M5_OHLC,ea,SP500,stocks bull,1397,11915.92,8.53,0.98,92.7
+VolatilityBreakout_M5_E_XAUUSD.a_M5_OHLC,ea,GOLD,gold downtrend,440,3352.34,7.62,0.73,26.1
+VolatilityBreakout_M5_E_XAUUSD.a_M5_OHLC,ea,GOLD,gold uptrend,1336,9495.5,7.11,0.91,73.9
+VolatilityBreakout_M5_E_XAUUSD.a_M5_OHLC,ea,BTC,crypto bear,786,1101.07,1.4,0.19,9.4
+VolatilityBreakout_M5_E_XAUUSD.a_M5_OHLC,ea,BTC,crypto bull,1053,10595.18,10.06,1.1,90.6
+VolatilityBreakout_M5_E_XAUUSD.a_M5_OHLC,ea,US10Y,rates falling,716,7283.65,10.17,1.17,54.4
+VolatilityBreakout_M5_E_XAUUSD.a_M5_OHLC,ea,US10Y,rates rising,1163,6110.5,5.25,0.62,45.6
+VolatilityBreakout_M5_E_XAUUSD.a_M5_OHLC,ea,OIL,oil downtrend,928,1129.28,1.22,0.17,8.8
+VolatilityBreakout_M5_E_XAUUSD.a_M5_OHLC,ea,OIL,oil uptrend,848,11718.56,13.82,1.42,91.2
+VolatilityBreakout_M5_E_XAUUSD.a_M5_OHLC,ea,VIX,calm,405,4367.57,10.78,1.05,29.4
+VolatilityBreakout_M5_E_XAUUSD.a_M5_OHLC,ea,VIX,normal,1205,7681.38,6.37,0.77,51.7
+VolatilityBreakout_M5_E_XAUUSD.a_M5_OHLC,ea,VIX,stressed,370,2808.75,7.59,0.91,18.9
+VolatilityBreakout_M5_G_XAUUSD.a_M5_OHLC,ea,DXY,strong dollar,987,4540.81,4.6,0.59,66.1
+VolatilityBreakout_M5_G_XAUUSD.a_M5_OHLC,ea,DXY,weak dollar,891,2328.21,2.61,0.4,33.9
+VolatilityBreakout_M5_G_XAUUSD.a_M5_OHLC,ea,SP500,stocks bear,379,3424.67,9.04,1.15,49.2
+VolatilityBreakout_M5_G_XAUUSD.a_M5_OHLC,ea,SP500,stocks bull,1396,3536.87,2.53,0.36,50.8
+VolatilityBreakout_M5_G_XAUUSD.a_M5_OHLC,ea,GOLD,gold downtrend,439,4637.04,10.56,1.19,66.6
+VolatilityBreakout_M5_G_XAUUSD.a_M5_OHLC,ea,GOLD,gold uptrend,1336,2324.5,1.74,0.26,33.4
+VolatilityBreakout_M5_G_XAUUSD.a_M5_OHLC,ea,BTC,crypto bear,785,1640.41,2.09,0.28,23.3
+VolatilityBreakout_M5_G_XAUUSD.a_M5_OHLC,ea,BTC,crypto bull,1053,5388.24,5.12,0.73,76.7
+VolatilityBreakout_M5_G_XAUUSD.a_M5_OHLC,ea,US10Y,rates falling,716,4791.42,6.69,0.94,69.8
+VolatilityBreakout_M5_G_XAUUSD.a_M5_OHLC,ea,US10Y,rates rising,1162,2077.6,1.79,0.24,30.2
+VolatilityBreakout_M5_G_XAUUSD.a_M5_OHLC,ea,OIL,oil downtrend,928,2747.07,2.96,0.46,39.5
+VolatilityBreakout_M5_G_XAUUSD.a_M5_OHLC,ea,OIL,oil uptrend,847,4214.47,4.98,0.62,60.5
+VolatilityBreakout_M5_G_XAUUSD.a_M5_OHLC,ea,VIX,calm,405,203.27,0.5,0.07,3.0
+VolatilityBreakout_M5_G_XAUUSD.a_M5_OHLC,ea,VIX,normal,1204,3616.36,3.0,0.43,52.8
+VolatilityBreakout_M5_G_XAUUSD.a_M5_OHLC,ea,VIX,stressed,370,3030.76,8.19,1.04,44.2
+VolatilityBreakout_M5_H_XAUUSD.a_M5_OHLC,ea,DXY,strong dollar,989,6520.65,6.59,0.52,65.4
+VolatilityBreakout_M5_H_XAUUSD.a_M5_OHLC,ea,DXY,weak dollar,891,3444.52,3.87,0.35,34.6
+VolatilityBreakout_M5_H_XAUUSD.a_M5_OHLC,ea,SP500,stocks bear,379,-3237.85,-8.54,-0.75,-32.4
+VolatilityBreakout_M5_H_XAUUSD.a_M5_OHLC,ea,SP500,stocks bull,1398,13237.3,9.47,0.78,132.4
+VolatilityBreakout_M5_H_XAUUSD.a_M5_OHLC,ea,GOLD,gold downtrend,441,1477.05,3.35,0.21,14.8
+VolatilityBreakout_M5_H_XAUUSD.a_M5_OHLC,ea,GOLD,gold uptrend,1336,8522.4,6.38,0.61,85.2
+VolatilityBreakout_M5_H_XAUUSD.a_M5_OHLC,ea,BTC,crypto bear,787,-4580.03,-5.82,-0.55,-56.1
+VolatilityBreakout_M5_H_XAUUSD.a_M5_OHLC,ea,BTC,crypto bull,1053,12739.58,12.1,0.95,156.1
+VolatilityBreakout_M5_H_XAUUSD.a_M5_OHLC,ea,US10Y,rates falling,716,8940.67,12.49,0.97,89.7
+VolatilityBreakout_M5_H_XAUUSD.a_M5_OHLC,ea,US10Y,rates rising,1164,1024.5,0.88,0.08,10.3
+VolatilityBreakout_M5_H_XAUUSD.a_M5_OHLC,ea,OIL,oil downtrend,928,756.67,0.82,0.08,7.6
+VolatilityBreakout_M5_H_XAUUSD.a_M5_OHLC,ea,OIL,oil uptrend,849,9242.78,10.89,0.79,92.4
+VolatilityBreakout_M5_H_XAUUSD.a_M5_OHLC,ea,VIX,calm,405,2907.36,7.18,0.53,32.0
+VolatilityBreakout_M5_H_XAUUSD.a_M5_OHLC,ea,VIX,normal,1206,5963.44,4.94,0.43,65.5
+VolatilityBreakout_M5_H_XAUUSD.a_M5_OHLC,ea,VIX,stressed,370,227.9,0.62,0.05,2.5
+VolatilityBreakout_NAS_VOL_M15_A_USTEC.a_M15_OHLC,ea,DXY,strong dollar,990,36179.38,36.54,1.53,78.1
+VolatilityBreakout_NAS_VOL_M15_A_USTEC.a_M15_OHLC,ea,DXY,weak dollar,891,10135.68,11.38,0.55,21.9
+VolatilityBreakout_NAS_VOL_M15_A_USTEC.a_M15_OHLC,ea,SP500,stocks bear,379,13694.19,36.13,1.36,30.4
+VolatilityBreakout_NAS_VOL_M15_A_USTEC.a_M15_OHLC,ea,SP500,stocks bull,1399,31292.85,22.37,1.06,69.6
+VolatilityBreakout_NAS_VOL_M15_A_USTEC.a_M15_OHLC,ea,GOLD,gold downtrend,441,21723.38,49.26,1.88,48.3
+VolatilityBreakout_NAS_VOL_M15_A_USTEC.a_M15_OHLC,ea,GOLD,gold uptrend,1337,23263.66,17.4,0.83,51.7
+VolatilityBreakout_NAS_VOL_M15_A_USTEC.a_M15_OHLC,ea,BTC,crypto bear,788,28893.1,36.67,1.46,60.2
+VolatilityBreakout_NAS_VOL_M15_A_USTEC.a_M15_OHLC,ea,BTC,crypto bull,1053,19093.46,18.13,0.89,39.8
+VolatilityBreakout_NAS_VOL_M15_A_USTEC.a_M15_OHLC,ea,US10Y,rates falling,716,20043.8,27.99,1.24,43.3
+VolatilityBreakout_NAS_VOL_M15_A_USTEC.a_M15_OHLC,ea,US10Y,rates rising,1165,26271.26,22.55,1.01,56.7
+VolatilityBreakout_NAS_VOL_M15_A_USTEC.a_M15_OHLC,ea,OIL,oil downtrend,928,23553.47,25.38,1.11,52.4
+VolatilityBreakout_NAS_VOL_M15_A_USTEC.a_M15_OHLC,ea,OIL,oil uptrend,850,21433.57,25.22,1.15,47.6
+VolatilityBreakout_NAS_VOL_M15_A_USTEC.a_M15_OHLC,ea,VIX,calm,406,-4651.9,-11.46,-0.69,-9.3
+VolatilityBreakout_NAS_VOL_M15_A_USTEC.a_M15_OHLC,ea,VIX,normal,1206,28105.75,23.3,1.03,56.4
+VolatilityBreakout_NAS_VOL_M15_A_USTEC.a_M15_OHLC,ea,VIX,stressed,370,26339.24,71.19,2.64,52.9
+VolatilityBreakout_NAS_VOL_M15_B_USTEC.a_M15_OHLC,ea,DXY,strong dollar,987,37363.38,37.86,1.61,77.5
+VolatilityBreakout_NAS_VOL_M15_B_USTEC.a_M15_OHLC,ea,DXY,weak dollar,891,10819.43,12.14,0.65,22.5
+VolatilityBreakout_NAS_VOL_M15_B_USTEC.a_M15_OHLC,ea,SP500,stocks bear,379,17509.92,46.2,1.79,40.2
+VolatilityBreakout_NAS_VOL_M15_B_USTEC.a_M15_OHLC,ea,SP500,stocks bull,1396,26064.68,18.67,0.92,59.8
+VolatilityBreakout_NAS_VOL_M15_B_USTEC.a_M15_OHLC,ea,GOLD,gold downtrend,439,18743.64,42.7,1.76,43.0
+VolatilityBreakout_NAS_VOL_M15_B_USTEC.a_M15_OHLC,ea,GOLD,gold uptrend,1336,24830.96,18.59,0.9,57.0
+VolatilityBreakout_NAS_VOL_M15_B_USTEC.a_M15_OHLC,ea,BTC,crypto bear,785,30439.65,38.78,1.64,65.0
+VolatilityBreakout_NAS_VOL_M15_B_USTEC.a_M15_OHLC,ea,BTC,crypto bull,1053,16373.23,15.55,0.78,35.0
+VolatilityBreakout_NAS_VOL_M15_B_USTEC.a_M15_OHLC,ea,US10Y,rates falling,716,21035.74,29.38,1.43,43.7
+VolatilityBreakout_NAS_VOL_M15_B_USTEC.a_M15_OHLC,ea,US10Y,rates rising,1162,27147.07,23.36,1.06,56.3
+VolatilityBreakout_NAS_VOL_M15_B_USTEC.a_M15_OHLC,ea,OIL,oil downtrend,928,19135.72,20.62,0.95,43.9
+VolatilityBreakout_NAS_VOL_M15_B_USTEC.a_M15_OHLC,ea,OIL,oil uptrend,847,24438.88,28.85,1.34,56.1
+VolatilityBreakout_NAS_VOL_M15_B_USTEC.a_M15_OHLC,ea,VIX,calm,405,-224.83,-0.56,-0.03,-0.4
+VolatilityBreakout_NAS_VOL_M15_B_USTEC.a_M15_OHLC,ea,VIX,normal,1204,28472.88,23.65,1.08,55.2
+VolatilityBreakout_NAS_VOL_M15_B_USTEC.a_M15_OHLC,ea,VIX,stressed,370,23336.38,63.07,2.5,45.2
+VolatilityBreakout_NAS_VOL_M15_C_USTEC.a_M15_OHLC,ea,DXY,strong dollar,987,39596.75,40.12,1.63,84.4
+VolatilityBreakout_NAS_VOL_M15_C_USTEC.a_M15_OHLC,ea,DXY,weak dollar,891,7345.04,8.24,0.44,15.6
+VolatilityBreakout_NAS_VOL_M15_C_USTEC.a_M15_OHLC,ea,SP500,stocks bear,379,17250.31,45.52,1.71,40.0
+VolatilityBreakout_NAS_VOL_M15_C_USTEC.a_M15_OHLC,ea,SP500,stocks bull,1396,25917.29,18.57,0.89,60.0
+VolatilityBreakout_NAS_VOL_M15_C_USTEC.a_M15_OHLC,ea,GOLD,gold downtrend,439,20699.4,47.15,1.82,48.0
+VolatilityBreakout_NAS_VOL_M15_C_USTEC.a_M15_OHLC,ea,GOLD,gold uptrend,1336,22468.2,16.82,0.81,52.0
+VolatilityBreakout_NAS_VOL_M15_C_USTEC.a_M15_OHLC,ea,BTC,crypto bear,785,30952.23,39.43,1.61,66.0
+VolatilityBreakout_NAS_VOL_M15_C_USTEC.a_M15_OHLC,ea,BTC,crypto bull,1053,15966.95,15.16,0.74,34.0
+VolatilityBreakout_NAS_VOL_M15_C_USTEC.a_M15_OHLC,ea,US10Y,rates falling,716,24416.09,34.1,1.54,52.0
+VolatilityBreakout_NAS_VOL_M15_C_USTEC.a_M15_OHLC,ea,US10Y,rates rising,1162,22525.7,19.39,0.88,48.0
+VolatilityBreakout_NAS_VOL_M15_C_USTEC.a_M15_OHLC,ea,OIL,oil downtrend,928,20295.73,21.87,0.95,47.0
+VolatilityBreakout_NAS_VOL_M15_C_USTEC.a_M15_OHLC,ea,OIL,oil uptrend,847,22871.87,27.0,1.26,53.0
+VolatilityBreakout_NAS_VOL_M15_C_USTEC.a_M15_OHLC,ea,VIX,calm,405,-2027.92,-5.01,-0.31,-4.0
+VolatilityBreakout_NAS_VOL_M15_C_USTEC.a_M15_OHLC,ea,VIX,normal,1204,29617.41,24.6,1.1,58.4
+VolatilityBreakout_NAS_VOL_M15_C_USTEC.a_M15_OHLC,ea,VIX,stressed,370,23144.17,62.55,2.35,45.6
+VolatilityBreakout_NAS_VOL_M15_D_USTEC.a_M15_OHLC,ea,DXY,strong dollar,990,33706.3,34.05,1.35,59.7
+VolatilityBreakout_NAS_VOL_M15_D_USTEC.a_M15_OHLC,ea,DXY,weak dollar,891,22798.44,25.59,1.12,40.3
+VolatilityBreakout_NAS_VOL_M15_D_USTEC.a_M15_OHLC,ea,SP500,stocks bear,379,18076.37,47.69,1.66,34.4
+VolatilityBreakout_NAS_VOL_M15_D_USTEC.a_M15_OHLC,ea,SP500,stocks bull,1399,34500.86,24.66,1.08,65.6
+VolatilityBreakout_NAS_VOL_M15_D_USTEC.a_M15_OHLC,ea,GOLD,gold downtrend,441,17648.62,40.02,1.51,33.6
+VolatilityBreakout_NAS_VOL_M15_D_USTEC.a_M15_OHLC,ea,GOLD,gold uptrend,1337,34928.61,26.12,1.11,66.4
+VolatilityBreakout_NAS_VOL_M15_D_USTEC.a_M15_OHLC,ea,BTC,crypto bear,788,32285.88,40.97,1.56,57.8
+VolatilityBreakout_NAS_VOL_M15_D_USTEC.a_M15_OHLC,ea,BTC,crypto bull,1053,23612.12,22.42,0.99,42.2
+VolatilityBreakout_NAS_VOL_M15_D_USTEC.a_M15_OHLC,ea,US10Y,rates falling,716,27163.66,37.94,1.61,48.1
+VolatilityBreakout_NAS_VOL_M15_D_USTEC.a_M15_OHLC,ea,US10Y,rates rising,1165,29341.08,25.19,1.03,51.9
+VolatilityBreakout_NAS_VOL_M15_D_USTEC.a_M15_OHLC,ea,OIL,oil downtrend,928,30261.83,32.61,1.33,57.6
+VolatilityBreakout_NAS_VOL_M15_D_USTEC.a_M15_OHLC,ea,OIL,oil uptrend,850,22315.4,26.25,1.1,42.4
+VolatilityBreakout_NAS_VOL_M15_D_USTEC.a_M15_OHLC,ea,VIX,calm,406,2988.44,7.36,0.37,5.2
+VolatilityBreakout_NAS_VOL_M15_D_USTEC.a_M15_OHLC,ea,VIX,normal,1206,31364.0,26.01,1.05,54.4
+VolatilityBreakout_NAS_VOL_M15_D_USTEC.a_M15_OHLC,ea,VIX,stressed,370,23269.42,62.89,2.4,40.4
+VolatilityBreakout_NAS_VOL_M15_E_USTEC.a_M15_OHLC,ea,DXY,strong dollar,987,44396.35,44.98,1.53,78.5
+VolatilityBreakout_NAS_VOL_M15_E_USTEC.a_M15_OHLC,ea,DXY,weak dollar,891,12162.3,13.65,0.56,21.5
+VolatilityBreakout_NAS_VOL_M15_E_USTEC.a_M15_OHLC,ea,SP500,stocks bear,379,23016.09,60.73,1.89,44.4
+VolatilityBreakout_NAS_VOL_M15_E_USTEC.a_M15_OHLC,ea,SP500,stocks bull,1396,28778.33,20.61,0.81,55.6
+VolatilityBreakout_NAS_VOL_M15_E_USTEC.a_M15_OHLC,ea,GOLD,gold downtrend,439,22813.38,51.97,1.64,44.0
+VolatilityBreakout_NAS_VOL_M15_E_USTEC.a_M15_OHLC,ea,GOLD,gold uptrend,1336,28981.04,21.69,0.85,56.0
+VolatilityBreakout_NAS_VOL_M15_E_USTEC.a_M15_OHLC,ea,BTC,crypto bear,785,34281.63,43.67,1.47,60.2
+VolatilityBreakout_NAS_VOL_M15_E_USTEC.a_M15_OHLC,ea,BTC,crypto bull,1053,22692.98,21.55,0.85,39.8
+VolatilityBreakout_NAS_VOL_M15_E_USTEC.a_M15_OHLC,ea,US10Y,rates falling,716,29618.86,41.37,1.5,52.4
+VolatilityBreakout_NAS_VOL_M15_E_USTEC.a_M15_OHLC,ea,US10Y,rates rising,1162,26939.79,23.18,0.87,47.6
+VolatilityBreakout_NAS_VOL_M15_E_USTEC.a_M15_OHLC,ea,OIL,oil downtrend,928,29312.22,31.59,1.11,56.6
+VolatilityBreakout_NAS_VOL_M15_E_USTEC.a_M15_OHLC,ea,OIL,oil uptrend,847,22482.2,26.54,1.03,43.4
+VolatilityBreakout_NAS_VOL_M15_E_USTEC.a_M15_OHLC,ea,VIX,calm,405,-4537.35,-11.2,-0.54,-7.5
+VolatilityBreakout_NAS_VOL_M15_E_USTEC.a_M15_OHLC,ea,VIX,normal,1204,36893.98,30.64,1.11,61.0
+VolatilityBreakout_NAS_VOL_M15_E_USTEC.a_M15_OHLC,ea,VIX,stressed,370,28103.66,75.96,2.4,46.5
+VolatilityBreakout_US30_VOL_M15_a_US30.a_M15_OHLC,ea,DXY,strong dollar,986,15891.06,16.12,1.62,51.5
+VolatilityBreakout_US30_VOL_M15_a_US30.a_M15_OHLC,ea,DXY,weak dollar,890,14979.0,16.83,1.68,48.5
+VolatilityBreakout_US30_VOL_M15_a_US30.a_M15_OHLC,ea,SP500,stocks bear,379,3885.3,10.25,0.97,13.5
+VolatilityBreakout_US30_VOL_M15_a_US30.a_M15_OHLC,ea,SP500,stocks bull,1394,24851.25,17.83,1.8,86.5
+VolatilityBreakout_US30_VOL_M15_a_US30.a_M15_OHLC,ea,GOLD,gold downtrend,437,3011.38,6.89,0.58,10.5
+VolatilityBreakout_US30_VOL_M15_a_US30.a_M15_OHLC,ea,GOLD,gold uptrend,1336,25725.17,19.26,2.05,89.5
+VolatilityBreakout_US30_VOL_M15_a_US30.a_M15_OHLC,ea,BTC,crypto bear,783,15452.24,19.73,2.0,52.4
+VolatilityBreakout_US30_VOL_M15_a_US30.a_M15_OHLC,ea,BTC,crypto bull,1053,14048.78,13.34,1.31,47.6
+VolatilityBreakout_US30_VOL_M15_a_US30.a_M15_OHLC,ea,US10Y,rates falling,716,11179.47,15.61,1.64,36.2
+VolatilityBreakout_US30_VOL_M15_a_US30.a_M15_OHLC,ea,US10Y,rates rising,1160,19690.59,16.97,1.66,63.8
+VolatilityBreakout_US30_VOL_M15_a_US30.a_M15_OHLC,ea,OIL,oil downtrend,928,14698.08,15.84,1.47,51.1
+VolatilityBreakout_US30_VOL_M15_a_US30.a_M15_OHLC,ea,OIL,oil uptrend,845,14038.47,16.61,1.81,48.9
+VolatilityBreakout_US30_VOL_M15_a_US30.a_M15_OHLC,ea,VIX,calm,404,4951.74,12.26,1.73,16.5
+VolatilityBreakout_US30_VOL_M15_a_US30.a_M15_OHLC,ea,VIX,normal,1203,19501.77,16.21,1.34,64.8
+VolatilityBreakout_US30_VOL_M15_a_US30.a_M15_OHLC,ea,VIX,stressed,370,5619.73,15.19,1.57,18.7
+VolatilityBreakout_US30_VOL_M15_b_US30.a_M15_OHLC,ea,DXY,strong dollar,972,5897.1,6.07,3.01,43.6
+VolatilityBreakout_US30_VOL_M15_b_US30.a_M15_OHLC,ea,DXY,weak dollar,889,7616.16,8.57,3.46,56.4
+VolatilityBreakout_US30_VOL_M15_b_US30.a_M15_OHLC,ea,SP500,stocks bear,379,3581.3,9.45,3.72,28.0
+VolatilityBreakout_US30_VOL_M15_b_US30.a_M15_OHLC,ea,SP500,stocks bull,1379,9191.7,6.67,3.11,72.0
+VolatilityBreakout_US30_VOL_M15_b_US30.a_M15_OHLC,ea,GOLD,gold downtrend,422,3900.03,9.24,3.63,30.5
+VolatilityBreakout_US30_VOL_M15_b_US30.a_M15_OHLC,ea,GOLD,gold uptrend,1336,8872.97,6.64,3.13,69.5
+VolatilityBreakout_US30_VOL_M15_b_US30.a_M15_OHLC,ea,BTC,crypto bear,768,7304.33,9.51,3.87,56.3
+VolatilityBreakout_US30_VOL_M15_b_US30.a_M15_OHLC,ea,BTC,crypto bull,1053,5665.21,5.38,2.69,43.7
+VolatilityBreakout_US30_VOL_M15_b_US30.a_M15_OHLC,ea,US10Y,rates falling,716,5692.53,7.95,3.3,42.1
+VolatilityBreakout_US30_VOL_M15_b_US30.a_M15_OHLC,ea,US10Y,rates rising,1145,7820.73,6.83,3.19,57.9
+VolatilityBreakout_US30_VOL_M15_b_US30.a_M15_OHLC,ea,OIL,oil downtrend,926,7866.34,8.49,3.47,61.6
+VolatilityBreakout_US30_VOL_M15_b_US30.a_M15_OHLC,ea,OIL,oil uptrend,832,4906.66,5.9,3.0,38.4
+VolatilityBreakout_US30_VOL_M15_b_US30.a_M15_OHLC,ea,VIX,calm,404,1957.83,4.85,2.48,16.8
+VolatilityBreakout_US30_VOL_M15_b_US30.a_M15_OHLC,ea,VIX,normal,1188,6831.28,5.75,1.15,58.7
+VolatilityBreakout_US30_VOL_M15_b_US30.a_M15_OHLC,ea,VIX,stressed,370,2854.14,7.71,3.43,24.5
+VolatilityBreakout_US30_VOL_M15_c_US30.a_M15_OHLC,ea,DXY,strong dollar,986,7398.9,7.5,0.97,47.3
+VolatilityBreakout_US30_VOL_M15_c_US30.a_M15_OHLC,ea,DXY,weak dollar,889,8227.5,9.25,1.17,52.7
+VolatilityBreakout_US30_VOL_M15_c_US30.a_M15_OHLC,ea,SP500,stocks bear,379,-279.28,-0.74,-0.09,-2.0
+VolatilityBreakout_US30_VOL_M15_c_US30.a_M15_OHLC,ea,SP500,stocks bull,1393,14087.68,10.11,1.28,102.0
+VolatilityBreakout_US30_VOL_M15_c_US30.a_M15_OHLC,ea,GOLD,gold downtrend,436,2187.83,5.02,0.59,15.8
+VolatilityBreakout_US30_VOL_M15_c_US30.a_M15_OHLC,ea,GOLD,gold uptrend,1336,11620.57,8.7,1.12,84.2
+VolatilityBreakout_US30_VOL_M15_c_US30.a_M15_OHLC,ea,BTC,crypto bear,782,4181.8,5.35,0.62,29.0
+VolatilityBreakout_US30_VOL_M15_c_US30.a_M15_OHLC,ea,BTC,crypto bull,1053,10253.15,9.74,1.35,71.0
+VolatilityBreakout_US30_VOL_M15_c_US30.a_M15_OHLC,ea,US10Y,rates falling,716,9344.48,13.05,1.89,59.8
+VolatilityBreakout_US30_VOL_M15_c_US30.a_M15_OHLC,ea,US10Y,rates rising,1159,6281.92,5.42,0.65,40.2
+VolatilityBreakout_US30_VOL_M15_c_US30.a_M15_OHLC,ea,OIL,oil downtrend,927,9112.12,9.83,1.28,66.0
+VolatilityBreakout_US30_VOL_M15_c_US30.a_M15_OHLC,ea,OIL,oil uptrend,845,4696.28,5.56,0.68,34.0
+VolatilityBreakout_US30_VOL_M15_c_US30.a_M15_OHLC,ea,VIX,calm,404,7054.93,17.46,2.35,49.2
+VolatilityBreakout_US30_VOL_M15_c_US30.a_M15_OHLC,ea,VIX,normal,1202,6982.5,5.81,0.68,48.7
+VolatilityBreakout_US30_VOL_M15_c_US30.a_M15_OHLC,ea,VIX,stressed,370,313.56,0.85,0.12,2.2
+VolatilityBreakout_US30_VOL_M15_g_US30.a_M15_OHLC,ea,DXY,strong dollar,986,15934.12,16.16,3.1,51.0
+VolatilityBreakout_US30_VOL_M15_g_US30.a_M15_OHLC,ea,DXY,weak dollar,889,15309.32,17.22,1.71,49.0
+VolatilityBreakout_US30_VOL_M15_g_US30.a_M15_OHLC,ea,SP500,stocks bear,379,5683.72,15.0,1.31,19.2
+VolatilityBreakout_US30_VOL_M15_g_US30.a_M15_OHLC,ea,SP500,stocks bull,1393,23980.93,17.22,2.52,80.8
+VolatilityBreakout_US30_VOL_M15_g_US30.a_M15_OHLC,ea,GOLD,gold downtrend,436,6044.06,13.86,3.4,20.4
+VolatilityBreakout_US30_VOL_M15_g_US30.a_M15_OHLC,ea,GOLD,gold uptrend,1336,23620.59,17.68,1.97,79.6
+VolatilityBreakout_US30_VOL_M15_g_US30.a_M15_OHLC,ea,BTC,crypto bear,782,12417.07,15.88,1.53,40.8
+VolatilityBreakout_US30_VOL_M15_g_US30.a_M15_OHLC,ea,BTC,crypto bull,1053,18016.22,17.11,3.13,59.2
+VolatilityBreakout_US30_VOL_M15_g_US30.a_M15_OHLC,ea,US10Y,rates falling,716,13580.33,18.97,1.68,43.5
+VolatilityBreakout_US30_VOL_M15_g_US30.a_M15_OHLC,ea,US10Y,rates rising,1159,17663.11,15.24,3.19,56.5
+VolatilityBreakout_US30_VOL_M15_g_US30.a_M15_OHLC,ea,OIL,oil downtrend,927,16021.36,17.28,1.72,54.0
+VolatilityBreakout_US30_VOL_M15_g_US30.a_M15_OHLC,ea,OIL,oil uptrend,845,13643.29,16.15,3.21,46.0
+VolatilityBreakout_US30_VOL_M15_g_US30.a_M15_OHLC,ea,VIX,calm,404,4496.59,11.13,1.23,16.1
+VolatilityBreakout_US30_VOL_M15_g_US30.a_M15_OHLC,ea,VIX,normal,1202,16684.68,13.88,1.43,59.6
+VolatilityBreakout_US30_VOL_M15_g_US30.a_M15_OHLC,ea,VIX,stressed,370,6822.09,18.44,2.48,24.4
+VolatilityBreakout_VolUS500_a_M15_US500.a_M15_OHLC,ea,DXY,strong dollar,987,4268.19,4.32,0.37,18.2
+VolatilityBreakout_VolUS500_a_M15_US500.a_M15_OHLC,ea,DXY,weak dollar,891,19150.26,21.49,1.47,81.8
+VolatilityBreakout_VolUS500_a_M15_US500.a_M15_OHLC,ea,SP500,stocks bear,379,3027.13,7.99,0.59,13.4
+VolatilityBreakout_VolUS500_a_M15_US500.a_M15_OHLC,ea,SP500,stocks bull,1396,19507.26,13.97,1.03,86.6
+VolatilityBreakout_VolUS500_a_M15_US500.a_M15_OHLC,ea,GOLD,gold downtrend,439,275.17,0.63,0.04,1.2
+VolatilityBreakout_VolUS500_a_M15_US500.a_M15_OHLC,ea,GOLD,gold uptrend,1336,22259.22,16.66,1.25,98.8
+VolatilityBreakout_VolUS500_a_M15_US500.a_M15_OHLC,ea,BTC,crypto bear,785,15374.48,19.59,1.3,67.6
+VolatilityBreakout_VolUS500_a_M15_US500.a_M15_OHLC,ea,BTC,crypto bull,1053,7378.5,7.01,0.59,32.4
+VolatilityBreakout_VolUS500_a_M15_US500.a_M15_OHLC,ea,US10Y,rates falling,716,7196.61,10.05,0.8,30.7
+VolatilityBreakout_VolUS500_a_M15_US500.a_M15_OHLC,ea,US10Y,rates rising,1162,16221.84,13.96,1.03,69.3
+VolatilityBreakout_VolUS500_a_M15_US500.a_M15_OHLC,ea,OIL,oil downtrend,928,14157.47,15.26,1.01,62.8
+VolatilityBreakout_VolUS500_a_M15_US500.a_M15_OHLC,ea,OIL,oil uptrend,847,8376.92,9.89,0.86,37.2
+VolatilityBreakout_VolUS500_a_M15_US500.a_M15_OHLC,ea,VIX,calm,405,3349.43,8.27,0.69,13.3
+VolatilityBreakout_VolUS500_a_M15_US500.a_M15_OHLC,ea,VIX,normal,1204,19890.38,16.52,1.22,79.0
+VolatilityBreakout_VolUS500_a_M15_US500.a_M15_OHLC,ea,VIX,stressed,370,1924.37,5.2,0.38,7.6
+VolatilityBreakout_VolUS500_c_M15_US500.a_M15_OHLC,ea,DXY,strong dollar,986,16824.83,17.06,0.99,72.0
+VolatilityBreakout_VolUS500_c_M15_US500.a_M15_OHLC,ea,DXY,weak dollar,890,6555.34,7.37,0.51,28.0
+VolatilityBreakout_VolUS500_c_M15_US500.a_M15_OHLC,ea,SP500,stocks bear,379,13823.09,36.47,1.54,66.6
+VolatilityBreakout_VolUS500_c_M15_US500.a_M15_OHLC,ea,SP500,stocks bull,1394,6944.08,4.98,0.39,33.4
+VolatilityBreakout_VolUS500_c_M15_US500.a_M15_OHLC,ea,GOLD,gold downtrend,437,7464.51,17.08,0.85,35.9
+VolatilityBreakout_VolUS500_c_M15_US500.a_M15_OHLC,ea,GOLD,gold uptrend,1336,13302.66,9.96,0.71,64.1
+VolatilityBreakout_VolUS500_c_M15_US500.a_M15_OHLC,ea,BTC,crypto bear,783,12667.87,16.18,0.88,57.7
+VolatilityBreakout_VolUS500_c_M15_US500.a_M15_OHLC,ea,BTC,crypto bull,1053,9283.13,8.82,0.65,42.3
+VolatilityBreakout_VolUS500_c_M15_US500.a_M15_OHLC,ea,US10Y,rates falling,716,9054.74,12.65,0.78,38.7
+VolatilityBreakout_VolUS500_c_M15_US500.a_M15_OHLC,ea,US10Y,rates rising,1160,14325.43,12.35,0.78,61.3
+VolatilityBreakout_VolUS500_c_M15_US500.a_M15_OHLC,ea,OIL,oil downtrend,928,9425.09,10.16,0.6,45.4
+VolatilityBreakout_VolUS500_c_M15_US500.a_M15_OHLC,ea,OIL,oil uptrend,845,11342.08,13.42,0.93,54.6
+VolatilityBreakout_VolUS500_c_M15_US500.a_M15_OHLC,ea,VIX,calm,404,2142.05,5.3,0.35,8.8
+VolatilityBreakout_VolUS500_c_M15_US500.a_M15_OHLC,ea,VIX,normal,1203,8058.12,6.7,0.47,33.0
+VolatilityBreakout_VolUS500_c_M15_US500.a_M15_OHLC,ea,VIX,stressed,370,14183.7,38.33,1.67,58.2
+VolatilityBreakout_VolUS500_g_M15_US500.a_M15_OHLC,ea,DXY,strong dollar,986,20740.66,21.04,1.32,61.6
+VolatilityBreakout_VolUS500_g_M15_US500.a_M15_OHLC,ea,DXY,weak dollar,890,12949.18,14.55,0.92,38.4
+VolatilityBreakout_VolUS500_g_M15_US500.a_M15_OHLC,ea,SP500,stocks bear,379,11842.41,31.25,1.5,36.8
+VolatilityBreakout_VolUS500_g_M15_US500.a_M15_OHLC,ea,SP500,stocks bull,1394,20320.48,14.58,1.0,63.2
+VolatilityBreakout_VolUS500_g_M15_US500.a_M15_OHLC,ea,GOLD,gold downtrend,437,7190.56,16.45,1.0,22.4
+VolatilityBreakout_VolUS500_g_M15_US500.a_M15_OHLC,ea,GOLD,gold uptrend,1336,24972.33,18.69,1.17,77.6
+VolatilityBreakout_VolUS500_g_M15_US500.a_M15_OHLC,ea,BTC,crypto bear,783,19825.27,25.32,1.45,57.7
+VolatilityBreakout_VolUS500_g_M15_US500.a_M15_OHLC,ea,BTC,crypto bull,1053,14507.9,13.78,0.92,42.3
+VolatilityBreakout_VolUS500_g_M15_US500.a_M15_OHLC,ea,US10Y,rates falling,716,9600.5,13.41,0.92,28.5
+VolatilityBreakout_VolUS500_g_M15_US500.a_M15_OHLC,ea,US10Y,rates rising,1160,24089.34,20.77,1.25,71.5
+VolatilityBreakout_VolUS500_g_M15_US500.a_M15_OHLC,ea,OIL,oil downtrend,928,13485.16,14.53,0.86,41.9
+VolatilityBreakout_VolUS500_g_M15_US500.a_M15_OHLC,ea,OIL,oil uptrend,845,18677.73,22.1,1.47,58.1
+VolatilityBreakout_VolUS500_g_M15_US500.a_M15_OHLC,ea,VIX,calm,404,79.0,0.2,0.02,0.2
+VolatilityBreakout_VolUS500_g_M15_US500.a_M15_OHLC,ea,VIX,normal,1203,10845.39,9.02,0.59,32.1
+VolatilityBreakout_VolUS500_g_M15_US500.a_M15_OHLC,ea,VIX,stressed,370,22852.56,61.76,2.84,67.7
+FAMILY: BTC_UBSonechart_Sets,family,DXY,strong dollar,990,1640842.99,1657.42,6.7,53.7
+FAMILY: BTC_UBSonechart_Sets,family,DXY,weak dollar,891,1417457.32,1590.86,6.63,46.3
+FAMILY: BTC_UBSonechart_Sets,family,SP500,stocks bear,379,704313.82,1858.35,7.6,24.2
+FAMILY: BTC_UBSonechart_Sets,family,SP500,stocks bull,1399,2209019.42,1579.0,6.36,75.8
+FAMILY: BTC_UBSonechart_Sets,family,GOLD,gold downtrend,441,756017.66,1714.33,6.56,26.0
+FAMILY: BTC_UBSonechart_Sets,family,GOLD,gold uptrend,1337,2157315.58,1613.55,6.65,74.0
+FAMILY: BTC_UBSonechart_Sets,family,BTC,crypto bear,788,1353968.57,1718.23,6.98,45.2
+FAMILY: BTC_UBSonechart_Sets,family,BTC,crypto bull,1053,1638252.88,1555.8,6.39,54.8
+FAMILY: BTC_UBSonechart_Sets,family,US10Y,rates falling,716,1243822.61,1737.18,7.26,40.7
+FAMILY: BTC_UBSonechart_Sets,family,US10Y,rates rising,1165,1814477.7,1557.49,6.31,59.3
+FAMILY: BTC_UBSonechart_Sets,family,OIL,oil downtrend,928,1492250.7,1608.03,6.33,51.2
+FAMILY: BTC_UBSonechart_Sets,family,OIL,oil uptrend,850,1421082.54,1671.86,6.96,48.8
+FAMILY: BTC_UBSonechart_Sets,family,VIX,calm,406,699242.12,1722.27,6.55,20.9
+FAMILY: BTC_UBSonechart_Sets,family,VIX,normal,1206,1920692.41,1592.61,6.7,57.5
+FAMILY: BTC_UBSonechart_Sets,family,VIX,stressed,370,722364.24,1952.34,8.28,21.6
+FAMILY: FX_UBSonechart_Sets,family,DXY,strong dollar,990,394322.61,398.31,4.3,45.5
+FAMILY: FX_UBSonechart_Sets,family,DXY,weak dollar,891,472451.64,530.25,5.36,54.5
+FAMILY: FX_UBSonechart_Sets,family,SP500,stocks bear,379,245627.09,648.09,6.37,30.6
+FAMILY: FX_UBSonechart_Sets,family,SP500,stocks bull,1399,556717.83,397.94,4.31,69.4
+FAMILY: FX_UBSonechart_Sets,family,GOLD,gold downtrend,441,225235.64,510.74,4.98,28.1
+FAMILY: FX_UBSonechart_Sets,family,GOLD,gold uptrend,1337,577109.28,431.64,4.7,71.9
+FAMILY: FX_UBSonechart_Sets,family,BTC,crypto bear,788,360577.0,457.59,4.79,42.3
+FAMILY: FX_UBSonechart_Sets,family,BTC,crypto bull,1053,492835.48,468.03,4.92,57.7
+FAMILY: FX_UBSonechart_Sets,family,US10Y,rates falling,716,338214.6,472.37,4.9,39.0
+FAMILY: FX_UBSonechart_Sets,family,US10Y,rates rising,1165,528559.65,453.7,4.76,61.0
+FAMILY: FX_UBSonechart_Sets,family,OIL,oil downtrend,928,479248.22,516.43,5.43,59.7
+FAMILY: FX_UBSonechart_Sets,family,OIL,oil uptrend,850,323096.7,380.11,4.05,40.3
+FAMILY: FX_UBSonechart_Sets,family,VIX,calm,406,163816.57,403.49,3.82,18.0
+FAMILY: FX_UBSonechart_Sets,family,VIX,normal,1206,508535.44,421.67,4.49,55.9
+FAMILY: FX_UBSonechart_Sets,family,VIX,stressed,370,237411.0,641.65,7.09,26.1
+FAMILY: Gold_UBSonechart_Sets,family,DXY,strong dollar,990,1634688.64,1651.2,5.07,51.1
+FAMILY: Gold_UBSonechart_Sets,family,DXY,weak dollar,891,1566303.77,1757.92,5.17,48.9
+FAMILY: Gold_UBSonechart_Sets,family,SP500,stocks bear,379,587837.54,1551.02,4.84,19.4
+FAMILY: Gold_UBSonechart_Sets,family,SP500,stocks bull,1399,2449908.13,1751.19,5.35,80.6
+FAMILY: Gold_UBSonechart_Sets,family,GOLD,gold downtrend,441,625693.63,1418.81,4.32,20.6
+FAMILY: Gold_UBSonechart_Sets,family,GOLD,gold uptrend,1337,2412052.04,1804.08,5.55,79.4
+FAMILY: Gold_UBSonechart_Sets,family,BTC,crypto bear,788,1641126.65,2082.65,5.95,51.2
+FAMILY: Gold_UBSonechart_Sets,family,BTC,crypto bull,1053,1561611.19,1483.01,4.64,48.8
+FAMILY: Gold_UBSonechart_Sets,family,US10Y,rates falling,716,1154988.74,1613.11,5.2,36.1
+FAMILY: Gold_UBSonechart_Sets,family,US10Y,rates rising,1165,2046003.67,1756.23,5.08,63.9
+FAMILY: Gold_UBSonechart_Sets,family,OIL,oil downtrend,928,1360595.98,1466.16,5.18,44.8
+FAMILY: Gold_UBSonechart_Sets,family,OIL,oil uptrend,850,1677149.69,1973.12,5.38,55.2
+FAMILY: Gold_UBSonechart_Sets,family,VIX,calm,406,561189.61,1382.24,3.93,16.9
+FAMILY: Gold_UBSonechart_Sets,family,VIX,normal,1206,2186057.83,1812.65,5.48,65.7
+FAMILY: Gold_UBSonechart_Sets,family,VIX,stressed,370,581603.22,1571.9,4.54,17.5
+FAMILY: IndicesUBSonechartSets,family,DXY,strong dollar,990,1026590.98,1036.96,4.34,59.4
+FAMILY: IndicesUBSonechartSets,family,DXY,weak dollar,891,701712.59,787.56,3.75,40.6
+FAMILY: IndicesUBSonechartSets,family,SP500,stocks bear,379,538844.81,1421.75,4.91,33.2
+FAMILY: IndicesUBSonechartSets,family,SP500,stocks bull,1399,1085819.44,776.14,3.76,66.8
+FAMILY: IndicesUBSonechartSets,family,GOLD,gold downtrend,441,500422.59,1134.75,4.48,30.8
+FAMILY: IndicesUBSonechartSets,family,GOLD,gold uptrend,1337,1124241.66,840.87,3.86,69.2
+FAMILY: IndicesUBSonechartSets,family,BTC,crypto bear,788,761119.79,965.89,3.87,44.7
+FAMILY: IndicesUBSonechartSets,family,BTC,crypto bull,1053,941484.71,894.1,4.3,55.3
+FAMILY: IndicesUBSonechartSets,family,US10Y,rates falling,716,662258.72,924.94,4.14,38.3
+FAMILY: IndicesUBSonechartSets,family,US10Y,rates rising,1165,1066044.85,915.06,4.02,61.7
+FAMILY: IndicesUBSonechartSets,family,OIL,oil downtrend,928,865159.76,932.28,3.83,53.3
+FAMILY: IndicesUBSonechartSets,family,OIL,oil uptrend,850,759504.49,893.53,4.29,46.7
+FAMILY: IndicesUBSonechartSets,family,VIX,calm,406,195273.28,480.97,2.79,10.7
+FAMILY: IndicesUBSonechartSets,family,VIX,normal,1206,1073633.92,890.24,4.05,58.9
+FAMILY: IndicesUBSonechartSets,family,VIX,stressed,370,554318.37,1498.16,5.14,30.4
+POOL: all robots,pool,DXY,strong dollar,990,4696445.22,4743.88,9.4,53.0
+POOL: all robots,pool,DXY,weak dollar,891,4157925.32,4666.58,9.33,47.0
+POOL: all robots,pool,SP500,stocks bear,379,2076623.26,5479.22,9.99,24.8
+POOL: all robots,pool,SP500,stocks bull,1399,6301464.82,4504.26,9.23,75.2
+POOL: all robots,pool,GOLD,gold downtrend,441,2107369.52,4778.62,8.96,25.2
+POOL: all robots,pool,GOLD,gold uptrend,1337,6270718.56,4690.14,9.54,74.8
+POOL: all robots,pool,BTC,crypto bear,788,4116792.01,5224.36,9.92,47.0
+POOL: all robots,pool,BTC,crypto bull,1053,4634184.26,4400.93,9.03,53.0
+POOL: all robots,pool,US10Y,rates falling,716,3399284.67,4747.6,9.72,38.4
+POOL: all robots,pool,US10Y,rates rising,1165,5455085.87,4682.48,9.16,61.6
+POOL: all robots,pool,OIL,oil downtrend,928,4197254.66,4522.9,9.27,50.1
+POOL: all robots,pool,OIL,oil uptrend,850,4180833.42,4918.63,9.51,49.9
+POOL: all robots,pool,VIX,calm,406,1619521.58,3988.97,8.27,17.2
+POOL: all robots,pool,VIX,normal,1206,5688919.6,4717.18,9.58,60.5
+POOL: all robots,pool,VIX,stressed,370,2095696.83,5664.05,9.97,22.3
