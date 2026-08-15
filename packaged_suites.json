@@ -1,0 +1,157 @@
+{
+  "_readme": [
+    "Packaged-EA suite definitions, shared by the EA Portfolio Engine and MT5Tools.",
+    "A suite = one packaged-EA configuration (product x risk level), with 'members' =",
+    "the matching main-pool strategies and 'package_ea' = the standalone packaged",
+    "backtest inside the packaged_suites timeline.",
+    "FRAMEWORK (confirmed Aug 2026 from trade comments in the packaged backtests):",
+    "TradeFrequency selects HOW MANY internal strategies run - higher levels ADD",
+    "lower-timeframe strategies for more frequency. Gold Reaper: ExtremeConservative",
+    "= strategies 1-3 (Daily), Conservative = 1-5 (+H4/H1), Moderate = 1-7,",
+    "Intense = 1-8. Gold Phantom: ExtremeConservative = 1-3, Conservative =",
+    "1,2,3,4,6, Moderate = 1-7 (UBS public sets cover only 3 variants - the other",
+    "Phantom UBS sets were never released publicly). GoldBotOne and GoldTradePro",
+    "always run all 8. Package-internal numbering matches the UBS one-chart set",
+    "numbering (The Gold Reaper_XAUUSD_N == GoldReaper_strategyN).",
+    "CALIBRATION (the min-lot 0.01 -> lot-step check): realized max DD at stepped",
+    "lots came in AT or UNDER the 5% design target everywhere - Gold Reaper",
+    "3.1-4.3% balance DD (ExtremeConservative equity DD 6.6%, the only marginal",
+    "overshoot), Gold Phantom 1.5-1.9%, GoldBotOne 2.1%, GoldTradePro 0.9%.",
+    "Grouped-off-main vs package: per-risk-unit P&L nearly identical for",
+    "ExtremeConservative; daily corr 0.80-0.90 overall (package weights internal",
+    "strategies differently than equal risk units) - grouping is a fair",
+    "directional stand-in, package-level questions use the packaged_suites",
+    "timeline directly."
+  ],
+  "suites": [
+    {
+      "name": "Gold Reaper — Extreme Conservative",
+      "family": "Gold Reaper Packaged",
+      "members": [
+        "GoldReaper_strategy1_Daily_XAUUSD.a_Daily_OHLC",
+        "GoldReaper_strategy2_Daily_XAUUSD.a_Daily_OHLC",
+        "GoldReaper_strategy3_Daily_XAUUSD.a_Daily_OHLC"
+      ],
+      "package_ea": "GoldReaper_Pkg_ExtremeConservative",
+      "package_timeline": "packaged_suites",
+      "notes": "Strategies 1-3 (Daily only), confirmed from trade comments. Daily corr vs members 0.87; per-risk-unit P&L matches the package almost exactly."
+    },
+    {
+      "name": "Gold Reaper — Conservative",
+      "family": "Gold Reaper Packaged",
+      "members": [
+        "GoldReaper_strategy1_Daily_XAUUSD.a_Daily_OHLC",
+        "GoldReaper_strategy2_Daily_XAUUSD.a_Daily_OHLC",
+        "GoldReaper_strategy3_Daily_XAUUSD.a_Daily_OHLC",
+        "GoldReaper_strategy4_H4_XAUUSD.a_H4_OHLC",
+        "GoldReaper_strategy5_H1_XAUUSD.a_H1_OHLC"
+      ],
+      "package_ea": "GoldReaper_Pkg_Conservative",
+      "package_timeline": "packaged_suites",
+      "notes": "Strategies 1-5, confirmed from trade comments. Daily corr vs members 0.83."
+    },
+    {
+      "name": "Gold Reaper — Moderate",
+      "family": "Gold Reaper Packaged",
+      "members": [
+        "GoldReaper_strategy1_Daily_XAUUSD.a_Daily_OHLC",
+        "GoldReaper_strategy2_Daily_XAUUSD.a_Daily_OHLC",
+        "GoldReaper_strategy3_Daily_XAUUSD.a_Daily_OHLC",
+        "GoldReaper_strategy4_H4_XAUUSD.a_H4_OHLC",
+        "GoldReaper_strategy5_H1_XAUUSD.a_H1_OHLC",
+        "GoldReaper_strategy6_H1_XAUUSD.a_H1_OHLC",
+        "GoldReaper_strategy7_H1_XAUUSD.a_H1_OHLC"
+      ],
+      "package_ea": "GoldReaper_Pkg_Moderate",
+      "package_timeline": "packaged_suites",
+      "notes": "Strategies 1-7, confirmed from trade comments. Daily corr vs members 0.81."
+    },
+    {
+      "name": "Gold Reaper — Intense",
+      "family": "Gold Reaper Packaged",
+      "members": [
+        "GoldReaper_strategy1_Daily_XAUUSD.a_Daily_OHLC",
+        "GoldReaper_strategy2_Daily_XAUUSD.a_Daily_OHLC",
+        "GoldReaper_strategy3_Daily_XAUUSD.a_Daily_OHLC",
+        "GoldReaper_strategy4_H4_XAUUSD.a_H4_OHLC",
+        "GoldReaper_strategy5_H1_XAUUSD.a_H1_OHLC",
+        "GoldReaper_strategy6_H1_XAUUSD.a_H1_OHLC",
+        "GoldReaper_strategy7_H1_XAUUSD.a_H1_OHLC",
+        "GoldReaper_strategy8_H1_XAUUSD.a_H1_OHLC"
+      ],
+      "package_ea": "GoldReaper_Pkg_Intense",
+      "package_timeline": "packaged_suites",
+      "notes": "Strategies 1-8, confirmed from trade comments (UBS strategy9 is not used by any package level). Daily corr vs members 0.80."
+    },
+    {
+      "name": "Gold Phantom — Extreme Conservative",
+      "family": "Gold Phantom Packaged",
+      "members": [
+        "GoldPhantom_Gold_a_XAUUSD.a_Daily_OHLC",
+        "GoldPhantom_Gold_b_XAUUSD.a_Daily_OHLC",
+        "GoldPhantom_Gold_c_XAUUSD.a_Daily_OHLC"
+      ],
+      "package_ea": "GoldPhantom_Pkg_ExtremeConservative",
+      "package_timeline": "packaged_suites",
+      "notes": "Runs internal strategies 1-3 (confirmed from trade comments). UBS only has 3 public one-chart variants (a/b/c; number mapping unconfirmed — the remaining Phantom UBS sets were never released publicly), so members are approximate."
+    },
+    {
+      "name": "Gold Phantom — Conservative",
+      "family": "Gold Phantom Packaged",
+      "members": [
+        "GoldPhantom_Gold_a_XAUUSD.a_Daily_OHLC",
+        "GoldPhantom_Gold_b_XAUUSD.a_Daily_OHLC",
+        "GoldPhantom_Gold_c_XAUUSD.a_Daily_OHLC"
+      ],
+      "package_ea": "GoldPhantom_Pkg_Conservative",
+      "package_timeline": "packaged_suites",
+      "notes": "Runs internal strategies 1,2,3,4,6 (skips 5; confirmed from trade comments). Members approximate — see Extreme Conservative note. Daily corr vs the 3 variants: 0.88."
+    },
+    {
+      "name": "Gold Phantom — Moderate",
+      "family": "Gold Phantom Packaged",
+      "members": [
+        "GoldPhantom_Gold_a_XAUUSD.a_Daily_OHLC",
+        "GoldPhantom_Gold_b_XAUUSD.a_Daily_OHLC",
+        "GoldPhantom_Gold_c_XAUUSD.a_Daily_OHLC"
+      ],
+      "package_ea": "GoldPhantom_Pkg_Moderate",
+      "package_timeline": "packaged_suites",
+      "notes": "Runs internal strategies 1-7 (confirmed from trade comments). Members approximate — see Extreme Conservative note."
+    },
+    {
+      "name": "GoldBotOne — Package",
+      "family": "GoldBotOne Packaged",
+      "members": [
+        "GoldBotOne_dailyA_XAUUSD.a_Daily_OHLC",
+        "GoldBotOne_dailyB_XAUUSD.a_Daily_OHLC",
+        "GoldBotOne_dailyC_XAUUSD.a_Daily_OHLC",
+        "GoldBotOne_dailyD_XAUUSD.a_Daily_OHLC",
+        "GoldBotOne_dailyE_XAUUSD.a_Daily_OHLC",
+        "GoldBotOne_dailyH_XAUUSD.a_Daily_OHLC",
+        "GoldBotOne_dailyI_XAUUSD.a_Daily_OHLC",
+        "GoldBotOne_dailyK_XAUUSD.a_Daily_OHLC"
+      ],
+      "package_ea": "GoldBotOne_Pkg",
+      "package_timeline": "packaged_suites",
+      "notes": "All 8 internal strategies always run (confirmed). Letter/number mapping to UBS variants unconfirmed. Daily corr: 0.90."
+    },
+    {
+      "name": "GoldTradePro — Package",
+      "family": "GoldTradePro Packaged",
+      "members": [
+        "GOLDTRADEPRO_a_XAUUSD.a_Daily_OHLC",
+        "GOLDTRADEPRO_c_XAUUSD.a_Daily_OHLC",
+        "GOLDTRADEPRO_d_XAUUSD.a_Daily_OHLC",
+        "GOLDTRADEPRO_E_XAUUSD.a_Daily_OHLC",
+        "GOLDTRADEPRO_F_XAUUSD.a_Daily_OHLC",
+        "GOLDTRADEPRO_G_XAUUSD.a_Daily_OHLC",
+        "GOLDTRADEPRO_H_XAUUSD.a_Daily_OHLC",
+        "GOLDTRADEPROH4_b_XAUUSD.a_H4_OHLC"
+      ],
+      "package_ea": "GoldTradePro_Pkg",
+      "package_timeline": "packaged_suites",
+      "notes": "All 8 internal strategies always run (confirmed). Letter/number mapping to UBS variants unconfirmed. Daily corr: 0.89."
+    }
+  ]
+}

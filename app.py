@@ -57,11 +57,11 @@ def write_desc(name, text):
         f.write(text.strip() + '\n')
 
 
-SUITES_PATH = os.path.join(os.path.dirname(ENGINE_DIR), 'packaged_suites.json')
+SUITES_PATH = os.path.join(ENGINE_DIR, 'packaged_suites.json')
 
 
 def load_suites():
-    """Packaged-EA suite definitions shared with MT5Tools (see file _readme)."""
+    """Packaged-EA suite definitions (ships with the repo; see file _readme)."""
     if not os.path.isfile(SUITES_PATH):
         return []
     try:
