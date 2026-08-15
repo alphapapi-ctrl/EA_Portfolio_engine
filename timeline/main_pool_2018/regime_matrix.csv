@@ -2444,3 +2444,18 @@ POOL: all robots,pool,OIL,oil uptrend,850,4180833.42,4918.63,9.51,49.9
 POOL: all robots,pool,VIX,calm,406,1619521.58,3988.97,8.27,17.2
 POOL: all robots,pool,VIX,normal,1206,5688919.6,4717.18,9.58,60.5
 POOL: all robots,pool,VIX,stressed,370,2095696.83,5664.05,9.97,22.3
+PORTFOLIO: Wim's Portfolio,suite,DXY,strong dollar,990,991536.49,1001.55,5.89,52.7
+PORTFOLIO: Wim's Portfolio,suite,DXY,weak dollar,891,889001.1,997.76,5.85,47.3
+PORTFOLIO: Wim's Portfolio,suite,SP500,stocks bear,379,427830.29,1128.84,6.51,24.6
+PORTFOLIO: Wim's Portfolio,suite,SP500,stocks bull,1399,1312535.15,938.2,5.73,75.4
+PORTFOLIO: Wim's Portfolio,suite,GOLD,gold downtrend,441,381004.16,863.96,4.91,21.9
+PORTFOLIO: Wim's Portfolio,suite,GOLD,gold uptrend,1337,1359361.28,1016.72,6.26,78.1
+PORTFOLIO: Wim's Portfolio,suite,BTC,crypto bear,788,795786.15,1009.88,5.74,43.1
+PORTFOLIO: Wim's Portfolio,suite,BTC,crypto bull,1053,1051936.32,998.99,5.99,56.9
+PORTFOLIO: Wim's Portfolio,suite,US10Y,rates falling,716,771994.53,1078.2,6.42,41.1
+PORTFOLIO: Wim's Portfolio,suite,US10Y,rates rising,1165,1108543.06,951.54,5.55,58.9
+PORTFOLIO: Wim's Portfolio,suite,OIL,oil downtrend,928,955262.35,1029.38,6.36,54.9
+PORTFOLIO: Wim's Portfolio,suite,OIL,oil uptrend,850,785103.09,923.65,5.43,45.1
+PORTFOLIO: Wim's Portfolio,suite,VIX,calm,406,382966.52,943.27,5.72,19.1
+PORTFOLIO: Wim's Portfolio,suite,VIX,normal,1206,1198980.19,994.18,5.9,59.9
+PORTFOLIO: Wim's Portfolio,suite,VIX,stressed,370,419007.7,1132.45,5.68,20.9

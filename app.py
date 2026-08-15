@@ -745,7 +745,7 @@ which is exactly how the "team of 9 Bitcoin robots" trap happens.
             keep = keep[keep.symbol.isin(mkts)]
         sub = matrix[(matrix.type == 'ea') & matrix.entity.isin(keep.ea_id.tolist())]
     else:
-        sub = matrix[matrix.type.isin(['family', 'pool'])]
+        sub = matrix[matrix.type.isin(['family', 'pool', 'suite'])]
         # Show the packaged-EA configurations alongside the pool's families —
         # each package is one risk unit, same footing as one family robot.
         if timeline_name != 'packaged_suites':

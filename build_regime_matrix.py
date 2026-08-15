@@ -123,6 +123,21 @@ def main():
             add_entity(f'FAMILY: {fam}', 'family', daily[cols].sum(axis=1))
     add_entity('POOL: all robots', 'pool', daily.sum(axis=1))
 
+    # Curated portfolios from packaged_suites.json (suites without their own
+    # packaged backtest — those with one already appear via their timeline).
+    suites_p = os.path.join(ENGINE_DIR, 'packaged_suites.json')
+    if os.path.isfile(suites_p):
+        import json
+        with open(suites_p, encoding='utf-8') as f:
+            suites = json.load(f).get('suites', [])
+        for s in suites:
+            if s.get('package_ea'):
+                continue
+            cols = [m for m in s.get('members', []) if m in daily.columns]
+            if len(cols) >= 2:
+                add_entity(f"PORTFOLIO: {s['name']}", 'suite',
+                           daily[cols].sum(axis=1))
+
     out = pd.DataFrame(records)
     out.to_csv(os.path.join(tdir, 'regime_matrix.csv'), index=False)
 
