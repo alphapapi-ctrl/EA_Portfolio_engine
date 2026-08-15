@@ -1249,14 +1249,15 @@ elif page == '🛠 Build a Run':
     # ── Run ───────────────────────────────────────────────────────────────
     st.divider()
     _gross = float(n_slots) * float(risk_pct) / 5.0
-    st.caption(f'⚖️ This run deploys **{_gross:.0f} risk units** '
-               f'({int(n_slots)} slot(s) × {risk_pct:.1f}% ÷ 5). One unit = '
-               'one robot at its 5% account-DD calibration, the live-account '
-               'convention. Profit and drawdown **dollars scale linearly '
-               'with the unit count** — a 37-slot book shows ~3.7× the '
-               'dollars of a 10-slot bench from sizing alone. Compare '
-               'different-sized runs on Sharpe, or rerun them at matching '
-               'units.')
+    st.caption(f'⚖️ This run **sums {int(n_slots)} robot(s) at '
+               f'{risk_pct:.1f}% sizing** — {_gross:.0f} robots-worth of '
+               'backtested size in total ("risk units"). Thanks to the '
+               '\\$100k / 5%-DD normalisation the backtest figures add '
+               'directly, so profit and drawdown dollars grow with every '
+               'robot you add — a 37-robot book shows ~3.7× the dollars of '
+               'a 10-robot bench purely from summing more robots. Compare '
+               'different-sized runs on Sharpe, or rerun at a matching '
+               'count.')
     problems = []
     if not run_name.strip():
         problems.append('**give the run a name** (the box at the top of the page — '
@@ -1555,12 +1556,15 @@ elif page == '🏁 Results & Compare':
         'turnover_units': 'Churn', 'events': 'Decisions'})
     st.dataframe(df, use_container_width=True,
                  column_config={c: st.column_config.NumberColumn(help=h) for c, h in {
-                     'Risk units'    : ('Total risk deployed: slots × (risk% / 5). '
-                                        'One unit = one robot at its 5% account-DD '
-                                        'calibration. Profit and drawdown DOLLARS '
-                                        'scale linearly with this — only compare '
-                                        'dollars between runs with the SAME unit '
-                                        'count; Sharpe is fair across different '
+                     'Risk units'    : ('How many robots-at-full-backtested-size '
+                                        'this run sums. The $100k / 5%-DD '
+                                        'normalisation makes backtest figures '
+                                        'directly summable, and a run\'s dollars '
+                                        'are exactly that sum — so a 37-robot run '
+                                        'shows ~3.7× the dollars (and dollar DD) '
+                                        'of a 10-robot bench purely from summing '
+                                        'more robots. Compare dollars only at the '
+                                        'same count; Sharpe is fair across '
                                         'counts.'),
                      'Profit ($)'    : METRIC_HELP['net_profit'],
                      'Per year (%)'  : METRIC_HELP['ann_return_pct'],
@@ -1571,10 +1575,11 @@ elif page == '🏁 Results & Compare':
 
     with st.expander('How to read this table (start here!)'):
         st.markdown("""
-- **Check Risk units before comparing dollars.** A 37-slot book deploys 37
-  units of risk; the 10-slot benches deploy 10. Its profit *and* drawdown
-  dollars will be ~3.7× bigger for that reason alone — that is sizing, not
-  skill. Sharpe is the fair cross-unit comparison.
+- **Check Risk units before comparing dollars.** The normalisation makes every
+  robot's backtest figures directly summable — a run's dollars are exactly the
+  sum of its robots. So a 37-robot book shows ~3.7× the profit *and* drawdown
+  dollars of a 10-robot bench just from summing more robots — that is count,
+  not skill. Sharpe is the fair comparison across different counts.
 - **Ignore the absolute profit numbers** — this pool only contains strategies that
   already looked good on history, which flatters everything. The *comparison
   between rows* is what's meaningful.
