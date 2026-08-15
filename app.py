@@ -740,6 +740,20 @@ which is exactly how the "team of 9 Bitcoin robots" trap happens.
         sub = matrix[(matrix.type == 'ea') & matrix.entity.isin(keep.ea_id.tolist())]
     else:
         sub = matrix[matrix.type.isin(['family', 'pool'])]
+        # Show the packaged-EA configurations alongside the pool's families —
+        # each package is one risk unit, same footing as one family robot.
+        if timeline_name != 'packaged_suites':
+            pk_path = os.path.join(ENGINE_DIR, 'timeline', 'packaged_suites',
+                                   'regime_matrix.csv')
+            if os.path.isfile(pk_path):
+                pk = pd.read_csv(pk_path)
+                pk = pk[pk.type == 'ea'].copy()
+                pk['entity'] = '📦 ' + pk['entity']
+                sub = pd.concat([sub, pk], ignore_index=True)
+                st.caption('📦 rows are the packaged-EA configurations (from '
+                           'the packaged_suites dataset, one risk unit each) '
+                           'shown for comparison — their day count is shorter '
+                           'than the pool\'s, so compare Sharpe, not totals.')
 
     sub = sub.copy()
     sub['col'] = sub['indicator'] + ': ' + sub['state']
