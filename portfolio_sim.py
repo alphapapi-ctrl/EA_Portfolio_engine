@@ -565,7 +565,12 @@ def simulate(daily, regime, review_every=5, warmup=63, overlays=None, basis=100_
     years  = len(live) / TRADING_DAYS
     vol_d  = pnl.std(ddof=0)
 
-    turnover = wdf.diff().abs().sum(axis=1).sum() / 2.0
+    # Churn = weight changes AFTER the initial deployment — entering the
+    # starting book on day one is not a management decision.
+    dturn = wdf.diff().abs().sum(axis=1)
+    nonzero = dturn[dturn > 0]
+    entry = float(nonzero.iloc[0]) if len(nonzero) else 0.0
+    turnover = (dturn.sum() - entry) / 2.0
     n_swaps  = len([e for e in events if e.get('action') in ('add', 'drop', 'swap')])
 
     summary = {
