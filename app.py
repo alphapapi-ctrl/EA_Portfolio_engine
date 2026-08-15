@@ -1645,6 +1645,32 @@ is what stops the panic-and-shelve cycle.
                        'be a straight line; in dollars it is a hockey stick, '
                        'in both directions.')
 
+        # ── Drawdown overlay — the other half of the story ────────────────
+        st.subheader('Drawdown — the other half of the story')
+        ddfig = go.Figure()
+        for label, f in frames.items():
+            peak = f['equity'].cummax()
+            ddp = (peak - f['equity']) / peak * 100
+            ddfig.add_trace(go.Scatter(x=f.index, y=-ddp, mode='lines',
+                                       name=label,
+                                       hovertemplate='%{x|%d %b %Y}<br>'
+                                                     '%{y:.2f}% below peak'
+                                                     '<extra>' + label +
+                                                     '</extra>'))
+        ddfig.add_hline(y=0, line_color='gray', line_width=1)
+        ddfig.update_layout(height=300, margin=dict(l=10, r=10, t=10, b=10),
+                            legend=dict(orientation='h', y=-0.2),
+                            yaxis_title='% below peak')
+        st.plotly_chart(ddfig, use_container_width=True)
+        st.caption('Every dip is time spent under water — same runs, same '
+                   'days as the curve above. Two equal profit curves are '
+                   'NOT equal if one spent months down here: depth is the '
+                   'pain, width is how long you had to sit through it, and '
+                   'dips that line up across runs mean the styles share the '
+                   'same bad weeks (no diversification between them). '
+                   'Shown as % of the account\'s running peak, so the '
+                   'linear and compounding views compare fairly.')
+
     st.subheader('Drill into one run')
     sel = st.selectbox('Run', list(df.index))
     seldir = os.path.join(RUNS_DIR, sel)
