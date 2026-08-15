@@ -1294,7 +1294,11 @@ elif page == '🛠 Build a Run':
 
         m1, m2, m3, m4, m5 = st.columns(5)
         m1.metric('Profit', f"${summary['net_profit']:,.0f}", help=METRIC_HELP['net_profit'])
-        m2.metric('Per year', f"{summary['ann_return_pct']:.0f}%", help=METRIC_HELP['ann_return_pct'])
+        m2.metric('Per year / robot',
+                  f"{summary['ann_return_pct'] / max(cfg['gross_budget'], 1e-9):.1f}%",
+                  help='Average yearly profit per robot at its backtested '
+                       'size — count-independent, so runs of different team '
+                       'sizes compare fairly.')
         m3.metric('Sharpe', summary['sharpe'], help=METRIC_HELP['sharpe'])
         m4.metric('Worst drop', f"{summary['max_dd_pct']:.1f}%", help=METRIC_HELP['max_dd_pct'])
         m5.metric('Churn', f"{summary['turnover_units']:.0f}", help=METRIC_HELP['turnover_units'])
@@ -1549,13 +1553,19 @@ elif page == '🏁 Results & Compare':
     df = pd.DataFrame(rows).T[['risk_units', 'net_profit', 'ann_return_pct',
                                'sharpe', 'max_dd_pct', 'turnover_units',
                                'events']]
+    df['ann_per_unit'] = np.where(df['risk_units'].astype(float) > 0,
+                                  df['ann_return_pct'].astype(float)
+                                  / df['risk_units'].astype(float), np.nan)
+    df = df[['risk_units', 'net_profit', 'ann_per_unit', 'sharpe',
+             'max_dd_pct', 'turnover_units', 'events']]
     df = df.sort_values('sharpe', ascending=False).rename(columns={
         'risk_units': 'Risk units',
-        'net_profit': 'Profit ($)', 'ann_return_pct': 'Per year (%)',
+        'net_profit': 'Profit ($)',
+        'ann_per_unit': 'Per year per robot (%)',
         'sharpe': 'Sharpe', 'max_dd_pct': 'Worst drop (%)',
         'turnover_units': 'Churn', 'events': 'Decisions'})
     st.dataframe(df, use_container_width=True,
-                 column_config={c: st.column_config.NumberColumn(help=h) for c, h in {
+                 column_config={c: st.column_config.NumberColumn(help=h, format='%.2f') for c, h in {
                      'Risk units'    : ('How many robots-at-full-backtested-size '
                                         'this run sums. The $100k / 5%-DD '
                                         'normalisation makes backtest figures '
@@ -1564,10 +1574,15 @@ elif page == '🏁 Results & Compare':
                                         'shows ~3.7× the dollars (and dollar DD) '
                                         'of a 10-robot bench purely from summing '
                                         'more robots. Compare dollars only at the '
-                                        'same count; Sharpe is fair across '
-                                        'counts.'),
+                                        'same count; Sharpe and per-robot columns '
+                                        'are fair across counts.'),
                      'Profit ($)'    : METRIC_HELP['net_profit'],
-                     'Per year (%)'  : METRIC_HELP['ann_return_pct'],
+                     'Per year per robot (%)': (
+                         'Average yearly profit per robot-at-backtested-size, '
+                         'on its own $100k / 5%-DD calibration — the '
+                         'count-independent return figure. (Raw "% of $100k" '
+                         'is misleading for multi-robot books: a 37-robot run '
+                         'shows 37× this number against the same fixed base.)'),
                      'Sharpe'        : METRIC_HELP['sharpe'],
                      'Worst drop (%)': METRIC_HELP['max_dd_pct'],
                      'Churn'         : METRIC_HELP['turnover_units'],
