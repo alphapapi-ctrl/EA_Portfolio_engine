@@ -62,7 +62,7 @@ SUITES_PATH = os.path.join(ENGINE_DIR, 'packaged_suites.json')
 # Fill-trust: how much a robot's backtest FILLS can be believed (fill_trust.py)
 TRUST_ICON = {'real': '✅', 'high': '🟢', 'medium': '🟡', 'low': '🔴',
               'unknown': '⚪', 'mixed': '◔'}
-TRUST_LEGEND = ('Fill trust — how much the backtest fills can be believed, '
+TRUST_LEGEND = ('Backtest quality — how much the backtest fills can be believed, '
                 'from a real-tick check of the last 3 months: ✅ real-tick '
                 'report · 🟢 high (real ticks keep ≥85% of the OHLC profit) · '
                 '🟡 medium (50–85%) · 🔴 low (<50%, or profit turns to loss on '
@@ -682,7 +682,7 @@ elif page == '📊 EA Pool':
         'realized_dd_pct', 'dd_vs_target'] + \
         (['family_fill_haircut_pct'] if has_trust else []) + ['trades']
     show = view[cols].rename(columns={
-        'trust': 'Fill trust',
+        'trust': 'Backtest quality',
         'strategy': 'Strategy', 'family': 'Family', 'symbol': 'Market',
         'timeframe': 'TF', 'net_profit': 'Backtest profit ($)',
         'realized_dd_pct': 'Worst DD (%)', 'dd_vs_target': 'DD vs 5% target',
@@ -690,7 +690,7 @@ elif page == '📊 EA Pool':
         'trades': 'Trades'})
     st.dataframe(show, use_container_width=True, hide_index=True,
                  column_config={
-                     'Fill trust': st.column_config.TextColumn(
+                     'Backtest quality': st.column_config.TextColumn(
                          help=TRUST_LEGEND),
                      'Real-tick haircut (family, %)': st.column_config.NumberColumn(
                          help='How much of the family\'s 1m-OHLC profit '
