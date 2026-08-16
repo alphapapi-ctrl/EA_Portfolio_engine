@@ -59,6 +59,17 @@ def write_desc(name, text):
 
 SUITES_PATH = os.path.join(ENGINE_DIR, 'packaged_suites.json')
 
+# Fill-trust: how much a robot's backtest FILLS can be believed (fill_trust.py)
+TRUST_ICON = {'real': '✅', 'high': '🟢', 'medium': '🟡', 'low': '🔴',
+              'unknown': '⚪', 'mixed': '◔'}
+TRUST_LEGEND = ('Fill trust — how much the backtest fills can be believed, '
+                'from a real-tick check of the last 3 months: ✅ real-tick '
+                'report · 🟢 high (real ticks keep ≥85% of the OHLC profit) · '
+                '🟡 medium (50–85%) · 🔴 low (<50%, or profit turns to loss on '
+                'real ticks) · ⚪ not checked · ◔ mixed group. Low-trust '
+                'robots\' numbers are fill artifacts as much as edge — treat '
+                'them as unproven until the live bench says otherwise.')
+
 
 def load_suites():
     """Packaged-EA suite definitions (ships with the repo; see file _readme)."""
@@ -125,7 +136,10 @@ def friendly_name(ea_id, meta):
     if row.empty:
         return ea_id
     r = row.iloc[0]
-    return f"{r['strategy']}  ({r['symbol']} {r['timeframe']}, {r['family']})"
+    badge = ''
+    if 'fill_trust' in meta.columns:
+        badge = TRUST_ICON.get(r.get('fill_trust', 'unknown'), '⚪') + ' '
+    return f"{badge}{r['strategy']}  ({r['symbol']} {r['timeframe']}, {r['family']})"
 
 
 def equity_chart(frames, basis=100_000):
@@ -658,20 +672,43 @@ elif page == '📊 EA Pool':
     if sym:
         view = view[view.symbol.isin(sym)]
 
-    show = view[['strategy', 'family', 'symbol', 'timeframe', 'net_profit',
-                 'realized_dd_pct', 'dd_vs_target', 'trades']].rename(columns={
+    has_trust = 'fill_trust' in view.columns
+    if has_trust:
+        view = view.copy()
+        view['trust'] = view['fill_trust'].map(
+            lambda t: f"{TRUST_ICON.get(t, '⚪')} {t}")
+    cols = (['trust'] if has_trust else []) + [
+        'strategy', 'family', 'symbol', 'timeframe', 'net_profit',
+        'realized_dd_pct', 'dd_vs_target'] + \
+        (['family_fill_haircut_pct'] if has_trust else []) + ['trades']
+    show = view[cols].rename(columns={
+        'trust': 'Fill trust',
         'strategy': 'Strategy', 'family': 'Family', 'symbol': 'Market',
         'timeframe': 'TF', 'net_profit': 'Backtest profit ($)',
         'realized_dd_pct': 'Worst DD (%)', 'dd_vs_target': 'DD vs 5% target',
+        'family_fill_haircut_pct': 'Real-tick haircut (family, %)',
         'trades': 'Trades'})
     st.dataframe(show, use_container_width=True, hide_index=True,
                  column_config={
+                     'Fill trust': st.column_config.TextColumn(
+                         help=TRUST_LEGEND),
+                     'Real-tick haircut (family, %)': st.column_config.NumberColumn(
+                         help='How much of the family\'s 1m-OHLC profit '
+                              'disappeared on real ticks over the last 3 '
+                              'months (from the real-tick proxy). 100+ = '
+                              'profit became a loss. Blank = the report is '
+                              'already real-tick or was not checked.'),
                      'DD vs 5% target': st.column_config.NumberColumn(
                          help='1.0 = this robot\'s backtest drawdown landed exactly on '
                               'the 5% calibration target. Far below 1 = it risked less '
                               'than intended here; far above = more. Values far from 1 '
                               'usually mean the set author\'s historical-DD number was '
                               'stale or a default.')})
+
+    if has_trust:
+        st.caption(TRUST_LEGEND + ' Recompute after refreshing the real-tick '
+                   'proxy: `python fill_trust.py` in the engine folder, then '
+                   'rebuild the regime matrix.')
 
     with st.expander('What does "DD vs 5% target" mean, and why care?'):
         st.markdown("""
@@ -772,6 +809,11 @@ which is exactly how the "team of 9 Bitcoin robots" trap happens.
 
     sub = sub.copy()
     sub['col'] = sub['indicator'] + ': ' + sub['state']
+    # Fill-trust badge on each row (from fill_trust.py via the matrix)
+    if 'fill_trust' in sub.columns:
+        badge = sub.groupby('entity')['fill_trust'].first().map(
+            lambda t: TRUST_ICON.get(t, '⚪')).to_dict()
+        sub['entity'] = sub['entity'].map(lambda e: f"{badge.get(e, '⚪')} {e}")
     heat = sub.pivot_table(index='entity', columns='col', values='sharpe')
     if len(heat) > 0:
         # Absolute anchors at the bottom, relative at the top: red = Sharpe 0
@@ -803,6 +845,7 @@ which is exactly how the "team of 9 Bitcoin robots" trap happens.
                    'and red in its opposite is a one-regime specialist — '
                    'fine, as long as the team knows it and balances around '
                    'it.')
+        st.caption(TRUST_LEGEND)
 
     # ── Drill-down ────────────────────────────────────────────────────────
     st.subheader('Drill into a family — or specific strategies within it')

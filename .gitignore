@@ -22,3 +22,6 @@ Thumbs.db
 
 # Local teaching snapshot (pre-real-tick OHLC compile), not for clones
 timeline/main_pool_2018_ohlc/
+
+# Recent-form proxies are per-install and refreshed weekly
+timeline/proxy_*/

@@ -104,24 +104,33 @@ def main():
                     for r in meta.itertuples()}
 
     records = []
+    # Fill-trust label per EA / family (from fill_trust.py, if it has run)
+    trust_ea = dict(zip(meta.ea_id, meta['fill_trust'])) \
+        if 'fill_trust' in meta.columns else {}
+    trust_fam = {}
+    if 'fill_trust' in meta.columns:
+        for fam, grp in meta.groupby('family'):
+            vc = grp['fill_trust'].value_counts()
+            trust_fam[fam] = vc.index[0] if len(vc) else 'unknown'
 
-    def add_entity(entity_id, entity_type, pnl):
+    def add_entity(entity_id, entity_type, pnl, trust='unknown'):
         for ind in states.columns:
             for row in condition(pnl, states[ind]):
                 records.append({'entity': entity_id, 'type': entity_type,
-                                'indicator': ind, **row})
+                                'indicator': ind, 'fill_trust': trust, **row})
 
     # Per EA, restricted to its active range
     for ea in daily.columns:
         lo, hi = active_range.get(ea, (daily.index[0], daily.index[-1]))
-        add_entity(ea, 'ea', daily[ea].loc[lo:hi])
+        add_entity(ea, 'ea', daily[ea].loc[lo:hi], trust_ea.get(ea, 'unknown'))
 
     # Per family (equal-weight sum of members) and whole pool
     for fam, grp in meta.groupby('family'):
         cols = [c for c in grp.ea_id if c in daily.columns]
         if cols:
-            add_entity(f'FAMILY: {fam}', 'family', daily[cols].sum(axis=1))
-    add_entity('POOL: all robots', 'pool', daily.sum(axis=1))
+            add_entity(f'FAMILY: {fam}', 'family', daily[cols].sum(axis=1),
+                       trust_fam.get(fam, 'unknown'))
+    add_entity('POOL: all robots', 'pool', daily.sum(axis=1), 'mixed')
 
     # Curated portfolios from packaged_suites.json (suites without their own
     # packaged backtest — those with one already appear via their timeline).
@@ -136,7 +145,7 @@ def main():
             cols = [m for m in s.get('members', []) if m in daily.columns]
             if len(cols) >= 2:
                 add_entity(f"PORTFOLIO: {s['name']}", 'suite',
-                           daily[cols].sum(axis=1))
+                           daily[cols].sum(axis=1), 'mixed')
 
     out = pd.DataFrame(records)
     out.to_csv(os.path.join(tdir, 'regime_matrix.csv'), index=False)
