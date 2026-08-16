@@ -23,5 +23,6 @@ Thumbs.db
 # Local teaching snapshot (pre-real-tick OHLC compile), not for clones
 timeline/main_pool_2018_ohlc/
 
-# Recent-form proxies are per-install and refreshed weekly
+# proxy_3m_realticks ships with the repo as base data; other proxy_* stay local
 timeline/proxy_*/
+!timeline/proxy_3m_realticks/
